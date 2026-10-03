@@ -1,530 +1,190 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
 ![Azure OpenAI](https://img.shields.io/badge/Azure%20OpenAI-GPT--4o-0078D4?logo=microsoftazure)
-![Azure AI Foundry](https://img.shields.io/badge/Azure-AI%20Foundry-0078D4)
 ![Blender](https://img.shields.io/badge/Blender-5.x-orange?logo=blender)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-# 🚀 Azure AI Universal Assembly Video Generator
+# AI Assembly Video Generator
 
-<p align="center">
+**Turn a flat-pack assembly manual (PDF) into an animated, step-by-step assembly video.**
 
-**Upload any instructional manual → AI understands it → Generates a step-by-step animated assembly video**
+GPT-4o vision reads the manual's pages. A chain of Python stages turns what it sees into an assembly graph, a motion plan and a 3D scene. Blender renders the scene headlessly, and the frames are stitched into an MP4 with on-screen step captions.
 
-*An experimental end-to-end AI pipeline for transforming static assembly manuals into animated visual instructions.*
-
-</p>
+[▶ Watch the walkthrough on Loom](https://www.loom.com/share/12703483af3d4d3187db376c63d08b1b)
 
 ---
 
-[▶ Click to watch Demo on Loom](https://www.loom.com/share/12703483af3d4d3187db376c63d08b1b)
+## Results
+
+Three real manuals, three generated videos. Each image shows one step in progress and the finished piece.
+
+**IKEA MELLTORP table.** Built upside down on its top, then turned over at the end, the way the manual shows it.
+
+![MELLTORP table](github_demo_assets/results/melltorp_table.png)
+
+**Habitat Banbury dining chair.** The front leg frame, side rails, slatted back and seat pad, in the manual's order.
+
+![Banbury chair](github_demo_assets/results/banbury_chair.png)
+
+**Habitat Kaycie single bed.** Headboard, footboard, side rails joined at the centre legs, then 14 slats.
+
+![Kaycie bed](github_demo_assets/results/kaycie_bed.png)
+
+The parts are proxy shapes (boxes, cylinders and simple frames) sized from the measurements printed in each manual, not CAD models.
 
 ---
 
-# 💡 Why I Built This Project
+## Why I built this
 
-When I moved to the UK, I quickly realised that many products I bought required self-assembly. Whether it was furniture, bicycles, shelving, children's toys, household appliances or other DIY products, they almost always arrived with only an instruction manual containing diagrams and very little text.
+When I moved to the UK, a lot of what I bought needed self-assembly, and it came with a manual of diagrams and very little text. Reading the diagrams often took longer than the assembly itself, and one misread step meant undoing work and starting again. Sometimes there was a YouTube video for the product, but often there wasn't.
 
-Although the manuals were technically correct, understanding the diagrams often took longer than assembling the product itself. If I misunderstood one step, I frequently had to undo the work and start again—wasting both time and effort.
-
-Like most people, I searched YouTube for assembly videos. Sometimes they existed, but for many products they simply didn't.
-
-That led me to ask a simple question:
-
-> **What if AI could understand any instructional manual and automatically generate an animated assembly video?**
-
-This project is my exploration of that idea.
-
-The long-term vision is to help people assemble products more quickly and confidently by converting static manuals into AI-generated visual guidance.
+So I wanted to see whether AI could read a manual and produce the video itself. This project is that experiment.
 
 ---
 
+## How it works
 
-# 🎯 Project Vision
-
-The long-term vision of this project is to build a universal AI system capable of understanding **any instructional manual** and automatically generating an easy-to-follow animated assembly guide.
-
-Unlike traditional rule-based systems that rely on manually authored 3D models or predefined animation sequences, this project attempts to reason directly from the assembly manual itself.
-
-The system is designed to work with a wide range of products including:
-
-- 🪑 Furniture
-- 🚲 Bicycles
-- 🏋️ Gym equipment
-- 🧸 Children's toys
-- 🏠 Household appliances
-- 🧰 DIY kits
-- 🏭 Industrial equipment
-
-The objective is to bridge the gap between static instruction manuals and intuitive visual guidance using modern AI techniques including computer vision, reasoning, procedural graphics and automated animation generation.
-
----
-
-# ✨ Current MVP Features
-
-The current prototype demonstrates an end-to-end AI pipeline capable of:
-
-- Uploading any instructional PDF
-- Converting PDF pages into images
-- Understanding diagrams using Azure GPT-4o Vision
-- Detecting parts, fasteners and tools
-- Tracking object identities across multiple pages
-- Extracting assembly actions
-- Building a Universal Assembly Graph
-- Planning assembly motions
-- Generating exploded assembly layouts
-- Creating procedural proxy geometry
-- Automatically generating Blender scenes
-- Rendering MP4 assembly animations
-- Exporting structured JSON outputs from every AI stage
-
----
-
-# 🏗 AI Pipeline Architecture
-
-                        +--------------------+
-                        |  Assembly PDF      |
-                        +---------+----------+
-                                  |
-                                  v
-                    +----------------------------+
-                    | PDF Page Extraction        |
-                    +-------------+--------------+
-                                  |
-                                  v
-                    +----------------------------+
-                    | Azure GPT-4o Vision        |
-                    +-------------+--------------+
-                                  |
-                                  v
-        +--------------------------------------------------+
-        |      AI Understanding Pipeline                   |
-        |--------------------------------------------------|
-        | Diagram Detection                               |
-        | Page State Extraction                           |
-        | Assembly Delta Detection                        |
-        | Object Identity Resolution                      |
-        | Assembly Action Extraction                      |
-        | Universal Assembly Graph Construction           |
-        +----------------------+---------------------------+
-                               |
-                               v
-        +--------------------------------------------------+
-        |        Animation Planning Pipeline               |
-        |--------------------------------------------------|
-        | Motion Planner                                  |
-        | Scene Layout Engine                             |
-        | Procedural Geometry Generator                   |
-        | Blender Script Generator                        |
-        +----------------------+---------------------------+
-                               |
-                               v
-                   +---------------------------+
-                   | Blender Rendering Engine  |
-                   +-------------+-------------+
-                                 |
-                                 v
-                   +---------------------------+
-                   | MP4 Assembly Animation    |
-                   +---------------------------+
-
----
-
-# ⚙️ How the AI Pipeline Works
-
-The pipeline does not generate animations directly.
-
-Instead, it gradually builds a digital understanding of the assembly process through multiple AI reasoning stages.
+The pipeline is a chain of standalone Python scripts that pass JSON files to each other. Every intermediate result is on disk, so you can inspect or rerun any single stage.
 
 ```
-Assembly Manual
-        │
+PDF ──► page images ──► GPT-4o vision: parts, fasteners, tools and actions per page
+                                    │
+        ┌───────────────────────────┘
         ▼
-Visual Understanding
-        │
-        ▼
-Object Recognition
-        │
-        ▼
-Action Recognition
-        │
-        ▼
-Object Identity Resolution
-        │
-        ▼
-Universal Assembly Graph
-        │
-        ▼
-Motion Planning
-        │
-        ▼
-Scene Generation
-        │
-        ▼
-Procedural Geometry
-        │
-        ▼
-Blender Animation
-        │
-        ▼
-Final MP4 Video
+  state differences ──► assembly actions ──► assembly graph (pass 1)
+        ──► object identity tracking ──► canonical action resolution
+        ──► "Repeat xN" replication ──► assembly graph (pass 2)
+        ──► motion plan ──► part shapes (sizes from the manual's measurements)
+        ──► scene layout (table / chair / bed / generic)
+        ──► generated Blender script ──► headless render ──► MP4 with captions
 ```
 
-Each stage produces structured JSON outputs that are used by the following stage, making the entire AI pipeline transparent and explainable.
+What each stage does:
+
+| Stage | What it does |
+|---|---|
+| Page state agent (LLM) | For each page: visible parts with labels and sizes, fasteners, tools, and the actions the diagram shows |
+| Diagram analyzer (LLM) | Finds the diagrams on each page and reads part-list measurements such as `(925 x 42mm)` |
+| Object identity tracker | Works out that "rail 6" on page 7 is the same part kind as on page 4, and gives every physical copy its own ID |
+| Action replicator | Expands a step drawn once with "Repeat x2" to every copy, but never past the number of copies the page shows |
+| Assembly graph | Parts, fasteners and the connections between them, in assembly order |
+| Motion planner | One motion per part. Steps that do the same thing to the same kind of part play together |
+| Part shapes | Gives each part a role (top, leg, rail, post, slat, seat, chair back, leg frame) and sets its size from the measurements |
+| Scene layout | Places parts by role in the finished piece and works out where each one starts. Fasteners sit where the two parts they join meet |
+| Blender builder | Generates a Blender Python script: proxy meshes, highlights on moving parts, camera framing, a turn-over finale for tables, then an orbit |
+| Video | Stitches the frames into an MP4 with "Step n of N" captions |
 
 ---
 
-# 🧠 Pipeline
+## Running it
 
-1. Upload PDF
-2. Convert PDF into page images
-3. Analyse each page with AI
-4. Identify parts, tools and fasteners
-5. Detect assembly actions
-6. Build assembly graph
-7. Create motion plan
-8. Generate scene layout
-9. Generate proxy geometry
-10. Generate Blender scene
-11. Render animation
-12. Export MP4
-
----
-
-## 📈 Current MVP
-
-- ✅ 12+ AI processing stages
-- ✅ 15+ JSON artifacts generated
-- ✅ Blender automated rendering
-- ✅ Streamlit interactive interface
-- ✅ Azure GPT-4o Vision integration
-- ✅ Universal Assembly Graph
-- ✅ Motion Planning Engine
-- ✅ Canonical Object Identity Resolution
-
-
----
-
-# 🛠 Technology Stack
-
-- Azure AI Foundry
-- Azure OpenAI GPT‑4o Vision
-- Python
-- Blender
-- Streamlit
-- MoviePy
-
----
-
-# 📂 Project Structure
-
-```text
-app.py
-config.py
-uploads/
-utils/
-blender/
-outputs/
-v2/
- ├── agents/
- ├── builders/
- ├── rendering/
- ├── stabilize/
- └── outputs/
-```
-
----
-
-# ▶️ Running
+Requirements: Python 3.11, [Blender 5.x](https://www.blender.org/download/), and an Azure OpenAI GPT-4o deployment for the vision stages.
 
 ```bash
+python -m venv .venv
+.venv\Scripts\activate
 pip install -r requirements.txt
-streamlit run app.py
 ```
 
-or
+### Full run with Azure vision
+
+Create a `.env` file in the repo root:
+
+```
+AZURE_OPENAI_ENDPOINT=https://<your-resource>.openai.azure.com/
+AZURE_OPENAI_DEPLOYMENT=gpt-4o
+BLENDER_EXE=C:\Program Files\Blender Foundation\Blender 5.1\blender.exe
+```
+
+Authentication goes through `DefaultAzureCredential`, so sign in with `az login` first. There is no API key.
 
 ```bash
+streamlit run app.py                 # upload a PDF in the browser
+# or
+python utils/pdf_to_images.py        # uploads/manual.pdf -> temp/pages/
 python v2/run_mvp_pipeline.py
 ```
 
----
+### Offline run (no Azure)
 
-## 📂 Generated AI Artifacts
+The repo includes hand-authored vision results for three manuals. `--vision-fixture` loads them instead of calling GPT-4o, and every later stage runs exactly as normal:
 
-Each run generates downloadable JSON files including:
+```bash
+python v2/run_mvp_pipeline.py --vision-fixture                                         # MELLTORP table
+python v2/run_mvp_pipeline.py --vision-fixture v2/tests/fixtures/vision_banbury_chair  # Banbury chair
+python v2/run_mvp_pipeline.py --vision-fixture v2/tests/fixtures/vision_kaycie_bed     # Kaycie bed
+```
 
-- page_states.json
-- assembly_deltas.json
-- assembly_actions.json
-- object_identity_map.json
-- resolved_assembly_actions.json
-- universal_assembly_graph.json
-- motion_plan.json
-- scene_layout.json
-- geometry_spec.json
-- diagram_analysis.json
-- part_shapes.json
-- proxy_geometry.json
+The video is written to `outputs/assembly_animation_v3.mp4`. Run all commands from the repo root.
 
-These intermediate outputs make the AI pipeline fully transparent, explainable, and easy to debug.
+### Tests
 
-
----
-## ⭐ Key Features
-
-- 🤖 Azure GPT-4o Vision powered manual understanding
-- 📄 Accepts any instructional PDF
-- 🧠 Universal Assembly Graph generation
-- 🔄 Canonical Object Identity Resolution
-- 🎯 Motion Planning Engine
-- 📐 Procedural Scene Layout Generation
-- 🧱 Automatic Proxy Geometry Creation
-- 🎬 Blender Python Scene Generation
-- 🎥 Automatic MP4 Rendering
-- 🌐 Interactive Streamlit Dashboard
-- 📊 Downloadable JSON outputs for every pipeline stage
-- 🔍 Fully explainable AI pipeline
-
-# 📸 Demo
-
-The following screenshots demonstrate the complete AI pipeline, from uploading an assembly manual through AI understanding, Blender rendering, and the final generated animation.
+```bash
+pytest v2/tests          # checks the generated JSON, so run the pipeline first
+```
 
 ---
 
-# 🖥️ Streamlit Application
+## Project structure
 
-### Home Screen
+```text
+app.py                     Streamlit UI: upload, live progress, video and JSON downloads
+config.py                  Shared paths
+services/foundry.py        Azure OpenAI client
+utils/pdf_to_images.py     PDF -> page PNGs
+v2/
+  run_mvp_pipeline.py      Runs every stage in order (--vision-fixture for offline runs)
+  agents/                  Vision agents, identity tracking, part shapes
+  rendering/               Action extraction, graph, motion, layout, Blender builder, video
+  builders/                Proxy geometry
+  tests/                   Output tests and offline vision fixtures
+github_demo_assets/        README images
+```
 
-![Home](github_demo_assets/screenshots/streamlit_home.png)
-
-*Landing page of the Streamlit application.*
-
----
-
-### Upload Manual
-
-![Upload](github_demo_assets/screenshots/streamlit_upload.png)
-
-*Upload any instructional PDF to start the pipeline.*
-
----
-
-### AI Processing
-
-![Processing](github_demo_assets/screenshots/streamlit_processing_start.png)
-
-*Live AI pipeline showing every processing stage.*
+Generated files go to `temp/`, `outputs/`, `blender/generated/`, `v2/outputs/json/` and `v2/output/`. All of them are git-ignored.
 
 ---
 
-# ⚙️ Pipeline Execution
+## Streamlit app
 
-### Live Pipeline Logs
+| Upload | Live pipeline | Result |
+|---|---|---|
+| ![Upload](github_demo_assets/screenshots/streamlit_upload.png) | ![Pipeline logs](github_demo_assets/screenshots/pipeline_logs.png) | ![Generated video](github_demo_assets/screenshots/generated_video.png) |
 
-![Pipeline Logs](github_demo_assets/screenshots/pipeline_logs.png)
-
-*Real-time logs from every AI agent.*
-
----
-
-### Motion Planner
-
-![Motion Planner](github_demo_assets/screenshots/pipeline_motion_planner.png)
-
-*Motion planning generated from the Universal Assembly Graph.*
+Every intermediate JSON file can be downloaded from the app, so you can see exactly what each stage decided.
 
 ---
 
-### Blender Rendering
+## Current limitations
 
-![Blender Rendering](github_demo_assets/screenshots/blender_rendering_progress.png)
+This is an experimental prototype, published with its rough edges:
 
-*Rendering frames inside Blender.*
-
----
-
-### Live Frame Rendering Logs
-
-![Frame Rendering](github_demo_assets/screenshots/live_frame_rendering_logs.png)
-
-*Frame-by-frame rendering progress.*
+- **Proxy geometry.** Parts are boxes, cylinders and simple composite frames, not real product models.
+- **Layouts are written per product type.** Tables, chairs and beds are placed properly. Anything else falls back to a generic exploded ring.
+- **Fasteners are approximate.** Bolts are always drawn upright. They are enlarged while moving so you can see them, then shrink to real size once fitted.
+- **A few parts never move.** A part that no step moves, such as the bed's centre legs, is in place from the first frame.
+- **The offline fixtures were written by hand.** They are what a vision model should return for those manuals. Live GPT-4o output will vary.
+- **The app has no offline mode.** The Streamlit UI always calls Azure. Offline runs only work from the command line.
+- **Windows-first.** The default Blender path is a Windows path.
 
 ---
 
-### Pipeline Complete
+## Roadmap
 
-![Complete](github_demo_assets/screenshots/generated_video.png)
-
-*Entire AI pipeline completed successfully.*
-
----
-
-# 🎥 Generated Results
-
-### Generated Assembly Video
-
-![Generated Video](github_demo_assets/screenshots/frame_preview.png)
-
-*Final AI-generated proxy assembly animation.*
+- Layout rules learned from the assembly graph instead of written per product type
+- Fasteners that turn to the direction of their hole and go into it
+- An offline switch in the Streamlit app
+- Narration with Azure Speech
+- A hosted version (Azure Container Apps, Blob storage, REST API)
 
 ---
 
-### Frame Preview
+## Author
 
-![Frame Preview](github_demo_assets/screenshots/json_outputs.png)
+**Syed Ali Haider.** Part of my applied AI engineering portfolio, exploring how vision models, structured reasoning and procedural graphics can make instruction manuals easier to follow.
 
-*Preview of the generated animation.*
+Suggestions and pull requests are welcome.
 
----
+## License
 
-### Animation Preview
-
-![Animation](github_demo_assets/animation.gif)
-
-*A short GIF preview of the generated assembly video.*
-
----
-
-### Download Individual JSON Files
-
-![JSON Downloads](github_demo_assets/screenshots/json_downloads.png)
-
-*Each intermediate AI artifact can be downloaded individually.*
-
----
-
-# 🎬 Loom Walkthrough
-
-A complete walkthrough explaining:
-
-- Project motivation
-- Architecture
-- AI pipeline
-- Universal Assembly Graph
-- Motion Planner
-- Blender rendering
-- Streamlit application
-- Current limitations
-- Future roadmap
-
----
-
-## 🚀 Repository Highlights
-
-✔ End-to-end AI pipeline
-
-✔ Azure GPT-4o Vision
-
-✔ Blender automation
-
-✔ Streamlit web application
-
-✔ Explainable AI through downloadable JSON outputs
-
-✔ Universal Assembly Graph
-
-✔ Canonical Object Tracking
-
-✔ Motion Planning Engine
-
-✔ Procedural Geometry Generation
-
----
-
-# ⚠️ Current Status
-
-This repository represents an **experimental MVP (Minimum Viable Product)**.
-
-The overall pipeline works from PDF upload through AI processing to Blender rendering and MP4 generation, but **it is not yet producing the level of assembly quality originally envisioned**.
-
-Current limitations include:
-
-- Generic proxy geometry instead of accurate product models
-- Assembly motion that is functional but not yet realistic
-- Limited understanding of complex manuals
-- Some AI extraction errors on challenging diagrams
-- Simplified procedural modelling
-- Limited support for non-standard assembly sequences
-
-These limitations are expected at this stage. The project was built to validate the complete AI pipeline and demonstrate the concept rather than provide a production-ready solution.
-
-I intentionally chose to publish the project in its current state because I believe documenting the engineering journey—including the challenges and remaining work—is more valuable than presenting an unrealistic "finished" product.
-
----
-
-# 🚀 Future Roadmap
-
-## AI Improvements
-
-- Better diagram understanding
-- Multi-view reasoning
-- Improved object tracking
-- Higher confidence action extraction
-
-## Graphics
-
-- CAD-aware geometry generation
-- Realistic materials
-- Parametric modelling
-- Better proxy objects
-
-## Animation
-
-- Physics-aware motion
-- Collision detection
-- Subassembly animation
-- Camera path optimisation
-
-## Cloud
-
-- Azure Container Apps deployment
-- Batch processing
-- REST API
-- Azure Blob integration
-
-## User Experience
-
-- Azure Speech narration
-- Interactive playback
-- Step-by-step controls
-- Mobile-friendly interface
-
-
----
-
-# 🤝 Contributing
-
-Suggestions, ideas and pull requests are welcome.
-
----
-
-# 📄 License
-
-MIT License
-
----
-
-# 👤 Author
-
-**Syed Ali Haider**
-
-This project is part of my Azure AI engineering portfolio and documents an ongoing exploration into using generative AI, computer vision and procedural graphics to make instructional manuals easier to understand.
-
----
-
-# ⭐ Lessons Learned
-
-This project demonstrates that generating assembly animations involves far more than simply rendering 3D objects.
-
-The most challenging aspect is enabling AI to understand *how* a product is assembled through visual reasoning, object tracking and graph construction before any animation can be produced.
-
-Although the current implementation remains an experimental MVP, it successfully validates the overall architecture and provides a strong foundation for future development toward a production-quality AI assembly system.
-
----
-
-## ⚡ Disclaimer
-
-This project is an experimental research prototype created for learning, exploration and portfolio purposes.
-
-It demonstrates the feasibility of combining Azure OpenAI, computer vision and procedural graphics to automate assembly instruction generation. It should not yet be considered production-ready software.
+MIT

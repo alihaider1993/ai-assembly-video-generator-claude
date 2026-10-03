@@ -351,6 +351,63 @@ def create_rounded_box(name, dimensions, material):
     return obj
 
 
+def join_boxes(name, pieces, material):
+    # One mesh from (dimensions, centre) boxes laid out around the origin.
+    boxes = []
+    for dimensions, location in pieces:
+        box = create_box(name, dimensions, material)
+        box.location = Vector(location)
+        boxes.append(box)
+    bpy.ops.object.select_all(action="DESELECT")
+    for box in boxes:
+        box.select_set(True)
+    bpy.context.view_layer.objects.active = boxes[0]
+    bpy.ops.object.join()
+    obj = bpy.context.object
+    obj.name = name
+    # Origin back at the centre of the whole frame.
+    bpy.ops.object.transform_apply(location=True, rotation=False, scale=False)
+    return obj
+
+
+def create_u_frame(name, dimensions, material):
+    # Two legs joined by a rail across their tops, e.g. a chair's front legs.
+    width, depth, height = dimensions
+    rail_height = min(0.07, height * 0.2)
+    leg_x = width / 2 - depth / 2
+    return join_boxes(name, [
+        ([depth, depth, height], (-leg_x, 0, 0)),
+        ([depth, depth, height], (leg_x, 0, 0)),
+        ([width - 2 * depth, depth * 0.8, rail_height], (0, 0, height / 2 - rail_height / 2)),
+    ], material)
+
+
+BACK_SLATS = 5
+
+
+def create_slatted_back(name, dimensions, material):
+    # A chair back: two tall back legs, a top rail, a lower rail just above
+    # seat height and vertical slats between the rails.
+    width, depth, height = dimensions
+    inner = width - 2 * depth
+    leg_x = width / 2 - depth / 2
+    top_height, low_height = 0.08, 0.05
+    top_z = height / 2 - top_height / 2
+    low_z = -height / 2 + height * 0.58
+    slat_bottom, slat_top = low_z + low_height / 2, top_z - top_height / 2
+    slat_width = inner / (2 * BACK_SLATS + 1)
+    pieces = [
+        ([depth, depth, height], (-leg_x, 0, 0)),
+        ([depth, depth, height], (leg_x, 0, 0)),
+        ([inner, depth, top_height], (0, 0, top_z)),
+        ([inner, depth * 0.8, low_height], (0, 0, low_z)),
+    ]
+    for i in range(BACK_SLATS):
+        x = -inner / 2 + slat_width * (2 * i + 1.5)
+        pieces.append(([slat_width, depth * 0.5, slat_top - slat_bottom], (x, 0, (slat_top + slat_bottom) / 2)))
+    return join_boxes(name, pieces, material)
+
+
 MIN_HOLE_RADIUS = 0.008
 
 
@@ -488,22 +545,31 @@ def create_mesh_for_layout(parent, layout_obj, graph_obj, proxy_obj):
         primitive, dimensions = fallback_dimensions(layout_obj, graph_obj)
         holes = []
 
+    true_dimensions = dimensions
     dimensions = visible_dimensions(layout_obj, dimensions)
 
     if primitive == "cylinder":
         mesh = create_cylinder(name, dimensions, material)
     elif primitive == "rounded_box":
         mesh = create_rounded_box(name, dimensions, material)
+    elif primitive == "u_frame":
+        mesh = create_u_frame(name, dimensions, material)
+    elif primitive == "slatted_back":
+        mesh = create_slatted_back(name, dimensions, material)
     else:
         mesh = create_box(name, dimensions, material)
 
-    add_holes(mesh, holes, dimensions)
+    # A frame's bounding box faces are mostly open space, so no hole markers.
+    if primitive not in ("u_frame", "slatted_back"):
+        add_holes(mesh, holes, dimensions)
     mesh.parent = parent
     # scene_layout rotation is XYZ Euler in degrees (e.g. a short rail
     # turned 90 degrees about Z to run along Y).
     mesh.rotation_euler = [math.radians(a) for a in layout_obj.get("rotation", [0, 0, 0])]
     mesh.scale = layout_obj.get("scale", [1, 1, 1])
     mesh["highlight"] = 0.0
+    # How much smaller the part really is than drawn (fasteners only).
+    mesh["true_size"] = true_dimensions[0] / dimensions[0] if dimensions[0] else 1.0
     return mesh, primitive
 
 
@@ -620,6 +686,12 @@ for index, step in enumerate(steps):
         keyframe_highlight(mesh, 1.0, start_frame)
         keyframe_highlight(mesh, 1.0, end_frame)
         keyframe_highlight(mesh, 0.0, end_frame + HIGHLIGHT_FADE_FRAMES)
+
+        # A fastener drawn larger than life to be seen going in shrinks to
+        # its real size once it's in, instead of sticking out of the joint.
+        if mesh["true_size"] < 1.0:
+            keyframe_scale(mesh, 1.0, end_frame)
+            keyframe_scale(mesh, mesh["true_size"], end_frame + HIGHLIGHT_FADE_FRAMES)
 
         if uid in spinning:
             base_angle = mesh.rotation_euler[2]

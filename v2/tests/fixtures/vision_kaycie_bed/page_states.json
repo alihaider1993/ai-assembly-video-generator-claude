@@ -1,0 +1,1450 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "Kaycie single bed: slatted headboard on two tall posts, low footboard, side rails with a central leg each side and a slatted base",
+    "uncertainties": [
+      "Cover page; product name Kaycie and Habitat logo."
+    ]
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Safety and care advice text only."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Bed warnings and standards text only."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P004_001",
+        "manual_label": "1",
+        "name": "left headboard foot",
+        "visual_description": "long square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 10,
+            "location_hint": "dowel and bolt holes along the inner face"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P004_002",
+        "manual_label": "2",
+        "name": "right headboard foot",
+        "visual_description": "long square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 10,
+            "location_hint": "dowel and bolt holes along the inner face"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P004_003",
+        "manual_label": "3",
+        "name": "left footboard foot",
+        "visual_description": "short square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes near the top"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P004_004",
+        "manual_label": "4",
+        "name": "right footboard foot",
+        "visual_description": "short square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes near the top"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P004_005",
+        "manual_label": "5",
+        "name": "central leg",
+        "visual_description": "short square wooden leg with a through hole near the top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "through holes near the top end"
+          }
+        ],
+        "page_position": "top"
+      },
+      {
+        "part_uid": "P004_006",
+        "manual_label": "6",
+        "name": "wide headboard rail",
+        "visual_description": "wide flat wooden board with dowel holes in both ends",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P004_007",
+        "manual_label": "7",
+        "name": "narrow headboard rail",
+        "visual_description": "narrow flat wooden board with dowel holes in both ends",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P004_008",
+        "manual_label": "8",
+        "name": "slat with stamp",
+        "visual_description": "flat wooden slat with a printed safety label near one end",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "one screw hole at each end"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P004_009",
+        "manual_label": "9",
+        "name": "slat",
+        "visual_description": "flat wooden slat with a screw hole at each end",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 13,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "one screw hole at each end"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P004_010",
+        "manual_label": "10",
+        "name": "right side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P004_011",
+        "manual_label": "11",
+        "name": "left side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Panels list with sizes for every part."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "parts_list",
+    "visible_parts": [],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F005_001",
+        "manual_label": "A",
+        "name": "wooden dowel 10 x 40mm",
+        "shape_family": "dowel",
+        "quantity_visible": 28
+      },
+      {
+        "fastener_uid": "F005_002",
+        "manual_label": "B",
+        "name": "4 x 35mm screw",
+        "shape_family": "screw",
+        "quantity_visible": 28
+      },
+      {
+        "fastener_uid": "F005_003",
+        "manual_label": "C",
+        "name": "headless bolt 1/4 x 155mm",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F005_004",
+        "manual_label": "D",
+        "name": "7 x 80mm bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F005_005",
+        "manual_label": "E",
+        "name": "70mm spacer",
+        "shape_family": "spacer",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F005_006",
+        "manual_label": "F",
+        "name": "nut 1/4",
+        "shape_family": "nut",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F005_007",
+        "manual_label": "G",
+        "name": "curved washer",
+        "shape_family": "washer",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F005_008",
+        "manual_label": "L",
+        "name": "1/4 x 90mm bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F005_009",
+        "manual_label": "M",
+        "name": "1/4 half moon nut",
+        "shape_family": "nut",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T005_001",
+        "name": "spanner H"
+      },
+      {
+        "tool_uid": "T005_002",
+        "name": "hex key I"
+      },
+      {
+        "tool_uid": "T005_003",
+        "name": "cross-head screwdriver"
+      },
+      {
+        "tool_uid": "T005_004",
+        "name": "small hammer"
+      },
+      {
+        "tool_uid": "T005_005",
+        "name": "ruler/tape measure"
+      },
+      {
+        "tool_uid": "T005_006",
+        "name": "scissors"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Fittings A-M, then tools required (not provided): tape measure, scissors, screwdriver, hammer."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "6",
+        "name": "wide headboard rail",
+        "visual_description": "wide flat wooden board with dowel holes in both ends",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P006_002",
+        "manual_label": "7",
+        "name": "narrow headboard rail",
+        "visual_description": "narrow flat wooden board with dowel holes in both ends",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P006_003",
+        "manual_label": "11",
+        "name": "left side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P006_004",
+        "manual_label": "10",
+        "name": "right side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "A",
+        "name": "wooden dowel 10 x 40mm",
+        "shape_family": "dowel",
+        "quantity_visible": 28
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A006_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P006_001",
+        "fastener_ref": "F006_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "wooden dowel A pushed into both ends of wide headboard rail 6, repeat x4"
+      },
+      {
+        "action_uid": "A006_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P006_002",
+        "fastener_ref": "F006_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "two wooden dowels A pushed into each end of narrow headboard rail 7, repeat x2"
+      },
+      {
+        "action_uid": "A006_003",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P006_003",
+        "fastener_ref": "F006_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "wooden dowels A pushed into the ends of left side rail 11, repeat x2"
+      },
+      {
+        "action_uid": "A006_004",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P006_004",
+        "fastener_ref": "F006_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "wooden dowels A pushed into the ends of right side rail 10, repeat x2"
+      }
+    ],
+    "final_visible_structure": "headboard rails and side rails with dowels in their ends",
+    "uncertainties": [
+      "Step 1."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "1",
+        "name": "left headboard foot",
+        "visual_description": "long square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 10,
+            "location_hint": "dowel and bolt holes along the inner face"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "2",
+        "name": "right headboard foot",
+        "visual_description": "long square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 10,
+            "location_hint": "dowel and bolt holes along the inner face"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P007_003",
+        "manual_label": "6",
+        "name": "wide headboard rail",
+        "visual_description": "wide flat wooden board with dowel holes in both ends",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 3,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P007_004",
+        "manual_label": "7",
+        "name": "narrow headboard rail",
+        "visual_description": "narrow flat wooden board with dowel holes in both ends",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P007_005",
+        "manual_label": "3",
+        "name": "left footboard foot",
+        "visual_description": "short square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes near the top"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P007_006",
+        "manual_label": "4",
+        "name": "right footboard foot",
+        "visual_description": "short square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes near the top"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "D",
+        "name": "7 x 80mm bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T007_001",
+        "name": "hex key I"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "attach",
+        "moving_part_ref": "P007_003",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "inward",
+        "visual_evidence": "three wide headboard rails 6 pushed onto the dowels in left headboard foot 1 and bolted with 80mm bolt D"
+      },
+      {
+        "action_uid": "A007_002",
+        "action_type": "attach",
+        "moving_part_ref": "P007_004",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "inward",
+        "visual_evidence": "two narrow headboard rails 7 pushed onto left headboard foot 1"
+      },
+      {
+        "action_uid": "A007_003",
+        "action_type": "attach",
+        "moving_part_ref": "P007_002",
+        "target_part_ref": "P007_003",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "inward",
+        "visual_evidence": "right headboard foot 2 pushed onto the other ends of the rails and bolted with 80mm bolt D (arrows)"
+      },
+      {
+        "action_uid": "A007_004",
+        "action_type": "attach",
+        "moving_part_ref": "P007_005",
+        "target_part_ref": "P007_003",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 3: left footboard foot 3 bolted to one end of a wide rail 6 with 80mm bolt D"
+      },
+      {
+        "action_uid": "A007_005",
+        "action_type": "attach",
+        "moving_part_ref": "P007_006",
+        "target_part_ref": "P007_003",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 3: right footboard foot 4 bolted to the other end of the same rail with 80mm bolt D"
+      }
+    ],
+    "final_visible_structure": "headboard of five rails between two tall posts; footboard of one wide rail between two short posts",
+    "uncertainties": [
+      "Steps 2 and 3 on one page. Step 3 inset labels the footboard rail 8, but the main drawing shows rail 6."
+    ]
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "5",
+        "name": "central leg",
+        "visual_description": "short square wooden leg with a through hole near the top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "through holes near the top end"
+          }
+        ],
+        "page_position": "top"
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "10",
+        "name": "right side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "C",
+        "name": "headless bolt 1/4 x 155mm",
+        "shape_family": "bolt",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "F008_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "headless bolt C pushed through the hole in central leg 5"
+      },
+      {
+        "action_uid": "A008_002",
+        "action_type": "slide",
+        "moving_part_ref": "P008_002",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "F008_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "right side rail 10 slid onto the headless bolt against central leg 5 (arrows), repeat x2"
+      }
+    ],
+    "final_visible_structure": "central leg against the end of the right side rail with the headless bolt through both",
+    "uncertainties": [
+      "Step 4."
+    ]
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "5",
+        "name": "central leg",
+        "visual_description": "short square wooden leg with a through hole near the top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "through holes near the top end"
+          }
+        ],
+        "page_position": "top"
+      },
+      {
+        "part_uid": "P009_002",
+        "manual_label": "10",
+        "name": "right side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F009_001",
+        "manual_label": "F",
+        "name": "nut 1/4",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F009_002",
+        "manual_label": "G",
+        "name": "curved washer",
+        "shape_family": "washer",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F009_003",
+        "manual_label": "C",
+        "name": "headless bolt 1/4 x 155mm",
+        "shape_family": "bolt",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T009_001",
+        "name": "spanner H"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A009_001",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P009_002",
+        "fastener_ref": "F009_001",
+        "tool_ref": "T009_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "curved washer G and nut F fitted on the headless bolt inside the round pocket of right side rail 10 and tightened with spanner H"
+      }
+    ],
+    "final_visible_structure": "right side rail fixed to the central leg",
+    "uncertainties": [
+      "Step 5."
+    ]
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P010_001",
+        "manual_label": "5",
+        "name": "central leg",
+        "visual_description": "short square wooden leg with a through hole near the top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "through holes near the top end"
+          }
+        ],
+        "page_position": "top"
+      },
+      {
+        "part_uid": "P010_002",
+        "manual_label": "10",
+        "name": "right side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P010_003",
+        "manual_label": "11",
+        "name": "left side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F010_001",
+        "manual_label": "C",
+        "name": "headless bolt 1/4 x 155mm",
+        "shape_family": "bolt",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F010_002",
+        "manual_label": "F",
+        "name": "nut 1/4",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F010_003",
+        "manual_label": "G",
+        "name": "curved washer",
+        "shape_family": "washer",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T010_001",
+        "name": "spanner H"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A010_001",
+        "action_type": "slide",
+        "moving_part_ref": "P010_003",
+        "target_part_ref": "P010_001",
+        "fastener_ref": "F010_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "left side rail 11 slid onto the other end of the headless bolt through central leg 5 (arrows), repeat x2"
+      },
+      {
+        "action_uid": "A010_002",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P010_003",
+        "fastener_ref": "F010_002",
+        "tool_ref": "T010_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "curved washer G and nut F tightened inside the pocket of left side rail 11 with spanner H"
+      }
+    ],
+    "final_visible_structure": "two long sides, each a right and left side rail joined at a central leg",
+    "uncertainties": [
+      "Step 6."
+    ]
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P011_001",
+        "manual_label": "1",
+        "name": "left headboard foot",
+        "visual_description": "long square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 10,
+            "location_hint": "dowel and bolt holes along the inner face"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P011_002",
+        "manual_label": "2",
+        "name": "right headboard foot",
+        "visual_description": "long square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 10,
+            "location_hint": "dowel and bolt holes along the inner face"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P011_003",
+        "manual_label": "10",
+        "name": "right side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P011_004",
+        "manual_label": "5",
+        "name": "central leg",
+        "visual_description": "short square wooden leg with a through hole near the top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "through holes near the top end"
+          }
+        ],
+        "page_position": "top"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F011_001",
+        "manual_label": "L",
+        "name": "1/4 x 90mm bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F011_002",
+        "manual_label": "M",
+        "name": "1/4 half moon nut",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T011_001",
+        "name": "hex key I"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A011_001",
+        "action_type": "attach",
+        "moving_part_ref": "P011_003",
+        "target_part_ref": "P011_001",
+        "fastener_ref": "F011_001",
+        "tool_ref": "T011_001",
+        "direction_hint": "inward",
+        "visual_evidence": "one long side pushed onto the dowels of left headboard foot 1; bolt L through the post into half moon nut M in the rail"
+      },
+      {
+        "action_uid": "A011_002",
+        "action_type": "attach",
+        "moving_part_ref": "P011_003",
+        "target_part_ref": "P011_002",
+        "fastener_ref": "F011_001",
+        "tool_ref": "T011_001",
+        "direction_hint": "inward",
+        "visual_evidence": "the other long side bolted to right headboard foot 2 with bolt L and half moon nut M"
+      }
+    ],
+    "final_visible_structure": "both long sides bolted to the headboard",
+    "uncertainties": [
+      "Step 7."
+    ]
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P012_001",
+        "manual_label": "3",
+        "name": "left footboard foot",
+        "visual_description": "short square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes near the top"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P012_002",
+        "manual_label": "4",
+        "name": "right footboard foot",
+        "visual_description": "short square wooden post with dowel holes and bolt holes up one face",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes near the top"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P012_003",
+        "manual_label": "11",
+        "name": "left side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F012_001",
+        "manual_label": "L",
+        "name": "1/4 x 90mm bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F012_002",
+        "manual_label": "M",
+        "name": "1/4 half moon nut",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T012_001",
+        "name": "hex key I"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A012_001",
+        "action_type": "attach",
+        "moving_part_ref": "P012_001",
+        "target_part_ref": "P012_003",
+        "fastener_ref": "F012_001",
+        "tool_ref": "T012_001",
+        "direction_hint": "inward",
+        "visual_evidence": "footboard post 3 bolted to the foot end of one side with bolt L into half moon nut M"
+      },
+      {
+        "action_uid": "A012_002",
+        "action_type": "attach",
+        "moving_part_ref": "P012_002",
+        "target_part_ref": "P012_003",
+        "fastener_ref": "F012_001",
+        "tool_ref": "T012_001",
+        "direction_hint": "inward",
+        "visual_evidence": "footboard post 4 bolted to the foot end of the other side with bolt L into half moon nut M"
+      }
+    ],
+    "final_visible_structure": "complete bed frame: headboard, footboard and two long sides",
+    "uncertainties": [
+      "Step 8."
+    ]
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P013_001",
+        "manual_label": "8",
+        "name": "slat with stamp",
+        "visual_description": "flat wooden slat with a printed safety label near one end",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "one screw hole at each end"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P013_002",
+        "manual_label": "9",
+        "name": "slat",
+        "visual_description": "flat wooden slat with a screw hole at each end",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "one screw hole at each end"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P013_003",
+        "manual_label": "10",
+        "name": "right side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P013_004",
+        "manual_label": "11",
+        "name": "left side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F013_001",
+        "manual_label": "B",
+        "name": "4 x 35mm screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T013_001",
+        "name": "cross-head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A013_001",
+        "action_type": "place",
+        "moving_part_ref": "P013_001",
+        "target_part_ref": "P013_004",
+        "fastener_ref": "F013_001",
+        "tool_ref": "T013_001",
+        "direction_hint": "down",
+        "visual_evidence": "slat with stamp 8 laid on the side rail ledges 5mm from the footboard and screwed down with 4 x 35mm screw B"
+      },
+      {
+        "action_uid": "A013_002",
+        "action_type": "place",
+        "moving_part_ref": "P013_002",
+        "target_part_ref": "P013_003",
+        "fastener_ref": "F013_001",
+        "tool_ref": "T013_001",
+        "direction_hint": "down",
+        "visual_evidence": "one slat 9 laid on the ledges at the headboard end and screwed down with screw B"
+      }
+    ],
+    "final_visible_structure": "first and last slats fixed across the frame",
+    "uncertainties": [
+      "Step 9. Close-up shows the safety label on slat 8 and a 5mm gap to the footboard."
+    ]
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P014_001",
+        "manual_label": "9",
+        "name": "slat",
+        "visual_description": "flat wooden slat with a screw hole at each end",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 13,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "one screw hole at each end"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P014_002",
+        "manual_label": "10",
+        "name": "right side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P014_003",
+        "manual_label": "11",
+        "name": "left side rail",
+        "visual_description": "long wooden side rail with a slat ledge, dowels in one end and a round nut pocket",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "screw holes along the slat ledge"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round pocket for the nut near one end"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F014_001",
+        "manual_label": "B",
+        "name": "4 x 35mm screw",
+        "shape_family": "screw",
+        "quantity_visible": 24
+      },
+      {
+        "fastener_uid": "F014_002",
+        "manual_label": "E",
+        "name": "70mm spacer",
+        "shape_family": "spacer",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T014_001",
+        "name": "cross-head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A014_001",
+        "action_type": "place",
+        "moving_part_ref": "P014_001",
+        "target_part_ref": "P014_002",
+        "fastener_ref": "F014_001",
+        "tool_ref": "T014_001",
+        "direction_hint": "down",
+        "visual_evidence": "remaining slats 9 laid evenly across the side rail ledges and screwed down with 24x screw B"
+      },
+      {
+        "action_uid": "A014_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P014_003",
+        "fastener_ref": "F014_002",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "two 70mm spacers E set on the ledge at the ends to keep the slats spaced"
+      }
+    ],
+    "final_visible_structure": "finished single bed with a full slatted base",
+    "uncertainties": [
+      "Step 10."
+    ]
+  },
+  {
+    "page_number": 15,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Guarantee and registration text; no assembly content."
+    ]
+  }
+]

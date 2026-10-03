@@ -168,14 +168,25 @@ def primitive_and_shape_type(shape_family: str, material_hint: str) -> Tuple[str
 
 # Generic furniture vocabulary -> the part's role, which fixes how it sits in
 # the finished piece, and a plausible [x, y, z] size in meters (z is up) for
-# when the manual gives no measurement.
+# when the manual gives no measurement. The first match wins, so a "seat
+# rail" is a rail, not a seat.
 PART_ROLES = [
     ("top", re.compile(r"\b(table ?top|top panel|worktop|desktop)\b"), [1.2, 0.75, 0.025]),
-    # Not "leg frame": on chairs that is a wide U-shaped frame, not a post.
-    ("leg", re.compile(r"\blegs?\b(?!\s*frame)"), [0.05, 0.05, 0.72]),
+    # A bed's corner posts, which the headboard/footboard rails run between.
+    ("post", re.compile(r"\b(head|foot)board (foot|feet|posts?|legs?)\b"), [0.045, 0.045, 0.9]),
+    # On chairs a "leg frame" is a wide U-shaped frame, not a post.
+    ("leg_frame", re.compile(r"\blegs? frame\b"), [0.42, 0.04, 0.45]),
+    ("leg", re.compile(r"\blegs?\b"), [0.05, 0.05, 0.72]),
+    ("back", re.compile(r"\b(chair back|backrest|back rest|seat back)\b"), [0.42, 0.04, 0.9]),
+    ("slat", re.compile(r"\bslats?\b"), [0.9, 0.07, 0.018]),
     ("rail", re.compile(r"\b(rails?|aprons?|stretchers?)\b"), [0.9, 0.03, 0.07]),
+    ("seat", re.compile(r"\bseat\b"), [0.45, 0.42, 0.05]),
     ("bracket", re.compile(r"\bbrackets?\b"), [0.08, 0.08, 0.04]),
 ]
+
+# Roles whose part is several pieces joined together; blender_builder_v3.py
+# builds these primitives from boxes.
+ROLE_PRIMITIVES = {"leg_frame": "u_frame", "back": "slatted_back"}
 
 
 def part_role(name: str) -> str:
@@ -188,8 +199,10 @@ def part_role(name: str) -> str:
 
 def role_dimensions(role: str, dims_mm: Optional[Tuple[float, float]]) -> List[float]:
     """[x, y, z] in meters for a part with a known role. A measured pair is
-    oriented by role: a top lies flat, a leg stands up, a rail runs
-    horizontally along X with its smaller figure as its height."""
+    oriented by role: a top, seat or slat lies flat, a leg or post stands
+    up, a leg frame or chair back stands up facing Y with its smaller
+    figure as its width, and a rail runs horizontally along X with its
+    smaller figure as its height."""
     default = next(dims for r, _, dims in PART_ROLES if r == role)
     # A bracket's measured pair doesn't say which faces it covers.
     if not dims_mm or role == "bracket":
@@ -198,10 +211,12 @@ def role_dimensions(role: str, dims_mm: Optional[Tuple[float, float]]) -> List[f
     larger = max(dims_mm) / 1000.0
     smaller = min(dims_mm) / 1000.0
 
-    if role == "top":
+    if role in {"top", "seat", "slat"}:
         return [larger, smaller, default[2]]
-    if role == "leg":
+    if role in {"leg", "post"}:
         return [smaller, smaller, larger]
+    if role in {"leg_frame", "back"}:
+        return [smaller, default[1], larger]
     return [larger, default[1], smaller]
 
 
@@ -357,6 +372,7 @@ def extract_part_shapes():
         dims_mm = label_dims_mm.get(manual_label)
         primitive, shape_type = primitive_and_shape_type(shape_family, material_hint)
         role = part_role(part.get("base_name") or part.get("canonical_name", ""))
+        primitive = ROLE_PRIMITIVES.get(role, primitive)
         if role:
             dimensions = role_dimensions(role, dims_mm)
         else:
@@ -413,6 +429,11 @@ def extract_part_shapes():
             if primitive == "cylinder":
                 diameter_m, length_m = parse_fastener_dimensions_m(name)
                 dimensions = [diameter_m, diameter_m, length_m]
+                dims_source = "parsed_from_name"
+            elif FASTENER_LEN_RE.search(name):
+                # e.g. a "70mm spacer": a small block that long.
+                length_m = float(FASTENER_LEN_RE.search(name).group(1)) / 1000.0
+                dimensions = [0.02, 0.02, length_m]
                 dims_source = "parsed_from_name"
             else:
                 # e.g. a bracket listed with the hardware: a thin rod is wrong.

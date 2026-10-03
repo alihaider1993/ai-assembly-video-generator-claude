@@ -1,0 +1,896 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "Assembled Kaycie single bed with slatted headboard",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.08,
+          "x_max": 0.38,
+          "y_max": 0.75
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Text only."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "warning",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Text only."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D004_001",
+        "diagram_type": "part_inventory",
+        "description": "Left headboard foot (925 x 42mm) x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.45,
+          "x_max": 0.9,
+          "y_max": 0.5
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_002",
+        "diagram_type": "part_inventory",
+        "description": "Right headboard foot (925 x 42mm) x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.4,
+          "x_max": 0.9,
+          "y_max": 0.45
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "2",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_003",
+        "diagram_type": "part_inventory",
+        "description": "Left footboard foot (333 x 42mm) x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.33,
+          "x_max": 0.9,
+          "y_max": 0.38
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "3",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_004",
+        "diagram_type": "part_inventory",
+        "description": "Right footboard foot (333 x 42mm) x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.29,
+          "x_max": 0.9,
+          "y_max": 0.33999999999999997
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "4",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_005",
+        "diagram_type": "part_inventory",
+        "description": "Central leg (333 x 42mm) x2",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.21,
+          "x_max": 0.9,
+          "y_max": 0.26
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "5",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_006",
+        "diagram_type": "part_inventory",
+        "description": "Wide headboard rail (889 x 90mm) x4",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.52,
+          "x_max": 0.9,
+          "y_max": 0.5700000000000001
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "6",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_007",
+        "diagram_type": "part_inventory",
+        "description": "Narrow headboard rail (889 x 65mm) x2",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.57,
+          "x_max": 0.9,
+          "y_max": 0.62
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "7",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_008",
+        "diagram_type": "part_inventory",
+        "description": "Slat with stamp (910 x 70mm) x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.63,
+          "x_max": 0.9,
+          "y_max": 0.68
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "8",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_009",
+        "diagram_type": "part_inventory",
+        "description": "Slats (910 x 70mm) x13",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.69,
+          "x_max": 0.9,
+          "y_max": 0.74
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "9",
+          "13x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_010",
+        "diagram_type": "part_inventory",
+        "description": "Right side rail (929 x 90mm) x2",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.75,
+          "x_max": 0.9,
+          "y_max": 0.8
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "10",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_011",
+        "diagram_type": "part_inventory",
+        "description": "Left side rail (929 x 90mm) x2",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.82,
+          "x_max": 0.9,
+          "y_max": 0.87
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "11",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "part_inventory",
+        "description": "Wooden dowel 10 x 40mm x28",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.14,
+          "x_max": 0.3,
+          "y_max": 0.21
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "A",
+          "28x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_002",
+        "diagram_type": "part_inventory",
+        "description": "4 x 35mm screw x28",
+        "page_region": {
+          "x_min": 0.4,
+          "y_min": 0.14,
+          "x_max": 0.6,
+          "y_max": 0.21
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "B",
+          "28x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_003",
+        "diagram_type": "part_inventory",
+        "description": "Headless bolt 1/4 x 155mm x2",
+        "page_region": {
+          "x_min": 0.63,
+          "y_min": 0.14,
+          "x_max": 0.9,
+          "y_max": 0.21
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "C",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_004",
+        "diagram_type": "part_inventory",
+        "description": "7 x 80mm bolt x8",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.24,
+          "x_max": 0.35,
+          "y_max": 0.31
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "D",
+          "8x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_005",
+        "diagram_type": "part_inventory",
+        "description": "70mm spacer x2",
+        "page_region": {
+          "x_min": 0.4,
+          "y_min": 0.24,
+          "x_max": 0.6,
+          "y_max": 0.31
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "E",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_006",
+        "diagram_type": "part_inventory",
+        "description": "Nut 1/4 x4",
+        "page_region": {
+          "x_min": 0.63,
+          "y_min": 0.24,
+          "x_max": 0.85,
+          "y_max": 0.31
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "F",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_007",
+        "diagram_type": "part_inventory",
+        "description": "Washer x4",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.33,
+          "x_max": 0.3,
+          "y_max": 0.4
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "G",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_008",
+        "diagram_type": "part_inventory",
+        "description": "Spanner x2 and hex key x1",
+        "page_region": {
+          "x_min": 0.4,
+          "y_min": 0.33,
+          "x_max": 0.85,
+          "y_max": 0.4
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "H",
+          "I"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_009",
+        "diagram_type": "part_inventory",
+        "description": "1/4 x 90mm bolt x4 and 1/4 half moon nut x4",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.43,
+          "x_max": 0.55,
+          "y_max": 0.5
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "L",
+          "M"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_010",
+        "diagram_type": "part_inventory",
+        "description": "Tools required: tape measure, scissors, cross-head screwdriver, small hammer",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.78,
+          "x_max": 0.7,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "exploded_view",
+        "description": "Dowels A going into the ends of rails 6, 7, 11 and 10, each with a repeat badge",
+        "page_region": {
+          "x_min": 0.15,
+          "y_min": 0.17,
+          "x_max": 0.85,
+          "y_max": 0.93
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "6",
+          "7",
+          "10",
+          "11",
+          "A"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D006_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D007_001",
+        "diagram_type": "exploded_view",
+        "description": "Headboard: rails 6, 7, 7, 6, 6 between posts 1 and 2, bolts D driven in with hex key I",
+        "page_region": {
+          "x_min": 0.12,
+          "y_min": 0.12,
+          "x_max": 0.88,
+          "y_max": 0.53
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "2",
+          "6",
+          "7",
+          "D",
+          "I"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D007_002",
+        "diagram_type": "exploded_view",
+        "description": "Footboard: rail 6 between short posts 3 and 4 with bolts D",
+        "page_region": {
+          "x_min": 0.18,
+          "y_min": 0.64,
+          "x_max": 0.88,
+          "y_max": 0.96
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "3",
+          "4",
+          "6",
+          "8",
+          "D",
+          "I"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D007_001",
+    "warnings": [],
+    "uncertainties": [
+      "Two steps on one page."
+    ]
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "exploded_view",
+        "description": "Headless bolt C through central leg 5 into right side rail 10 (arrows)",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.2,
+          "x_max": 0.9,
+          "y_max": 0.9
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "5",
+          "10",
+          "C"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D008_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D009_001",
+        "diagram_type": "close_up",
+        "description": "Washer G and nut F on the headless bolt tightened with spanner H",
+        "page_region": {
+          "x_min": 0.13,
+          "y_min": 0.3,
+          "x_max": 0.85,
+          "y_max": 0.9
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "5",
+          "10",
+          "C",
+          "F",
+          "G",
+          "H"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D010_001",
+        "diagram_type": "exploded_view",
+        "description": "Left side rail 11 joined to rail 10 at central leg 5; nut F and washer G tightened with spanner H",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.15,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "5",
+          "10",
+          "11",
+          "F",
+          "G",
+          "H"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D010_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D011_001",
+        "diagram_type": "assembly_view",
+        "description": "Long sides bolted to the headboard posts with bolt L and half moon nut M",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.3,
+          "x_max": 0.95,
+          "y_max": 0.8
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "L",
+          "M",
+          "I"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D011_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D012_001",
+        "diagram_type": "assembly_view",
+        "description": "Footboard bolted to the foot ends of the long sides with bolt L and nut M",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.27,
+          "x_max": 0.95,
+          "y_max": 0.82
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "L",
+          "M",
+          "I"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D012_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D013_001",
+        "diagram_type": "assembly_view",
+        "description": "Slat 8 at the foot end and slat 9 at the head end screwed down with screw B",
+        "page_region": {
+          "x_min": 0.08,
+          "y_min": 0.2,
+          "x_max": 0.92,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "8",
+          "9",
+          "B"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D013_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D014_001",
+        "diagram_type": "assembly_view",
+        "description": "Remaining slats 9 laid across and screwed down; spacers E at the ends",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.2,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "9",
+          "B",
+          "E"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D014_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "unknown",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Guarantee page."
+    ]
+  }
+]

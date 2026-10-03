@@ -1,0 +1,339 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "Assembled Banbury chair",
+        "page_region": {
+          "x_min": 0.27,
+          "y_min": 0.22,
+          "x_max": 0.73,
+          "y_max": 0.77
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Text only."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D003_001",
+        "diagram_type": "part_inventory",
+        "description": "Left / Right Side Rail (310 x 60mm) x4",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.2,
+          "x_max": 0.33,
+          "y_max": 0.36
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D003_002",
+        "diagram_type": "part_inventory",
+        "description": "Front Leg (430 x 415mm) x2",
+        "page_region": {
+          "x_min": 0.37,
+          "y_min": 0.12,
+          "x_max": 0.58,
+          "y_max": 0.36
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "2",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D003_003",
+        "diagram_type": "part_inventory",
+        "description": "Seat Pad (450 x 355mm) x2",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.4,
+          "x_max": 0.35,
+          "y_max": 0.49
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "3",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D003_004",
+        "diagram_type": "part_inventory",
+        "description": "Chair Back (905 x 403mm) x2",
+        "page_region": {
+          "x_min": 0.7,
+          "y_min": 0.13,
+          "x_max": 0.92,
+          "y_max": 0.5
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "4",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D003_005",
+        "diagram_type": "part_inventory",
+        "description": "Fittings: 40mm wood dowel, M6x50mm bolt, lock washer, flat washer, M4x30mm screw, M4 allen key",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.58,
+          "x_max": 0.9,
+          "y_max": 0.84
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_006",
+        "diagram_type": "part_inventory",
+        "description": "Cross head screwdriver (not provided)",
+        "page_region": {
+          "x_min": 0.08,
+          "y_min": 0.9,
+          "x_max": 0.55,
+          "y_max": 0.96
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "G"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D004_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 1: side rails 1 with dowels A onto the top of front leg frame 2; bolt B, washers C and D, allen key F",
+        "page_region": {
+          "x_min": 0.12,
+          "y_min": 0.17,
+          "x_max": 0.9,
+          "y_max": 0.53
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "2",
+          "A",
+          "B",
+          "C",
+          "D",
+          "F"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D004_002",
+        "diagram_type": "exploded_view",
+        "description": "Step 2: side rails pushed onto dowels A in chair back 4",
+        "page_region": {
+          "x_min": 0.07,
+          "y_min": 0.53,
+          "x_max": 0.95,
+          "y_max": 0.9
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "4",
+          "A"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D004_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 3: bolts B with washers C and D through the side rails into the chair back",
+        "page_region": {
+          "x_min": 0.07,
+          "y_min": 0.03,
+          "x_max": 0.95,
+          "y_max": 0.43
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "B",
+          "C",
+          "D"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_002",
+        "diagram_type": "assembly_view",
+        "description": "Step 4: frame upside down on seat pad 3, screws E driven with screwdriver G",
+        "page_region": {
+          "x_min": 0.07,
+          "y_min": 0.47,
+          "x_max": 0.9,
+          "y_max": 0.96
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "3",
+          "4",
+          "E",
+          "G"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D005_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "unknown",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "final_product",
+        "description": "Finished chair, 'Assemble is completed'",
+        "page_region": {
+          "x_min": 0.27,
+          "y_min": 0.05,
+          "x_max": 0.67,
+          "y_max": 0.52
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  }
+]

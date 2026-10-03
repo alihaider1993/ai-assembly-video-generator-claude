@@ -12,18 +12,23 @@ appear in the motion plan, so most parts sit static in the render.
 
 This expands each resolved action across sibling instances, stepping both
 ends of the action through their sibling groups together (cycling if group
-sizes differ), so the first replica is the action as resolved. Actions
-between two parts of the same kind are not expanded, and replicas never
-duplicate an action already stated for that instance. This is a heuristic,
-not a guaranteed-correct left/right pairing for every product geometry —
-review the expanded output for non-symmetric designs.
+sizes differ), so the first replica is the action as resolved. When the
+page shows several copies of the part (or says "Repeat xN"), the action is
+repeated at most that many times, so a page showing three of four rails
+doesn't move the fourth. Actions between two parts of the same kind are
+not expanded, and replicas never duplicate an action already stated for
+that instance. This is a heuristic, not a guaranteed-correct left/right
+pairing for every product geometry — review the expanded output for
+non-symmetric designs.
 """
 
 import json
+import re
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 GRAPH_PATH = Path("v2/outputs/json/universal_assembly_graph.json")
+PAGE_STATES_PATH = Path("v2/outputs/json/page_states.json")
 RESOLVED_ACTIONS_PATH = Path("v2/outputs/json/resolved_assembly_actions.json")
 OUTPUT_PATH = Path("v2/outputs/json/resolved_assembly_actions.json")  # overwrite in place
 
@@ -60,6 +65,34 @@ def build_sibling_groups(graph: Dict[str, Any]) -> Dict[str, List[str]]:
     return groups
 
 
+REPEAT_RE = re.compile(r"repeat\s*x\s*(\d+)", re.IGNORECASE)
+
+
+def page_quantities(page_states: List[Dict[str, Any]]) -> Dict[str, int]:
+    """Page-local part uid (e.g. P007_003) -> how many copies the page shows."""
+    quantities: Dict[str, int] = {}
+    for page in page_states:
+        for part in page.get("visible_parts", []):
+            digits = re.search(r"\d+", str(part.get("quantity_visible", "")))
+            if part.get("part_uid") and digits and int(digits.group()) > 0:
+                quantities[part["part_uid"]] = int(digits.group())
+    return quantities
+
+
+def copies_shown(action: Dict[str, Any], end: str, quantities: Dict[str, int]) -> Optional[int]:
+    """Copies of the moving/target part the action's page shows, or None
+    when the page doesn't say. A single copy without "Repeat xN" is
+    usually one drawn to stand for all of them (a close-up), so it says
+    nothing either."""
+    quantity = quantities.get(action.get(f"original_{end}_ref", ""))
+    repeat = REPEAT_RE.search(action.get("visual_evidence", ""))
+    if quantity is None:
+        return None
+    if repeat:
+        return quantity * int(repeat.group(1))
+    return quantity if quantity > 1 else None
+
+
 def paired_uid(ref_uid: str, pair_index: int, groups: Dict[str, List[str]]) -> str:
     """The sibling `pair_index` places after `ref_uid` in its group, so
     replica 0 is the action as resolved and the pairing between moving
@@ -74,8 +107,13 @@ def action_key(action: Dict[str, Any]) -> tuple:
     return (action.get("moving_ref", ""), action.get("target_ref", ""), action.get("action_type", ""))
 
 
-def replicate_actions(graph: Dict[str, Any], resolved: Dict[str, Any]) -> Dict[str, Any]:
+def replicate_actions(
+    graph: Dict[str, Any],
+    resolved: Dict[str, Any],
+    page_states: Optional[List[Dict[str, Any]]] = None,
+) -> Dict[str, Any]:
     groups = build_sibling_groups(graph)
+    quantities = page_quantities(page_states or [])
     actions = resolved.get("actions", [])
     expanded: List[Dict[str, Any]] = []
     skipped_self = 0
@@ -103,10 +141,11 @@ def replicate_actions(graph: Dict[str, Any], resolved: Dict[str, Any]) -> Dict[s
 
         repeat_count = 1
         if not same_kind:
-            for ref in (moving, target):
+            for end, ref in (("moving", moving), ("target", target)):
                 group = groups.get(ref)
                 if group:
-                    repeat_count = max(repeat_count, len(group))
+                    shown = copies_shown(action, end, quantities)
+                    repeat_count = max(repeat_count, min(len(group), shown or len(group)))
 
         for pair_index in range(repeat_count):
             new_action = dict(action)
@@ -144,8 +183,9 @@ def replicate_actions(graph: Dict[str, Any], resolved: Dict[str, Any]) -> Dict[s
 def main():
     graph = load_json(GRAPH_PATH)
     resolved = load_json(RESOLVED_ACTIONS_PATH)
+    page_states = load_json(PAGE_STATES_PATH) if PAGE_STATES_PATH.exists() else []
 
-    output = replicate_actions(graph, resolved)
+    output = replicate_actions(graph, resolved, page_states)
     save_json(output, OUTPUT_PATH)
 
     replication = output.get("debug", {}).get("replication", {})

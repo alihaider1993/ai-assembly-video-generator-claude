@@ -349,6 +349,11 @@ def infer_structural_pair(
     """(moving, target, reason, confidence) for a part-to-part link implied by the
     evidence text when the model only reported a fastener action, or
     ("", "", "", 0.0) when nothing can be inferred."""
+    # Inserting a fastener (dowels, plugs) into a part doesn't join it to
+    # anything else yet, whichever similarly named parts the text mentions.
+    if norm(observed.get("action_type", "")) == "insert":
+        return "", "", "", 0.0
+
     mentioned = [uid for _, uid in find_mentioned_parts(page, observed.get("visual_evidence", ""))]
 
     if len(mentioned) >= 2:

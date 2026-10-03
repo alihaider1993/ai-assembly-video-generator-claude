@@ -1,0 +1,448 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "Banbury dining chair: padded seat, four legs, tall back with five vertical slats",
+    "uncertainties": [
+      "Cover page; product name Banbury and Habitat logo."
+    ]
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Safety, care and guidance text only."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P003_001",
+        "manual_label": "1",
+        "name": "side rail",
+        "visual_description": "flat wooden seat rail with dowel holes and a bolt hole in each end and slotted screw pockets",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "two dowel holes and one bolt hole in each end"
+          },
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "screw pockets on the inner face"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P003_002",
+        "manual_label": "2",
+        "name": "front leg frame",
+        "visual_description": "U-shaped wooden frame: two front legs joined by a top rail, with dowel and bolt holes at the top",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and bolt holes in the tops of both legs"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P003_003",
+        "manual_label": "3",
+        "name": "seat pad",
+        "visual_description": "upholstered padded seat with rounded edges",
+        "shape_family": "panel",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "pre-drilled screw holes in the underside board"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P003_004",
+        "manual_label": "4",
+        "name": "chair back",
+        "visual_description": "tall wooden chair back: two curved back legs with a top rail, a lower rail and five vertical slats",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and bolt holes in each back leg at seat height"
+          }
+        ],
+        "page_position": "right"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F003_001",
+        "manual_label": "A",
+        "name": "40mm wood dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 6
+      },
+      {
+        "fastener_uid": "F003_002",
+        "manual_label": "B",
+        "name": "M6x50mm bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 6
+      },
+      {
+        "fastener_uid": "F003_003",
+        "manual_label": "C",
+        "name": "lock washer",
+        "shape_family": "washer",
+        "quantity_visible": 6
+      },
+      {
+        "fastener_uid": "F003_004",
+        "manual_label": "D",
+        "name": "flat washer",
+        "shape_family": "washer",
+        "quantity_visible": 6
+      },
+      {
+        "fastener_uid": "F003_005",
+        "manual_label": "E",
+        "name": "M4x30mm screw",
+        "shape_family": "screw",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T003_001",
+        "name": "M4 allen key F"
+      },
+      {
+        "tool_uid": "T003_002",
+        "name": "cross head screwdriver G"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "The box holds a pair of chairs (parts x4/x2, fittings x12); quantities here are for one chair."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P004_001",
+        "manual_label": "1",
+        "name": "side rail",
+        "visual_description": "flat wooden seat rail with dowel holes and a bolt hole in each end and slotted screw pockets",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "two dowel holes and one bolt hole in each end"
+          },
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "screw pockets on the inner face"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P004_002",
+        "manual_label": "2",
+        "name": "front leg frame",
+        "visual_description": "U-shaped wooden frame: two front legs joined by a top rail, with dowel and bolt holes at the top",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and bolt holes in the tops of both legs"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F004_001",
+        "manual_label": "A",
+        "name": "40mm wood dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F004_002",
+        "manual_label": "B",
+        "name": "M6x50mm bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F004_003",
+        "manual_label": "C",
+        "name": "lock washer",
+        "shape_family": "washer",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F004_004",
+        "manual_label": "D",
+        "name": "flat washer",
+        "shape_family": "washer",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T004_001",
+        "name": "M4 allen key F"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A004_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_002",
+        "fastener_ref": "F004_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "wood dowels A pushed into the holes in the tops of front leg frame 2"
+      },
+      {
+        "action_uid": "A004_002",
+        "action_type": "attach",
+        "moving_part_ref": "P004_001",
+        "target_part_ref": "P004_002",
+        "fastener_ref": "F004_002",
+        "tool_ref": "T004_001",
+        "direction_hint": "down",
+        "visual_evidence": "side rails 1 pushed onto the dowels at each top corner of front leg frame 2; M6x50mm bolt B with lock washer C and flat washer D tightened with allen key F"
+      },
+      {
+        "action_uid": "A004_003",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_001",
+        "fastener_ref": "F004_003",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "lock washer C and flat washer D under the head of bolt B inside the rail pocket"
+      }
+    ],
+    "final_visible_structure": "front leg frame with two side rails standing up from its top corners",
+    "uncertainties": [
+      "Steps 1 and 2 on one page; both say repeat x2 for the second chair."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "1",
+        "name": "side rail",
+        "visual_description": "flat wooden seat rail with dowel holes and a bolt hole in each end and slotted screw pockets",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "two dowel holes and one bolt hole in each end"
+          },
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "screw pockets on the inner face"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P005_002",
+        "manual_label": "2",
+        "name": "front leg frame",
+        "visual_description": "U-shaped wooden frame: two front legs joined by a top rail, with dowel and bolt holes at the top",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and bolt holes in the tops of both legs"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P005_003",
+        "manual_label": "4",
+        "name": "chair back",
+        "visual_description": "tall wooden chair back: two curved back legs with a top rail, a lower rail and five vertical slats",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and bolt holes in each back leg at seat height"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P005_004",
+        "manual_label": "3",
+        "name": "seat pad",
+        "visual_description": "upholstered padded seat with rounded edges",
+        "shape_family": "panel",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "pre-drilled screw holes in the underside board"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F005_001",
+        "manual_label": "A",
+        "name": "40mm wood dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F005_002",
+        "manual_label": "B",
+        "name": "M6x50mm bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F005_003",
+        "manual_label": "C",
+        "name": "lock washer",
+        "shape_family": "washer",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F005_004",
+        "manual_label": "D",
+        "name": "flat washer",
+        "shape_family": "washer",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F005_005",
+        "manual_label": "E",
+        "name": "M4x30mm screw",
+        "shape_family": "screw",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T005_001",
+        "name": "M4 allen key F"
+      },
+      {
+        "tool_uid": "T005_002",
+        "name": "cross head screwdriver G"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A005_001",
+        "action_type": "attach",
+        "moving_part_ref": "P005_003",
+        "target_part_ref": "P005_001",
+        "fastener_ref": "F005_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 2-3: the free ends of the side rails 1 pushed onto dowels A in chair back 4, then bolted with M6x50mm bolt B, lock washer C and flat washer D"
+      },
+      {
+        "action_uid": "A005_002",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P005_003",
+        "fastener_ref": "F005_002",
+        "tool_ref": "T005_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "4x bolt B with washers C and D tightened through the side rails into chair back 4"
+      },
+      {
+        "action_uid": "A005_003",
+        "action_type": "place",
+        "moving_part_ref": "P005_004",
+        "target_part_ref": "P005_001",
+        "fastener_ref": "F005_005",
+        "tool_ref": "T005_002",
+        "direction_hint": "down",
+        "visual_evidence": "step 4: frame set on seat pad 3 and fixed with 6x M4x30mm screw E through the rail pockets using screwdriver G"
+      }
+    ],
+    "final_visible_structure": "complete chair frame with the seat pad screwed on",
+    "uncertainties": [
+      "Steps 3 and 4 on one page; the frame is shown upside down on the seat pad for step 4."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "assembled Banbury chair standing upright",
+    "uncertainties": [
+      "Step 5: picture of the finished chair, 'Assemble is completed'."
+    ]
+  }
+]
