@@ -187,4 +187,4 @@ Suggestions and pull requests are welcome.
 
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE).
