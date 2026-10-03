@@ -1,12 +1,16 @@
-"""Helpers for hand-authoring vision fixtures (page_states.json and
-diagram_analysis.json) in the exact schema the vision agents write.
+"""Helpers for describing a manual's pages as the pipeline's vision results:
+manuals/<name>/page_states.json and diagram_analysis.json.
 
-The raw dicts are what a vision model would plausibly return for each page;
-they go through the agents' own validators."""
+Each manual has a describe.py (written by reading its page images) that lists
+the pages with part(), fastener(), tool(), action(), page() and diagram(),
+then calls write_description(). Everything goes through vision_schema.py, so
+the files have exactly the schema the pipeline expects.
+"""
 import copy
 import json
-import sys
 from pathlib import Path
+
+from vision_schema import validate_diagram_analysis, validate_page_state
 
 
 def part(label, name, desc, shape, material, qty, features=(), pos="center"):
@@ -54,22 +58,18 @@ def diagram(dtype, desc, region, labels=(), parts=True, fast=False, tools=False,
             "visual_complexity": complexity, "confidence": conf}
 
 
-def write_fixture(repo: Path, out: Path, pages, diagrams) -> None:
-    sys.path.insert(0, str(repo))
-    sys.path.insert(0, str(repo / "v2" / "agents"))
-    from page_state_agent import validate_page_state
-    from diagram_analyzer_agent import DiagramAnalyzerAgent
-
+def write_description(out: Path, pages, diagrams) -> None:
+    """Validate the pages and write page_states.json and diagram_analysis.json
+    into `out`. `diagrams` maps page number -> (page_type, diagrams, uncertainties)."""
     out.mkdir(parents=True, exist_ok=True)
     states = [validate_page_state(p)[0] for p in pages]
     (out / "page_states.json").write_text(json.dumps(states, indent=2) + "\n", encoding="utf-8")
 
-    validator = DiagramAnalyzerAgent.__new__(DiagramAnalyzerAgent)  # no Azure client needed
     analyses = []
     for n, (ptype, items, unc) in diagrams.items():
         data = {"page_number": n, "page_type": ptype, "diagrams": items,
                 "primary_assembly_diagram": "", "warnings": [], "uncertainties": unc}
-        analyses.append(validator.validate(data, n))
+        analyses.append(validate_diagram_analysis(data, n))
     (out / "diagram_analysis.json").write_text(json.dumps(analyses, indent=2) + "\n", encoding="utf-8")
 
     for s in states:

@@ -278,6 +278,6 @@ if __name__ == "__main__":
     reason = empty_input_reason(states if isinstance(states, list) else [])
     if reason:
         sys.exit(
-            f"ERROR: {reason}. The page analysis stage produced nothing to animate; "
-            "fix it (e.g. the Azure OpenAI vision calls) before running later stages."
+            f"ERROR: {reason}. The page states have nothing to animate; "
+            "check the vision fixture's page_states.json."
         )

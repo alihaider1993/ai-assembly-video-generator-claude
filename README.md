@@ -1,26 +1,27 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
-![Azure OpenAI](https://img.shields.io/badge/Azure%20OpenAI-GPT--4o-0078D4?logo=microsoftazure)
 ![Blender](https://img.shields.io/badge/Blender-5.x-orange?logo=blender)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 # AI Assembly Video Generator
 
-**Turn a flat-pack assembly manual (PDF) into an animated, step-by-step assembly video.**
+**Turn a flat-pack assembly manual into an animated, step-by-step assembly video.**
 
-GPT-4o vision reads the manual's pages. A chain of Python stages turns what it sees into an assembly graph, a motion plan and a 3D scene. Blender renders the scene headlessly, and the frames are stitched into an MP4 with on-screen step captions.
-
-[▶ Watch the walkthrough on Loom](https://www.loom.com/share/12703483af3d4d3187db376c63d08b1b)
+Add a manual's PDF and describe its pages: the parts, fasteners and actions each step shows, plus any part sizes printed in it. A chain of Python stages turns that description into an assembly graph, a motion plan and a 3D scene. Blender renders the scene headlessly, and the frames are stitched into an MP4 with on-screen step captions. Everything runs locally and free, with no cloud services or paid models.
 
 ---
 
 ## Results
 
-Three real manuals, three generated videos. Each image shows one step in progress and the finished piece.
+Four real manuals, four generated videos. Each image shows one step in progress and the finished piece.
 
 **IKEA MELLTORP table.** Built upside down on its top, then turned over at the end, the way the manual shows it.
 
 ![MELLTORP table](github_demo_assets/results/melltorp_table.png)
+
+**IKEA NORDEN extendable table.** Frame with cross rails and runners, four legs, and an H-shaped stretcher frame between them.
+
+![NORDEN table](github_demo_assets/results/norden_table.png)
 
 **Habitat Banbury dining chair.** The front leg frame, side rails, slatted back and seat pad, in the manual's order.
 
@@ -38,18 +39,15 @@ The parts are proxy shapes (boxes, cylinders and simple frames) sized from the m
 
 When I moved to the UK, a lot of what I bought needed self-assembly, and it came with a manual of diagrams and very little text. Reading the diagrams often took longer than the assembly itself, and one misread step meant undoing work and starting again. Sometimes there was a YouTube video for the product, but often there wasn't.
 
-So I wanted to see whether AI could read a manual and produce the video itself. This project is that experiment.
+So I wanted to see whether a program could turn a manual's diagrams into a video automatically. This project is that experiment.
 
 ---
 
 ## How it works
 
-The pipeline is a chain of standalone Python scripts that pass JSON files to each other. Every intermediate result is on disk, so you can inspect or rerun any single stage.
-
 ```
-PDF ──► page images ──► GPT-4o vision: parts, fasteners, tools and actions per page
-                                    │
-        ┌───────────────────────────┘
+manual.pdf ──► page images ──► page descriptions (manuals/<name>/describe.py)
+        │
         ▼
   state differences ──► assembly actions ──► assembly graph (pass 1)
         ──► object identity tracking ──► canonical action resolution
@@ -59,17 +57,17 @@ PDF ──► page images ──► GPT-4o vision: parts, fasteners, tools and a
         ──► generated Blender script ──► headless render ──► MP4 with captions
 ```
 
-What each stage does:
+**Page descriptions.** Each manual has a `describe.py` that lists, page by page, the parts with their labels and quantities, the fasteners and tools, the actions the diagrams show (with "Repeat x2" notes), and the part-list measurements such as `(925 x 42mm)`. No paid vision model reads the pages. I write the descriptions with [Claude Code](https://claude.com/claude-code), using the repo's `/describe-manual` skill: it reads the page images and writes the file. The descriptions are checked against a fixed schema before the pipeline uses them.
+
+After that, every stage is a standalone Python script that passes JSON files to the next. Every intermediate result is on disk, so you can inspect or rerun any single stage.
 
 | Stage | What it does |
 |---|---|
-| Page state agent (LLM) | For each page: visible parts with labels and sizes, fasteners, tools, and the actions the diagram shows |
-| Diagram analyzer (LLM) | Finds the diagrams on each page and reads part-list measurements such as `(925 x 42mm)` |
 | Object identity tracker | Works out that "rail 6" on page 7 is the same part kind as on page 4, and gives every physical copy its own ID |
 | Action replicator | Expands a step drawn once with "Repeat x2" to every copy, but never past the number of copies the page shows |
 | Assembly graph | Parts, fasteners and the connections between them, in assembly order |
 | Motion planner | One motion per part. Steps that do the same thing to the same kind of part play together |
-| Part shapes | Gives each part a role (top, leg, rail, post, slat, seat, chair back, leg frame) and sets its size from the measurements |
+| Part shapes | Gives each part a role (top, leg, rail, stretcher, post, slat, seat, chair back, leg frame) and sets its size from the measurements |
 | Scene layout | Places parts by role in the finished piece and works out where each one starts. Fasteners sit where the two parts they join meet |
 | Blender builder | Generates a Blender Python script: proxy meshes, highlights on moving parts, camera framing, a turn-over finale for tables, then an orbit |
 | Video | Stitches the frames into an MP4 with "Step n of N" captions |
@@ -78,7 +76,7 @@ What each stage does:
 
 ## Running it
 
-Requirements: Python 3.11, [Blender 5.x](https://www.blender.org/download/), and an Azure OpenAI GPT-4o deployment for the vision stages.
+Requirements: Python 3.11 and [Blender 5.x](https://www.blender.org/download/).
 
 ```bash
 python -m venv .venv
@@ -86,36 +84,38 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### Full run with Azure vision
-
-Create a `.env` file in the repo root:
+If Blender isn't at `C:\Program Files\Blender Foundation\Blender 5.1\blender.exe`, put its path in a `.env` file in the repo root:
 
 ```
-AZURE_OPENAI_ENDPOINT=https://<your-resource>.openai.azure.com/
-AZURE_OPENAI_DEPLOYMENT=gpt-4o
-BLENDER_EXE=C:\Program Files\Blender Foundation\Blender 5.1\blender.exe
+BLENDER_EXE=C:\path\to\blender.exe
 ```
 
-Authentication goes through `DefaultAzureCredential`, so sign in with `az login` first. There is no API key.
+### Make a video for a new manual
+
+1. Add the manual: `python utils/pdf_to_images.py path/to/manual.pdf`. Or use **Add a manual** in the app. This creates `manuals/<name>/` with the PDF and its page images.
+2. Describe it: in Claude Code, run `/describe-manual <name>`. This writes `manuals/<name>/describe.py` and its two JSON files.
+3. Build the video: `python v2/run_mvp_pipeline.py <name>`. Or pick the manual in the app and select **Generate assembly video**.
+
+The video is saved as `outputs/videos/<name>.mp4`. A run takes a few minutes, most of it Blender rendering.
+
+The four example manuals are already described:
 
 ```bash
-streamlit run app.py                 # upload a PDF in the browser
-# or
-python utils/pdf_to_images.py        # uploads/manual.pdf -> temp/pages/
-python v2/run_mvp_pipeline.py
+python v2/run_mvp_pipeline.py melltorp_table
+python v2/run_mvp_pipeline.py new_table_manual   # NORDEN
+python v2/run_mvp_pipeline.py banbury_chair
+python v2/run_mvp_pipeline.py kaycie_bed
 ```
 
-### Offline run (no Azure)
-
-The repo includes hand-authored vision results for three manuals. `--vision-fixture` loads them instead of calling GPT-4o, and every later stage runs exactly as normal:
+### The app
 
 ```bash
-python v2/run_mvp_pipeline.py --vision-fixture                                         # MELLTORP table
-python v2/run_mvp_pipeline.py --vision-fixture v2/tests/fixtures/vision_banbury_chair  # Banbury chair
-python v2/run_mvp_pipeline.py --vision-fixture v2/tests/fixtures/vision_kaycie_bed     # Kaycie bed
+streamlit run app.py
 ```
 
-The video is written to `outputs/assembly_animation_v3.mp4`. Run all commands from the repo root.
+The app does two things:
+- **Add a manual:** upload a PDF and its pages are rendered.
+- **Make the video:** pick a manual. If its pages haven't been described yet, the app tells you to run `/describe-manual <name>`. Otherwise you can generate the video and watch each stage and the Blender render progress live, then play the video, see frame previews, and download the MP4 and every intermediate JSON file.
 
 ### Tests
 
@@ -128,30 +128,22 @@ pytest v2/tests          # checks the generated JSON, so run the pipeline first
 ## Project structure
 
 ```text
-app.py                     Streamlit UI: upload, live progress, video and JSON downloads
+app.py                     Streamlit UI: add a manual, generate, play and download
 config.py                  Shared paths
-services/foundry.py        Azure OpenAI client
-utils/pdf_to_images.py     PDF -> page PNGs
+utils/pdf_to_images.py     Adds a manual: copies the PDF, renders its pages
+manuals/<name>/            One folder per manual: describe.py + the two JSON files it writes
+                           (manual.pdf and pages/ stay local)
+.claude/skills/            The /describe-manual procedure for Claude Code
 v2/
-  run_mvp_pipeline.py      Runs every stage in order (--vision-fixture for offline runs)
-  agents/                  Vision agents, identity tracking, part shapes
+  run_mvp_pipeline.py      Runs every stage in order for one manual
+  agents/                  Description helpers and schema, identity tracking, part shapes
   rendering/               Action extraction, graph, motion, layout, Blender builder, video
   builders/                Proxy geometry
-  tests/                   Output tests and offline vision fixtures
+  tests/                   Output tests
 github_demo_assets/        README images
 ```
 
-Generated files go to `temp/`, `outputs/`, `blender/generated/`, `v2/outputs/json/` and `v2/output/`. All of them are git-ignored.
-
----
-
-## Streamlit app
-
-| Upload | Live pipeline | Result |
-|---|---|---|
-| ![Upload](github_demo_assets/screenshots/streamlit_upload.png) | ![Pipeline logs](github_demo_assets/screenshots/pipeline_logs.png) | ![Generated video](github_demo_assets/screenshots/generated_video.png) |
-
-Every intermediate JSON file can be downloaded from the app, so you can see exactly what each stage decided.
+Generated files go to `outputs/`, `blender/generated/`, `v2/outputs/json/` and `v2/output/`. All of them are git-ignored, as are manual PDFs and page images.
 
 ---
 
@@ -159,29 +151,27 @@ Every intermediate JSON file can be downloaded from the app, so you can see exac
 
 This is an experimental prototype, published with its rough edges:
 
-- **Proxy geometry.** Parts are boxes, cylinders and simple composite frames, not real product models.
-- **Layouts are written per product type.** Tables, chairs and beds are placed properly. Anything else falls back to a generic exploded ring.
+- **Describing a manual is a step you run in Claude Code.** It isn't done inside the app. This keeps the project free; a vision model could take over the same step later.
+- **Proxy geometry.** Parts are boxes, cylinders and simple composite frames, not real product models. When a manual prints no sizes, parts get default sizes for their type.
+- **Layouts cover tables, chairs and beds.** Anything else falls back to a generic exploded ring until it gets a layout of its own.
 - **Fasteners are approximate.** Bolts are always drawn upright. They are enlarged while moving so you can see them, then shrink to real size once fitted.
 - **A few parts never move.** A part that no step moves, such as the bed's centre legs, is in place from the first frame.
-- **The offline fixtures were written by hand.** They are what a vision model should return for those manuals. Live GPT-4o output will vary.
-- **The app has no offline mode.** The Streamlit UI always calls Azure. Offline runs only work from the command line.
 - **Windows-first.** The default Blender path is a Windows path.
 
 ---
 
 ## Roadmap
 
-- Layout rules learned from the assembly graph instead of written per product type
+- Layouts for more product types (shelving, desks, wardrobes), driven by the assembly graph
 - Fasteners that turn to the direction of their hole and go into it
-- An offline switch in the Streamlit app
-- Narration with Azure Speech
-- A hosted version (Azure Container Apps, Blob storage, REST API)
+- Optional automatic page reading with a vision model
+- Spoken narration for each step
 
 ---
 
 ## Author
 
-**Syed Ali Haider.** Part of my applied AI engineering portfolio, exploring how vision models, structured reasoning and procedural graphics can make instruction manuals easier to follow.
+**Syed Ali Haider.** Part of my applied AI engineering portfolio, exploring how structured reasoning and procedural graphics can make instruction manuals easier to follow.
 
 Suggestions and pull requests are welcome.
 

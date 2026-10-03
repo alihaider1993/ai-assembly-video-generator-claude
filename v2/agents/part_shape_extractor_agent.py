@@ -179,7 +179,9 @@ PART_ROLES = [
     ("leg", re.compile(r"\blegs?\b"), [0.05, 0.05, 0.72]),
     ("back", re.compile(r"\b(chair back|backrest|back rest|seat back)\b"), [0.42, 0.04, 0.9]),
     ("slat", re.compile(r"\bslats?\b"), [0.9, 0.07, 0.018]),
-    ("rail", re.compile(r"\b(rails?|aprons?|stretchers?)\b"), [0.9, 0.03, 0.07]),
+    # Low bars between a table's legs (an H-frame), below the top rails.
+    ("stretcher", re.compile(r"\bstretchers?\b"), [0.9, 0.03, 0.07]),
+    ("rail", re.compile(r"\b(rails?|aprons?)\b"), [0.9, 0.03, 0.07]),
     ("seat", re.compile(r"\bseat\b"), [0.45, 0.42, 0.05]),
     ("bracket", re.compile(r"\bbrackets?\b"), [0.08, 0.08, 0.04]),
 ]

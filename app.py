@@ -7,13 +7,16 @@ from pathlib import Path
 import streamlit as st
 
 from config import (
-    DEFAULT_MANUAL_PDF,
     FRAMES_V3_DIR,
-    VIDEO_V3_PATH,
+    MANUALS_DIR,
+    OUTPUTS_DIR,
+    VIDEOS_DIR,
     V2_JSON_DIR,
     V2_OUTPUT_DIR,
     ensure_project_dirs,
+    is_described,
 )
+from utils.pdf_to_images import add_manual, manual_name
 
 
 st.set_page_config(
@@ -24,69 +27,59 @@ st.set_page_config(
 
 
 PIPELINE_STEPS = [
-    "Upload PDF",
-    "PDF to Images",
-    "Manual Understanding",
-    "Assembly Graph",
-    "Motion Plan",
-    "Scene Layout",
-    "Visual Geometry",
-    "Blender Render",
-    "MP4 Video",
+    "Load page descriptions",
+    "Assembly actions",
+    "Assembly graph",
+    "Motion plan",
+    "Part shapes",
+    "Scene layout",
+    "Blender render",
+    "MP4 video",
     "Complete",
 ]
 
 
 def render_pipeline_status(active_index: int):
-    cols = st.columns(5)
+    for row_start in (0, 5):
+        row = PIPELINE_STEPS[row_start:row_start + 5]
+        cols = st.columns(5)
 
-    for i, step in enumerate(PIPELINE_STEPS[:5]):
-        with cols[i]:
-            if i < active_index:
-                st.success(f"[DONE]\n\n{step}")
-            elif i == active_index:
-                st.warning(f"[RUNNING]\n\n{step}")
-            else:
-                st.info(f"[WAITING]\n\n{step}")
-
-    cols = st.columns(5)
-
-    for j, step in enumerate(PIPELINE_STEPS[5:], start=5):
-        with cols[j - 5]:
-            if j < active_index:
-                st.success(f"[DONE]\n\n{step}")
-            elif j == active_index:
-                st.warning(f"[RUNNING]\n\n{step}")
-            else:
-                st.info(f"[WAITING]\n\n{step}")
+        for offset, step in enumerate(row):
+            i = row_start + offset
+            with cols[offset]:
+                if i < active_index:
+                    st.success(f"[DONE]\n\n{step}")
+                elif i == active_index:
+                    st.warning(f"[RUNNING]\n\n{step}")
+                else:
+                    st.info(f"[WAITING]\n\n{step}")
 
 
 def detect_step(line: str, current_step: int) -> int:
+    # Matches the "RUNNING: ..." line run_mvp_pipeline.py prints before each stage.
     text = line.lower()
 
-    if "extracted" in text:
+    if "assembly_action_extractor" in text or "state_difference_engine" in text:
         return max(current_step, 1)
-    if "page_state_agent" in text or "page state" in text:
+    if "universal_graph_engine" in text or "object_identity_tracker" in text:
         return max(current_step, 2)
-    if "universal_graph_engine" in text or "graph" in text:
+    if "motion_planner" in text:
         return max(current_step, 3)
-    if "motion_planner" in text or "motion planner" in text:
+    if "part_shape_extractor" in text:
         return max(current_step, 4)
-    if "scene_layout_engine" in text or "scene layout" in text:
+    if "scene_layout_engine" in text:
         return max(current_step, 5)
-    if "diagram_analyzer" in text or "part shape" in text or "proxy geometry" in text:
+    if "blender" in text or "saved:" in text:
         return max(current_step, 6)
-    if "blender" in text or "saved:" in text or "rendering" in text:
+    if "render_video" in text or "video created" in text:
         return max(current_step, 7)
-    if "moviepy" in text or "video created" in text:
-        return max(current_step, 8)
     if "mvp pipeline complete" in text:
-        return 9
+        return 8
 
     return current_step
 
 
-def run_live_command(cmd, log_box, progress_bar, status_area, current_step):
+def run_live_command(cmd, log_box, progress_bar, status_area):
     process = subprocess.Popen(
         cmd,
         stdout=subprocess.PIPE,
@@ -98,8 +91,8 @@ def run_live_command(cmd, log_box, progress_bar, status_area, current_step):
     )
 
     logs = []
+    current_step = 0
     frame_count = 0
-    total_frame_hint = 1000
 
     for line in process.stdout:
         line = line.rstrip()
@@ -110,13 +103,13 @@ def run_live_command(cmd, log_box, progress_bar, status_area, current_step):
         if "Saved:" in line and "frame_" in line:
             frame_count += 1
             progress_bar.progress(
-                min(frame_count / total_frame_hint, 1.0),
-                text=f"Rendering Blender frames... {frame_count}"
+                min(current_step / (len(PIPELINE_STEPS) - 1), 1.0),
+                text=f"Rendering Blender frames... {frame_count}",
             )
         else:
             progress_bar.progress(
                 min(current_step / (len(PIPELINE_STEPS) - 1), 1.0),
-                text=f"Current step: {PIPELINE_STEPS[current_step]}"
+                text=f"Current step: {PIPELINE_STEPS[current_step]}",
             )
 
         with status_area.container():
@@ -124,24 +117,18 @@ def run_live_command(cmd, log_box, progress_bar, status_area, current_step):
 
         log_box.code("\n".join(logs[-100:]))
 
-    return_code = process.wait()
-
-    if return_code != 0:
-        # Stages print "[FATAL] ..." / "[PIPELINE FAILED] ..." with the actual cause
-        # (e.g. missing AZURE_OPENAI_ENDPOINT); show that instead of just the command.
+    if process.wait() != 0:
+        # Stages print "[FATAL] ..." / "[PIPELINE FAILED] ..." with the actual
+        # cause (e.g. Blender not found); show that instead of just the command.
         reasons = [
             line for line in logs
             if line.startswith(("[FATAL]", "[PIPELINE FAILED]"))
         ]
         details = "\n\n".join(reasons) if reasons else "\n".join(logs[-15:])
-        raise RuntimeError(
-            f"Command failed: {' '.join(cmd)}\n\n{details}"
-        )
-
-    return current_step
+        raise RuntimeError(f"Command failed: {' '.join(cmd)}\n\n{details}")
 
 
-def run_pipeline():
+def run_pipeline(name: str):
     status_area = st.empty()
     progress_bar = st.progress(0, text="Starting pipeline...")
 
@@ -149,60 +136,55 @@ def run_pipeline():
         log_box = st.empty()
 
     start_time = time.time()
-    current_step = 1
 
     with status_area.container():
-        render_pipeline_status(current_step)
+        render_pipeline_status(0)
 
-    commands = [
-        [sys.executable, "-u", "utils/pdf_to_images.py"],
-        [sys.executable, "-u", "v2/run_mvp_pipeline.py"],
-    ]
-
-    for cmd in commands:
-        current_step = run_live_command(
-            cmd,
-            log_box,
-            progress_bar,
-            status_area,
-            current_step,
-        )
+    run_live_command(
+        [sys.executable, "-u", "v2/run_mvp_pipeline.py", name],
+        log_box,
+        progress_bar,
+        status_area,
+    )
 
     elapsed = time.time() - start_time
-
     progress_bar.progress(1.0, text=f"Complete in {elapsed:.1f} seconds")
 
     with status_area.container():
-        render_pipeline_status(9)
+        render_pipeline_status(len(PIPELINE_STEPS) - 1)
+
+
+def generated_json_files():
+    # v2/output/ holds copies of diagram_analysis.json and scene_layout.json;
+    # list each file name once.
+    files = list(V2_JSON_DIR.glob("*.json"))
+    names = {f.name for f in files}
+    return files + [f for f in V2_OUTPUT_DIR.glob("*.json") if f.name not in names]
 
 
 def create_json_zip() -> Path:
-    zip_path = Path("outputs/generated_json_files.zip")
-    zip_path.parent.mkdir(parents=True, exist_ok=True)
-
-    json_files = list(V2_JSON_DIR.glob("*.json")) + list(V2_OUTPUT_DIR.glob("*.json"))
+    zip_path = OUTPUTS_DIR / "generated_json_files.zip"
 
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
-        for file in json_files:
+        for file in generated_json_files():
             zipf.write(file, arcname=file.name)
 
     return zip_path
 
 
 def show_json_downloads():
-    st.subheader("Generated JSON Outputs")
+    st.subheader("Generated JSON outputs")
+    st.caption("From the last run.")
 
-    json_files = list(V2_JSON_DIR.glob("*.json")) + list(V2_OUTPUT_DIR.glob("*.json"))
+    json_files = generated_json_files()
 
     if not json_files:
-        st.info("No JSON files generated yet.")
+        st.info("No JSON files yet. Generate a video to create them.")
         return
 
-    zip_path = create_json_zip()
-
-    with open(zip_path, "rb") as f:
+    with open(create_json_zip(), "rb") as f:
         st.download_button(
-            "Download All JSON Files",
+            "Download all JSON files",
             data=f,
             file_name="generated_json_files.zip",
             mime="application/zip",
@@ -226,100 +208,110 @@ def show_json_downloads():
                     )
 
 
+def show_video(name: str):
+    video = VIDEOS_DIR / f"{name}.mp4"
+
+    if not video.exists():
+        st.info("No video for this manual yet. Select Generate assembly video to make one.")
+        return
+
+    st.video(str(video))
+
+    with open(video, "rb") as f:
+        st.download_button(
+            "Download MP4",
+            data=f,
+            file_name=video.name,
+            mime="video/mp4",
+            use_container_width=True,
+        )
+
+
+def add_manual_form():
+    st.subheader("1. Add a manual")
+
+    uploaded = st.file_uploader("Instruction manual PDF", type=["pdf"])
+    if not uploaded:
+        return
+
+    name = st.text_input("Manual name", value=manual_name(Path(uploaded.name)))
+    if st.button("Add manual"):
+        manual_dir = MANUALS_DIR / manual_name(Path(name or uploaded.name))
+        manual_dir.mkdir(parents=True, exist_ok=True)
+        pdf = manual_dir / "manual.pdf"
+        pdf.write_bytes(uploaded.getvalue())
+        add_manual(pdf, manual_dir.name)
+        pages = len(list((manual_dir / "pages").glob("page_*.png")))
+        st.success(f"Added {manual_dir.name} ({pages} pages).")
+
+
+def list_manuals():
+    return sorted(d.name for d in MANUALS_DIR.iterdir() if d.is_dir()) if MANUALS_DIR.exists() else []
+
+
+def show_frames():
+    frames = sorted(FRAMES_V3_DIR.glob("*.png"))
+
+    if not frames:
+        st.info("Frames from the last run will appear here.")
+        return
+
+    st.subheader(f"Frame preview ({len(frames)} frames, last run)")
+
+    for col, frame, label in zip(
+        st.columns(3),
+        [frames[0], frames[len(frames) // 2], frames[-1]],
+        ["First frame", "Middle frame", "Final frame"],
+    ):
+        with col:
+            st.image(str(frame), caption=label)
+
+
 def main():
     ensure_project_dirs()
 
-    st.title("🛠️ Azure AI Universal Assembly Video Generator")
-    st.caption("Upload an instructional manual PDF and generate an AI-planned proxy assembly animation.")
+    st.title("🛠️ AI Assembly Video Generator")
+    st.caption(
+        "Turns an assembly manual into an animated video: assembly graph, "
+        "motion plan, 3D layout and a Blender render."
+    )
 
     st.markdown("---")
+    add_manual_form()
 
-    left, right = st.columns([1, 1])
+    st.markdown("---")
+    st.subheader("2. Make the video")
 
-    with left:
-        st.subheader("1. Upload Manual")
+    manuals = list_manuals()
+    if not manuals:
+        st.info("No manuals yet. Add one above.")
+        return
 
-        uploaded_file = st.file_uploader(
-            "Upload instruction manual PDF",
-            type=["pdf"],
+    name = st.selectbox("Manual", options=manuals)
+    manual_dir = MANUALS_DIR / name
+
+    if not is_described(manual_dir):
+        st.warning(
+            f"This manual's pages haven't been described yet. In Claude Code, run "
+            f"`/describe-manual {name}`, then come back and generate the video."
         )
-
-        if uploaded_file:
-            DEFAULT_MANUAL_PDF.parent.mkdir(parents=True, exist_ok=True)
-            DEFAULT_MANUAL_PDF.write_bytes(uploaded_file.read())
-
-            st.success("Manual uploaded successfully")
-            st.code(str(DEFAULT_MANUAL_PDF.resolve()))
-        else:
-            st.info("Upload a PDF manual to begin.")
-
-    with right:
-        st.subheader("2. Output Locations")
-        st.write("Frames:")
-        st.code(str(FRAMES_V3_DIR.resolve()))
-        st.write("Video:")
-        st.code(str(VIDEO_V3_PATH.resolve()))
-
-    st.markdown("---")
-
-    uploaded_ready = DEFAULT_MANUAL_PDF.exists()
-
-    if st.button(
-        "Generate Assembly Video",
-        type="primary",
-        disabled=not uploaded_ready,
-        use_container_width=True,
-    ):
+    elif st.button("Generate assembly video", type="primary", use_container_width=True):
         try:
-            run_pipeline()
-            st.success("[SUCCESS] Assembly video generated successfully!")
-
+            run_pipeline(name)
+            st.success("Assembly video generated.")
         except Exception as e:
             st.error(str(e))
             return
 
     st.markdown("---")
 
-    tab1, tab2, tab3 = st.tabs(["Generated Video", "Frame Preview", "JSON Outputs"])
+    tab1, tab2, tab3 = st.tabs(["Video", "Frame preview", "JSON outputs"])
 
     with tab1:
-        if VIDEO_V3_PATH.exists():
-            st.subheader("Generated Assembly Video")
-            st.video(str(VIDEO_V3_PATH))
-
-            with open(VIDEO_V3_PATH, "rb") as f:
-                st.download_button(
-                    "Download MP4",
-                    data=f,
-                    file_name="assembly_animation_v3.mp4",
-                    mime="video/mp4",
-                    use_container_width=True,
-                )
-        else:
-            st.info("Video will appear here after generation.")
+        show_video(name)
 
     with tab2:
-        if FRAMES_V3_DIR.exists():
-            frames = sorted(FRAMES_V3_DIR.glob("*.png"))
-
-            if frames:
-                st.subheader(f"Frame Preview ({len(frames)} frames)")
-
-                preview_cols = st.columns(3)
-                preview_frames = [
-                    frames[0],
-                    frames[len(frames) // 2],
-                    frames[-1],
-                ]
-                labels = ["First frame", "Middle frame", "Final frame"]
-
-                for col, frame, label in zip(preview_cols, preview_frames, labels):
-                    with col:
-                        st.image(str(frame), caption=label)
-            else:
-                st.info("Frames will appear here after rendering.")
-        else:
-            st.info("Frames folder not created yet.")
+        show_frames()
 
     with tab3:
         show_json_downloads()

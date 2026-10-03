@@ -7,18 +7,21 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent
 
 # ==========================================================
-# INPUTS
+# MANUALS
 # ==========================================================
 
-UPLOADS_DIR = PROJECT_ROOT / "uploads"
-DEFAULT_MANUAL_PDF = UPLOADS_DIR / "manual.pdf"
+# One folder per manual: manuals/<name>/ holds manual.pdf and pages/ (both
+# git-ignored), describe.py (the page-by-page description, written by
+# reading the pages) and the two vision files it generates, which the
+# pipeline starts from.
+MANUALS_DIR = PROJECT_ROOT / "manuals"
 
-# ==========================================================
-# TEMP
-# ==========================================================
+VISION_FILES = ("page_states.json", "diagram_analysis.json")
 
-TEMP_DIR = PROJECT_ROOT / "temp"
-PAGE_IMAGES_DIR = TEMP_DIR / "pages"
+
+def is_described(manual_dir: Path) -> bool:
+    return all((manual_dir / name).exists() for name in VISION_FILES)
+
 
 # ==========================================================
 # OUTPUTS
@@ -26,11 +29,12 @@ PAGE_IMAGES_DIR = TEMP_DIR / "pages"
 
 OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 
-FRAMES_V2_DIR = OUTPUTS_DIR / "frames_v2"
 FRAMES_V3_DIR = OUTPUTS_DIR / "frames_v3"
 
-VIDEO_V2_PATH = OUTPUTS_DIR / "assembly_animation_v2.mp4"
 VIDEO_V3_PATH = OUTPUTS_DIR / "assembly_animation_v3.mp4"
+
+# Each finished run is also kept here as <product>.mp4.
+VIDEOS_DIR = OUTPUTS_DIR / "videos"
 
 # ==========================================================
 # BLENDER
@@ -40,7 +44,6 @@ BLENDER_DIR = PROJECT_ROOT / "blender"
 
 BLENDER_GENERATED_DIR = BLENDER_DIR / "generated"
 
-BLENDER_V2_SCRIPT = BLENDER_GENERATED_DIR / "v2_generated_blender_scene.py"
 BLENDER_V3_SCRIPT = BLENDER_GENERATED_DIR / "v3_generated_blender_scene.py"
 
 # ==========================================================
@@ -93,17 +96,13 @@ def ensure_project_dirs():
 
     directories = [
 
-        UPLOADS_DIR,
-
-        TEMP_DIR,
-
-        PAGE_IMAGES_DIR,
+        MANUALS_DIR,
 
         OUTPUTS_DIR,
 
-        FRAMES_V2_DIR,
-
         FRAMES_V3_DIR,
+
+        VIDEOS_DIR,
 
         BLENDER_GENERATED_DIR,
 

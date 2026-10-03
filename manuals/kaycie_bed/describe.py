@@ -1,12 +1,14 @@
-"""Vision fixture for the Habitat Kaycie 3ft single bed (uploads/7255030_D001.pdf).
+"""Vision results for the Habitat Kaycie 3ft single bed manual (15 pages).
 
-Usage (from the repo root):
-    python v2/tests/fixtures/generators/make_fixture_bed.py . v2/tests/fixtures/vision_kaycie_bed
+Run: python manuals/kaycie_bed/describe.py
 """
 import sys
 from pathlib import Path
 
-from fixture_lib import action, diagram, fastener, page, part, tool, write_fixture
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE.parents[1] / "v2" / "agents"))
+
+from manual_description import action, diagram, fastener, page, part, tool, write_description  # noqa: E402
 
 POST = "square wooden post with dowel holes and bolt holes up one face"
 
@@ -256,4 +258,4 @@ DIAGRAMS = {
 }
 
 if __name__ == "__main__":
-    write_fixture(Path(sys.argv[1]), Path(sys.argv[2]), PAGES, DIAGRAMS)
+    write_description(HERE, PAGES, DIAGRAMS)

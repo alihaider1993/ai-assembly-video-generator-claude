@@ -3,8 +3,11 @@ __pycache__/
 *.pyc
 .env
 
-uploads/*
-!uploads/.gitkeep
+# Manual PDFs and their rendered pages stay local; describe.py and the
+# two vision JSON files in each manuals/<name>/ are committed.
+uploads/
+manuals/*/manual.pdf
+manuals/*/pages/
 
 temp/
 outputs/

@@ -1,15 +1,17 @@
-"""Vision fixture for the Habitat Banbury dining chair (uploads/tablechair.pdf).
+"""Vision results for the Habitat Banbury dining chair manual (6 pages).
 
 The box holds a pair of chairs and every step says "Repeat x2"; quantities
 here are for one chair, so the video builds one.
 
-Usage (from the repo root):
-    python v2/tests/fixtures/generators/make_fixture_chair.py . v2/tests/fixtures/vision_banbury_chair
+Run: python manuals/banbury_chair/describe.py
 """
 import sys
 from pathlib import Path
 
-from fixture_lib import action, diagram, fastener, page, part, tool, write_fixture
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE.parents[1] / "v2" / "agents"))
+
+from manual_description import action, diagram, fastener, page, part, tool, write_description  # noqa: E402
 
 SIDE_RAIL = lambda qty=2: part(
     "1", "side rail", "flat wooden seat rail with dowel holes and a bolt hole in each end and slotted screw pockets",
@@ -103,4 +105,4 @@ DIAGRAMS = {
 }
 
 if __name__ == "__main__":
-    write_fixture(Path(sys.argv[1]), Path(sys.argv[2]), PAGES, DIAGRAMS)
+    write_description(HERE, PAGES, DIAGRAMS)

@@ -280,6 +280,28 @@ TABLE_EXPLODE_LIFT = 0.3
 # aren't buried inside it; several at one host are spread sideways.
 FASTENER_INSET = 0.05
 FASTENER_SPREAD = 0.04
+# A table's stretchers sit at this fraction of the leg height.
+STRETCHER_HEIGHT = 0.3
+# Inner frame rails are at most this share of half the frame's length.
+INNER_RAIL_FIT = 0.8
+
+
+def classify_rails(rails: List[str], shapes: Dict[str, Dict[str, Any]]) -> Tuple[List[str], List[str], List[str], List[str]]:
+    """(side, end, cross, inner) rails of a table frame, by name: "long" or
+    "side" rails run along the long edges, "end" or "short" rails along the
+    short ones, "cross" rails across the inside, and other named rails
+    (guides, runners) lengthways inside. When no rail is named that way,
+    the two longest are the sides and the rest the ends."""
+    by_length = sorted(rails, key=lambda uid: (-shapes[uid]["dimensions"][0], uid))
+
+    def having(*words: str) -> List[str]:
+        return [uid for uid in by_length if any(w in base_name(shapes[uid]).split() for w in words)]
+
+    sides, ends, crosses = having("long", "side"), having("end", "short"), having("cross")
+    named = set(sides) | set(ends) | set(crosses)
+    if not named:
+        return by_length[:2], by_length[2:], [], []
+    return sides, [u for u in ends if u not in sides], [u for u in crosses if u not in sides + ends], [u for u in by_length if u not in named]
 
 
 def load_part_shapes(path: Path) -> Dict[str, Dict[str, Any]]:
@@ -361,23 +383,54 @@ def compute_table_positions(
         final[uid] = [sx * corner_x, sy * corner_y, leg_h / 2]
         rotation[uid] = [0.0, 0.0, 0.0]
 
-    # Rails are stretched to fit between the legs. The two longest run
-    # along X (the top's long side); any others are turned 90 degrees to
-    # run along Y. Each direction alternates between opposite edges.
+    # Rails are stretched to fit between the legs. Side rails run along X
+    # (the top's long side) and end rails along Y, each alternating between
+    # opposite edges; cross rails span the frame along Y, evenly spaced
+    # inside it; any other rails (guides, runners) lie along X inside the
+    # frame. Names say which is which; without such names the two longest
+    # rails are the sides and the rest the ends.
     span = {"x": 2 * corner_x - leg_w, "y": 2 * corner_y - leg_w}
-    rails = sorted(by_role.get("rail", []), key=lambda uid: (-shapes[uid]["dimensions"][0], uid))
-    for i, uid in enumerate(rails):
-        length, _, height = shapes[uid]["dimensions"]
-        axis = "x" if i < 2 else "y"
-        sign = 1 if i % 2 == 0 else -1
-        z = leg_h - height / 2
-        scale[uid] = [span[axis] / length, 1.0, 1.0]
-        if axis == "x":
-            final[uid] = [0.0, sign * corner_y, z]
-            rotation[uid] = [0.0, 0.0, 0.0]
-        else:
-            final[uid] = [sign * corner_x, 0.0, z]
-            rotation[uid] = [0.0, 0.0, 90.0]
+    sides, ends, crosses, inner = classify_rails(by_role.get("rail", []), shapes)
+
+    def place_rail(uid: str, x: float, y: float, axis: str, length: float = 0.0) -> None:
+        rail_length, _, height = shapes[uid]["dimensions"]
+        final[uid] = [x, y, leg_h - height / 2]
+        rotation[uid] = [0.0, 0.0, 0.0 if axis == "x" else 90.0]
+        if length:
+            scale[uid] = [length / rail_length, 1.0, 1.0]
+
+    for i, uid in enumerate(sides):
+        place_rail(uid, 0.0, (1 if i % 2 == 0 else -1) * corner_y, "x", span["x"])
+    for i, uid in enumerate(ends):
+        place_rail(uid, (1 if i % 2 == 0 else -1) * corner_x, 0.0, "y", span["y"])
+    for i, uid in enumerate(crosses):
+        place_rail(uid, corner_x * (-1 + 2 * (i + 1) / (len(crosses) + 1)), 0.0, "y", span["y"])
+    # Inner pieces: two columns, one in each half of the frame, rows spread
+    # across Y; shortened if they wouldn't fit in their half.
+    rows = max((len(inner) + 1) // 2, 1)
+    for i, uid in enumerate(inner):
+        row_y = corner_y * 0.6 * (-1 + 2 * (i // 2 + 0.5) / rows)
+        fit = min(shapes[uid]["dimensions"][0], corner_x * INNER_RAIL_FIT)
+        place_rail(uid, (1 if i % 2 == 0 else -1) * corner_x / 2, row_y, "x", fit)
+
+    # Stretchers make a low H-frame: the shorter ones across each end
+    # between the legs, the longest one down the middle between them.
+    stretchers = sorted(by_role.get("stretcher", []), key=lambda uid: (-shapes[uid]["dimensions"][0], uid))
+    long_stretchers = [uid for uid in stretchers if any(w in base_name(shapes[uid]) for w in ("long", "middle", "centre", "center"))]
+    if not long_stretchers and len(stretchers) > 2:
+        long_stretchers = stretchers[:1]
+    stretcher_z = leg_h * STRETCHER_HEIGHT
+    end_stretchers = [uid for uid in stretchers if uid not in long_stretchers]
+    for i, uid in enumerate(end_stretchers):
+        length, thickness, _ = shapes[uid]["dimensions"]
+        final[uid] = [(1 if i % 2 == 0 else -1) * corner_x, 0.0, stretcher_z]
+        rotation[uid] = [0.0, 0.0, 90.0]
+        scale[uid] = [span["y"] / length, 1.0, 1.0]
+    for uid in long_stretchers:
+        length, thickness, _ = shapes[uid]["dimensions"]
+        final[uid] = [0.0, 0.0, stretcher_z]
+        rotation[uid] = [0.0, 0.0, 0.0]
+        scale[uid] = [(2 * corner_x - thickness) / length, 1.0, 1.0]
 
     for i, uid in enumerate(by_role.get("bracket", [])):
         sx, sy = corners[i % 4]
