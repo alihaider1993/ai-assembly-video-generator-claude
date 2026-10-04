@@ -4,6 +4,11 @@ Blender -> MP4.
 Usage (from the repo root):
     python v2/run_mvp_pipeline.py NAME       # manuals/NAME/
     python v2/run_mvp_pipeline.py DIR        # any folder with the two vision files
+    python v2/run_mvp_pipeline.py NAME --quiet
+
+--quiet prints everything except Blender's per-frame "Saved:" lines and
+progress bars, which are only counted; outputs/logs/pipeline.log keeps every
+line.
 
 The pipeline starts from the manual's page_states.json and
 diagram_analysis.json (written by manuals/NAME/describe.py). The video is
@@ -13,11 +18,12 @@ outputs/videos/NAME.mp4.
 
 import argparse
 import os
+import re
 import shutil
 import subprocess
 import sys
 from pathlib import Path
-from typing import List, Union
+from typing import List, Optional, TextIO, Union
 
 from dotenv import load_dotenv
 
@@ -26,6 +32,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import (
     FRAMES_V3_DIR,
+    OUTPUTS_DIR,
     VIDEO_V3_PATH,
     VIDEOS_DIR,
     BLENDER_V3_SCRIPT,
@@ -48,6 +55,14 @@ BLENDER_EXE = os.environ.get(
     "BLENDER_EXE",
     r"C:\Program Files\Blender Foundation\Blender 5.1\blender.exe",
 )
+
+LOG_PATH = OUTPUTS_DIR / "logs" / "pipeline.log"
+
+# Lines --quiet keeps out of the console: one per rendered frame, and the
+# progress bars moviepy redraws many times a second.
+FRAME_SAVED = re.compile(r"Saved: .*frame_\d+\.png")
+PROGRESS_BAR = re.compile(r"\d+%\|")
+
 
 class CopyStep:
     """In-process file copy, so the pipeline does not need PowerShell."""
@@ -118,10 +133,45 @@ class PipelineStepError(RuntimeError):
     pass
 
 
-def run_command(step: Step) -> None:
-    print("\n" + "=" * 80)
-    print("RUNNING:", step if isinstance(step, CopyStep) else " ".join(step))
-    print("=" * 80, flush=True)
+def say(text: str, log: Optional[TextIO]) -> None:
+    print(text, flush=True)
+    if log:
+        log.write(text + "\n")
+
+
+def run_quiet(step: List[str], log: TextIO) -> int:
+    """Run a stage, writing all its output to the log and echoing all but noise."""
+    process = subprocess.Popen(
+        step,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        env={**os.environ, "PYTHONIOENCODING": "utf-8"},
+    )
+    frames = bars = 0
+    for line in process.stdout:
+        log.write(line)
+        if FRAME_SAVED.search(line):
+            frames += 1
+        elif PROGRESS_BAR.search(line):
+            bars += 1
+        else:
+            print(line, end="", flush=True)
+    process.wait()
+
+    hidden = [f"{frames} frame 'Saved:' lines"] if frames else []
+    hidden += [f"{bars} progress-bar lines"] if bars else []
+    if hidden:
+        print(f"({' and '.join(hidden)} only in {LOG_PATH})", flush=True)
+    return process.returncode
+
+
+def run_command(step: Step, log: Optional[TextIO] = None) -> None:
+    say("\n" + "=" * 80, log)
+    say("RUNNING: " + (str(step) if isinstance(step, CopyStep) else " ".join(step)), log)
+    say("=" * 80, log)
 
     if isinstance(step, CopyStep):
         if not step.source.exists():
@@ -136,11 +186,11 @@ def run_command(step: Step) -> None:
             "in .env to the full path of blender.exe."
         )
 
-    result = subprocess.run(step, shell=False)
+    returncode = run_quiet(step, log) if log else subprocess.run(step, shell=False).returncode
 
-    if result.returncode != 0:
+    if returncode != 0:
         raise PipelineStepError(
-            f"Stage exited with code {result.returncode}: {' '.join(step)}. "
+            f"Stage exited with code {returncode}: {' '.join(step)}. "
             "Its error is shown above; later stages were not run."
         )
 
@@ -163,6 +213,8 @@ def clear_old_outputs():
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("manual", help="Manual name under manuals/, or a folder holding its vision files.")
+    parser.add_argument("--quiet", action="store_true",
+                        help="Keep per-frame lines and progress bars out of the console; the log keeps everything.")
     return parser.parse_args()
 
 
@@ -188,12 +240,20 @@ def main():
 
     clear_old_outputs()
 
+    log = None
+    if args.quiet:
+        LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+        log = LOG_PATH.open("w", encoding="utf-8")
+
     try:
         for step in build_steps(manual_dir):
-            run_command(step)
+            run_command(step, log)
     except PipelineStepError as e:
         print(f"\n[PIPELINE FAILED] {e}", file=sys.stderr)
         sys.exit(1)
+    finally:
+        if log:
+            log.close()
 
     kept = VIDEOS_DIR / f"{name}.mp4"
     shutil.copyfile(VIDEO_V3_PATH, kept)

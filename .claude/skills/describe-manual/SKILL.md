@@ -12,13 +12,14 @@ Arguments: the manual's name (a folder under `manuals/`), or a path to a PDF.
 ## Steps
 
 1. **Set up the folder.** For a PDF path, run `python utils/pdf_to_images.py <pdf> [name]`. This copies the PDF to `manuals/<name>/manual.pdf` and renders `manuals/<name>/pages/page_<n>.png`. If the folder exists but has no `pages/`, run it on `manuals/<name>/manual.pdf`.
-2. **Get an overview, then read the details.**
-   - Make one contact sheet of all pages (PIL, about 0.3x scale) and read it to understand the product and the order of steps.
-   - Then read the parts-list and step pages at about 0.6x scale, two pages per image. Don't read every page at full size; it costs a lot of context.
+2. **Get an overview, then read the details.** Run `python utils/page_sheets.py <name>`. It writes images to `manuals/<name>/sheets/`, each sized as large as the model can use, and lists any blank pages.
+   - Read `contact.png` (all pages) to understand the product and the order of steps.
+   - Read the two-page sheets `pages_NN_MM.png` for every step.
+   - Where there is small print (part-list sizes, part numbers, quantities, "Repeat xN" notes, close-up insets), don't guess from the sheet: run `python utils/page_sheets.py <name> --page N --split 2` (or `--box x0 y0 x1 y1`) and read that at full detail. Always do this for the parts-list pages.
 3. **Write `manuals/<name>/describe.py`.** Copy the structure of the existing examples: `manuals/banbury_chair/describe.py` (chair), `kaycie_bed` (bed), `melltorp_table` and `new_table_manual` (tables). Use the helpers from `v2/agents/manual_description.py`. End the file with `write_description(HERE, PAGES, DIAGRAMS)`.
 4. **Run it.** Run `python manuals/<name>/describe.py`. Then fix every "action reference(s) could not be resolved" line: each fastener and tool an action uses must be listed on that page.
-5. **Generate the video.** Run `python v2/run_mvp_pipeline.py <name>` in the background; it takes a few minutes, mostly the Blender render. To check the layout first without rendering, run the stages up to `blender_builder_v3.py` and read `v2/outputs/json/motion_plan.json` and `scene_layout.json` (`debug.layout_mode`, each part's final position).
-6. **Look at the result.** Sample about six frames from `outputs/videos/<name>.mp4` into one image (`imageio.v3.imiter`) and check that parts end up where the manual shows them. Fix the description or the layout and re-run if not.
+5. **Generate the video.** Run `python v2/run_mvp_pipeline.py <name> --quiet` in the background; it takes a few minutes, mostly the Blender render. `--quiet` leaves out only Blender's per-frame lines and progress bars; the full output is in `outputs/logs/pipeline.log`. Then run `python utils/layout_summary.py` and check `Layout mode`, the warnings, the steps, and each part's role, size and final position. Open the JSON files in `v2/outputs/json/` only when the summary shows a problem.
+6. **Look at the result.** Run `python utils/sample_frames.py <name>` and read `outputs/checks/<name>_frames.png`. Check that parts end up where the manual shows them. If a frame is unclear, look at that moment with `--at <seconds>`. Fix the description or the layout and re-run if not.
 
 ## Naming parts so they get placed
 

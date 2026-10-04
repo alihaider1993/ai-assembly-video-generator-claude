@@ -21,6 +21,10 @@ pip install -r requirements.txt        # direct dependencies only
 python utils/pdf_to_images.py <pdf> [name]   # add a manual: manuals/<name>/manual.pdf + pages/page_<n>.png
 python manuals/<name>/describe.py            # (re)generate its page_states.json + diagram_analysis.json
 python v2/run_mvp_pipeline.py <name>         # build the video → outputs/videos/<name>.mp4
+python v2/run_mvp_pipeline.py <name> --quiet # same, without per-frame lines (full log: outputs/logs/pipeline.log)
+python utils/page_sheets.py <name> [--page N --split 2]  # page images sized for reading (manuals/<name>/sheets/)
+python utils/layout_summary.py               # last run's layout + motion plan as a short table
+python utils/sample_frames.py <name> [--at S] # grid of video frames → outputs/checks/
 streamlit run app.py                         # UI: add a manual, pick one, generate, play/download
 
 python <any stage script>              # each stage is standalone; rerun one to iterate on it
@@ -30,6 +34,10 @@ pytest v2/tests/test_mvp_visual_pipeline.py::test_shape_types_are_valid  # singl
 ```
 
 Environment (`.env`, optional): `BLENDER_EXE`, defaulting to `C:\Program Files\Blender Foundation\Blender 5.1\blender.exe`.
+
+## Keeping token use down
+
+Use the tools above instead of reading raw output: run the pipeline with `--quiet`, check layouts with `layout_summary.py`, and read pages and frames through `page_sheets.py` / `sample_frames.py`, which size images to what the model can use. Don't trade away detail: read small print with `--page N --split 2`, and open the full JSON or log when a summary shows a problem. Use Grep rather than reading the large stage scripts (`scene_layout_engine.py`, `blender_builder_v3.py`) whole.
 
 ## Manuals
 

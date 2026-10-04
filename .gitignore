@@ -2,12 +2,14 @@
 __pycache__/
 *.pyc
 .env
+.claude/settings.local.json
 
 # Manual PDFs and their rendered pages stay local; describe.py and the
 # two vision JSON files in each manuals/<name>/ are committed.
 uploads/
 manuals/*/manual.pdf
 manuals/*/pages/
+manuals/*/sheets/
 
 temp/
 outputs/
