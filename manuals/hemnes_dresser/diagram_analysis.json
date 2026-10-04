@@ -1,0 +1,272 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "Assembled HEMNES 8-drawer dresser",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.2,
+          "x_max": 0.8,
+          "y_max": 0.6
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 4,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D004_001",
+        "diagram_type": "part_inventory",
+        "description": "Bag 1: cam bolt 118331 x22, cam lock 110630 x12, dowel 101350 x8, screw 100349 x12",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.35
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "118331",
+          "110630",
+          "101350",
+          "100349"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "part_inventory",
+        "description": "Bag 2: dowel 101350 x24, cam bolt 118331 x11, screws 100232 x2 and 100214 x9, cam lock 110630 x25, screw 100365 x26, foot 107862, nails 101221, cam bolts 603440 x4",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.9
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "101350",
+          "118331",
+          "100232",
+          "100214",
+          "110630",
+          "100365",
+          "107862",
+          "101221",
+          "603440"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "part_inventory",
+        "description": "Bag 3: cam lock x32, screw 100413 x12, dowel 101345 x32, plug 110519 x36, cam bolt 123492 x32, knob 117615 x12, screws 100347 x32 and 105344 x8; runners 156500 4 kinds x8; rods 131294 x4; gliders 191064 x4",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "110630",
+          "100413",
+          "101345",
+          "110519",
+          "123492",
+          "117615",
+          "156500",
+          "131294",
+          "191064"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "exploded_view",
+        "description": "Steps 2-3: side panels between the legs on dowels, cam locks",
+        "page_region": {
+          "x_min": 0.5,
+          "y_min": 0.05,
+          "x_max": 0.98,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "101350",
+          "110630",
+          "8x",
+          "12x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D008_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 24,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D024_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 19: right side frame lowered onto the rails",
+        "page_region": {
+          "x_min": 0.5,
+          "y_min": 0.05,
+          "x_max": 0.98,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "101350",
+          "5x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D024_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 29,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D029_001",
+        "diagram_type": "exploded_view",
+        "description": "Steps 25-26: top panel onto the frame",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "118331",
+          "101350",
+          "11x",
+          "9x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D029_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 45,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D045_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 48: drawers in, deeper ones at the bottom",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D045_001",
+    "warnings": [],
+    "uncertainties": []
+  }
+]

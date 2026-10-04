@@ -13,8 +13,15 @@ from pathlib import Path
 from vision_schema import validate_diagram_analysis, validate_page_state
 
 
-def part(label, name, desc, shape, material, qty, features=(), pos="center"):
-    return {
+def part(label, name, desc, shape, material, qty, features=(), pos="center", size=None, tilt=0.0, profile=None):
+    """size: (width x, depth y, height z) in mm as fitted, estimated from the
+    drawings when the manual prints none. tilt: degrees the fitted part
+    leans back (a reclined chair back; a seat sloping down to the back).
+    profile: a part's outline in its side view (plane "side": y forward
+    to back, z up) or front view (plane "front": x, z), as a path of mm
+    points traced with a strip "thickness" mm wide: bentwood frames,
+    curved rails, armrests."""
+    entry = {
         "part_uid": "", "manual_label": label, "name": name,
         "visual_description": desc, "shape_family": shape,
         "material_hint": material, "quantity_visible": qty,
@@ -23,6 +30,13 @@ def part(label, name, desc, shape, material, qty, features=(), pos="center"):
         ],
         "page_position": pos,
     }
+    if size:
+        entry["size_mm"] = list(size)
+    if tilt:
+        entry["tilt_deg"] = tilt
+    if profile:
+        entry["profile"] = profile
+    return entry
 
 
 def fastener(label, name, shape, qty):

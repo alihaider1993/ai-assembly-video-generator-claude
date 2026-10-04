@@ -1,0 +1,874 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "\u00c5LHULT dining chair: four legs, seat, tall back with vertical slats under a top rail",
+    "uncertainties": [
+      "Cover page; product name and IKEA logo."
+    ]
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [
+      {
+        "tool_uid": "T002_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Cross head screwdriver needed (not supplied); soft floor; call IKEA if unsure."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P003_001",
+        "manual_label": "",
+        "name": "left corner bracket",
+        "visual_description": "small metal angle bracket 102646 with a slotted hole in each leg",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "slotted screw holes"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P003_002",
+        "manual_label": "",
+        "name": "right corner bracket",
+        "visual_description": "small metal angle bracket 102646 with a slotted hole in each leg",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "slotted screw holes"
+          }
+        ],
+        "page_position": "right"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F003_001",
+        "manual_label": "128745",
+        "name": "frame bolt 128745",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_002",
+        "manual_label": "100215",
+        "name": "top rail screw 100215",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F003_003",
+        "manual_label": "109598",
+        "name": "bracket screw 109598",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_004",
+        "manual_label": "100400",
+        "name": "seat screw 100400",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_005",
+        "manual_label": "101357",
+        "name": "wooden dowel 101357",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F003_006",
+        "manual_label": "101350",
+        "name": "wooden dowel 101350",
+        "shape_family": "dowel",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T003_001",
+        "name": "allen key 100092"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Only the hardware is drawn; the wooden parts appear in the steps.",
+      "A slotted spacer strip (1x) is kept for steps 7 and 9; it is a temporary jig, not part of the chair."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P004_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left wooden chair side: a short front leg and a tall angled back leg joined by a seat rail and a lower rail",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes on the inner face of each leg"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "slat and top rail holes in the back leg"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P004_002",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right wooden chair side: a short front leg and a tall angled back leg joined by a seat rail and a lower rail",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes on the inner face of each leg"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "slat and top rail holes in the back leg"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P004_003",
+        "manual_label": "",
+        "name": "left corner bracket",
+        "visual_description": "small metal angle bracket 102646 with a slotted hole in each leg",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "slotted screw holes"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P004_004",
+        "manual_label": "",
+        "name": "right corner bracket",
+        "visual_description": "small metal angle bracket 102646 with a slotted hole in each leg",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "slotted screw holes"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P004_005",
+        "manual_label": "",
+        "name": "front rail",
+        "visual_description": "straight wooden seat rail between the two front legs, dowel holes in each end",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes in the ends"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P004_006",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "straight wooden seat rail between the two back legs, dowel holes in each end and slat holes on top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slat holes along the top edge"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F004_001",
+        "manual_label": "109598",
+        "name": "bracket screw 109598",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F004_002",
+        "manual_label": "101357",
+        "name": "wooden dowel 101357",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F004_003",
+        "manual_label": "101350",
+        "name": "wooden dowel 101350",
+        "shape_family": "dowel",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T004_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A004_001",
+        "action_type": "attach",
+        "moving_part_ref": "P004_003",
+        "target_part_ref": "P004_001",
+        "fastener_ref": "F004_001",
+        "tool_ref": "T004_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 1: 2x left corner bracket (102646) screwed with screw 109598 to the inside of the seat rail of the left side frame lying on the floor"
+      },
+      {
+        "action_uid": "A004_002",
+        "action_type": "attach",
+        "moving_part_ref": "P004_004",
+        "target_part_ref": "P004_002",
+        "fastener_ref": "F004_001",
+        "tool_ref": "T004_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 1: 2x right corner bracket (102646) screwed with screw 109598 to the inside of the seat rail of the right side frame"
+      },
+      {
+        "action_uid": "A004_003",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_005",
+        "fastener_ref": "F004_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 2: wooden dowels 101357 and 101350 pushed into the holes in the ends of the front rail"
+      },
+      {
+        "action_uid": "A004_004",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_006",
+        "fastener_ref": "F004_003",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 2: 2x dowel 101350 in each end of the back rail"
+      }
+    ],
+    "final_visible_structure": "two side frames with corner brackets; front and back rails with dowels in their ends",
+    "uncertainties": [
+      "Steps 1 and 2 on one page. Brackets must sit flush with the rail top (shown in the right/wrong inset)."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left wooden chair side: a short front leg and a tall angled back leg joined by a seat rail and a lower rail",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes on the inner face of each leg"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "slat and top rail holes in the back leg"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P005_002",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right wooden chair side: a short front leg and a tall angled back leg joined by a seat rail and a lower rail",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes on the inner face of each leg"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "slat and top rail holes in the back leg"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P005_003",
+        "manual_label": "",
+        "name": "front rail",
+        "visual_description": "straight wooden seat rail between the two front legs, dowel holes in each end",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes in the ends"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P005_004",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "straight wooden seat rail between the two back legs, dowel holes in each end and slat holes on top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slat holes along the top edge"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F005_001",
+        "manual_label": "101350",
+        "name": "wooden dowel 101350",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F005_002",
+        "manual_label": "128745",
+        "name": "frame bolt 128745",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T005_001",
+        "name": "allen key 100092"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A005_001",
+        "action_type": "attach",
+        "moving_part_ref": "P005_003",
+        "target_part_ref": "P005_001",
+        "fastener_ref": "F005_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 3: front rail stood on its end and pushed with its dowels into the holes of the left side frame lying on the floor"
+      },
+      {
+        "action_uid": "A005_002",
+        "action_type": "attach",
+        "moving_part_ref": "P005_004",
+        "target_part_ref": "P005_001",
+        "fastener_ref": "F005_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 3: back rail pushed with its dowels into the left side frame"
+      },
+      {
+        "action_uid": "A005_003",
+        "action_type": "attach",
+        "moving_part_ref": "P005_002",
+        "target_part_ref": "P005_004",
+        "fastener_ref": "F005_002",
+        "tool_ref": "T005_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 4: right side frame laid on the ends of the front rail and back rail and fixed with 2x frame bolt 128745 tightened with allen key 100092"
+      }
+    ],
+    "final_visible_structure": "chair frame lying on its side: two side frames joined by the front and back rails",
+    "uncertainties": [
+      "Steps 3 and 4 on one page; the frame is turned over between them."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left wooden chair side: a short front leg and a tall angled back leg joined by a seat rail and a lower rail",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes on the inner face of each leg"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "slat and top rail holes in the back leg"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P006_002",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right wooden chair side: a short front leg and a tall angled back leg joined by a seat rail and a lower rail",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes on the inner face of each leg"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "slat and top rail holes in the back leg"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P006_003",
+        "manual_label": "",
+        "name": "front rail",
+        "visual_description": "straight wooden seat rail between the two front legs, dowel holes in each end",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes in the ends"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P006_004",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "straight wooden seat rail between the two back legs, dowel holes in each end and slat holes on top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "two dowel holes in each end"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slat holes along the top edge"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P006_005",
+        "manual_label": "",
+        "name": "back slat",
+        "visual_description": "long thin wooden back slat",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "128745",
+        "name": "frame bolt 128745",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T006_001",
+        "name": "allen key 100092"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A006_001",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P006_003",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 5: frame turned over; 2x frame bolt 128745 tightened through the other side frame into the rails"
+      },
+      {
+        "action_uid": "A006_002",
+        "action_type": "insert",
+        "moving_part_ref": "P006_005",
+        "target_part_ref": "P006_004",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 6: chair stood upright; 4x back slat pushed down into the holes along the top of the back rail"
+      }
+    ],
+    "final_visible_structure": "upright chair frame with four back slats standing in the back rail",
+    "uncertainties": [
+      "Steps 5 and 6 on one page."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left wooden chair side: a short front leg and a tall angled back leg joined by a seat rail and a lower rail",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes on the inner face of each leg"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "slat and top rail holes in the back leg"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right wooden chair side: a short front leg and a tall angled back leg joined by a seat rail and a lower rail",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes on the inner face of each leg"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "slat and top rail holes in the back leg"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P007_003",
+        "manual_label": "",
+        "name": "back slat",
+        "visual_description": "long thin wooden back slat",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P007_004",
+        "manual_label": "",
+        "name": "top rail",
+        "visual_description": "slightly curved wooden crest rail across the tops of the back legs and slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slat holes underneath"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes in the ends"
+          }
+        ],
+        "page_position": "top"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "100215",
+        "name": "top rail screw 100215",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T007_001",
+        "name": "allen key 100092"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "attach",
+        "moving_part_ref": "P007_004",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 8: top rail pressed down onto the slat tops and the back legs, fixed with 2x screw 100215 through the back legs using allen key 100092; no power drill"
+      }
+    ],
+    "final_visible_structure": "chair frame with the top rail across the back legs and slats",
+    "uncertainties": [
+      "Step 7: the slotted spacer strip is laid over the slat tops to space them; it is not drawn in the video."
+    ]
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "seat",
+        "visual_description": "flat wooden seat board with notches for the back legs",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "pre-drilled screw holes underneath"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "",
+        "name": "left corner bracket",
+        "visual_description": "small metal angle bracket 102646 with a slotted hole in each leg",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "slotted screw holes"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P008_003",
+        "manual_label": "",
+        "name": "right corner bracket",
+        "visual_description": "small metal angle bracket 102646 with a slotted hole in each leg",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "slotted screw holes"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P008_004",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left wooden chair side: a short front leg and a tall angled back leg joined by a seat rail and a lower rail",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes on the inner face of each leg"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "slat and top rail holes in the back leg"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P008_005",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right wooden chair side: a short front leg and a tall angled back leg joined by a seat rail and a lower rail",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes on the inner face of each leg"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "slat and top rail holes in the back leg"
+          }
+        ],
+        "page_position": "right"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "100400",
+        "name": "seat screw 100400",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T008_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "place",
+        "moving_part_ref": "P008_001",
+        "target_part_ref": "P008_002",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 10: chair turned upside down onto the seat lying on a table; 4x seat screw 100400 driven through the corner brackets into the seat"
+      }
+    ],
+    "final_visible_structure": "finished chair",
+    "uncertainties": [
+      "Step 9: the spacer strip is pulled out of the top rail; nothing is fitted."
+    ]
+  }
+]

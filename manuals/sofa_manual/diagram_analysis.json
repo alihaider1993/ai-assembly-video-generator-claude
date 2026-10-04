@@ -1,0 +1,545 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "Assembled KIVIK chaise longue",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.25,
+          "x_max": 0.8,
+          "y_max": 0.75
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D002_001",
+        "diagram_type": "warning",
+        "description": "Two people, soft floor, call IKEA if unsure",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D003_001",
+        "diagram_type": "part_inventory",
+        "description": "Fittings: nut 100712 x5, washer 100854 x5, toothed washer 100851 x4, screw 111374 x4, screw 121365 x4, bolt 100471 x4",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.25,
+          "x_max": 0.95,
+          "y_max": 0.45
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "100712",
+          "100854",
+          "100851",
+          "111374",
+          "121365",
+          "100471",
+          "5x",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_002",
+        "diagram_type": "part_inventory",
+        "description": "Allen key 100002 x1 and box spanner 120202 x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.45,
+          "y_max": 0.7
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "100002",
+          "120202",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_003",
+        "diagram_type": "part_inventory",
+        "description": "Foot 121236 x4",
+        "page_region": {
+          "x_min": 0.45,
+          "y_min": 0.45,
+          "x_max": 0.85,
+          "y_max": 0.7
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "121236",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_004",
+        "diagram_type": "part_inventory",
+        "description": "Joining kit: connecting rail 121230 x1, joining rail 121227 x1, corner bracket 121228 x2, clamp bracket 121231 x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.75,
+          "x_max": 0.95,
+          "y_max": 0.98
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "121230",
+          "121227",
+          "121228",
+          "121231",
+          "1x",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 1: 4x foot 121236 into the base of the chaise frame",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.3,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "121236",
+          "4x"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D005_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 2: armrest removed from the sofa end, 4x nut 100712 and washer 100854 with box spanner 120202",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.3,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "100712",
+          "100854",
+          "120202",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D006_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D007_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 3: connecting rail 121230 fixed to the sofa end with screw 121365, nut 100712, washer 100854",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.4,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "121230",
+          "121365",
+          "100712",
+          "100854",
+          "120202",
+          "100002"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D007_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 4: joining rail 121227 screwed to the sofa base with 3x screw 121365",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "121227",
+          "121365",
+          "100002",
+          "3x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D008_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D009_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 5: 2x corner bracket 121228 screwed to the armrest with 4x screw 111374",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "121228",
+          "111374",
+          "100002",
+          "2x",
+          "4x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D009_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D010_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 6: clamp bracket 121231 hooked onto the chaise frame and armrest",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "121231"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D010_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D011_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 7: 2x bolt 100471 with toothed washer 100851, washer 100854, nut 100712",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "100471",
+          "100851",
+          "100854",
+          "100712",
+          "120202",
+          "2x"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D011_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D012_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 8: clamp bracket pushed up and tightened",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.48
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D012_002",
+        "diagram_type": "exploded_view",
+        "description": "Step 9: 2x bolt 100471 with toothed washer, washer and nut",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.5,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "100471",
+          "100851",
+          "100854",
+          "100712",
+          "2x"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D012_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D013_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 10: turned upright, chaise hooked onto the joining rail pegs (2x)",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "2x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D013_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D014_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 11: seat cushion into the chaise frame",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.48
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "place",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D014_002",
+        "diagram_type": "assembly_view",
+        "description": "Step 12: back cushion onto the chaise",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.5,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "place",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D014_001",
+    "warnings": [],
+    "uncertainties": []
+  }
+]

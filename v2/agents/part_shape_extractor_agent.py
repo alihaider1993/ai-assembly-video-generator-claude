@@ -37,6 +37,7 @@ from config import (
     UNIVERSAL_GRAPH_JSON,
     DIAGRAM_ANALYSIS_JSON,
     DIAGRAM_ANALYSIS_COPY_JSON,
+    PAGE_STATES_JSON,
     PART_SHAPES_JSON,
 )
 
@@ -66,6 +67,16 @@ MM_PAIR_RE = re.compile(r"\((\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)\s*mm\)", re.IG
 FASTENER_M_RE = re.compile(r"m(\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)\s*mm", re.IGNORECASE)
 FASTENER_LEN_RE = re.compile(r"(\d+(?:\.\d+)?)\s*mm", re.IGNORECASE)
 
+# [diameter, diameter, length] in metres for small hardware with no size in
+# its name, by shape family.
+SMALL_FASTENER_SIZES = {
+    "cam": [0.015, 0.015, 0.012],
+    "plug": [0.008, 0.008, 0.025],
+    "nail": [0.002, 0.002, 0.03],
+    "other": [0.008, 0.008, 0.03],
+    "unknown": [0.008, 0.008, 0.03],
+}
+
 
 def load_diagram_analysis() -> List[Dict[str, Any]]:
     """Prefer the authoritative outputs/json copy; fall back to the
@@ -75,6 +86,45 @@ def load_diagram_analysis() -> List[Dict[str, Any]]:
     if DIAGRAM_ANALYSIS_COPY_JSON.exists():
         return load_json(DIAGRAM_ANALYSIS_COPY_JSON)
     return []
+
+
+INSTANCE_SUFFIX_RE = re.compile(r"\s+\d+\s*/\s*\d+$")
+
+
+def described_shapes() -> Dict[str, Dict[str, Any]]:
+    """Part name -> the estimated size, lean and outline describe.py gave
+    it (size_mm, tilt_deg, profile), from the copied page_states.json; the
+    last page that gives a field wins."""
+    if not PAGE_STATES_JSON.exists():
+        return {}
+    shapes: Dict[str, Dict[str, Any]] = {}
+    for page in load_json(PAGE_STATES_JSON):
+        for part in page.get("visible_parts", []):
+            fields = {k: part[k] for k in ("size_mm", "tilt_deg", "profile") if part.get(k)}
+            if fields:
+                shapes.setdefault(norm(part.get("name", "")), {}).update(fields)
+    return shapes
+
+
+# For an outline traced in each view: the axes (of x, y, z) its two figures
+# run along, and the axis it is extruded along.
+PROFILE_AXES = {"side": (1, 2, 0), "front": (0, 2, 1), "top": (0, 1, 2)}
+
+
+def profile_dimensions(profile: Dict[str, Any], dimensions: List[float]) -> List[float]:
+    """[x, y, z] in metres of a traced outline: its extent (plus the strip
+    thickness for an open path) in its view, and the part's own size
+    along the axis it is extruded."""
+    u_axis, v_axis, w_axis = PROFILE_AXES.get(profile.get("plane", "side"), PROFILE_AXES["side"])
+    points = profile.get("path", [])
+    pad = 0.0 if profile.get("closed") else float(profile.get("thickness", 30)) / 1000.0
+    us = [p[0] / 1000.0 for p in points]
+    vs = [p[1] / 1000.0 for p in points]
+    out = [0.0, 0.0, 0.0]
+    out[u_axis] = max(us) - min(us) + pad
+    out[v_axis] = max(vs) - min(vs) + pad
+    out[w_axis] = dimensions[w_axis]
+    return out
 
 
 def build_label_dimensions_mm(diagram_analysis: List[Dict[str, Any]]) -> Dict[str, Tuple[float, float]]:
@@ -167,16 +217,44 @@ def primitive_and_shape_type(shape_family: str, material_hint: str) -> Tuple[str
 
 
 # Generic furniture vocabulary -> the part's role, which fixes how it sits in
-# the finished piece, and a plausible [x, y, z] size in meters (z is up) for
-# when the manual gives no measurement. The first match wins, so a "seat
-# rail" is a rail, not a seat.
+# the finished piece, a plausible [x, y, z] size in meters (z is up) for
+# when the manual gives no measurement, and how a measured pair of figures
+# is turned (ROLE_ORIENTATION). The first match wins, so a "seat rail" is a
+# rail, not a seat, and a "drawer front" is not a front panel.
 PART_ROLES = [
-    ("top", re.compile(r"\b(table ?top|top panel|worktop|desktop)\b"), [1.2, 0.75, 0.025]),
+    ("top", re.compile(r"\b(table ?top|top panels?|worktop|desktop|top boards?|top shelf)\b"), [1.2, 0.75, 0.025]),
     # A bed's corner posts, which the headboard/footboard rails run between.
     ("post", re.compile(r"\b(head|foot)board (foot|feet|posts?|legs?)\b"), [0.045, 0.045, 0.9]),
     # On chairs a "leg frame" is a wide U-shaped frame, not a post.
     ("leg_frame", re.compile(r"\blegs? frame\b"), [0.42, 0.04, 0.45]),
+    # A chair side: front leg, tall back leg and the rails between them,
+    # standing in the Y/Z plane (depth along Y).
+    ("side_frame", re.compile(r"\bside frames?\b"), [0.04, 0.42, 0.95]),
+    # Drawers: each drawer is a front, two sides, a back and a bottom.
+    ("drawer_front", re.compile(r"\bdrawer fronts?\b"), [0.76, 0.018, 0.16]),
+    ("drawer_side", re.compile(r"\bdrawer sides?\b"), [0.012, 0.4, 0.12]),
+    ("drawer_back", re.compile(r"\bdrawer backs?\b"), [0.7, 0.012, 0.12]),
+    ("drawer_bottom", re.compile(r"\bdrawer (bottom|base)s?\b"), [0.7, 0.4, 0.004]),
+    ("runner", re.compile(r"\bdrawer (runners?|slides?)\b"), [0.4, 0.012, 0.035]),
+    # Upholstery: cushions and the sofa or chair body they sit on.
+    ("back_cushion", re.compile(r"\b(back cushions?|backrest cushions?|back pillows?)\b"), [0.8, 0.2, 0.45]),
+    ("cushion", re.compile(r"\b(seat cushions?|cushions?|mattress(es)?)\b"), [0.8, 0.8, 0.12]),
+    ("body", re.compile(r"\b(sofa|couch|settee|chaise|armchair|ottoman|footstool|pouffe?)\b"), [1.0, 0.9, 0.45]),
+    # A bed's head or foot end as one board (not its rails or posts).
+    ("end_board", re.compile(r"\b(head|foot)boards?\b(?!\s+(rails?|foot|feet|posts?|legs?))"), [0.95, 0.04, 0.9]),
+    # Cabinet carcass panels.
+    ("side_panel", re.compile(r"\b(side panels?|end panels?|gables?|side boards?)\b"), [0.018, 0.4, 0.8]),
+    ("divider", re.compile(r"\b(dividers?|partitions?|middle panels?|cent(re|er) panels?|vertical panels?|mullions?)\b"),
+     [0.018, 0.38, 0.7]),
+    ("back_panel", re.compile(r"\b(back panels?|back boards?|backboards?|rear panels?|hardboard)\b"), [0.8, 0.005, 0.8]),
+    ("front_panel", re.compile(r"\bfront panels?\b"), [0.9, 0.018, 0.4]),
+    ("door", re.compile(r"\bdoors?\b"), [0.4, 0.018, 0.7]),
+    ("lid", re.compile(r"\blids?\b"), [0.9, 0.45, 0.018]),
+    ("plinth", re.compile(r"\b(plinths?|kick ?boards?|toe ?kicks?|base rails?|skirting)\b"), [0.76, 0.018, 0.08]),
+    ("shelf", re.compile(r"\b(shelf|shelves|bottom panels?|base panels?|bottom boards?)\b"), [0.76, 0.38, 0.018]),
     ("leg", re.compile(r"\blegs?\b"), [0.05, 0.05, 0.72]),
+    # Short feet under a sofa, cabinet or bed base.
+    ("foot", re.compile(r"\b(foot|feet)\b"), [0.06, 0.06, 0.1]),
     ("back", re.compile(r"\b(chair back|backrest|back rest|seat back)\b"), [0.42, 0.04, 0.9]),
     ("slat", re.compile(r"\bslats?\b"), [0.9, 0.07, 0.018]),
     # Low bars between a table's legs (an H-frame), below the top rails.
@@ -184,11 +262,30 @@ PART_ROLES = [
     ("rail", re.compile(r"\b(rails?|aprons?)\b"), [0.9, 0.03, 0.07]),
     ("seat", re.compile(r"\bseat\b"), [0.45, 0.42, 0.05]),
     ("bracket", re.compile(r"\bbrackets?\b"), [0.08, 0.08, 0.04]),
+    ("handle", re.compile(r"\b(handles?|knobs?|pulls?)\b"), [0.12, 0.025, 0.03]),
+    ("hinge", re.compile(r"\bhinges?\b"), [0.035, 0.05, 0.012]),
 ]
 
+# How a measured (A x B mm) pair is turned, by role: "flat" lies down
+# (larger along X, smaller along Y), "bar" stands up, "tall"/"wide" stand
+# facing the front (XZ) or the side ("side_tall"/"side_wide", YZ) with the
+# larger figure as height or width; "fixed" keeps the default (a bracket's
+# figures don't say which faces they cover). Others are beams along X.
+ROLE_ORIENTATION = {
+    "top": "flat", "seat": "flat", "slat": "flat", "shelf": "flat", "lid": "flat", "cushion": "flat",
+    "drawer_bottom": "flat", "body": "flat",
+    "leg": "bar", "post": "bar", "foot": "bar",
+    "leg_frame": "tall", "back": "tall", "door": "tall", "back_panel": "tall",
+    "drawer_front": "wide", "drawer_back": "wide", "front_panel": "wide", "end_board": "wide", "back_cushion": "wide",
+    "side_frame": "side_tall", "side_panel": "side_tall", "divider": "side_tall",
+    "drawer_side": "side_wide",
+    "bracket": "fixed", "handle": "fixed", "hinge": "fixed",
+}
+
 # Roles whose part is several pieces joined together; blender_builder_v3.py
-# builds these primitives from boxes.
-ROLE_PRIMITIVES = {"leg_frame": "u_frame", "back": "slatted_back"}
+# builds these primitives from boxes. Upholstery gets rounded corners.
+ROLE_PRIMITIVES = {"leg_frame": "u_frame", "back": "slatted_back", "side_frame": "side_frame",
+                   "cushion": "rounded_box", "back_cushion": "rounded_box", "body": "rounded_box"}
 
 
 def part_role(name: str) -> str:
@@ -200,26 +297,24 @@ def part_role(name: str) -> str:
 
 
 def role_dimensions(role: str, dims_mm: Optional[Tuple[float, float]]) -> List[float]:
-    """[x, y, z] in meters for a part with a known role. A measured pair is
-    oriented by role: a top, seat or slat lies flat, a leg or post stands
-    up, a leg frame or chair back stands up facing Y with its smaller
-    figure as its width, and a rail runs horizontally along X with its
-    smaller figure as its height."""
+    """[x, y, z] in meters for a part with a known role: the default, or a
+    measured pair turned the way the role sits (ROLE_ORIENTATION), with
+    the default for the third side."""
     default = next(dims for r, _, dims in PART_ROLES if r == role)
-    # A bracket's measured pair doesn't say which faces it covers.
-    if not dims_mm or role == "bracket":
+    orientation = ROLE_ORIENTATION.get(role, "beam")
+    if not dims_mm or orientation == "fixed":
         return list(default)
 
     larger = max(dims_mm) / 1000.0
     smaller = min(dims_mm) / 1000.0
-
-    if role in {"top", "seat", "slat"}:
-        return [larger, smaller, default[2]]
-    if role in {"leg", "post"}:
-        return [smaller, smaller, larger]
-    if role in {"leg_frame", "back"}:
-        return [smaller, default[1], larger]
-    return [larger, default[1], smaller]
+    return {
+        "flat": [larger, smaller, default[2]],
+        "bar": [smaller, smaller, larger],
+        "tall": [smaller, default[1], larger],
+        "wide": [larger, default[1], smaller],
+        "side_tall": [default[0], smaller, larger],
+        "side_wide": [default[0], larger, smaller],
+    }.get(orientation, [larger, default[1], smaller])
 
 
 DEFAULT_THICKNESS_M = {
@@ -358,6 +453,7 @@ def extract_part_shapes():
     }
 
     # --- Real parts (OBJ*) ---
+    described_by_name = described_shapes()
     for part in graph.get("parts", []):
         part_uid = part.get("part_uid")
         if not part_uid:
@@ -387,6 +483,17 @@ def extract_part_shapes():
         else:
             dims_source = "fallback_default"
 
+        # Estimated size and outline from describe.py, when it gave them.
+        described = described_by_name.get(norm(INSTANCE_SUFFIX_RE.sub("", part.get("canonical_name", "")))) or {}
+        profile = described.get("profile")
+        if described.get("size_mm"):
+            dimensions = [v / 1000.0 for v in described["size_mm"]]
+            if not dims_mm:
+                dims_source = "estimated"
+        if profile:
+            dimensions = profile_dimensions(profile, dimensions)
+            primitive = "profile"
+
         part_shapes["parts"].append({
             "part_uid": part_uid,  # canonical: OBJ0001, etc.
             "canonical_name": part.get("canonical_name", part_uid),
@@ -408,6 +515,8 @@ def extract_part_shapes():
                 {"anchor_uid": "A_BOTTOM", "relative_position": [0.5, 1.0]},
             ],
             "labels": labels,
+            "tilt_deg": described.get("tilt_deg", 0.0),
+            "profile": profile,
             "confidence": part.get("confidence", 0.7),
         })
 
@@ -425,6 +534,14 @@ def extract_part_shapes():
             dimensions = [0.01, 0.01, 0.15]
             primitive, shape_type = "cylinder", "cylinder"
             dims_source = "fallback_default"
+        elif shape_family in SMALL_FASTENER_SIZES:
+            # Cam locks, plugs, nails and other small hardware: a few
+            # centimetres at most, never a furniture part's default size.
+            diameter_m, length_m = parse_fastener_dimensions_m(name) if FASTENER_LEN_RE.search(name) else (0.0, 0.0)
+            default = SMALL_FASTENER_SIZES[shape_family]
+            dimensions = [diameter_m or default[0], diameter_m or default[1], length_m or default[2]]
+            primitive, shape_type = "cylinder", "cylinder"
+            dims_source = "parsed_from_name" if length_m else "fallback_default"
         else:
             primitive, shape_type = primitive_and_shape_type(shape_family, "metal")
 

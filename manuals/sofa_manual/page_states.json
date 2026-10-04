@@ -1,0 +1,1390 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "KIVIK chaise longue section with a long seat cushion and a back cushion",
+    "uncertainties": [
+      "Cover page; product name KIVIK and IKEA logo."
+    ]
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Two people needed; assemble on a soft floor; call IKEA if unsure."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P003_001",
+        "manual_label": "121236",
+        "name": "foot",
+        "visual_description": "square tapered plastic foot 121236",
+        "shape_family": "block",
+        "material_hint": "plastic",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "push-fit peg on top"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          60,
+          60,
+          100
+        ]
+      },
+      {
+        "part_uid": "P003_002",
+        "manual_label": "121228",
+        "name": "corner bracket",
+        "visual_description": "metal angle bracket 121228 with round and slotted holes",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "slotted holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "round holes"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P003_003",
+        "manual_label": "121230",
+        "name": "connecting rail",
+        "visual_description": "long metal bar 121230 with an angled end plate at each end",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes in the end plates"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P003_004",
+        "manual_label": "121227",
+        "name": "joining rail",
+        "visual_description": "flat metal strip 121227 with three pegs",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P003_005",
+        "manual_label": "121231",
+        "name": "clamp bracket",
+        "visual_description": "U-shaped metal clamp bracket 121231 with a screw and pressure disc",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "threaded hole for the clamp screw"
+          }
+        ],
+        "page_position": "right"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F003_001",
+        "manual_label": "100712",
+        "name": "nut 100712",
+        "shape_family": "nut",
+        "quantity_visible": 5
+      },
+      {
+        "fastener_uid": "F003_002",
+        "manual_label": "100854",
+        "name": "washer 100854",
+        "shape_family": "washer",
+        "quantity_visible": 5
+      },
+      {
+        "fastener_uid": "F003_003",
+        "manual_label": "100851",
+        "name": "toothed washer 100851",
+        "shape_family": "washer",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_004",
+        "manual_label": "111374",
+        "name": "screw 111374",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_005",
+        "manual_label": "121365",
+        "name": "screw 121365",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_006",
+        "manual_label": "100471",
+        "name": "bolt 100471",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T003_001",
+        "name": "allen key 100002"
+      },
+      {
+        "tool_uid": "T003_002",
+        "name": "box spanner 120202"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Only the hardware and the joining kit are drawn; the chaise frame, sofa, armrest and cushions appear in the steps.",
+      "Inset: the chaise is fitted to the end of a sofa, forming an L."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Unpacking: cut the packaging open without a knife into the fabric; lay the chaise on its back on a soft surface."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "",
+        "name": "chaise frame",
+        "visual_description": "long upholstered chaise longue base frame, spring base open underneath",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "foot holes in the corners of the base"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes in the end"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          900,
+          1630,
+          450
+        ]
+      },
+      {
+        "part_uid": "P005_002",
+        "manual_label": "121236",
+        "name": "foot",
+        "visual_description": "square tapered plastic foot 121236",
+        "shape_family": "block",
+        "material_hint": "plastic",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "push-fit peg on top"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          60,
+          60,
+          100
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A005_001",
+        "action_type": "insert",
+        "moving_part_ref": "P005_002",
+        "target_part_ref": "P005_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 1: 4x foot 121236 pushed and turned into the corners of the base of the chaise frame lying on its back"
+      }
+    ],
+    "final_visible_structure": "chaise frame on its back with four feet in its base corners",
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "",
+        "name": "sofa section",
+        "visual_description": "existing upholstered KIVIK 2-seat sofa section with its backrest, laid on its back, its end armrest taken off",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "threaded studs and holes in the end of the base frame"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          1900,
+          950,
+          830
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              950,
+              0
+            ],
+            [
+              950,
+              830
+            ],
+            [
+              760,
+              830
+            ],
+            [
+              690,
+              450
+            ],
+            [
+              0,
+              450
+            ]
+          ],
+          "closed": true
+        }
+      },
+      {
+        "part_uid": "P006_002",
+        "manual_label": "",
+        "name": "armrest",
+        "visual_description": "upholstered end armrest taken off the sofa and refitted to the outer side of the chaise",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes on its inner face"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          150,
+          950,
+          650
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "100712",
+        "name": "nut 100712",
+        "shape_family": "nut",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F006_002",
+        "manual_label": "100854",
+        "name": "washer 100854",
+        "shape_family": "washer",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T006_001",
+        "name": "box spanner 120202"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "sofa section on its back with the end armrest taken off",
+    "uncertainties": [
+      "Step 2: the 4 nuts 100712 and washers 100854 holding the sofa's end armrest are undone with box spanner 120202 and the armrest is lifted away, to be refitted to the chaise later. A removal, so no action is recorded.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "sofa section",
+        "visual_description": "existing upholstered KIVIK 2-seat sofa section with its backrest, laid on its back, its end armrest taken off",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "threaded studs and holes in the end of the base frame"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          1900,
+          950,
+          830
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              950,
+              0
+            ],
+            [
+              950,
+              830
+            ],
+            [
+              760,
+              830
+            ],
+            [
+              690,
+              450
+            ],
+            [
+              0,
+              450
+            ]
+          ],
+          "closed": true
+        }
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "121230",
+        "name": "connecting rail",
+        "visual_description": "long metal bar 121230 with an angled end plate at each end",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes in the end plates"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P007_003",
+        "manual_label": "121227",
+        "name": "joining rail",
+        "visual_description": "flat metal strip 121227 with three pegs",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P007_004",
+        "manual_label": "121228",
+        "name": "corner bracket",
+        "visual_description": "metal angle bracket 121228 with round and slotted holes",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "slotted holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "round holes"
+          }
+        ],
+        "page_position": "right"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "100712",
+        "name": "nut 100712",
+        "shape_family": "nut",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F007_002",
+        "manual_label": "100854",
+        "name": "washer 100854",
+        "shape_family": "washer",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F007_003",
+        "manual_label": "121365",
+        "name": "screw 121365",
+        "shape_family": "screw",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T007_001",
+        "name": "box spanner 120202"
+      },
+      {
+        "tool_uid": "T007_002",
+        "name": "allen key 100002"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "attach",
+        "moving_part_ref": "P007_002",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_003",
+        "tool_ref": "T007_002",
+        "direction_hint": "inward",
+        "visual_evidence": "step 3: connecting rail 121230 held against the end of the sofa section base and fixed with 1x screw 121365 using allen key 100002"
+      },
+      {
+        "action_uid": "A007_002",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P007_002",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 3: 1x nut 100712 and washer 100854 tightened on the stud through the connecting rail end plate with box spanner 120202"
+      }
+    ],
+    "final_visible_structure": "connecting rail fixed across the end of the sofa base",
+    "uncertainties": [
+      "Info inset: shows where the joining kit (connecting rail 121230, joining rail 121227, 2x corner bracket 121228) goes."
+    ]
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "sofa section",
+        "visual_description": "existing upholstered KIVIK 2-seat sofa section with its backrest, laid on its back, its end armrest taken off",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "threaded studs and holes in the end of the base frame"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          1900,
+          950,
+          830
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              950,
+              0
+            ],
+            [
+              950,
+              830
+            ],
+            [
+              760,
+              830
+            ],
+            [
+              690,
+              450
+            ],
+            [
+              0,
+              450
+            ]
+          ],
+          "closed": true
+        }
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "121227",
+        "name": "joining rail",
+        "visual_description": "flat metal strip 121227 with three pegs",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P008_003",
+        "manual_label": "121230",
+        "name": "connecting rail",
+        "visual_description": "long metal bar 121230 with an angled end plate at each end",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes in the end plates"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "121365",
+        "name": "screw 121365",
+        "shape_family": "screw",
+        "quantity_visible": 3
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T008_001",
+        "name": "allen key 100002"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "attach",
+        "moving_part_ref": "P008_002",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 4: joining rail 121227 screwed to the sofa section base frame with 3x screw 121365 and allen key 100002, pegs facing out"
+      }
+    ],
+    "final_visible_structure": "joining rail along the bottom of the sofa's end",
+    "uncertainties": [
+      "Inset: the pegs on the joining rail must face outward, not inward."
+    ]
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "",
+        "name": "chaise frame",
+        "visual_description": "long upholstered chaise longue base frame, spring base open underneath",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "foot holes in the corners of the base"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes in the end"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          900,
+          1630,
+          450
+        ]
+      },
+      {
+        "part_uid": "P009_002",
+        "manual_label": "",
+        "name": "armrest",
+        "visual_description": "upholstered end armrest taken off the sofa and refitted to the outer side of the chaise",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes on its inner face"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          150,
+          950,
+          650
+        ]
+      },
+      {
+        "part_uid": "P009_003",
+        "manual_label": "121228",
+        "name": "corner bracket",
+        "visual_description": "metal angle bracket 121228 with round and slotted holes",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "slotted holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "round holes"
+          }
+        ],
+        "page_position": "right"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F009_001",
+        "manual_label": "111374",
+        "name": "screw 111374",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T009_001",
+        "name": "allen key 100002"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A009_001",
+        "action_type": "attach",
+        "moving_part_ref": "P009_003",
+        "target_part_ref": "P009_002",
+        "fastener_ref": "F009_001",
+        "tool_ref": "T009_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 5: chaise frame stood on its end; 2x corner bracket 121228 screwed to the inner face of the armrest with 4x screw 111374 and allen key 100002"
+      },
+      {
+        "action_uid": "A009_002",
+        "action_type": "attach",
+        "moving_part_ref": "P009_002",
+        "target_part_ref": "P009_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 5: armrest stood against the outer side of the chaise frame"
+      }
+    ],
+    "final_visible_structure": "armrest standing against the chaise frame's outer side with two corner brackets",
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P010_001",
+        "manual_label": "",
+        "name": "chaise frame",
+        "visual_description": "long upholstered chaise longue base frame, spring base open underneath",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "foot holes in the corners of the base"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes in the end"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          900,
+          1630,
+          450
+        ]
+      },
+      {
+        "part_uid": "P010_002",
+        "manual_label": "121231",
+        "name": "clamp bracket",
+        "visual_description": "U-shaped metal clamp bracket 121231 with a screw and pressure disc",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "threaded hole for the clamp screw"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P010_003",
+        "manual_label": "",
+        "name": "armrest",
+        "visual_description": "upholstered end armrest taken off the sofa and refitted to the outer side of the chaise",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes on its inner face"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          150,
+          950,
+          650
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A010_001",
+        "action_type": "attach",
+        "moving_part_ref": "P010_002",
+        "target_part_ref": "P010_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "up",
+        "visual_evidence": "step 6: clamp bracket 121231 hooked over the edge of the chaise frame and the armrest, its screw turned in by hand"
+      }
+    ],
+    "final_visible_structure": "clamp bracket holding the armrest to the chaise frame",
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P011_001",
+        "manual_label": "",
+        "name": "chaise frame",
+        "visual_description": "long upholstered chaise longue base frame, spring base open underneath",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "foot holes in the corners of the base"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes in the end"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          900,
+          1630,
+          450
+        ]
+      },
+      {
+        "part_uid": "P011_002",
+        "manual_label": "121228",
+        "name": "corner bracket",
+        "visual_description": "metal angle bracket 121228 with round and slotted holes",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "slotted holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "round holes"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P011_003",
+        "manual_label": "",
+        "name": "armrest",
+        "visual_description": "upholstered end armrest taken off the sofa and refitted to the outer side of the chaise",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes on its inner face"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          150,
+          950,
+          650
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F011_001",
+        "manual_label": "100471",
+        "name": "bolt 100471",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F011_002",
+        "manual_label": "100851",
+        "name": "toothed washer 100851",
+        "shape_family": "washer",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F011_003",
+        "manual_label": "100854",
+        "name": "washer 100854",
+        "shape_family": "washer",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F011_004",
+        "manual_label": "100712",
+        "name": "nut 100712",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T011_001",
+        "name": "box spanner 120202"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A011_001",
+        "action_type": "attach",
+        "moving_part_ref": "P011_002",
+        "target_part_ref": "P011_001",
+        "fastener_ref": "F011_001",
+        "tool_ref": "T011_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 7: the lower corner bracket on the armrest bolted to the chaise frame with 2x bolt 100471, toothed washer 100851, washer 100854 and nut 100712 using box spanner 120202"
+      }
+    ],
+    "final_visible_structure": "armrest bolted to the chaise frame at the bottom",
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P012_001",
+        "manual_label": "",
+        "name": "chaise frame",
+        "visual_description": "long upholstered chaise longue base frame, spring base open underneath",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "foot holes in the corners of the base"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes in the end"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          900,
+          1630,
+          450
+        ]
+      },
+      {
+        "part_uid": "P012_002",
+        "manual_label": "121231",
+        "name": "clamp bracket",
+        "visual_description": "U-shaped metal clamp bracket 121231 with a screw and pressure disc",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "threaded hole for the clamp screw"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P012_003",
+        "manual_label": "121228",
+        "name": "corner bracket",
+        "visual_description": "metal angle bracket 121228 with round and slotted holes",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "slotted holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "round holes"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P012_004",
+        "manual_label": "",
+        "name": "armrest",
+        "visual_description": "upholstered end armrest taken off the sofa and refitted to the outer side of the chaise",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes on its inner face"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          150,
+          950,
+          650
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F012_001",
+        "manual_label": "100471",
+        "name": "bolt 100471",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F012_002",
+        "manual_label": "100851",
+        "name": "toothed washer 100851",
+        "shape_family": "washer",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F012_003",
+        "manual_label": "100854",
+        "name": "washer 100854",
+        "shape_family": "washer",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F012_004",
+        "manual_label": "100712",
+        "name": "nut 100712",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T012_001",
+        "name": "box spanner 120202"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A012_001",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P012_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "up",
+        "visual_evidence": "step 8: clamp bracket pushed up against the frame and tightened"
+      },
+      {
+        "action_uid": "A012_002",
+        "action_type": "attach",
+        "moving_part_ref": "P012_003",
+        "target_part_ref": "P012_001",
+        "fastener_ref": "F012_001",
+        "tool_ref": "T012_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 9: the upper corner bracket bolted to the chaise frame with 2x bolt 100471, toothed washer 100851, washer 100854 and nut 100712"
+      }
+    ],
+    "final_visible_structure": "armrest fixed to the chaise frame at both brackets",
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P013_001",
+        "manual_label": "",
+        "name": "chaise frame",
+        "visual_description": "long upholstered chaise longue base frame, spring base open underneath",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "foot holes in the corners of the base"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes in the end"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          900,
+          1630,
+          450
+        ]
+      },
+      {
+        "part_uid": "P013_002",
+        "manual_label": "",
+        "name": "sofa section",
+        "visual_description": "existing upholstered KIVIK 2-seat sofa section with its backrest, laid on its back, its end armrest taken off",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "threaded studs and holes in the end of the base frame"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          1900,
+          950,
+          830
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              950,
+              0
+            ],
+            [
+              950,
+              830
+            ],
+            [
+              760,
+              830
+            ],
+            [
+              690,
+              450
+            ],
+            [
+              0,
+              450
+            ]
+          ],
+          "closed": true
+        }
+      },
+      {
+        "part_uid": "P013_003",
+        "manual_label": "121227",
+        "name": "joining rail",
+        "visual_description": "flat metal strip 121227 with three pegs",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A013_001",
+        "action_type": "attach",
+        "moving_part_ref": "P013_001",
+        "target_part_ref": "P013_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 10: chaise turned upright and its end lowered so its hooks drop onto the 2x pegs of the joining rail on the sofa section"
+      }
+    ],
+    "final_visible_structure": "chaise longue standing beside the sofa, joined at its end, forming an L",
+    "uncertainties": [
+      "The pieces are turned upright between steps 9 and 10; the turn is not a join."
+    ]
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P014_001",
+        "manual_label": "",
+        "name": "chaise frame",
+        "visual_description": "long upholstered chaise longue base frame, spring base open underneath",
+        "shape_family": "frame",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "foot holes in the corners of the base"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket holes in the end"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          900,
+          1630,
+          450
+        ]
+      },
+      {
+        "part_uid": "P014_002",
+        "manual_label": "",
+        "name": "seat cushion",
+        "visual_description": "long upholstered chaise seat cushion",
+        "shape_family": "panel",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "top",
+        "size_mm": [
+          820,
+          1400,
+          150
+        ]
+      },
+      {
+        "part_uid": "P014_003",
+        "manual_label": "",
+        "name": "back cushion",
+        "visual_description": "upholstered back cushion",
+        "shape_family": "panel",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "top",
+        "size_mm": [
+          820,
+          220,
+          450
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A014_001",
+        "action_type": "place",
+        "moving_part_ref": "P014_002",
+        "target_part_ref": "P014_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 11: seat cushion laid into the chaise frame, its strip pressed onto the fastening tape"
+      },
+      {
+        "action_uid": "A014_002",
+        "action_type": "place",
+        "moving_part_ref": "P014_003",
+        "target_part_ref": "P014_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 12: back cushion set against the back of the chaise frame"
+      }
+    ],
+    "final_visible_structure": "finished chaise longue with seat and back cushions",
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "other",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "finished chaise longue; keep the instructions",
+    "uncertainties": [
+      "Shows the finished chaise and the instruction leaflet kept with it."
+    ]
+  },
+  {
+    "page_number": 16,
+    "page_type": "other",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "examples of KIVIK sofas combined with a chaise longue",
+    "uncertainties": [
+      "Combination examples only; no assembly."
+    ]
+  }
+]

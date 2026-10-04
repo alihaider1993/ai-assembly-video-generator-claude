@@ -1,0 +1,524 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "Assembled PO\u00c4NG armchair",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.1,
+          "x_max": 0.8,
+          "y_max": 0.85
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D002_001",
+        "diagram_type": "warning",
+        "description": "Allen key, no drill, soft floor, call IKEA if unsure",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D003_001",
+        "diagram_type": "part_inventory",
+        "description": "Fittings: bolt 122606 x4, bolt 146654 x2, dowel 123786 x2, screw 119046 x8, screw 120925 x6, barrel nut 100514 x4, washer 102319 x2",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.45
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "122606",
+          "146654",
+          "123786",
+          "119046",
+          "120925",
+          "100514",
+          "102319",
+          "4x",
+          "2x",
+          "8x",
+          "6x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_002",
+        "diagram_type": "part_inventory",
+        "description": "Allen key 100001 x1",
+        "page_region": {
+          "x_min": 0.55,
+          "y_min": 0.03,
+          "x_max": 0.75,
+          "y_max": 0.3
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "100001",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_003",
+        "diagram_type": "assembly_view",
+        "description": "Finished frame from the side",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.5,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D003_003",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D004_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 1: back lying on its side, 4 back slats into the left back upright",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.48
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D004_002",
+        "diagram_type": "exploded_view",
+        "description": "Step 2: right back upright onto the slats",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.5,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D004_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 3: 4x screw 119046 through one back upright",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.48
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "119046",
+          "100001",
+          "4x"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_002",
+        "diagram_type": "exploded_view",
+        "description": "Step 4: back turned over, 4x screw 119046 through the other back upright",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.5,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "119046",
+          "100001",
+          "4x"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D005_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 5: seat screwed to the bottom of the back uprights with 2x screw 120925",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "120925",
+          "100001",
+          "2x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D006_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D007_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 6: seat side rails along the seat edges",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.48
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D007_002",
+        "diagram_type": "exploded_view",
+        "description": "Step 7: 4x screw 120925 through the seat side rails",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.5,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "120925",
+          "100001",
+          "4x"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D007_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 8: chair upside down, left side frame on dowel 123786 with bolt 146654 and washer 102319",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "123786",
+          "146654",
+          "102319",
+          "100001"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D008_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D009_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 9: front rail and rear base rail, 2x bolt 122606 into barrel nut 100514",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "122606",
+          "100514",
+          "100001",
+          "2x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D009_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D010_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 10: right side frame on dowel 123786 with bolt 146654 and washer 102319",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "123786",
+          "146654",
+          "102319",
+          "100001"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D010_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D011_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 11: 2x bolt 122606 through the right side frame into the crossbars",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "122606",
+          "100514",
+          "100001",
+          "2x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D011_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D012_001",
+        "diagram_type": "assembly_view",
+        "description": "Retighten all 6 bolts",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.48
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "100001",
+          "6x"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D012_002",
+        "diagram_type": "assembly_view",
+        "description": "Cushion fitted, strap on the hook-and-loop tape",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.5,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "place",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D012_001",
+    "warnings": [],
+    "uncertainties": []
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "Fully assembled \u00c5LHULT wooden chair with vertical back slats.",
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [
+      {
+        "tool_uid": "T002_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": []
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P003_001",
+        "manual_label": "",
+        "name": "slat spacing template",
+        "visual_description": "Cardboard alignment template with 4 notches for back slats",
+        "shape_family": "panel",
+        "material_hint": "other",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "notch",
+            "count": 4,
+            "location_hint": "edge"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F003_001",
+        "manual_label": "128745",
+        "name": "long hex bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_002",
+        "manual_label": "100215",
+        "name": "top rail bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F003_003",
+        "manual_label": "102646",
+        "name": "corner bracket",
+        "shape_family": "bracket",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_004",
+        "manual_label": "109598",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_005",
+        "manual_label": "100400",
+        "name": "seat screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_006",
+        "manual_label": "101357",
+        "name": "large wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F003_007",
+        "manual_label": "101350",
+        "name": "small wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T003_001",
+        "name": "100092"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": []
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P004_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "Left chair side frame including front leg, back leg, seat rail, and lower stretcher",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "inner faces of legs and rail"
+          }
+        ],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P004_002",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "Right chair side frame including front leg, back leg, seat rail, and lower stretcher",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "inner faces of legs and rail"
+          }
+        ],
+        "page_position": "right"
+      },
+      {
+        "part_uid": "P004_003",
+        "manual_label": "",
+        "name": "front rail",
+        "visual_description": "Connecting rail between side frames",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "ends"
+          }
+        ],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P004_004",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "Connecting back rail with slots/holes for back slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "ends"
+          }
+        ],
+        "page_position": "bottom"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F004_001",
+        "manual_label": "102646",
+        "name": "corner bracket",
+        "shape_family": "bracket",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F004_002",
+        "manual_label": "109598",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F004_003",
+        "manual_label": "101357",
+        "name": "large wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F004_004",
+        "manual_label": "101350",
+        "name": "small wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T004_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A004_001",
+        "action_type": "attach",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_001",
+        "fastener_ref": "F004_001",
+        "tool_ref": "T004_001",
+        "direction_hint": "down",
+        "visual_evidence": "Attach two corner brackets 102646 onto left side frame seat rail using screws 109598; Repeat x4 total across both frames"
+      },
+      {
+        "action_uid": "A004_002",
+        "action_type": "attach",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_002",
+        "fastener_ref": "F004_001",
+        "tool_ref": "T004_001",
+        "direction_hint": "down",
+        "visual_evidence": "Attach two corner brackets 102646 onto right side frame seat rail using screws 109598"
+      },
+      {
+        "action_uid": "A004_003",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_003",
+        "fastener_ref": "F004_003",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "Insert large wooden dowel 101357 and small wooden dowel 101350 into one end, and two small wooden dowels 101350 into the other end of front rail"
+      },
+      {
+        "action_uid": "A004_004",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_004",
+        "fastener_ref": "F004_003",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "Insert large wooden dowel 101357 and small wooden dowel 101350 into one end, and two small wooden dowels 101350 into the other end of back rail"
+      }
+    ],
+    "final_visible_structure": "Left and right side frames have corner brackets screwed on; front rail and back rail have dowels inserted into both ends.",
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "Right chair side frame lying horizontally",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P005_002",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "Left chair side frame placed on top of rails",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "top"
+      },
+      {
+        "part_uid": "P005_003",
+        "manual_label": "",
+        "name": "front rail",
+        "visual_description": "Front cross rail connecting side frames",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P005_004",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "Back cross rail connecting side frames",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F005_001",
+        "manual_label": "128745",
+        "name": "long hex bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T005_001",
+        "name": "100092"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A005_001",
+        "action_type": "place",
+        "moving_part_ref": "P005_003",
+        "target_part_ref": "P005_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "Insert dowels of front rail into holes on right side frame"
+      },
+      {
+        "action_uid": "A005_002",
+        "action_type": "place",
+        "moving_part_ref": "P005_004",
+        "target_part_ref": "P005_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "Insert dowels of back rail into holes on right side frame"
+      },
+      {
+        "action_uid": "A005_003",
+        "action_type": "place",
+        "moving_part_ref": "P005_002",
+        "target_part_ref": "P005_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "Place left side frame over front rail and back rail dowels"
+      },
+      {
+        "action_uid": "A005_004",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P005_002",
+        "fastener_ref": "F005_001",
+        "tool_ref": "T005_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "Secure left side frame to front rail and back rail using 2 long hex bolts 128745 tightened with Allen key 100092"
+      }
+    ],
+    "final_visible_structure": "Left side frame fastened to front rail and back rail on top of right side frame.",
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "Right chair side frame now facing upward",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "top"
+      },
+      {
+        "part_uid": "P006_002",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "Left chair side frame",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P006_003",
+        "manual_label": "",
+        "name": "back slat",
+        "visual_description": "Vertical backrest slat",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P006_004",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "Back seat cross rail with slat slots",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 4,
+            "location_hint": "top surface"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "128745",
+        "name": "long hex bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T006_001",
+        "name": "100092"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A006_001",
+        "action_type": "flip",
+        "moving_part_ref": "P006_001",
+        "target_part_ref": "P006_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "clockwise",
+        "visual_evidence": "Flip chair assembly over so right side frame faces up"
+      },
+      {
+        "action_uid": "A006_002",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P006_001",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "Fasten right side frame with 2 long hex bolts 128745 using Allen key 100092"
+      },
+      {
+        "action_uid": "A006_003",
+        "action_type": "slide",
+        "moving_part_ref": "P006_003",
+        "target_part_ref": "P006_004",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "Slide 4 back slats down into slots on back rail; Repeat x4"
+      }
+    ],
+    "final_visible_structure": "Chair frame standing upright with 4 back slats inserted into the back rail.",
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "slat spacing template",
+        "visual_description": "Alignment template with 4 notches",
+        "shape_family": "panel",
+        "material_hint": "other",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "notch",
+            "count": 4,
+            "location_hint": "edge"
+          }
+        ],
+        "page_position": "top"
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "",
+        "name": "back slat",
+        "visual_description": "Vertical backrest slat",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P007_003",
+        "manual_label": "",
+        "name": "chair back",
+        "visual_description": "Top rail of chair backrest",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "ends"
+          },
+          {
+            "feature_type": "slot",
+            "count": 4,
+            "location_hint": "bottom face"
+          }
+        ],
+        "page_position": "top"
+      },
+      {
+        "part_uid": "P007_004",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "Left side frame back leg post",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "left"
+      },
+      {
+        "part_uid": "P007_005",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "Right side frame back leg post",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "right"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "100215",
+        "name": "top rail bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T007_001",
+        "name": "100092"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "place",
+        "moving_part_ref": "P007_001",
+        "target_part_ref": "P007_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "Place slat spacing template over the upper ends of 4 back slats to align them"
+      },
+      {
+        "action_uid": "A007_002",
+        "action_type": "place",
+        "moving_part_ref": "P007_003",
+        "target_part_ref": "P007_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "Fit chair back top rail over top ends of back slats and onto the back posts of side frames"
+      },
+      {
+        "action_uid": "A007_003",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P007_003",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "Secure chair back top rail through side frame back posts with 2 top rail bolts 100215 using Allen key 100092 (do not use power drill)"
+      }
+    ],
+    "final_visible_structure": "Chair back top rail securely fastened across back posts over aligned back slats.",
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "slat spacing template",
+        "visual_description": "Alignment template to be removed",
+        "shape_family": "panel",
+        "material_hint": "other",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "top"
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "",
+        "name": "seat",
+        "visual_description": "Chair wooden seat panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "bottom"
+      },
+      {
+        "part_uid": "P008_003",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "Chair frame subassembly",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "100400",
+        "name": "seat screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F008_002",
+        "manual_label": "102646",
+        "name": "corner bracket",
+        "shape_family": "bracket",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T008_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "slide",
+        "moving_part_ref": "P008_001",
+        "target_part_ref": "",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "up",
+        "visual_evidence": "Pull slat spacing template upward to remove it from back slats"
+      },
+      {
+        "action_uid": "A008_002",
+        "action_type": "place",
+        "moving_part_ref": "P008_003",
+        "target_part_ref": "P008_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "Place chair frame upside down onto the underside of seat on a table, aligned with corner guides"
+      },
+      {
+        "action_uid": "A008_003",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P008_002",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "Drive 4 screws 100400 through corner brackets 102646 into underside of seat using screwdriver"
+      }
+    ],
+    "final_visible_structure": "Fully assembled \u00c5LHULT chair with seat fastened to frame and template removed.",
+    "uncertainties": [
+      "1 action reference(s) could not be resolved to visible objects on this page."
+    ]
+  }
+]

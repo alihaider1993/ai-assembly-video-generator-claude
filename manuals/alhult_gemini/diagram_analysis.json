@@ -1,0 +1,390 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "\u00c5LHULT chair fully assembled",
+        "page_region": {
+          "x_min": 0.15,
+          "y_min": 0.22,
+          "x_max": 0.85,
+          "y_max": 0.9
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "\u00c5LHULT",
+          "IKEA"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D002_001",
+        "diagram_type": "warning",
+        "description": "Do not use specific tools or assemble on hard surfaces directly; assemble on a soft mat and contact IKEA if needed.",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D003_001",
+        "diagram_type": "part_inventory",
+        "description": "Fasteners and tools inventory",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "128745",
+          "101385",
+          "100215",
+          "105251",
+          "100092",
+          "102646",
+          "109598",
+          "100400",
+          "101357",
+          "101350"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D004_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 1: Screwing corner brackets 102646 to left side frame and right side frame with screws 109598",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.52
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "4x",
+          "102646",
+          "109598"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D004_002",
+        "diagram_type": "assembly_view",
+        "description": "Step 2: Inserting dowels 101357 and 101350 into front rail and back rail ends",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.53,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "2",
+          "2x",
+          "101357",
+          "101350"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D004_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 3: Fitting front rail and back rail dowels into right side frame",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.45
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "3",
+          "2x"
+        ],
+        "likely_action": "place",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_002",
+        "diagram_type": "assembly_view",
+        "description": "Step 4: Placing left side frame onto rails and fastening with bolts 128745",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.46,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "4",
+          "2x",
+          "100092",
+          "128745",
+          "101385"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D005_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 5: Flipping frame and fastening right side frame with bolts 128745",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.45
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "5",
+          "2x",
+          "100092",
+          "128745",
+          "101385"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D006_002",
+        "diagram_type": "assembly_view",
+        "description": "Step 6: Setting chair upright and inserting 4 back slats into back rail",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.46,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "6",
+          "4x"
+        ],
+        "likely_action": "slide",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D006_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D007_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 7: Placing alignment template onto top of back slats",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.4
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "7"
+        ],
+        "likely_action": "place",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D007_002",
+        "diagram_type": "assembly_view",
+        "description": "Step 8: Placing top rail and fastening with bolts 100215 using Allen key 100092",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.41,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "8",
+          "2x",
+          "100215",
+          "105251",
+          "100092"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D007_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 9: Removing slat spacing template",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.35
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "9"
+        ],
+        "likely_action": "slide",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D008_002",
+        "diagram_type": "assembly_view",
+        "description": "Step 10: Screwing chair seat to brackets with 4 screws 100400",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.36,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "10",
+          "4x",
+          "100400"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D008_001",
+    "warnings": [],
+    "uncertainties": []
+  }
+]

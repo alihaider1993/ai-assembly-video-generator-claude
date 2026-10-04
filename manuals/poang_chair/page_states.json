@@ -1,0 +1,1522 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "PO\u00c4NG armchair: bentwood cantilever frame, slatted back, seat and cushion",
+    "uncertainties": [
+      "Cover page; product name PO\u00c4NG and IKEA logo."
+    ]
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Use the supplied allen key, no power drill; soft floor; call IKEA if unsure."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "visible_parts": [],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F003_001",
+        "manual_label": "122606",
+        "name": "bolt 122606",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_002",
+        "manual_label": "146654",
+        "name": "bolt 146654",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F003_003",
+        "manual_label": "123786",
+        "name": "dowel 123786",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F003_004",
+        "manual_label": "119046",
+        "name": "screw 119046",
+        "shape_family": "screw",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F003_005",
+        "manual_label": "120925",
+        "name": "screw 120925",
+        "shape_family": "screw",
+        "quantity_visible": 6
+      },
+      {
+        "fastener_uid": "F003_006",
+        "manual_label": "100514",
+        "name": "barrel nut 100514",
+        "shape_family": "nut",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_007",
+        "manual_label": "102319",
+        "name": "washer 102319",
+        "shape_family": "washer",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T003_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Only the hardware is drawn; the wooden parts appear in the steps.",
+      "Info box shows the finished frame from the side."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P004_001",
+        "manual_label": "",
+        "name": "back slat",
+        "visual_description": "curved bentwood slat running across between the back uprights; one has hook-and-loop tape",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes in the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          520,
+          50,
+          70
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              130,
+              25
+            ],
+            [
+              260,
+              35
+            ],
+            [
+              390,
+              25
+            ],
+            [
+              520,
+              0
+            ]
+          ],
+          "thickness": 15,
+          "plane": "top"
+        }
+      },
+      {
+        "part_uid": "P004_002",
+        "manual_label": "",
+        "name": "left back upright",
+        "visual_description": "long S-curved bentwood upright on the left of the back, leaning back towards its top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slat screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "seat screw hole at the bottom"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          45,
+          290,
+          1000
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              70,
+              250
+            ],
+            [
+              40,
+              480
+            ],
+            [
+              120,
+              740
+            ],
+            [
+              250,
+              960
+            ]
+          ],
+          "thickness": 40
+        }
+      },
+      {
+        "part_uid": "P004_003",
+        "manual_label": "",
+        "name": "right back upright",
+        "visual_description": "long S-curved bentwood upright on the right of the back, leaning back towards its top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slat screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "seat screw hole at the bottom"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          45,
+          290,
+          1000
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              70,
+              250
+            ],
+            [
+              40,
+              480
+            ],
+            [
+              120,
+              740
+            ],
+            [
+              250,
+              960
+            ]
+          ],
+          "thickness": 40
+        }
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A004_001",
+        "action_type": "insert",
+        "moving_part_ref": "P004_001",
+        "target_part_ref": "P004_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 1: back drawn lying on its side; 4x back slat pushed into the holes of the left back upright, the more curved ones as in the info inset"
+      },
+      {
+        "action_uid": "A004_002",
+        "action_type": "attach",
+        "moving_part_ref": "P004_003",
+        "target_part_ref": "P004_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 2: right back upright pressed down onto the other ends of the 4 back slats"
+      }
+    ],
+    "final_visible_structure": "back lying on its side: 4 slats across between the two back uprights",
+    "uncertainties": [
+      "The back is drawn lying on its side; in the finished chair the uprights stand and the slats run across."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "",
+        "name": "back slat",
+        "visual_description": "curved bentwood slat running across between the back uprights; one has hook-and-loop tape",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes in the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          520,
+          50,
+          70
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              130,
+              25
+            ],
+            [
+              260,
+              35
+            ],
+            [
+              390,
+              25
+            ],
+            [
+              520,
+              0
+            ]
+          ],
+          "thickness": 15,
+          "plane": "top"
+        }
+      },
+      {
+        "part_uid": "P005_002",
+        "manual_label": "",
+        "name": "left back upright",
+        "visual_description": "long S-curved bentwood upright on the left of the back, leaning back towards its top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slat screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "seat screw hole at the bottom"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          45,
+          290,
+          1000
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              70,
+              250
+            ],
+            [
+              40,
+              480
+            ],
+            [
+              120,
+              740
+            ],
+            [
+              250,
+              960
+            ]
+          ],
+          "thickness": 40
+        }
+      },
+      {
+        "part_uid": "P005_003",
+        "manual_label": "",
+        "name": "right back upright",
+        "visual_description": "long S-curved bentwood upright on the right of the back, leaning back towards its top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slat screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "seat screw hole at the bottom"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          45,
+          290,
+          1000
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              70,
+              250
+            ],
+            [
+              40,
+              480
+            ],
+            [
+              120,
+              740
+            ],
+            [
+              250,
+              960
+            ]
+          ],
+          "thickness": 40
+        }
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F005_001",
+        "manual_label": "119046",
+        "name": "screw 119046",
+        "shape_family": "screw",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T005_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A005_001",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P005_003",
+        "fastener_ref": "F005_001",
+        "tool_ref": "T005_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 3: 4x screw 119046 through the right back upright into the back slats with allen key 100001"
+      },
+      {
+        "action_uid": "A005_002",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P005_002",
+        "fastener_ref": "F005_001",
+        "tool_ref": "T005_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 4: back turned over; 4x screw 119046 through the left back upright into the back slats"
+      }
+    ],
+    "final_visible_structure": "back screwed together",
+    "uncertainties": [
+      "Insets: use screw 119046 here, not 120925.",
+      "The back is turned over between steps 3 and 4; not a join."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "",
+        "name": "seat",
+        "visual_description": "fabric seat stretched on a frame, screwed to the bottom of the back uprights",
+        "shape_family": "panel",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes at the back corners"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          540,
+          480,
+          20
+        ]
+      },
+      {
+        "part_uid": "P006_002",
+        "manual_label": "",
+        "name": "left back upright",
+        "visual_description": "long S-curved bentwood upright on the left of the back, leaning back towards its top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slat screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "seat screw hole at the bottom"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          45,
+          290,
+          1000
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              70,
+              250
+            ],
+            [
+              40,
+              480
+            ],
+            [
+              120,
+              740
+            ],
+            [
+              250,
+              960
+            ]
+          ],
+          "thickness": 40
+        }
+      },
+      {
+        "part_uid": "P006_003",
+        "manual_label": "",
+        "name": "right back upright",
+        "visual_description": "long S-curved bentwood upright on the right of the back, leaning back towards its top",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slat screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "seat screw hole at the bottom"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          45,
+          290,
+          1000
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              70,
+              250
+            ],
+            [
+              40,
+              480
+            ],
+            [
+              120,
+              740
+            ],
+            [
+              250,
+              960
+            ]
+          ],
+          "thickness": 40
+        }
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "120925",
+        "name": "screw 120925",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T006_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A006_001",
+        "action_type": "attach",
+        "moving_part_ref": "P006_001",
+        "target_part_ref": "P006_002",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 5: seat frame screwed to the bottom ends of the left back upright and right back upright with 2x screw 120925 and allen key 100001"
+      }
+    ],
+    "final_visible_structure": "seat hanging from the bottom of the back",
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "seat",
+        "visual_description": "fabric seat stretched on a frame, screwed to the bottom of the back uprights",
+        "shape_family": "panel",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes at the back corners"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          540,
+          480,
+          20
+        ]
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "",
+        "name": "seat side rail",
+        "visual_description": "flat bentwood strip along one side edge of the seat",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "dowel and bolt hole"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          480,
+          25,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "120925",
+        "name": "screw 120925",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T007_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "attach",
+        "moving_part_ref": "P007_002",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 6-7: 2x seat side rail laid along the side edges of the seat, curved side down (info inset), fixed with 4x screw 120925"
+      }
+    ],
+    "final_visible_structure": "seat with a side rail along each edge",
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left bentwood side frame: armrest bending down into the front leg and back along the floor as a runner",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt and dowel holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          60,
+          820,
+          640
+        ],
+        "profile": {
+          "path": [
+            [
+              650,
+              560
+            ],
+            [
+              120,
+              600
+            ],
+            [
+              40,
+              540
+            ],
+            [
+              60,
+              380
+            ],
+            [
+              180,
+              120
+            ],
+            [
+              300,
+              30
+            ],
+            [
+              790,
+              30
+            ]
+          ],
+          "thickness": 45
+        }
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "",
+        "name": "seat side rail",
+        "visual_description": "flat bentwood strip along one side edge of the seat",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "dowel and bolt hole"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          480,
+          25,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "123786",
+        "name": "dowel 123786",
+        "shape_family": "dowel",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F008_002",
+        "manual_label": "146654",
+        "name": "bolt 146654",
+        "shape_family": "bolt",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F008_003",
+        "manual_label": "102319",
+        "name": "washer 102319",
+        "shape_family": "washer",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T008_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P008_002",
+        "fastener_ref": "F008_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 8: dowel 123786 pushed into the seat side rail"
+      },
+      {
+        "action_uid": "A008_002",
+        "action_type": "attach",
+        "moving_part_ref": "P008_001",
+        "target_part_ref": "P008_002",
+        "fastener_ref": "F008_002",
+        "tool_ref": "T008_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 8: chair upside down; left side frame laid over the seat side rail and fixed with 1x bolt 146654 and washer 102319 using allen key 100001"
+      }
+    ],
+    "final_visible_structure": "left side frame on the upturned chair",
+    "uncertainties": [
+      "The chair is turned upside down before step 8; not a join.",
+      "Inset: use bolt 146654 here, not 122606."
+    ]
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left bentwood side frame: armrest bending down into the front leg and back along the floor as a runner",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt and dowel holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          60,
+          820,
+          640
+        ],
+        "profile": {
+          "path": [
+            [
+              650,
+              560
+            ],
+            [
+              120,
+              600
+            ],
+            [
+              40,
+              540
+            ],
+            [
+              60,
+              380
+            ],
+            [
+              180,
+              120
+            ],
+            [
+              300,
+              30
+            ],
+            [
+              790,
+              30
+            ]
+          ],
+          "thickness": 45
+        }
+      },
+      {
+        "part_uid": "P009_002",
+        "manual_label": "",
+        "name": "front rail",
+        "visual_description": "straight wooden crossbar joining the two side frames at the front, under the seat",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "barrel nut holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          560,
+          40,
+          60
+        ]
+      },
+      {
+        "part_uid": "P009_003",
+        "manual_label": "",
+        "name": "rear base rail",
+        "visual_description": "straight wooden crossbar joining the ends of the two floor runners at the back",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "barrel nut holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          560,
+          40,
+          40
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F009_001",
+        "manual_label": "122606",
+        "name": "bolt 122606",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F009_002",
+        "manual_label": "100514",
+        "name": "barrel nut 100514",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T009_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A009_001",
+        "action_type": "attach",
+        "moving_part_ref": "P009_002",
+        "target_part_ref": "P009_001",
+        "fastener_ref": "F009_001",
+        "tool_ref": "T009_001",
+        "direction_hint": "up",
+        "visual_evidence": "step 9: front rail pushed up against the left side frame and fixed with bolt 122606 into barrel nut 100514"
+      },
+      {
+        "action_uid": "A009_002",
+        "action_type": "attach",
+        "moving_part_ref": "P009_003",
+        "target_part_ref": "P009_001",
+        "fastener_ref": "F009_001",
+        "tool_ref": "T009_001",
+        "direction_hint": "up",
+        "visual_evidence": "step 9: rear base rail pushed against the end of the left side frame's runner and fixed with bolt 122606 into barrel nut 100514"
+      }
+    ],
+    "final_visible_structure": "front rail and rear base rail fixed to the left side frame",
+    "uncertainties": [
+      "The chair is upside down, so the two crossbars are drawn pointing up."
+    ]
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P010_001",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right bentwood side frame: armrest bending down into the front leg and back along the floor as a runner",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt and dowel holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          60,
+          820,
+          640
+        ],
+        "profile": {
+          "path": [
+            [
+              650,
+              560
+            ],
+            [
+              120,
+              600
+            ],
+            [
+              40,
+              540
+            ],
+            [
+              60,
+              380
+            ],
+            [
+              180,
+              120
+            ],
+            [
+              300,
+              30
+            ],
+            [
+              790,
+              30
+            ]
+          ],
+          "thickness": 45
+        }
+      },
+      {
+        "part_uid": "P010_002",
+        "manual_label": "",
+        "name": "seat side rail",
+        "visual_description": "flat bentwood strip along one side edge of the seat",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "dowel and bolt hole"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          480,
+          25,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F010_001",
+        "manual_label": "123786",
+        "name": "dowel 123786",
+        "shape_family": "dowel",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F010_002",
+        "manual_label": "146654",
+        "name": "bolt 146654",
+        "shape_family": "bolt",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F010_003",
+        "manual_label": "102319",
+        "name": "washer 102319",
+        "shape_family": "washer",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T010_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A010_001",
+        "action_type": "attach",
+        "moving_part_ref": "P010_001",
+        "target_part_ref": "P010_002",
+        "fastener_ref": "F010_002",
+        "tool_ref": "T010_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 10: chair turned on its other side; right side frame fitted on dowel 123786 and fixed with 1x bolt 146654 and washer 102319"
+      }
+    ],
+    "final_visible_structure": "both side frames on the seat side rails",
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P011_001",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right bentwood side frame: armrest bending down into the front leg and back along the floor as a runner",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt and dowel holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          60,
+          820,
+          640
+        ],
+        "profile": {
+          "path": [
+            [
+              650,
+              560
+            ],
+            [
+              120,
+              600
+            ],
+            [
+              40,
+              540
+            ],
+            [
+              60,
+              380
+            ],
+            [
+              180,
+              120
+            ],
+            [
+              300,
+              30
+            ],
+            [
+              790,
+              30
+            ]
+          ],
+          "thickness": 45
+        }
+      },
+      {
+        "part_uid": "P011_002",
+        "manual_label": "",
+        "name": "front rail",
+        "visual_description": "straight wooden crossbar joining the two side frames at the front, under the seat",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "barrel nut holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          560,
+          40,
+          60
+        ]
+      },
+      {
+        "part_uid": "P011_003",
+        "manual_label": "",
+        "name": "rear base rail",
+        "visual_description": "straight wooden crossbar joining the ends of the two floor runners at the back",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "barrel nut holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          560,
+          40,
+          40
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F011_001",
+        "manual_label": "122606",
+        "name": "bolt 122606",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F011_002",
+        "manual_label": "100514",
+        "name": "barrel nut 100514",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T011_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A011_001",
+        "action_type": "attach",
+        "moving_part_ref": "P011_002",
+        "target_part_ref": "P011_001",
+        "fastener_ref": "F011_001",
+        "tool_ref": "T011_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 11: bolt 122606 through the right side frame into the barrel nut 100514 in the front rail"
+      },
+      {
+        "action_uid": "A011_002",
+        "action_type": "attach",
+        "moving_part_ref": "P011_003",
+        "target_part_ref": "P011_001",
+        "fastener_ref": "F011_001",
+        "tool_ref": "T011_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 11: bolt 122606 through the right side frame's runner into the barrel nut 100514 in the rear base rail"
+      }
+    ],
+    "final_visible_structure": "chair frame complete",
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P012_001",
+        "manual_label": "",
+        "name": "seat cushion",
+        "visual_description": "padded chair cushion over the seat and back, fixed with hook-and-loop tape",
+        "shape_family": "panel",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "top",
+        "size_mm": [
+          540,
+          680,
+          640
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              60
+            ],
+            [
+              420,
+              40
+            ],
+            [
+              520,
+              120
+            ],
+            [
+              600,
+              600
+            ]
+          ],
+          "thickness": 80
+        }
+      },
+      {
+        "part_uid": "P012_002",
+        "manual_label": "",
+        "name": "seat",
+        "visual_description": "fabric seat stretched on a frame, screwed to the bottom of the back uprights",
+        "shape_family": "panel",
+        "material_hint": "fabric",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes at the back corners"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          540,
+          480,
+          20
+        ]
+      },
+      {
+        "part_uid": "P012_003",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left bentwood side frame: armrest bending down into the front leg and back along the floor as a runner",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt and dowel holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          60,
+          820,
+          640
+        ],
+        "profile": {
+          "path": [
+            [
+              650,
+              560
+            ],
+            [
+              120,
+              600
+            ],
+            [
+              40,
+              540
+            ],
+            [
+              60,
+              380
+            ],
+            [
+              180,
+              120
+            ],
+            [
+              300,
+              30
+            ],
+            [
+              790,
+              30
+            ]
+          ],
+          "thickness": 45
+        }
+      },
+      {
+        "part_uid": "P012_004",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right bentwood side frame: armrest bending down into the front leg and back along the floor as a runner",
+        "shape_family": "frame",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt and dowel holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          60,
+          820,
+          640
+        ],
+        "profile": {
+          "path": [
+            [
+              650,
+              560
+            ],
+            [
+              120,
+              600
+            ],
+            [
+              40,
+              540
+            ],
+            [
+              60,
+              380
+            ],
+            [
+              180,
+              120
+            ],
+            [
+              300,
+              30
+            ],
+            [
+              790,
+              30
+            ]
+          ],
+          "thickness": 45
+        }
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [
+      {
+        "tool_uid": "T012_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A012_001",
+        "action_type": "place",
+        "moving_part_ref": "P012_001",
+        "target_part_ref": "P012_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "chair upright; cushion laid on the seat and back, its strap pressed onto the hook-and-loop tape on the back"
+      }
+    ],
+    "final_visible_structure": "finished PO\u00c4NG armchair with cushion",
+    "uncertainties": [
+      "Top info: retighten all 6 bolts with allen key 100001 once the chair is upright."
+    ]
+  }
+]

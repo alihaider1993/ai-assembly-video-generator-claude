@@ -1,9 +1,11 @@
 import json
 import math
-import re
 import sys
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Tuple
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from general_layout import compute_general_positions  # noqa: E402
 
 GRAPH_PATH = Path("v2/outputs/json/universal_assembly_graph.json")
 MOTION_PATH = Path("v2/outputs/json/motion_plan.json")
@@ -271,507 +273,11 @@ def compute_connected_positions(
     return final_pos, exploded_pos
 
 
-# Table layout: how far legs sit in from the top's edge, and where moving
-# parts start relative to their final position (outward, then up).
-LEG_INSET = 0.04
-TABLE_EXPLODE_DISTANCE = 0.45
-TABLE_EXPLODE_LIFT = 0.3
-# Fasteners sit just under the top, nudged in from their host part so they
-# aren't buried inside it; several at one host are spread sideways.
-FASTENER_INSET = 0.05
-FASTENER_SPREAD = 0.04
-# A table's stretchers sit at this fraction of the leg height.
-STRETCHER_HEIGHT = 0.3
-# Inner frame rails are at most this share of half the frame's length.
-INNER_RAIL_FIT = 0.8
-
-
-def classify_rails(rails: List[str], shapes: Dict[str, Dict[str, Any]]) -> Tuple[List[str], List[str], List[str], List[str]]:
-    """(side, end, cross, inner) rails of a table frame, by name: "long" or
-    "side" rails run along the long edges, "end" or "short" rails along the
-    short ones, "cross" rails across the inside, and other named rails
-    (guides, runners) lengthways inside. When no rail is named that way,
-    the two longest are the sides and the rest the ends."""
-    by_length = sorted(rails, key=lambda uid: (-shapes[uid]["dimensions"][0], uid))
-
-    def having(*words: str) -> List[str]:
-        return [uid for uid in by_length if any(w in base_name(shapes[uid]).split() for w in words)]
-
-    sides, ends, crosses = having("long", "side"), having("end", "short"), having("cross")
-    named = set(sides) | set(ends) | set(crosses)
-    if not named:
-        return by_length[:2], by_length[2:], [], []
-    return sides, [u for u in ends if u not in sides], [u for u in crosses if u not in sides + ends], [u for u in by_length if u not in named]
-
-
 def load_part_shapes(path: Path) -> Dict[str, Dict[str, Any]]:
     if not path.exists():
         return {}
     data = load_json(path)
     return {p["part_uid"]: p for p in data.get("parts", []) if p.get("part_uid")}
-
-
-def fastener_host_pairs(graph: Dict[str, Any]) -> List[Tuple[str, str]]:
-    """Every distinct (fastener_uid, host part) pair: the host is the part
-    the fastener comes with in a connection (its from_node_ref). One
-    fastener type used at four legs gives four pairs, i.e. four instances."""
-    pairs: List[Tuple[str, str]] = []
-    for conn in graph.get("connections", []):
-        from_ref = conn.get("from_node_ref", "")
-        for fastener in conn.get("fasteners", []):
-            pair = (fastener, from_ref)
-            if fastener and from_ref and fastener != from_ref and pair not in pairs:
-                pairs.append(pair)
-    return pairs
-
-
-def outward_start(final: List[float], center: List[float]) -> List[float]:
-    dx, dy = final[0] - center[0], final[1] - center[1]
-    length = math.hypot(dx, dy)
-    if length < 1e-6:
-        dx, dy, length = 1.0, 0.0, 1.0
-    return [
-        final[0] + dx / length * TABLE_EXPLODE_DISTANCE,
-        final[1] + dy / length * TABLE_EXPLODE_DISTANCE,
-        final[2] + TABLE_EXPLODE_LIFT,
-    ]
-
-
-def compute_table_positions(
-    shapes: Dict[str, Dict[str, Any]],
-    graph: Dict[str, Any],
-) -> Optional[Dict[str, Any]]:
-    """Lay out a top + legs (+ rails, brackets, fasteners) the way flat-pack
-    tables are built: upside down, with the top lying face-down on the
-    floor, to be turned over at the end. Legs stand at the top's corners,
-    rails run along its edges between the legs, brackets sit inside the
-    corners, and each fastener appears once per part it is used with.
-
-    Positions are worked out for the upright table, then flipped 180
-    degrees about the X axis through `pivot`; turning the assembly over
-    by the same rotation about `pivot` gives back the upright table.
-
-    Returns None when the parts don't form a table (no "top" or no "leg"
-    role), so the generic layout is used. Otherwise a dict of per-node
-    final/exploded/rotation/scale, instance_of (instance -> fastener uid)
-    and the pivot."""
-    by_role: Dict[str, List[str]] = {}
-    for uid, shape in sorted(shapes.items()):
-        if shape.get("role"):
-            by_role.setdefault(shape["role"], []).append(uid)
-
-    if not by_role.get("top") or not by_role.get("leg"):
-        return None
-
-    top_uid = by_role["top"][0]
-    top_w, top_d, top_t = shapes[top_uid]["dimensions"]
-    leg_h = max(shapes[uid]["dimensions"][2] for uid in by_role["leg"])
-    leg_half = max(shapes[by_role["leg"][0]]["dimensions"][:2]) / 2
-    leg_w = 2 * leg_half
-
-    corner_x = top_w / 2 - LEG_INSET - leg_half
-    corner_y = top_d / 2 - LEG_INSET - leg_half
-
-    final = {top_uid: [0.0, 0.0, leg_h + top_t / 2]}
-    rotation = {top_uid: [0.0, 0.0, 0.0]}
-    scale: Dict[str, List[float]] = {}
-    instance_of: Dict[str, str] = {}
-
-    corners = [(1, 1), (-1, 1), (-1, -1), (1, -1)]
-    for i, uid in enumerate(by_role["leg"]):
-        sx, sy = corners[i % 4]
-        final[uid] = [sx * corner_x, sy * corner_y, leg_h / 2]
-        rotation[uid] = [0.0, 0.0, 0.0]
-
-    # Rails are stretched to fit between the legs. Side rails run along X
-    # (the top's long side) and end rails along Y, each alternating between
-    # opposite edges; cross rails span the frame along Y, evenly spaced
-    # inside it; any other rails (guides, runners) lie along X inside the
-    # frame. Names say which is which; without such names the two longest
-    # rails are the sides and the rest the ends.
-    span = {"x": 2 * corner_x - leg_w, "y": 2 * corner_y - leg_w}
-    sides, ends, crosses, inner = classify_rails(by_role.get("rail", []), shapes)
-
-    def place_rail(uid: str, x: float, y: float, axis: str, length: float = 0.0) -> None:
-        rail_length, _, height = shapes[uid]["dimensions"]
-        final[uid] = [x, y, leg_h - height / 2]
-        rotation[uid] = [0.0, 0.0, 0.0 if axis == "x" else 90.0]
-        if length:
-            scale[uid] = [length / rail_length, 1.0, 1.0]
-
-    for i, uid in enumerate(sides):
-        place_rail(uid, 0.0, (1 if i % 2 == 0 else -1) * corner_y, "x", span["x"])
-    for i, uid in enumerate(ends):
-        place_rail(uid, (1 if i % 2 == 0 else -1) * corner_x, 0.0, "y", span["y"])
-    for i, uid in enumerate(crosses):
-        place_rail(uid, corner_x * (-1 + 2 * (i + 1) / (len(crosses) + 1)), 0.0, "y", span["y"])
-    # Inner pieces: two columns, one in each half of the frame, rows spread
-    # across Y; shortened if they wouldn't fit in their half.
-    rows = max((len(inner) + 1) // 2, 1)
-    for i, uid in enumerate(inner):
-        row_y = corner_y * 0.6 * (-1 + 2 * (i // 2 + 0.5) / rows)
-        fit = min(shapes[uid]["dimensions"][0], corner_x * INNER_RAIL_FIT)
-        place_rail(uid, (1 if i % 2 == 0 else -1) * corner_x / 2, row_y, "x", fit)
-
-    # Stretchers make a low H-frame: the shorter ones across each end
-    # between the legs, the longest one down the middle between them.
-    stretchers = sorted(by_role.get("stretcher", []), key=lambda uid: (-shapes[uid]["dimensions"][0], uid))
-    long_stretchers = [uid for uid in stretchers if any(w in base_name(shapes[uid]) for w in ("long", "middle", "centre", "center"))]
-    if not long_stretchers and len(stretchers) > 2:
-        long_stretchers = stretchers[:1]
-    stretcher_z = leg_h * STRETCHER_HEIGHT
-    end_stretchers = [uid for uid in stretchers if uid not in long_stretchers]
-    for i, uid in enumerate(end_stretchers):
-        length, thickness, _ = shapes[uid]["dimensions"]
-        final[uid] = [(1 if i % 2 == 0 else -1) * corner_x, 0.0, stretcher_z]
-        rotation[uid] = [0.0, 0.0, 90.0]
-        scale[uid] = [span["y"] / length, 1.0, 1.0]
-    for uid in long_stretchers:
-        length, thickness, _ = shapes[uid]["dimensions"]
-        final[uid] = [0.0, 0.0, stretcher_z]
-        rotation[uid] = [0.0, 0.0, 0.0]
-        scale[uid] = [(2 * corner_x - thickness) / length, 1.0, 1.0]
-
-    for i, uid in enumerate(by_role.get("bracket", [])):
-        sx, sy = corners[i % 4]
-        height = shapes[uid]["dimensions"][2]
-        final[uid] = [sx * (corner_x - leg_w), sy * (corner_y - leg_w), leg_h - height / 2]
-        rotation[uid] = [0.0, 0.0, 45.0 + 90.0 * (i % 4)]
-
-    # One instance of a fastener per placed host part, nudged toward the
-    # middle of the table and spread sideways when a host has several.
-    # A fastener with no placed host keeps its own uid at a leg corner.
-    per_host: Dict[str, int] = {}
-    instance_count: Dict[str, int] = {}
-    for fastener, host in fastener_host_pairs(graph):
-        if host not in final or host == top_uid:
-            continue
-        hx, hy, _ = final[host]
-        length = math.hypot(hx, hy) or 1.0
-        ix, iy = -hx / length, -hy / length
-        k = per_host.get(host, 0)
-        per_host[host] = k + 1
-        # 0, +1, -1, +2, -2 ... spacings either side of the host.
-        offset = (k + 1) // 2 * FASTENER_SPREAD * (1 if k % 2 else -1)
-        instance_count[fastener] = instance_count.get(fastener, 0) + 1
-        uid = f"{fastener}_{instance_count[fastener]}"
-        instance_of[uid] = fastener
-        final[uid] = [
-            hx + ix * FASTENER_INSET - iy * offset,
-            hy + iy * FASTENER_INSET + ix * offset,
-            leg_h - 0.03,
-        ]
-        rotation[uid] = [0.0, 0.0, 0.0]
-
-    fastener_uids = [f.get("fastener_uid") for f in graph.get("fasteners", []) if f.get("fastener_uid")]
-    for i, fastener in enumerate(f for f in fastener_uids if f not in instance_count):
-        sx, sy = corners[i % 4]
-        final[fastener] = [sx * corner_x, sy * corner_y, leg_h - 0.03]
-        rotation[fastener] = [0.0, 0.0, 0.0]
-
-    # Flip upside down: 180 degrees about X through the pivot maps
-    # (x, y, z) to (x, -y, 2*pivot_z - z) and an object's Z rotation r to
-    # an XYZ Euler of (180, 0, -r).
-    height = leg_h + top_t
-    pivot = [0.0, 0.0, height / 2]
-    final = {uid: [x, -y, height - z] for uid, (x, y, z) in final.items()}
-    rotation = {uid: [rx + 180.0, ry, -rz] for uid, (rx, ry, rz) in rotation.items()}
-
-    center = [0.0, 0.0, top_t / 2]
-    exploded = {
-        uid: list(pos) if uid == top_uid else outward_start(pos, center)
-        for uid, pos in final.items()
-    }
-    return {
-        "final": final,
-        "exploded": exploded,
-        "rotation": rotation,
-        "scale": scale,
-        "instance_of": instance_of,
-        "pivot": pivot,
-    }
-
-
-# Chairs and beds are built standing the way they end up, so there is no
-# finale. Moving parts start outward and up from the middle by these
-# fractions of the piece's longest side.
-EXPLODE_FRACTION = 0.3
-EXPLODE_LIFT_FRACTION = 0.25
-# A slatted bed base sits this far below the top of its side rails.
-SLAT_DROP = 0.03
-
-
-def parts_by_role(shapes: Dict[str, Dict[str, Any]]) -> Dict[str, List[str]]:
-    by_role: Dict[str, List[str]] = {}
-    for uid, shape in sorted(shapes.items()):
-        if shape.get("role"):
-            by_role.setdefault(shape["role"], []).append(uid)
-    return by_role
-
-
-def world_half_extents(dims: List[float], rotation: List[float], scale: List[float]) -> List[float]:
-    """Half size along world X/Y/Z of a box turned a whole number of quarter
-    turns about Z (the only turns the chair and bed layouts use)."""
-    x, y, z = (d * s / 2 for d, s in zip(dims, scale))
-    if round(rotation[2] / 90.0) % 2:
-        x, y = y, x
-    return [x, y, z]
-
-
-def place_fastener_instances(
-    shapes: Dict[str, Dict[str, Any]],
-    graph: Dict[str, Any],
-    final: Dict[str, List[float]],
-    rotation: Dict[str, List[float]],
-    scale: Dict[str, List[float]],
-) -> Dict[str, str]:
-    """One instance of a fastener per part it is used with (its host), at
-    the point of the host nearest the part the host is joined to, or
-    nearest the middle of the piece when the connection names no other
-    part (a dowel pushed into a rail). Several at one host are spread
-    along it. Adds the instances to final/rotation and returns instance
-    uid -> fastener uid."""
-    middle = [sum(p[i] for p in final.values()) / len(final) for i in range(3)]
-    instance_of: Dict[str, str] = {}
-    instance_count: Dict[str, int] = {}
-    per_host: Dict[str, int] = {}
-    hosted = set()
-
-    for conn in graph.get("connections", []):
-        from_ref, to_ref = conn.get("from_node_ref", ""), conn.get("to_node_ref", "")
-        for fastener in conn.get("fasteners", []):
-            host, other = (to_ref, "") if from_ref == fastener else (from_ref, to_ref)
-            if (fastener, host) in hosted or host not in final or host not in shapes:
-                continue
-            hosted.add((fastener, host))
-
-            center = final[host]
-            half = world_half_extents(
-                shapes[host]["dimensions"], rotation.get(host, [0.0, 0.0, 0.0]), scale.get(host, [1.0, 1.0, 1.0])
-            )
-            toward = final.get(other, middle)
-            point = [min(max(t, c - h), c + h) for c, h, t in zip(center, half, toward)]
-
-            # 0, +1, -1, +2, -2 ... spacings along the host's longer side.
-            k = per_host.get(host, 0)
-            per_host[host] = k + 1
-            offset = (k + 1) // 2 * FASTENER_SPREAD * (1 if k % 2 else -1)
-            axis = 0 if half[0] >= half[1] else 1
-            point[axis] = min(max(point[axis] + offset, center[axis] - half[axis]), center[axis] + half[axis])
-
-            instance_count[fastener] = instance_count.get(fastener, 0) + 1
-            uid = f"{fastener}_{instance_count[fastener]}"
-            instance_of[uid] = fastener
-            final[uid] = point
-            rotation[uid] = [0.0, 0.0, 0.0]
-
-    return instance_of
-
-
-def explode_outward(final: Dict[str, List[float]], center: List[float]) -> Dict[str, List[float]]:
-    """Start positions for moving parts: outward from `center` and up, by a
-    share of the piece's size."""
-    xs = [p[0] for p in final.values()]
-    ys = [p[1] for p in final.values()]
-    zs = [p[2] for p in final.values()]
-    size = max(max(xs) - min(xs), max(ys) - min(ys), max(zs) - min(zs), 0.5)
-    distance, lift = size * EXPLODE_FRACTION, size * EXPLODE_LIFT_FRACTION
-
-    exploded = {}
-    for uid, pos in final.items():
-        dx, dy = pos[0] - center[0], pos[1] - center[1]
-        length = math.hypot(dx, dy)
-        # Something over the middle (a seat) comes straight down.
-        if length < 0.05:
-            exploded[uid] = [pos[0], pos[1], pos[2] + distance]
-            continue
-        exploded[uid] = [pos[0] + dx / length * distance, pos[1] + dy / length * distance, pos[2] + lift]
-    return exploded
-
-
-def compute_chair_positions(
-    shapes: Dict[str, Dict[str, Any]],
-    graph: Dict[str, Any],
-) -> Optional[Dict[str, Any]]:
-    """Lay out a chair standing upright: the front leg frame at the front,
-    the back (whose legs are the back legs) behind it, side rails between
-    them along the inside of the legs, and the seat on top. None when the
-    parts have no leg frame or no back."""
-    by_role = parts_by_role(shapes)
-    if not by_role.get("leg_frame") or not by_role.get("back"):
-        return None
-
-    frame_uid, back_uid = by_role["leg_frame"][0], by_role["back"][0]
-    frame_w, frame_t, frame_h = shapes[frame_uid]["dimensions"]
-    back_w, back_t, back_h = shapes[back_uid]["dimensions"]
-    rails = by_role.get("rail", [])
-    depth = shapes[rails[0]]["dimensions"][0] if rails else frame_w
-
-    y_front = -(depth + frame_t) / 2
-    y_back = (depth + back_t) / 2
-    final = {frame_uid: [0.0, y_front, frame_h / 2], back_uid: [0.0, y_back, back_h / 2]}
-    rotation = {frame_uid: [0.0, 0.0, 0.0], back_uid: [0.0, 0.0, 0.0]}
-    scale: Dict[str, List[float]] = {}
-
-    rail_x = min(frame_w, back_w) / 2 - frame_t / 2
-    for i, uid in enumerate(rails):
-        length, _, height = shapes[uid]["dimensions"]
-        final[uid] = [rail_x * (1 if i % 2 == 0 else -1), (y_front + y_back) / 2, frame_h - height / 2]
-        rotation[uid] = [0.0, 0.0, 90.0]
-        scale[uid] = [depth / length, 1.0, 1.0]
-
-    for uid in by_role.get("seat", []):
-        _, seat_d, seat_t = shapes[uid]["dimensions"]
-        final[uid] = [0.0, y_front - frame_t / 2 + seat_d / 2, frame_h + seat_t / 2]
-        rotation[uid] = [0.0, 0.0, 0.0]
-
-    instance_of = place_fastener_instances(shapes, graph, final, rotation, scale)
-    return {
-        "final": final,
-        "exploded": explode_outward(final, [0.0, 0.0, frame_h / 2]),
-        "rotation": rotation,
-        "scale": scale,
-        "instance_of": instance_of,
-        "pivot": None,
-    }
-
-
-INSTANCE_SUFFIX_RE = re.compile(r"\s+\d+\s*/\s*\d+$")
-
-
-def base_name(shape: Dict[str, Any]) -> str:
-    """'right side rail 2/2' -> 'right side rail'."""
-    return INSTANCE_SUFFIX_RE.sub("", shape.get("canonical_name", "")).lower()
-
-
-def named(uids: List[str], shapes: Dict[str, Dict[str, Any]], word: str) -> List[str]:
-    return [uid for uid in uids if word in base_name(shapes[uid])]
-
-
-def side_of(shape: Dict[str, Any], index: int) -> int:
-    """+1 (right, +X) or -1 (left) from the name, else alternating."""
-    name = base_name(shape)
-    if "left" in name:
-        return -1
-    if "right" in name:
-        return 1
-    return 1 if index % 2 == 0 else -1
-
-
-def joined_to(uid: str, others: List[str], graph: Dict[str, Any]) -> bool:
-    return any(
-        uid in ends and ends & set(others)
-        for ends in ({conn.get("from_node_ref"), conn.get("to_node_ref")} for conn in graph.get("connections", []))
-    )
-
-
-def compute_bed_positions(
-    shapes: Dict[str, Dict[str, Any]],
-    graph: Dict[str, Any],
-) -> Optional[Dict[str, Any]]:
-    """Lay out a bed standing upright, headboard at +Y: tall headboard posts
-    with the headboard rails stacked between them, short footboard posts
-    with a rail between them, side rails end to end down each side (with a
-    centre leg where two meet) and slats across on top. None when there
-    are no bed posts."""
-    by_role = parts_by_role(shapes)
-    posts = by_role.get("post", [])
-    if not posts:
-        return None
-
-    rails = by_role.get("rail", [])
-    head_posts, foot_posts = named(posts, shapes, "headboard"), named(posts, shapes, "footboard")
-    side_rails = named(rails, shapes, "side")
-    board_rails = [uid for uid in rails if uid not in side_rails]
-    legs, slats = by_role.get("leg", []), by_role.get("slat", [])
-
-    # Side rail kinds run from the headboard to the footboard: the kind
-    # joined to the headboard posts first, then by name.
-    kinds: Dict[str, List[str]] = {}
-    for uid in side_rails:
-        kinds.setdefault(base_name(shapes[uid]), []).append(uid)
-    kind_order = sorted(kinds, key=lambda name: (not joined_to(kinds[name][0], head_posts, graph), name))
-    kind_lengths = [shapes[kinds[name][0]]["dimensions"][0] for name in kind_order]
-
-    post_w = shapes[posts[0]]["dimensions"][0]
-    leg_w = shapes[legs[0]]["dimensions"][0] if legs else 0.0
-    inner_w = max((shapes[uid]["dimensions"][0] for uid in board_rails), default=0.9)
-    inner_len = sum(kind_lengths) + leg_w * max(len(kind_lengths) - 1, 0) or 1.9
-    post_x = inner_w / 2 + post_w / 2
-    post_y = inner_len / 2 + post_w / 2
-    foot_h = max((shapes[uid]["dimensions"][2] for uid in foot_posts or legs), default=0.33)
-    head_h = max((shapes[uid]["dimensions"][2] for uid in head_posts), default=0.9)
-
-    final: Dict[str, List[float]] = {}
-    rotation: Dict[str, List[float]] = {}
-
-    def put(uid: str, pos: List[float], turn: float = 0.0) -> None:
-        final[uid] = pos
-        rotation[uid] = [0.0, 0.0, turn]
-
-    for group, y in ((head_posts, post_y), (foot_posts, -post_y)):
-        for i, uid in enumerate(group):
-            put(uid, [side_of(shapes[uid], i) * post_x, y, shapes[uid]["dimensions"][2] / 2])
-
-    # One board rail goes between the footboard posts: the one not joined
-    # to the headboard, else the last of the widest.
-    foot_rails: List[str] = []
-    if foot_posts and board_rails:
-        widest = max(shapes[uid]["dimensions"][2] for uid in board_rails)
-        free = [uid for uid in board_rails if not joined_to(uid, head_posts, graph)]
-        foot_rails = free[-1:] or [uid for uid in board_rails if shapes[uid]["dimensions"][2] == widest][-1:]
-    for uid in foot_rails:
-        put(uid, [0.0, -post_y, foot_h - shapes[uid]["dimensions"][2] / 2])
-
-    # Headboard rails top to bottom: a widest one, the narrower ones, then
-    # the other widest ones, with even gaps.
-    head_rails = sorted(
-        (uid for uid in board_rails if uid not in foot_rails),
-        key=lambda uid: (-shapes[uid]["dimensions"][2], uid),
-    )
-    if head_rails:
-        widest = shapes[head_rails[0]]["dimensions"][2]
-        wide = [uid for uid in head_rails if shapes[uid]["dimensions"][2] == widest]
-        order = wide[:1] + [uid for uid in head_rails if uid not in wide] + wide[1:]
-        top, bottom = head_h - 0.03, foot_h + 0.06
-        heights = [shapes[uid]["dimensions"][2] for uid in order]
-        gap = max((top - bottom - sum(heights)) / max(len(order) - 1, 1), 0.01)
-        z = top
-        for uid, height in zip(order, heights):
-            put(uid, [0.0, post_y, z - height / 2])
-            z -= height + gap
-
-    y = inner_len / 2
-    leg_rows: List[float] = []
-    for name, length in zip(kind_order, kind_lengths):
-        for i, uid in enumerate(kinds[name]):
-            height = shapes[uid]["dimensions"][2]
-            put(uid, [(1 if i % 2 == 0 else -1) * post_x, y - length / 2, foot_h - height / 2], 90.0)
-        y -= length
-        if len(leg_rows) < len(kinds) - 1:
-            leg_rows.append(y - leg_w / 2)
-            y -= leg_w
-    for i, uid in enumerate(legs):
-        row = leg_rows[min(i // 2, len(leg_rows) - 1)] if leg_rows else 0.0
-        put(uid, [(1 if i % 2 == 0 else -1) * post_x, row, shapes[uid]["dimensions"][2] / 2])
-
-    # Slats evenly across the base, from the footboard to the headboard.
-    if slats:
-        slat_w = shapes[slats[0]]["dimensions"][1]
-        pitch = (inner_len - slat_w) / max(len(slats) - 1, 1)
-        for i, uid in enumerate(slats):
-            thickness = shapes[uid]["dimensions"][2]
-            put(uid, [0.0, -inner_len / 2 + slat_w / 2 + i * pitch, foot_h - SLAT_DROP - thickness / 2])
-
-    instance_of = place_fastener_instances(shapes, graph, final, rotation, {})
-    return {
-        "final": final,
-        "exploded": explode_outward(final, [0.0, 0.0, foot_h / 2]),
-        "rotation": rotation,
-        "scale": {},
-        "instance_of": instance_of,
-        "pivot": None,
-    }
 
 
 def fallback_grid_position(index: int, node_type: str) -> Tuple[List[float], List[float]]:
@@ -820,6 +326,95 @@ def primary_assembly_uid(graph: Dict[str, Any]) -> str:
     return "ASM0001"
 
 
+# A sub-assembly is staged this far (at least) beside where it ends up,
+# as a share of its own size.
+STAGING_FRACTION = 0.6
+
+
+def stage_subassemblies(scene_objects: List[Dict[str, Any]], motion: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """A part that other parts are fitted to before its own step (feet into
+    a chaise that is later joined to a sofa) is a sub-assembly: it is built
+    at a staging spot beside its final place, then moves there with
+    everything on it. Sub-assemblies nest (an armrest with its brackets,
+    fitted to the staged chaise). Sets on each scene object:
+    - "own_end": where its own step leaves it (final, plus the offsets of
+      the sub-assemblies it is in that haven't moved yet);
+    - "carry": [{"base", "from", "to"}] for each enclosing sub-assembly's
+      move, in order;
+    - for a sub-assembly's base, "reveal_with": the members whose first
+      step shows it at its staging spot;
+    and moves start positions to match. Returns the groups."""
+    steps = sorted(motion.get("steps", []), key=lambda s: s.get("start_frame", 1))
+    own_step: Dict[str, int] = {}
+    for i, step in enumerate(steps):
+        for uid in step.get("moving_nodes", []):
+            own_step.setdefault(uid, i)
+
+    objects_of: Dict[str, List[Dict[str, Any]]] = {}
+    for obj in scene_objects:
+        objects_of.setdefault(obj.get("instance_of", obj["node_uid"]), []).append(obj)
+
+    groups = []
+    for base in sorted(own_step, key=own_step.get):
+        if base not in objects_of:
+            continue
+        # Everything fitted to the base, or to a part fitted to it, before
+        # the base's own step (in any order: brackets on an armrest that is
+        # then fitted to the base belong too).
+        members = {base}
+        grew = True
+        while grew:
+            grew = False
+            for i, step in enumerate(steps[:own_step[base]]):
+                if set(step.get("target_nodes", [])) & members:
+                    new = {u for u in step.get("moving_nodes", []) if own_step.get(u) == i} - members
+                    if new:
+                        members |= new
+                        grew = True
+        if len(members) < 2:
+            continue
+        objs = [o for uid in members for o in objects_of.get(uid, [])]
+        base_obj = objects_of[base][0]
+        dx = base_obj["start_position"][0] - base_obj["final_position"][0]
+        dy = base_obj["start_position"][1] - base_obj["final_position"][1]
+        if math.hypot(dx, dy) < 1e-6:
+            dx, dy = 1.0, 0.0
+        xs = [o["final_position"][0] for o in objs]
+        ys = [o["final_position"][1] for o in objs]
+        span = max(max(xs) - min(xs), max(ys) - min(ys), 0.3)
+        reach = max(math.hypot(dx, dy), span * (1 + STAGING_FRACTION))
+        length = math.hypot(dx, dy)
+        groups.append({"base": base, "members": sorted(members),
+                       "offset": [dx / length * reach, dy / length * reach, 0.0]})
+
+    def plus(*vectors: List[float]) -> List[float]:
+        return [sum(v[i] for v in vectors) for i in range(3)]
+
+    zero = [0.0, 0.0, 0.0]
+    for uid, objs in objects_of.items():
+        enclosing = sorted((g for g in groups if uid in g["members"] and g["base"] != uid), key=lambda g: own_step[g["base"]])
+        own = next((g for g in groups if g["base"] == uid), None)
+        if not enclosing and not own:
+            continue
+        waiting = plus(zero, *[g["offset"] for g in enclosing])
+        for obj in objs:
+            final = obj["final_position"]
+            obj["own_end"] = plus(final, waiting)
+            if own:
+                # A base waits at its staging spot until its own step.
+                obj["start_position"] = plus(final, own["offset"], waiting)
+                obj["reveal_with"] = [m for m in own["members"] if m != uid]
+            else:
+                obj["start_position"] = plus(obj["start_position"], waiting)
+            obj["carry"] = [
+                {"base": g["base"],
+                 "from": plus(final, *[h["offset"] for h in enclosing[i:]]),
+                 "to": plus(final, *[h["offset"] for h in enclosing[i + 1:]])}
+                for i, g in enumerate(enclosing)
+            ]
+    return groups
+
+
 def build_scene_layout(
     graph_path: Path = GRAPH_PATH,
     motion_path: Path = MOTION_PATH,
@@ -849,14 +444,8 @@ def build_scene_layout(
 
     shapes = load_part_shapes(part_shapes_path)
     layout_mode = "generic"
-    for mode, compute in (
-        ("table", compute_table_positions),
-        ("chair", compute_chair_positions),
-        ("bed", compute_bed_positions),
-    ):
-        placed = compute(shapes, graph)
-        if not placed:
-            continue
+    placed = compute_general_positions(shapes, graph, motion)
+    if placed:
         connected_final.update(placed["final"])
         connected_exploded.update(placed["exploded"])
         rotations = placed["rotation"]
@@ -867,11 +456,10 @@ def build_scene_layout(
                 nodes[instance_uid] = dict(nodes[base_uid], node_uid=instance_uid, instance_of=base_uid)
         for base_uid in set(placed["instance_of"].values()):
             nodes.pop(base_uid, None)
-        # A table is built upside down and turned over at the end.
+        # Built upside down (a table on its top): turned over at the end.
         if placed["pivot"] is not None:
             finale = {"type": "flip", "axis": "X", "angle": 180.0, "pivot": placed["pivot"]}
-        layout_mode = mode
-        break
+        layout_mode = "frame"
 
     scene_objects = []
     warnings = []
@@ -928,6 +516,8 @@ def build_scene_layout(
         if node_type == "part" and not geometry_uid:
             warnings.append(f"No geometry found for part node {uid}")
 
+    subassemblies = stage_subassemblies(scene_objects, motion)
+
     layout = {
         "schema_version": "2.2",
         "scene_objects": scene_objects,
@@ -953,7 +543,9 @@ def build_scene_layout(
             "connected_node_count": len(connected_final),
             "fallback_node_count": fallback_index,
         },
-        "warnings": warnings
+        "warnings": warnings,
+        # Parts built aside and moved into place together (see stage_subassemblies).
+        "subassemblies": subassemblies,
     }
 
     save_json(layout, output_path)

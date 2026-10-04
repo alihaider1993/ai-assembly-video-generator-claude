@@ -75,6 +75,8 @@ def build_proxy_geometry():
             "location": [0.0, 0.0, 0.0],
             "rotation": [0.0, 0.0, 0.0],
             "holes": shape.get("holes", []),
+            # A traced outline for the "profile" primitive (bentwood frames).
+            "profile": shape.get("profile"),
             "anchor_points": shape.get("anchor_points", []),
             "visual_features": {
                 "rounded_corners": shape.get("has_rounded_corners", False),

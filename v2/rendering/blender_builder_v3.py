@@ -105,6 +105,16 @@ def step_caption(step: Dict[str, Any], moving: List[str], by_uid: Dict[str, Dict
     for uid in moving:
         name = display_name(by_uid[uid].get("name", uid))
         counts[name] = counts.get(name, 0) + 1
+    # The manual's own count ("4x screw 119046") beats the number of copies
+    # drawn, which is one per part a fastener goes into.
+    evidence = step.get("visual_evidence", "")
+    for name in counts:
+        words = [w for w in re.findall(r"[a-z0-9]+", name.lower()) if len(w) > 2]
+        for match in re.finditer(r"(\d+)\s*x\s+([a-z0-9]+(?: [a-z0-9]+){0,3})", evidence.lower()):
+            said = match.group(2)
+            if words and (words[-1] in said.split() or name.lower() in said):
+                counts[name] = int(match.group(1))
+                break
     items = [f"{count} x {name}" if count > 1 else name for name, count in counts.items()]
     text = f"{verb} {' and '.join(items)}"
 
@@ -162,6 +172,24 @@ def build_timeline(motion: Dict[str, Any], scene_layout: Dict[str, Any]) -> Dict
             "caption": step_caption(step, moving, by_uid),
         })
         frame += duration + STEP_GAP_FRAMES
+
+    # Sub-assemblies (scene_layout_engine.stage_subassemblies): a base part
+    # shows up at its staging spot with the first part fitted to it, and its
+    # own step carries everything on it one level closer to its place.
+    def bases_moving(step: Dict[str, Any]) -> set:
+        return {base_uid(by_uid[u]) for u in step["moving_nodes"]}
+
+    for step in steps:
+        step["carried"], step["reveal"] = [], []
+    for uid, obj in by_uid.items():
+        for carry in obj.get("carry", []):
+            step = next((s for s in steps if carry["base"] in bases_moving(s)), None)
+            if step is not None:
+                step["carried"].append({"uid": uid, "from": carry["from"], "to": carry["to"]})
+        if obj.get("reveal_with"):
+            step = next((s for s in steps if bases_moving(s) & set(obj["reveal_with"])), None)
+            if step is not None and uid not in step["moving_nodes"]:
+                step["reveal"].append(uid)
 
     last_end = steps[-1]["end_frame"] if steps else 1
     flips = scene_layout.get("finale", {}).get("type") == "flip"
@@ -408,6 +436,103 @@ def create_slatted_back(name, dimensions, material):
     return join_boxes(name, pieces, material)
 
 
+SIDE_FRAME_SEAT_FRACTION = 0.48  # same as general_layout.py
+
+
+def create_side_frame(name, dimensions, material):
+    # A chair side standing in the Y/Z plane: a front leg up to seat height,
+    # a full-height back leg, a seat rail between them and a lower rail.
+    thickness, depth, height = dimensions
+    seat_height = height * SIDE_FRAME_SEAT_FRACTION
+    bottom = -height / 2
+    leg_y = depth / 2 - thickness / 2
+    inner = depth - 2 * thickness
+    rail_height, low_height = 0.07, 0.035
+    return join_boxes(name, [
+        ([thickness, thickness, seat_height], (0, -leg_y, bottom + seat_height / 2)),
+        ([thickness, thickness, height], (0, leg_y, 0)),
+        ([thickness * 0.8, inner, rail_height], (0, 0, bottom + seat_height - rail_height / 2)),
+        ([thickness * 0.8, inner, low_height], (0, 0, bottom + seat_height * 0.4)),
+    ], material)
+
+
+def profile_axes(plane):
+    # (axis of u, axis of v, axis the outline is extruded along) for an
+    # outline traced in the side view (y, z), front view (x, z) or from
+    # above (x, y).
+    if plane == "front":
+        return 0, 2, 1
+    if plane == "top":
+        return 0, 1, 2
+    return 1, 2, 0
+
+
+def prism_mesh(name, polygons, axes, depth, material):
+    # One mesh: each 2D polygon extruded `depth` along the third axis.
+    u_axis, v_axis, w_axis = axes
+    verts, faces = [], []
+    for polygon in polygons:
+        n = len(polygon)
+        base = len(verts)
+        for w in (-depth / 2, depth / 2):
+            for u, v in polygon:
+                point = [0.0, 0.0, 0.0]
+                point[u_axis], point[v_axis], point[w_axis] = u, v, w
+                verts.append(point)
+        faces.append(list(range(base, base + n))[::-1])
+        faces.append(list(range(base + n, base + 2 * n)))
+        for i in range(n):
+            j = (i + 1) % n
+            faces.append([base + i, base + j, base + n + j, base + n + i])
+    mesh = bpy.data.meshes.new(name)
+    mesh.from_pydata(verts, [], faces)
+    mesh.validate()
+    obj = bpy.data.objects.new(name, mesh)
+    bpy.context.collection.objects.link(obj)
+    bpy.context.view_layer.objects.active = obj
+    obj.select_set(True)
+    obj.data.materials.append(material)
+    return obj
+
+
+def create_profile(name, dimensions, profile, material):
+    # A traced outline (mm), centred in the part's box. A closed outline
+    # ("closed": True) is filled: a sofa body's side, seat and backrest.
+    # Otherwise it is a strip `thickness` wide along the path, with a round
+    # joint at each bend: bentwood frames, curved slats and uprights.
+    path = [(p[0] / 1000.0, p[1] / 1000.0) for p in profile.get("path", [])]
+    axes = profile_axes(profile.get("plane", "side"))
+    depth = dimensions[axes[2]]
+    if len(path) < 2:
+        return create_box(name, dimensions, material)
+    thickness = profile.get("thickness", 30) / 1000.0
+    mid_u = (min(p[0] for p in path) + max(p[0] for p in path)) / 2
+    mid_v = (min(p[1] for p in path) + max(p[1] for p in path)) / 2
+    points = [(u - mid_u, v - mid_v) for u, v in path]
+    if profile.get("closed"):
+        polygons = [points]
+    else:
+        polygons = []
+        half = thickness / 2
+        for (u0, v0), (u1, v1) in zip(points, points[1:]):
+            length = math.hypot(u1 - u0, v1 - v0)
+            if length < 1e-6:
+                continue
+            nu, nv = -(v1 - v0) / length * half, (u1 - u0) / length * half
+            polygons.append([(u0 + nu, v0 + nv), (u1 + nu, v1 + nv), (u1 - nu, v1 - nv), (u0 - nu, v0 - nv)])
+        for u, v in points[1:-1]:
+            polygons.append([(u + half * math.cos(a * math.pi / 8), v + half * math.sin(a * math.pi / 8)) for a in range(16)])
+    obj = prism_mesh(name, polygons, axes, depth, material)
+    if profile.get("closed") and profile.get("rounded", True):
+        bevel = obj.modifiers.new("Rounded_Corners", "BEVEL")
+        bevel.width = min(0.06, depth * 0.15)
+        bevel.segments = 3
+    return obj
+
+
+COMPOSITE_PRIMITIVES = ("u_frame", "slatted_back", "side_frame", "profile")
+
+
 MIN_HOLE_RADIUS = 0.008
 
 
@@ -536,7 +661,7 @@ def create_mesh_for_layout(parent, layout_obj, graph_obj, proxy_obj):
     if proxy_obj:
         name = f"{{uid}}_mesh"
         primitive = proxy_obj.get("primitive", "box")
-        if proxy_obj.get("shape_type") == "rounded_panel":
+        if proxy_obj.get("shape_type") == "rounded_panel" and primitive != "profile":
             primitive = "rounded_box"
         dimensions = proxy_obj.get("dimensions", [1, 1, 1])
         holes = proxy_obj.get("holes", [])
@@ -556,11 +681,15 @@ def create_mesh_for_layout(parent, layout_obj, graph_obj, proxy_obj):
         mesh = create_u_frame(name, dimensions, material)
     elif primitive == "slatted_back":
         mesh = create_slatted_back(name, dimensions, material)
+    elif primitive == "side_frame":
+        mesh = create_side_frame(name, dimensions, material)
+    elif primitive == "profile" and proxy_obj and proxy_obj.get("profile"):
+        mesh = create_profile(name, dimensions, proxy_obj["profile"], material)
     else:
         mesh = create_box(name, dimensions, material)
 
     # A frame's bounding box faces are mostly open space, so no hole markers.
-    if primitive not in ("u_frame", "slatted_back"):
+    if primitive not in COMPOSITE_PRIMITIVES:
         add_holes(mesh, holes, dimensions)
     mesh.parent = parent
     # scene_layout rotation is XYZ Euler in degrees (e.g. a short rail
@@ -659,9 +788,34 @@ SPIN_TURNS = 2
 steps = TIMELINE["steps"]
 first_step_of = {{}}
 
+revealed = set()
+
+
 for index, step in enumerate(steps):
     start_frame = step["start_frame"]
     end_frame = step["end_frame"]
+
+    # A sub-assembly's base appears at its staging spot when the first part
+    # is fitted to it.
+    for uid in step.get("reveal", []):
+        obj = node_objects.get(uid)
+        layout_obj = layout_by_uid.get(uid)
+        if not obj or not layout_obj or uid in revealed:
+            continue
+        revealed.add(uid)
+        appear_frame = start_frame - APPEAR_FRAMES
+        if appear_frame > 1:
+            keyframe_scale(obj, HIDDEN_SCALE, appear_frame)
+            keyframe_scale(obj, 1.0, start_frame)
+        keyframe_location(obj, local(layout_obj.get("start_position", [0, 0, 1])), start_frame)
+
+    # Parts already fitted to a sub-assembly move with it.
+    for carried in step.get("carried", []):
+        obj = node_objects.get(carried["uid"])
+        if not obj:
+            continue
+        keyframe_location(obj, local(carried["from"]), start_frame)
+        keyframe_location(obj, local(carried["to"]), end_frame)
 
     for uid in step["moving_nodes"]:
         obj = node_objects.get(uid)
@@ -672,12 +826,15 @@ for index, step in enumerate(steps):
         first_step_of[uid] = index
 
         appear_frame = start_frame - APPEAR_FRAMES
-        if appear_frame > 1:
+        if appear_frame > 1 and uid not in revealed:
             keyframe_scale(obj, HIDDEN_SCALE, appear_frame)
             keyframe_scale(obj, 1.0, start_frame)
 
+        # A member of a sub-assembly goes onto it at its staging spot; the
+        # base's own step then carries it into place.
+        end_position = layout_obj.get("own_end") or layout_obj.get("final_position", [0, 0, 1])
         keyframe_location(obj, local(layout_obj.get("start_position", [0, 0, 1])), start_frame)
-        keyframe_location(obj, local(layout_obj.get("final_position", [0, 0, 1])), end_frame)
+        keyframe_location(obj, local(end_position), end_frame)
 
         mesh = node_meshes.get(uid)
         if mesh is None:
@@ -827,7 +984,9 @@ if flip:
 # ones), so it widens gradually instead of jumping in and out. It then
 # frames the turn-over and slowly orbits the finished assembly.
 CAMERA_DIRECTION = Vector((0.95, -1.20, 0.72)).normalized()
-ORBIT_DEGREES = 100
+# The orbit turns this far, clockwise seen from above: from front-right
+# across the front to front-left, so the last shot shows the front (-Y).
+ORBIT_DEGREES = -100
 ORBIT_KEY_SPACING = 6
 
 bpy.ops.object.camera_add(location=(0, 0, 0))
