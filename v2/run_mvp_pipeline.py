@@ -5,6 +5,10 @@ Usage (from the repo root):
     python v2/run_mvp_pipeline.py NAME       # manuals/NAME/
     python v2/run_mvp_pipeline.py DIR        # any folder with the two vision files
     python v2/run_mvp_pipeline.py NAME --quiet
+    python v2/run_mvp_pipeline.py NAME --no-render
+
+--no-render runs every stage up to writing the Blender script, without
+Blender or the video (what CI runs).
 
 --quiet prints everything except Blender's per-frame "Saved:" lines and
 progress bars, which are only counted; outputs/logs/pipeline.log keeps every
@@ -79,8 +83,8 @@ class CopyStep:
 Step = Union[List[str], CopyStep]
 
 
-def build_steps(fixture_dir: Path) -> List[Step]:
-    return [
+def build_steps(fixture_dir: Path, render: bool = True) -> List[Step]:
+    steps = [
         CopyStep(fixture_dir / "page_states.json", PAGE_STATES_JSON),
         [sys.executable, "v2/rendering/state_difference_engine.py"],
         [sys.executable, "v2/rendering/assembly_action_extractor.py"],
@@ -121,7 +125,10 @@ def build_steps(fixture_dir: Path) -> List[Step]:
         [sys.executable, "v2/builders/proxy_geometry_builder.py"],
 
         [sys.executable, "v2/rendering/blender_builder_v3.py"],
-
+    ]
+    if not render:
+        return steps
+    return steps + [
         # --python-exit-code makes an exception in the generated script fail
         # the stage instead of exiting 0.
         [BLENDER_EXE, "--background", "--python-exit-code", "1", "--python", str(BLENDER_V3_SCRIPT)],
@@ -216,6 +223,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("manual", help="Manual name under manuals/, or a folder holding its vision files.")
     parser.add_argument("--quiet", action="store_true",
                         help="Keep per-frame lines and progress bars out of the console; the log keeps everything.")
+    parser.add_argument("--no-render", action="store_true",
+                        help="Stop after writing the Blender script: no Blender, no video.")
     return parser.parse_args()
 
 
@@ -247,7 +256,7 @@ def main():
         log = LOG_PATH.open("w", encoding="utf-8")
 
     try:
-        for step in build_steps(manual_dir):
+        for step in build_steps(manual_dir, render=not args.no_render):
             run_command(step, log)
     except PipelineStepError as e:
         print(f"\n[PIPELINE FAILED] {e}", file=sys.stderr)
@@ -255,6 +264,10 @@ def main():
     finally:
         if log:
             log.close()
+
+    if args.no_render:
+        print(f"\n[SUCCESS] Stages up to the Blender script complete: {BLENDER_V3_SCRIPT}")
+        return
 
     kept = VIDEOS_DIR / f"{name}.mp4"
     shutil.copyfile(VIDEO_V3_PATH, kept)

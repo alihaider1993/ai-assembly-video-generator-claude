@@ -22,6 +22,7 @@ python utils/pdf_to_images.py <pdf> [name]   # add a manual: manuals/<name>/manu
 python manuals/<name>/describe.py            # (re)generate its page_states.json + diagram_analysis.json
 python v2/run_mvp_pipeline.py <name>         # build the video → outputs/videos/<name>.mp4
 python v2/run_mvp_pipeline.py <name> --quiet # same, without per-frame lines (full log: outputs/logs/pipeline.log)
+python v2/run_mvp_pipeline.py <name> --no-render # stages up to the Blender script only (no Blender, no video; what CI runs)
 python utils/page_sheets.py <name> [--page N --split 2]  # page images sized for reading (manuals/<name>/sheets/)
 python utils/layout_summary.py               # last run's layout + motion plan as a short table
 python utils/sample_frames.py <name> [--at S] # grid of video frames → outputs/checks/
@@ -83,3 +84,4 @@ Key points:
 - Generated outputs (`outputs/`, `blender/generated/`, `v2/outputs/json/*.json`, `v2/output/*.json`), `uploads/` (a drop folder) and each manual's PDF and `pages/` are git-ignored.
 - Output paths are fixed. Run manuals one at a time, or copy the repo into a separate sandbox for each run.
 - The full run is Windows-first because of the default `BLENDER_EXE` path.
+- CI (`.github/workflows/ci.yml`, GitHub Actions on Ubuntu) runs every described manual with `--no-render`, compiles the generated Blender script, runs `pytest v2/tests`, and runs `pytest mcp_server/tests`. Add a new manual to its matrix.
