@@ -11,7 +11,9 @@ import os
 from pathlib import Path
 from typing import Literal, Optional
 
-from pydantic import BaseModel, ConfigDict, ValidationError
+from pydantic import BaseModel, ConfigDict, ValidationError, model_serializer
+
+from mcp_server.counts import parse_quantities, parse_repeat
 
 log = logging.getLogger(__name__)
 
@@ -77,6 +79,11 @@ class Ref(_Model):
     name: Optional[str] = None
 
 
+class Quantity(_Model):
+    count: int
+    text: str
+
+
 class Step(_Model):
     action_uid: Optional[str] = None
     action_type: Optional[str] = None
@@ -85,7 +92,16 @@ class Step(_Model):
     fastener: Optional[Ref] = None
     tool: Optional[Ref] = None
     direction_hint: Optional[str] = None
+    repeat: Optional[int] = None
+    quantities_mentioned: list[Quantity] = []
     visual_evidence: Optional[str] = None
+
+    @model_serializer(mode="wrap")
+    def _keep_repeat(self, handler):
+        # repeat stays in the output as null so clients can tell "no count" from "field missing".
+        data = handler(self)
+        data.setdefault("repeat", self.repeat)
+        return data
 
 
 class PageSteps(_Model):
@@ -195,6 +211,8 @@ def get_assembly_steps(root: Path, product_id: str, include_evidence: bool = Fal
                 fastener=_resolve(a.fastener_ref, fasteners),
                 tool=_resolve(a.tool_ref, tools),
                 direction_hint=a.direction_hint or None,
+                repeat=parse_repeat(a.visual_evidence),
+                quantities_mentioned=[Quantity(count=n, text=t) for n, t in parse_quantities(a.visual_evidence)],
                 visual_evidence=a.visual_evidence if include_evidence else None,
             )
             for a in page.observed_actions

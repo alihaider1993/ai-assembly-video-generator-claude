@@ -54,6 +54,13 @@ def get_assembly_steps(product_id: str, include_evidence: bool = False) -> dict[
     resolved to names from the same page (raw refs are kept). Page
     uncertainties are included. Set include_evidence=True to add each action's
     visual_evidence text. product_id must be an id from list_products.
+
+    Each action also has repeat (int or null, from "repeat xN"; null when the
+    phrase is qualified, e.g. "total", "each", or numbers disagree) and
+    quantities_mentioned (list of {count, text} for each "Nx <words>"; sizes
+    such as "4 x 35mm" are skipped). Both are filled even when evidence is off.
+    Digit counts only; counts written as words (e.g. 'two') are not captured;
+    parsed from vision text, not verified against the manual.
     """
     try:
         steps = loader.get_assembly_steps(loader.data_root(), product_id, include_evidence)
