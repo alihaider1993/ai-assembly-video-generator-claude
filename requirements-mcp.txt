@@ -1,0 +1,4 @@
+# MCP server (mcp_server/) dependencies, pinned. mcp<2 keeps the FastMCP API.
+mcp==1.30.0
+pydantic==2.13.5
+pytest==9.1.1

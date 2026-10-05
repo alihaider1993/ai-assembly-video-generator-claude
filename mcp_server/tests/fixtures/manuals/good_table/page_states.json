@@ -1,0 +1,12 @@
+[
+  {"page_number": 1, "page_type": "cover", "visible_parts": [], "visible_fasteners": [], "visible_tools": [], "observed_actions": [], "uncertainties": []},
+  {"page_number": 3, "page_type": "assembly_step", "extra_field": "ignored",
+   "visible_parts": [{"part_uid": "P003_001", "name": "table top", "quantity_visible": 1}, {"part_uid": "P003_002", "name": "leg", "quantity_visible": 4}],
+   "visible_fasteners": [{"fastener_uid": "F003_001", "name": "bolt", "quantity_visible": 4}],
+   "visible_tools": [{"tool_uid": "T003_001", "name": "allen key"}],
+   "observed_actions": [{"action_uid": "A003_001", "action_type": "attach", "moving_part_ref": "P003_002", "target_part_ref": "P003_001", "fastener_ref": "F003_001", "tool_ref": "T003_001", "direction_hint": "down", "visual_evidence": "4x bolt through each leg"}],
+   "uncertainties": ["leg orientation unclear"]},
+  {"page_number": 4, "page_type": "assembly_step",
+   "visible_parts": [{"part_uid": "P004_001", "name": "shelf"}],
+   "observed_actions": [{"action_uid": "A004_001", "action_type": "insert", "moving_part_ref": "P004_001", "target_part_ref": "P999_999", "fastener_ref": "", "visual_evidence": "shelf slides in"}]}
+]
