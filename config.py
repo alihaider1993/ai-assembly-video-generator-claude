@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 # ==========================================================
@@ -21,6 +22,16 @@ VISION_FILES = ("page_states.json", "diagram_analysis.json")
 
 def is_described(manual_dir: Path) -> bool:
     return all((manual_dir / name).exists() for name in VISION_FILES)
+
+
+def product_title(manual_dir: Path) -> str:
+    """The product's name for the video title: product.json's "title" (set
+    by describe.py), else the folder name ("brimnes_wardrobe" -> "Brimnes Wardrobe")."""
+    try:
+        title = json.loads((manual_dir / "product.json").read_text(encoding="utf-8")).get("title", "")
+    except (OSError, ValueError):
+        title = ""
+    return title.strip() or manual_dir.name.replace("_", " ").replace("-", " ").title()
 
 
 # ==========================================================

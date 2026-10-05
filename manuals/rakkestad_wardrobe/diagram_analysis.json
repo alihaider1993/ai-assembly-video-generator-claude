@@ -1,0 +1,167 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "Assembled RAKKESTAD three-door wardrobe",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.1,
+          "x_max": 0.5,
+          "y_max": 0.8
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "part_inventory",
+        "description": "Fittings: screws 100219 x16, dowels 101345 x38, screws 109567 x3, 105248 x38, 109041 x2, plugs 109837 x4, knobs 119595 x3, bracket 103717, felt pads, nail guide, plates 109221 x9, hinges 109338 x9, rail holders 157308 x2, spacers 158568 x8, nails 405950 x2 bags, clothes rail 146857",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "100219",
+          "101345",
+          "109567",
+          "105248",
+          "109041",
+          "109837",
+          "119595",
+          "103717",
+          "109221",
+          "109338",
+          "157308",
+          "158568",
+          "405950",
+          "146857"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "part_inventory",
+        "description": "Which tall panel is which: left side panel, divider, right side panel",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 16,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D016_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 18: top panel onto the side panels",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.1,
+          "x_max": 0.95,
+          "y_max": 0.9
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "100219",
+          "4x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D016_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 28,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D028_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 36: three doors hung on the hinges",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.1,
+          "x_max": 0.95,
+          "y_max": 0.85
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "9x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D028_001",
+    "warnings": [],
+    "uncertainties": []
+  }
+]

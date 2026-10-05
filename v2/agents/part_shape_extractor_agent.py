@@ -230,6 +230,10 @@ PART_ROLES = [
     # A chair side: front leg, tall back leg and the rails between them,
     # standing in the Y/Z plane (depth along Y).
     ("side_frame", re.compile(r"\bside frames?\b"), [0.04, 0.42, 0.95]),
+    # Hardware named after what it is fitted to ("door hinge", "drawer
+    # handle") is still hardware, so it is matched before doors and drawers.
+    ("handle", re.compile(r"\b(handles?|knobs?|pulls?)\b"), [0.12, 0.025, 0.03]),
+    ("hinge", re.compile(r"\bhinges?\b"), [0.035, 0.05, 0.012]),
     # Drawers: each drawer is a front, two sides, a back and a bottom.
     ("drawer_front", re.compile(r"\bdrawer fronts?\b"), [0.76, 0.018, 0.16]),
     ("drawer_side", re.compile(r"\bdrawer sides?\b"), [0.012, 0.4, 0.12]),
@@ -262,8 +266,6 @@ PART_ROLES = [
     ("rail", re.compile(r"\b(rails?|aprons?)\b"), [0.9, 0.03, 0.07]),
     ("seat", re.compile(r"\bseat\b"), [0.45, 0.42, 0.05]),
     ("bracket", re.compile(r"\bbrackets?\b"), [0.08, 0.08, 0.04]),
-    ("handle", re.compile(r"\b(handles?|knobs?|pulls?)\b"), [0.12, 0.025, 0.03]),
-    ("hinge", re.compile(r"\bhinges?\b"), [0.035, 0.05, 0.012]),
 ]
 
 # How a measured (A x B mm) pair is turned, by role: "flat" lies down

@@ -31,6 +31,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import (
+    product_title,
     FRAMES_V3_DIR,
     OUTPUTS_DIR,
     VIDEO_V3_PATH,
@@ -125,7 +126,7 @@ def build_steps(fixture_dir: Path) -> List[Step]:
         # the stage instead of exiting 0.
         [BLENDER_EXE, "--background", "--python-exit-code", "1", "--python", str(BLENDER_V3_SCRIPT)],
 
-        [sys.executable, "v2/rendering/render_video.py"],
+        [sys.executable, "v2/rendering/render_video.py", "--title", product_title(fixture_dir)],
     ]
 
 

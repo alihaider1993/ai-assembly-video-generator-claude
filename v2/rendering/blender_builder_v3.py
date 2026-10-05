@@ -98,6 +98,11 @@ def display_name(name: str) -> str:
     return re.sub(r"\s+\d+\s*/\s*\d+$", "", str(name)).strip()
 
 
+# Words naming a fastener; "<part word> <one of these>" is that fastener.
+HARDWARE_WORDS = {"pin", "pins", "bolt", "bolts", "screw", "screws", "dowel", "dowels", "plug", "plugs", "lock", "locks",
+                  "nut", "nuts", "washer", "washers", "holder", "holders", "plate", "plates", "pad", "pads", "nail", "nails"}
+
+
 def step_caption(step: Dict[str, Any], moving: List[str], by_uid: Dict[str, Dict[str, Any]]) -> str:
     verb, preposition = ACTION_VERBS.get(step.get("action_type", ""), ("Fit", "to"))
 
@@ -112,6 +117,9 @@ def step_caption(step: Dict[str, Any], moving: List[str], by_uid: Dict[str, Dict
         words = [w for w in re.findall(r"[a-z0-9]+", name.lower()) if len(w) > 2]
         for match in re.finditer(r"(\d+)\s*x\s+([a-z0-9]+(?: [a-z0-9]+){0,3})", evidence.lower()):
             said = match.group(2)
+            # "4x shelf pin" counts pins, not the shelf they hold.
+            if said.split()[1:2] and said.split()[1] in HARDWARE_WORDS and said.split()[1] not in words:
+                continue
             if words and (words[-1] in said.split() or name.lower() in said):
                 counts[name] = int(match.group(1))
                 break
@@ -1006,6 +1014,12 @@ track.up_axis = "UP_Y"
 # Sensor fit AUTO puts the sensor width on the longer (horizontal) side.
 tan_half_x = camera.data.sensor_width / (2 * camera.data.lens)
 tan_half_y = tan_half_x * scene.render.resolution_y / scene.render.resolution_x
+# The top TITLE_BAND of the frame holds the product title (render_video.py):
+# the furniture is framed in the rest, by shifting the view up by half the
+# band (shift is a fraction of the wider side) and fitting a shorter height.
+TITLE_BAND = 0.12
+camera.data.shift_y = TITLE_BAND / 2 * scene.render.resolution_y / scene.render.resolution_x
+tan_half_y *= 1 - TITLE_BAND
 FRAME_MARGIN = 1.06
 
 

@@ -1,0 +1,204 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "Assembled BRIMNES two-door wardrobe",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.1,
+          "x_max": 0.4,
+          "y_max": 0.9
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "part_inventory",
+        "description": "Bag 1: pins 106940 x2, screws 100214 x2, cam locks x20, screws 109567 x4, dowels 101345 x27, cam bolts 118331 x16, nails 101206 x40, wall spacers 153548 x4, plugs 123840 x2, nail guide 105494; wall kit",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "106940",
+          "100214",
+          "119252",
+          "109567",
+          "101345",
+          "118331",
+          "101206",
+          "153548",
+          "123840",
+          "105494"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D009_001",
+        "diagram_type": "part_inventory",
+        "description": "Bag 2: rail holders 157306 x2, hinges 109336 x6, mounting plates 109220 x6, shelf pins 101532 x4, felt pads 107091, screws 105248 x26; clothes rail 122663",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "157306",
+          "109336",
+          "109220",
+          "101532",
+          "107091",
+          "105248",
+          "122663",
+          "124328"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D015_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 14: fixed shelf closing the bottom compartment",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.4,
+          "x_max": 0.9,
+          "y_max": 0.85
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "118331",
+          "2x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D015_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 18,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D018_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 21: top panel onto the side panels",
+        "page_region": {
+          "x_min": 0.5,
+          "y_min": 0.5,
+          "x_max": 0.98,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "101345",
+          "4x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D018_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 31,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D031_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 37: doors hung on the hinges",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.1,
+          "x_max": 0.95,
+          "y_max": 0.85
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "6x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D031_001",
+    "warnings": [],
+    "uncertainties": []
+  }
+]

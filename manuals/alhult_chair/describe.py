@@ -167,4 +167,4 @@ DIAGRAMS = {
 }
 
 if __name__ == "__main__":
-    write_description(HERE, PAGES, DIAGRAMS)
+    write_description(HERE, PAGES, DIAGRAMS, title="IKEA ÅLHULT Chair")

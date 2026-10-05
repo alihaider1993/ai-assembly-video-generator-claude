@@ -245,7 +245,7 @@ def main():
         raw_path.write_text(json.dumps(manual, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     pages, diagrams = to_description(manual)
-    write_description(manual_dir, pages, diagrams)
+    write_description(manual_dir, pages, diagrams, title=manual["product"])
     print(f"Described {manual['product']!r}: next, python v2/run_mvp_pipeline.py {manual_dir.name}")
 
 

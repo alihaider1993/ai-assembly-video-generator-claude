@@ -1,0 +1,2306 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "RAKKESTAD three-door wardrobe: three frame-and-panel doors with knobs",
+    "uncertainties": [
+      "Cover page; product name RAKKESTAD and IKEA logo."
+    ]
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tip-over warning: the wardrobe must be fixed to the wall."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [
+      {
+        "tool_uid": "T003_001",
+        "name": "cross head screwdriver"
+      },
+      {
+        "tool_uid": "T003_002",
+        "name": "hammer"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tools: cross head screwdriver, hammer, drill and spirit level for the wall fixing; two people."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "parts_list",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Wall fixing kit (brackets 106989, screws, washers, wall plugs): not part of the wardrobe."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "109338",
+        "name": "hinge",
+        "visual_description": "cup hinge 109338 clipped to a mounting plate 109221",
+        "shape_family": "block",
+        "material_hint": "metal",
+        "quantity_visible": 9,
+        "connection_features": [],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P005_002",
+        "manual_label": "119595",
+        "name": "knob",
+        "visual_description": "round wooden knob 119595 on each door",
+        "shape_family": "block",
+        "material_hint": "wood",
+        "quantity_visible": 3,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          40,
+          30,
+          40
+        ]
+      },
+      {
+        "part_uid": "P005_003",
+        "manual_label": "146857",
+        "name": "clothes rail",
+        "visual_description": "round metal clothes rail 146857 in the wide left section under the top panel",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "top",
+        "size_mm": [
+          740,
+          25,
+          25
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F005_001",
+        "manual_label": "100219",
+        "name": "screw 100219",
+        "shape_family": "screw",
+        "quantity_visible": 16
+      },
+      {
+        "fastener_uid": "F005_002",
+        "manual_label": "101345",
+        "name": "dowel 101345",
+        "shape_family": "dowel",
+        "quantity_visible": 38
+      },
+      {
+        "fastener_uid": "F005_003",
+        "manual_label": "109567",
+        "name": "screw 109567",
+        "shape_family": "screw",
+        "quantity_visible": 3
+      },
+      {
+        "fastener_uid": "F005_004",
+        "manual_label": "105248",
+        "name": "screw 105248",
+        "shape_family": "screw",
+        "quantity_visible": 38
+      },
+      {
+        "fastener_uid": "F005_005",
+        "manual_label": "109041",
+        "name": "screw 109041",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F005_006",
+        "manual_label": "109837",
+        "name": "plug 109837",
+        "shape_family": "plug",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F005_007",
+        "manual_label": "103717",
+        "name": "angle bracket 103717",
+        "shape_family": "other",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F005_008",
+        "manual_label": "107091",
+        "name": "felt pad 107091",
+        "shape_family": "plug",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F005_009",
+        "manual_label": "105494",
+        "name": "nail guide 105494",
+        "shape_family": "other",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F005_010",
+        "manual_label": "109221",
+        "name": "mounting plate 109221",
+        "shape_family": "other",
+        "quantity_visible": 9
+      },
+      {
+        "fastener_uid": "F005_011",
+        "manual_label": "157308",
+        "name": "rail holder 157308",
+        "shape_family": "other",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F005_012",
+        "manual_label": "158568",
+        "name": "spacer 158568",
+        "shape_family": "plug",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F005_013",
+        "manual_label": "405950",
+        "name": "nail 405950",
+        "shape_family": "other",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T005_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Spacers 158568 x8 go on the plinths; nails 405950 come in 2 bags."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "tall left side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P006_002",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "upright divider between the wide hanging section and the shelf section, with three hinge plates",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          560,
+          1660
+        ]
+      },
+      {
+        "part_uid": "P006_003",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "tall right side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Info: which tall panel is which \u2014 the left side panel, the shorter divider and the right side panel, with their hinge plates."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "tall left side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "upright divider between the wide hanging section and the shelf section, with three hinge plates",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          560,
+          1660
+        ]
+      },
+      {
+        "part_uid": "P007_003",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "tall right side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "109221",
+        "name": "mounting plate 109221",
+        "shape_family": "other",
+        "quantity_visible": 9
+      },
+      {
+        "fastener_uid": "F007_002",
+        "manual_label": "105248",
+        "name": "screw 105248",
+        "shape_family": "screw",
+        "quantity_visible": 18
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T007_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 1: 9x mounting plate 109221 screwed to the three tall panels with screws 105248, three per panel"
+      }
+    ],
+    "final_visible_structure": "three tall panels lying flat with hinge plates",
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "upright divider between the wide hanging section and the shelf section, with three hinge plates",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          560,
+          1660
+        ]
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "",
+        "name": "shelf",
+        "visual_description": "fixed shelf between the divider and the right side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 3,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          380,
+          560,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "101345",
+        "name": "dowel 101345",
+        "shape_family": "dowel",
+        "quantity_visible": 22
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "F008_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 2: 4x dowel 101345 pushed into the end of the divider"
+      },
+      {
+        "action_uid": "A008_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P008_002",
+        "fastener_ref": "F008_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 3: 18x dowel 101345 pushed into the edges of the three shelves"
+      }
+    ],
+    "final_visible_structure": "divider and shelves with dowels",
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel across the wardrobe above the plinths",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "dowel and screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          1134,
+          560,
+          18
+        ]
+      },
+      {
+        "part_uid": "P009_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "tall left side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P009_003",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel across the tops of the side panels and divider, with a wall bracket underneath",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw and plug holes"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          1170,
+          580,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F009_001",
+        "manual_label": "100219",
+        "name": "screw 100219",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F009_002",
+        "manual_label": "101345",
+        "name": "dowel 101345",
+        "shape_family": "dowel",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T009_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A009_001",
+        "action_type": "attach",
+        "moving_part_ref": "P009_001",
+        "target_part_ref": "P009_002",
+        "fastener_ref": "F009_001",
+        "tool_ref": "T009_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 4: left side panel stood on its edge; bottom panel fixed at its lower end with 2x screw 100219"
+      },
+      {
+        "action_uid": "A009_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P009_003",
+        "fastener_ref": "F009_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 5: 8x dowel 101345 pushed into the edges of the top panel"
+      }
+    ],
+    "final_visible_structure": "bottom panel standing at the end of the left side panel",
+    "uncertainties": [
+      "The wardrobe is built lying on its back; the side panels stand on their long edges."
+    ]
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P010_001",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel across the tops of the side panels and divider, with a wall bracket underneath",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw and plug holes"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          1170,
+          580,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F010_001",
+        "manual_label": "109837",
+        "name": "plug 109837",
+        "shape_family": "plug",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F010_002",
+        "manual_label": "103717",
+        "name": "angle bracket 103717",
+        "shape_family": "other",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F010_003",
+        "manual_label": "109041",
+        "name": "screw 109041",
+        "shape_family": "screw",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T010_001",
+        "name": "hammer"
+      },
+      {
+        "tool_uid": "T010_002",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A010_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P010_001",
+        "fastener_ref": "F010_001",
+        "tool_ref": "T010_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 6: 4x plug 109837 tapped into the top panel"
+      },
+      {
+        "action_uid": "A010_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P010_001",
+        "fastener_ref": "F010_002",
+        "tool_ref": "T010_002",
+        "direction_hint": "down",
+        "visual_evidence": "step 7: top panel turned over; angle bracket 103717 screwed to it with 1x screw 109041 (not the longer screw)"
+      }
+    ],
+    "final_visible_structure": "top panel ready",
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P011_001",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "upright divider between the wide hanging section and the shelf section, with three hinge plates",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          560,
+          1660
+        ]
+      },
+      {
+        "part_uid": "P011_002",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel across the wardrobe above the plinths",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "dowel and screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          1134,
+          560,
+          18
+        ]
+      },
+      {
+        "part_uid": "P011_003",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "tall left side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F011_001",
+        "manual_label": "100219",
+        "name": "screw 100219",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T011_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A011_001",
+        "action_type": "attach",
+        "moving_part_ref": "P011_001",
+        "target_part_ref": "P011_002",
+        "fastener_ref": "F011_001",
+        "tool_ref": "T011_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 8-9: divider stood on its edge and fixed to the bottom panel with 2x screw 100219, repeat x2"
+      }
+    ],
+    "final_visible_structure": "divider standing on the bottom panel",
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P012_001",
+        "manual_label": "",
+        "name": "shelf",
+        "visual_description": "fixed shelf between the divider and the right side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 3,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          380,
+          560,
+          18
+        ]
+      },
+      {
+        "part_uid": "P012_002",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "upright divider between the wide hanging section and the shelf section, with three hinge plates",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          560,
+          1660
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F012_001",
+        "manual_label": "100219",
+        "name": "screw 100219",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F012_002",
+        "manual_label": "101345",
+        "name": "dowel 101345",
+        "shape_family": "dowel",
+        "quantity_visible": 18
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T012_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A012_001",
+        "action_type": "attach",
+        "moving_part_ref": "P012_001",
+        "target_part_ref": "P012_002",
+        "fastener_ref": "F012_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 10: 3x shelf pushed onto the dowels of the divider, beside the bottom panel"
+      },
+      {
+        "action_uid": "A012_002",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P012_002",
+        "fastener_ref": "F012_001",
+        "tool_ref": "T012_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 11: 2x screw 100219 through the divider"
+      }
+    ],
+    "final_visible_structure": "three shelves standing off the divider",
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P013_001",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "tall right side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P013_002",
+        "manual_label": "",
+        "name": "shelf",
+        "visual_description": "fixed shelf between the divider and the right side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 3,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          380,
+          560,
+          18
+        ]
+      },
+      {
+        "part_uid": "P013_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel across the wardrobe above the plinths",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "dowel and screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          1134,
+          560,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F013_001",
+        "manual_label": "100219",
+        "name": "screw 100219",
+        "shape_family": "screw",
+        "quantity_visible": 6
+      },
+      {
+        "fastener_uid": "F013_002",
+        "manual_label": "101345",
+        "name": "dowel 101345",
+        "shape_family": "dowel",
+        "quantity_visible": 9
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T013_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A013_001",
+        "action_type": "attach",
+        "moving_part_ref": "P013_001",
+        "target_part_ref": "P013_002",
+        "fastener_ref": "F013_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 12: right side panel pushed onto the shelf dowels and fixed with 4x screw 100219"
+      },
+      {
+        "action_uid": "A013_002",
+        "action_type": "attach",
+        "moving_part_ref": "P013_001",
+        "target_part_ref": "P013_003",
+        "fastener_ref": "F013_001",
+        "tool_ref": "T013_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 13: 2x screw 100219 through the right side panel into the bottom panel"
+      }
+    ],
+    "final_visible_structure": "carcass with both side panels, divider and shelves, lying on its back",
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P014_001",
+        "manual_label": "",
+        "name": "plinth",
+        "visual_description": "plinth board under the bottom panel, front and back",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          1134,
+          18,
+          70
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F014_001",
+        "manual_label": "101345",
+        "name": "dowel 101345",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F014_002",
+        "manual_label": "158568",
+        "name": "spacer 158568",
+        "shape_family": "plug",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T014_001",
+        "name": "hammer"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A014_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P014_001",
+        "fastener_ref": "F014_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 14: 4x dowel 101345 pushed into the ends of the two plinths"
+      },
+      {
+        "action_uid": "A014_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P014_001",
+        "fastener_ref": "F014_002",
+        "tool_ref": "T014_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 15: 4x spacer 158568 knocked into the two plinths"
+      }
+    ],
+    "final_visible_structure": "two plinths ready",
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P015_001",
+        "manual_label": "",
+        "name": "plinth",
+        "visual_description": "plinth board under the bottom panel, front and back",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          1134,
+          18,
+          70
+        ]
+      },
+      {
+        "part_uid": "P015_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "tall left side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P015_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel across the wardrobe above the plinths",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "dowel and screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          1134,
+          560,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F015_001",
+        "manual_label": "101345",
+        "name": "dowel 101345",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A015_001",
+        "action_type": "attach",
+        "moving_part_ref": "P015_001",
+        "target_part_ref": "P015_002",
+        "fastener_ref": "F015_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 16-17: 2x plinth pushed onto the dowels under the bottom panel, back then front"
+      }
+    ],
+    "final_visible_structure": "plinths under the bottom panel",
+    "uncertainties": []
+  },
+  {
+    "page_number": 16,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P016_001",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel across the tops of the side panels and divider, with a wall bracket underneath",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw and plug holes"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          1170,
+          580,
+          18
+        ]
+      },
+      {
+        "part_uid": "P016_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "tall left side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P016_003",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "tall right side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P016_004",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "upright divider between the wide hanging section and the shelf section, with three hinge plates",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          560,
+          1660
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F016_001",
+        "manual_label": "100219",
+        "name": "screw 100219",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F016_002",
+        "manual_label": "101345",
+        "name": "dowel 101345",
+        "shape_family": "dowel",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T016_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A016_001",
+        "action_type": "attach",
+        "moving_part_ref": "P016_001",
+        "target_part_ref": "P016_002",
+        "fastener_ref": "F016_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 18: top panel pushed onto the upper ends of the side panels and divider"
+      },
+      {
+        "action_uid": "A016_002",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P016_001",
+        "fastener_ref": "F016_001",
+        "tool_ref": "T016_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 18: 4x screw 100219 through the side panels into the top panel"
+      }
+    ],
+    "final_visible_structure": "carcass complete",
+    "uncertainties": []
+  },
+  {
+    "page_number": 17,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P017_001",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel across the tops of the side panels and divider, with a wall bracket underneath",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw and plug holes"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          1170,
+          580,
+          18
+        ]
+      },
+      {
+        "part_uid": "P017_002",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "upright divider between the wide hanging section and the shelf section, with three hinge plates",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          560,
+          1660
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F017_001",
+        "manual_label": "109041",
+        "name": "screw 109041",
+        "shape_family": "screw",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T017_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A017_001",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P017_002",
+        "fastener_ref": "F017_001",
+        "tool_ref": "T017_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 19: 1x screw 109041 through the angle bracket into the divider"
+      }
+    ],
+    "final_visible_structure": "divider fixed to the top panel",
+    "uncertainties": []
+  },
+  {
+    "page_number": 18,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P018_001",
+        "manual_label": "",
+        "name": "back panel",
+        "visual_description": "hardboard back strip, three nailed side by side over the back",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 3,
+        "connection_features": [],
+        "page_position": "back",
+        "size_mm": [
+          390,
+          3,
+          1700
+        ]
+      },
+      {
+        "part_uid": "P018_002",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel across the tops of the side panels and divider, with a wall bracket underneath",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw and plug holes"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          1170,
+          580,
+          18
+        ]
+      },
+      {
+        "part_uid": "P018_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel across the wardrobe above the plinths",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "dowel and screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          1134,
+          560,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F018_001",
+        "manual_label": "405950",
+        "name": "nail 405950",
+        "shape_family": "other",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F018_002",
+        "manual_label": "105494",
+        "name": "nail guide 105494",
+        "shape_family": "other",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T018_001",
+        "name": "hammer"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A018_001",
+        "action_type": "attach",
+        "moving_part_ref": "P018_001",
+        "target_part_ref": "P018_002",
+        "fastener_ref": "F018_001",
+        "tool_ref": "T018_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 20-21: three back panel strips laid on the back side by side, first nail 405950 in a corner using the nail guide 105494"
+      }
+    ],
+    "final_visible_structure": "three hardboard back strips on the back",
+    "uncertainties": []
+  },
+  {
+    "page_number": 19,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P019_001",
+        "manual_label": "",
+        "name": "back panel",
+        "visual_description": "hardboard back strip, three nailed side by side over the back",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 3,
+        "connection_features": [],
+        "page_position": "back",
+        "size_mm": [
+          390,
+          3,
+          1700
+        ]
+      },
+      {
+        "part_uid": "P019_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "tall left side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P019_003",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "tall right side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F019_001",
+        "manual_label": "405950",
+        "name": "nail 405950",
+        "shape_family": "other",
+        "quantity_visible": 14
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T019_001",
+        "name": "hammer"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A019_001",
+        "action_type": "attach",
+        "moving_part_ref": "P019_001",
+        "target_part_ref": "P019_002",
+        "fastener_ref": "F019_001",
+        "tool_ref": "T019_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 22-23: back panel strips squared and fixed with nails 405950 into the side panels and divider"
+      }
+    ],
+    "final_visible_structure": "back strips held in place",
+    "uncertainties": []
+  },
+  {
+    "page_number": 20,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P020_001",
+        "manual_label": "",
+        "name": "back panel",
+        "visual_description": "hardboard back strip, three nailed side by side over the back",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 3,
+        "connection_features": [],
+        "page_position": "back",
+        "size_mm": [
+          390,
+          3,
+          1700
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F020_001",
+        "manual_label": "405950",
+        "name": "nail 405950",
+        "shape_family": "other",
+        "quantity_visible": 44
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T020_001",
+        "name": "hammer"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A020_001",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P020_001",
+        "fastener_ref": "F020_001",
+        "tool_ref": "T020_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 24: 44x nail 405950 all round the back panels"
+      }
+    ],
+    "final_visible_structure": "back panel nailed on",
+    "uncertainties": []
+  },
+  {
+    "page_number": 21,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 25-32 (pages 21-26): the wardrobe stood up and fixed to the wall with the wall kit; the turn and the wall kit are not joins.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 26,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P026_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "tall left side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P026_002",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "upright divider between the wide hanging section and the shelf section, with three hinge plates",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          560,
+          1660
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F026_001",
+        "manual_label": "157308",
+        "name": "rail holder 157308",
+        "shape_family": "other",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F026_002",
+        "manual_label": "105248",
+        "name": "screw 105248",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T026_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A026_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P026_001",
+        "fastener_ref": "F026_001",
+        "tool_ref": "T026_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 33: 2x rail holder 157308 screwed to the left side panel and the divider with screws 105248"
+      }
+    ],
+    "final_visible_structure": "rail holders in the wide section",
+    "uncertainties": []
+  },
+  {
+    "page_number": 27,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P027_001",
+        "manual_label": "146857",
+        "name": "clothes rail",
+        "visual_description": "round metal clothes rail 146857 in the wide left section under the top panel",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "top",
+        "size_mm": [
+          740,
+          25,
+          25
+        ]
+      },
+      {
+        "part_uid": "P027_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "tall left side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P027_003",
+        "manual_label": "",
+        "name": "left door",
+        "visual_description": "left frame-and-panel door with three glass-style panes, full height, three hinges",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "hinge cup holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          388,
+          18,
+          1680
+        ]
+      },
+      {
+        "part_uid": "P027_004",
+        "manual_label": "",
+        "name": "middle door",
+        "visual_description": "middle frame-and-panel door with three glass-style panes, full height, three hinges",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "hinge cup holes"
+          }
+        ],
+        "page_position": "middle",
+        "size_mm": [
+          388,
+          18,
+          1680
+        ]
+      },
+      {
+        "part_uid": "P027_005",
+        "manual_label": "",
+        "name": "right door",
+        "visual_description": "right frame-and-panel door with three glass-style panes, full height, three hinges",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "hinge cup holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          388,
+          18,
+          1680
+        ]
+      },
+      {
+        "part_uid": "P027_006",
+        "manual_label": "109338",
+        "name": "hinge",
+        "visual_description": "cup hinge 109338 clipped to a mounting plate 109221",
+        "shape_family": "block",
+        "material_hint": "metal",
+        "quantity_visible": 9,
+        "connection_features": [],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F027_001",
+        "manual_label": "105248",
+        "name": "screw 105248",
+        "shape_family": "screw",
+        "quantity_visible": 18
+      },
+      {
+        "fastener_uid": "F027_002",
+        "manual_label": "157308",
+        "name": "rail holder 157308",
+        "shape_family": "other",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T027_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A027_001",
+        "action_type": "attach",
+        "moving_part_ref": "P027_001",
+        "target_part_ref": "P027_002",
+        "fastener_ref": "F027_002",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 34: clothes rail 146857 dropped into the rail holders under the top panel"
+      },
+      {
+        "action_uid": "A027_002",
+        "action_type": "attach",
+        "moving_part_ref": "P027_006",
+        "target_part_ref": "P027_003",
+        "fastener_ref": "F027_001",
+        "tool_ref": "T027_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 35: 9x hinge 109338 screwed into the cup holes of the three doors with screws 105248, three per door"
+      }
+    ],
+    "final_visible_structure": "clothes rail fitted; three doors lying flat with hinges",
+    "uncertainties": []
+  },
+  {
+    "page_number": 28,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P028_001",
+        "manual_label": "",
+        "name": "left door",
+        "visual_description": "left frame-and-panel door with three glass-style panes, full height, three hinges",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "hinge cup holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          388,
+          18,
+          1680
+        ]
+      },
+      {
+        "part_uid": "P028_002",
+        "manual_label": "",
+        "name": "middle door",
+        "visual_description": "middle frame-and-panel door with three glass-style panes, full height, three hinges",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "hinge cup holes"
+          }
+        ],
+        "page_position": "middle",
+        "size_mm": [
+          388,
+          18,
+          1680
+        ]
+      },
+      {
+        "part_uid": "P028_003",
+        "manual_label": "",
+        "name": "right door",
+        "visual_description": "right frame-and-panel door with three glass-style panes, full height, three hinges",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "hinge cup holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          388,
+          18,
+          1680
+        ]
+      },
+      {
+        "part_uid": "P028_004",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "tall left side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P028_005",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "upright divider between the wide hanging section and the shelf section, with three hinge plates",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          560,
+          1660
+        ]
+      },
+      {
+        "part_uid": "P028_006",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "tall right side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F028_001",
+        "manual_label": "109221",
+        "name": "mounting plate 109221",
+        "shape_family": "other",
+        "quantity_visible": 9
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T028_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A028_001",
+        "action_type": "attach",
+        "moving_part_ref": "P028_001",
+        "target_part_ref": "P028_004",
+        "fastener_ref": "F028_001",
+        "tool_ref": "T028_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 36: left door hung by clipping its hinges onto the mounting plates 109221 of the left side panel"
+      },
+      {
+        "action_uid": "A028_002",
+        "action_type": "attach",
+        "moving_part_ref": "P028_002",
+        "target_part_ref": "P028_005",
+        "fastener_ref": "F028_001",
+        "tool_ref": "T028_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 36: middle door hung on the mounting plates of the divider"
+      },
+      {
+        "action_uid": "A028_003",
+        "action_type": "attach",
+        "moving_part_ref": "P028_003",
+        "target_part_ref": "P028_006",
+        "fastener_ref": "F028_001",
+        "tool_ref": "T028_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 36: right door hung on the mounting plates of the right side panel"
+      }
+    ],
+    "final_visible_structure": "three doors hung",
+    "uncertainties": []
+  },
+  {
+    "page_number": 29,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P029_001",
+        "manual_label": "119595",
+        "name": "knob",
+        "visual_description": "round wooden knob 119595 on each door",
+        "shape_family": "block",
+        "material_hint": "wood",
+        "quantity_visible": 3,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          40,
+          30,
+          40
+        ]
+      },
+      {
+        "part_uid": "P029_002",
+        "manual_label": "",
+        "name": "left door",
+        "visual_description": "left frame-and-panel door with three glass-style panes, full height, three hinges",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "hinge cup holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          388,
+          18,
+          1680
+        ]
+      },
+      {
+        "part_uid": "P029_003",
+        "manual_label": "",
+        "name": "middle door",
+        "visual_description": "middle frame-and-panel door with three glass-style panes, full height, three hinges",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "hinge cup holes"
+          }
+        ],
+        "page_position": "middle",
+        "size_mm": [
+          388,
+          18,
+          1680
+        ]
+      },
+      {
+        "part_uid": "P029_004",
+        "manual_label": "",
+        "name": "right door",
+        "visual_description": "right frame-and-panel door with three glass-style panes, full height, three hinges",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "hinge cup holes"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          388,
+          18,
+          1680
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F029_001",
+        "manual_label": "109567",
+        "name": "screw 109567",
+        "shape_family": "screw",
+        "quantity_visible": 3
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T029_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A029_001",
+        "action_type": "attach",
+        "moving_part_ref": "P029_001",
+        "target_part_ref": "P029_002",
+        "fastener_ref": "F029_001",
+        "tool_ref": "T029_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 37: knob 119595 screwed to the left door with screw 109567"
+      },
+      {
+        "action_uid": "A029_002",
+        "action_type": "attach",
+        "moving_part_ref": "P029_001",
+        "target_part_ref": "P029_003",
+        "fastener_ref": "F029_001",
+        "tool_ref": "T029_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 37: knob screwed to the middle door"
+      },
+      {
+        "action_uid": "A029_003",
+        "action_type": "attach",
+        "moving_part_ref": "P029_001",
+        "target_part_ref": "P029_004",
+        "fastener_ref": "F029_001",
+        "tool_ref": "T029_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 37: knob screwed to the right door"
+      }
+    ],
+    "final_visible_structure": "knobs on all three doors",
+    "uncertainties": []
+  },
+  {
+    "page_number": 30,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P030_001",
+        "manual_label": "",
+        "name": "left door",
+        "visual_description": "left frame-and-panel door with three glass-style panes, full height, three hinges",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "hinge cup holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          388,
+          18,
+          1680
+        ]
+      },
+      {
+        "part_uid": "P030_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "tall left side panel with three hinge mounting plates on its front edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "screw, dowel and hinge plate holes"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          580,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F030_001",
+        "manual_label": "107091",
+        "name": "felt pad 107091",
+        "shape_family": "plug",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A030_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P030_002",
+        "fastener_ref": "F030_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 38: felt pads 107091 stuck inside the front edges as door stops"
+      }
+    ],
+    "final_visible_structure": "finished RAKKESTAD wardrobe",
+    "uncertainties": [
+      "Page 31 shows adjusting the hinges up/down, in/out and sideways."
+    ]
+  }
+]

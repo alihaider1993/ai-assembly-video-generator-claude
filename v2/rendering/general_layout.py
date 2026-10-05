@@ -336,6 +336,7 @@ class GeneralLayout:
         self.junctions: List[str] = []
         # Height the carcass or bodies stand at: the legs or feet under them.
         self.floor = 0.0
+        self.short_dividers: Set[str] = set()
         # Set by footprint(): the carcass's height, and the width figure of
         # each measured front or back panel.
         self.carcass_height = 0.0
@@ -539,7 +540,13 @@ class GeneralLayout:
                 if scale:
                     axis = 2 if uid in self.frame.base_rotation else 0
                     scale[axis] /= n
-            self.frame.put(uid, [x, side * (depth / 2 + outside * t / 2), self.floor + h / 2], scale=scale)
+            z = self.floor + h / 2
+            # A short panel on a face that also has a lower one (a solid
+            # lower back with hardboard above it) goes up to the top.
+            if not scale and height and h < height - 1e-6 and not self.words[uid] & BOTTOM_WORDS and any(
+                    self.words[o] & BOTTOM_WORDS and self.role(o) == self.role(uid) for o in end_walls if o != uid):
+                z = self.floor + height - h / 2
+            self.frame.put(uid, [x, side * (depth / 2 + outside * t / 2), z], scale=scale)
 
     # -- 2. uprights --
 
@@ -1204,6 +1211,8 @@ class GeneralLayout:
             return
         dividers = self.with_role("divider")
         uprights = set(side_walls) | set(dividers)
+        wall_h = min(self.dims(w)[2] for w in side_walls)
+        self.short_dividers = {d for d in dividers if is_measured(self.parts[d]) and self.dims(d)[2] < 0.6 * wall_h}
         spanning = [u for u in self.of_kind("plate", unplaced=True)
                     if len(self.links[u] & uprights) >= 2 or self.role(u) in ("shelf", "top", "lid")]
         wall_top = min(self.frame.top(w) for w in side_walls)
@@ -1232,31 +1241,54 @@ class GeneralLayout:
             self.frame.put(uid, [0.0, y, low + self.dims(uid)[2] / 2], scale=fitted(uid, right - left, deep))
         low = max([low] + [self.frame.top(u) for u in bottoms])
 
-        # Dividers: from the bottom up to the top of the sides.
+        # Dividers: from the bottom up to the top of the sides, or, when
+        # their size says they are much shorter (one closing a low
+        # compartment), standing on the bottom at their own height.
         for k, uid in enumerate(dividers):
             if self.placed(uid):
                 continue
             h = self.dims(uid)[2]
             x = left + (right - left) * (k + 1) / (len(dividers) + 1)
-            self.frame.put(uid, [x, y, (low + wall_top) / 2], scale=[1.0, 1.0, (wall_top - low) / h])
+            if uid in self.short_dividers:
+                self.frame.put(uid, [x, y, low + h / 2])
+            else:
+                self.frame.put(uid, [x, y, (low + wall_top) / 2], scale=[1.0, 1.0, (wall_top - low) / h])
+
+        # A shelf joined to a short divider and about as wide as the carcass
+        # caps it: it lies on the divider across the whole width.
+        for uid in list(middles):
+            short = [d for d in self.links[uid] & self.short_dividers if self.placed(d)]
+            if short and self.dims(uid)[0] > 0.6 * (right - left):
+                z = max(self.frame.top(d) for d in short) + self.dims(uid)[2] / 2
+                self.frame.put(uid, [0.0, y, z], scale=fitted(uid, right - left, deep))
+                middles.remove(uid)
 
         # Compartments between neighbouring upright panels; each shelf goes to
-        # one both of whose walls it is joined to, else to the emptiest.
+        # one both of whose walls it is joined to, else to the emptiest. A bay
+        # beside a short divider ends at the divider's top.
         walls = sorted(side_walls + [d for d in dividers if self.placed(d)], key=lambda w: self.frame.final[w][0])
         bays = [(walls[i], walls[i + 1]) for i in range(len(walls) - 1)]
         shelves_in: Dict[int, List[str]] = {i: [] for i in range(len(bays))}
         for uid in middles:
             fits = [i for i, (a, b) in enumerate(bays) if {a, b} <= self.links[uid]]
+            fits = fits or [i for i, (a, b) in enumerate(bays) if {a, b} & self.links[uid] & set(dividers)]
             bay = min(fits or range(len(bays)), key=lambda i: (len(shelves_in[i]), i))
             shelves_in[bay].append(uid)
         high = wall_top - (0.0 if tops else max((self.dims(u)[2] for u in middles), default=0.0))
         for i, (a, b) in enumerate(bays):
             x0, x1 = self.frame.box(a)[1][0], self.frame.box(b)[0][0]
+            short = [w for w in (a, b) if w in self.short_dividers]
+            bay_high = min([self.frame.box(w)[1][2] for w in short] or [high])
             for k, uid in enumerate(shelves_in[i]):
-                z = low + (high - low) * (k + 1) / (len(shelves_in[i]) + 1)
+                z = low + (bay_high - low) * (k + 1) / (len(shelves_in[i]) + 1)
                 w = self.dims(uid)[0]
                 scale = None if is_measured(self.parts[uid]) else [(x1 - x0) / w, 1.0, 1.0]
                 self.frame.put(uid, [(x0 + x1) / 2, y, z], scale=scale)
+
+    def full_dividers(self) -> List[str]:
+        """Placed dividers that run the carcass's full height (not a short
+        one closing a low compartment); these split doors and drawers."""
+        return [d for d in self.with_role("divider") if self.placed(d) and d not in self.short_dividers]
 
     # -- doors, drawers and their hardware --
 
@@ -1316,7 +1348,7 @@ class GeneralLayout:
         measured widths), the shallowest first from the top; drawers narrow
         enough share a row. Rows are then stretched to fill the opening (or
         a band above the doors)."""
-        dividers = sorted(self.frame.final[d][0] for d in self.with_role("divider") if self.placed(d))
+        dividers = sorted(self.frame.final[d][0] for d in self.full_dividers())
         edges = [x0] + dividers + [x1]
         bays = [(edges[i], edges[i + 1]) for i in range(len(edges) - 1)]
         if len(bays) == 1:
@@ -1358,14 +1390,14 @@ class GeneralLayout:
         cols = 1
         if is_measured(self.parts[drawers[0]]) and width < 0.75 * inner:
             cols = max(1, round(inner / width))
-        elif self.with_role("divider") and not self.with_role("door"):
-            cols = len(self.with_role("divider")) + 1
+        elif self.full_dividers() and not self.with_role("door"):
+            cols = len(self.full_dividers()) + 1
         cols = min(cols, len(drawers))
         return cols, -(-len(drawers) // cols)
 
     def door_bays(self, n: int, x0: float, x1: float) -> List[Tuple[float, float]]:
         """Door widths: one per compartment when the counts match, else equal."""
-        dividers = sorted(self.frame.final[d][0] for d in self.with_role("divider") if self.placed(d))
+        dividers = sorted(self.frame.final[d][0] for d in self.full_dividers())
         if len(dividers) + 1 == n:
             edges = [x0] + dividers + [x1]
             return [(edges[i], edges[i + 1]) for i in range(n)]
@@ -1414,20 +1446,21 @@ class GeneralLayout:
             self.frame.put(uid, [x, (y0 + y1) / 2, zb + bh * 0.4], [0.0, 0.0, 90.0], [(y1 - y0) / length, 1.0, 1.0])
 
     def place_hinges(self, doors: List[str]) -> None:
-        """Two hinges per door just inside its hinge edge (the outer edge),
+        """Two or more hinges per door (shared evenly) just inside its hinge edge (the outer edge),
         near its top and bottom; with no doors, spread along the underside
         of a lid's back edge."""
         hinges = [u for u in self.with_role("hinge") if not self.placed(u)]
         if not hinges:
             return
         if doors:
+            each = max(2, len(hinges) // len(doors))
             for i, uid in enumerate(hinges):
-                door = doors[min(i // 2, len(doors) - 1)]
+                door = doors[min(i // each, len(doors) - 1)]
                 lo, hi = self.frame.box(door)
                 c = self.frame.final[door]
                 hx, hy, hz = self.dims(uid)
                 x = lo[0] + hx / 2 if c[0] <= 0 else hi[0] - hx / 2
-                z = lo[2] + (hi[2] - lo[2]) * (0.1 if i % 2 == 0 else 0.9)
+                z = lo[2] + (hi[2] - lo[2]) * (0.1 + 0.8 * (i % each) / (each - 1))
                 self.frame.put(uid, [x, hi[1] + hy / 2, z])
             return
         lids = [u for u in self.with_role("lid", "top") if self.placed(u)]
@@ -1461,10 +1494,11 @@ class GeneralLayout:
             count[front] = k + 1
             lo, hi = self.frame.box(front)
             c = self.frame.final[front]
-            _, hy, _ = self.dims(uid)
+            hx, hy, hz = self.dims(uid)
             if self.role(front) == "door":
+                # Turned upright unless its size already stands it up.
                 x = hi[0] - 0.05 if c[0] <= 0 else lo[0] + 0.05
-                self.frame.put(uid, [x, lo[1] - hy / 2, c[2]], [0.0, 90.0, 0.0])
+                self.frame.put(uid, [x, lo[1] - hy / 2, c[2]], [0.0, 90.0, 0.0] if hx > hz else None)
             else:
                 x = c[0] if allowed[front] == 1 else c[0] + (hi[0] - lo[0]) * (-0.25 if k == 0 else 0.25)
                 self.frame.put(uid, [x, lo[1] - hy / 2, c[2]])

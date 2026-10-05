@@ -1,3 +1,4 @@
+import argparse
 import json
 import re
 import sys
@@ -37,6 +38,11 @@ PANEL_COLOR = (20, 24, 30)
 PANEL_OPACITY = 0.78
 LABEL_COLOR = (255, 140, 60)
 TEXT_COLOR = (245, 246, 248)
+# Product title, centred in a band across the top. The Blender camera keeps
+# that band clear of the furniture (TITLE_BAND in blender_builder_v3.py).
+TITLE_SIZE = 0.05
+TITLE_TOP = 0.03
+TITLE_COLOR = (34, 38, 46)
 
 
 def load_font(names, size):
@@ -95,7 +101,34 @@ def draw_caption(image: Image.Image, caption, opacity: float, fonts) -> Image.Im
     return Image.alpha_composite(image.convert("RGBA"), overlay).convert("RGB")
 
 
+def draw_title(image: Image.Image, title: str, font) -> Image.Image:
+    """The product name centred at the top of the frame, shrunk to fit the width."""
+    draw = ImageDraw.Draw(image)
+    box = draw.textbbox((0, 0), title, font=font)
+    left = (image.width - (box[2] - box[0])) / 2 - box[0]
+    draw.text((left, image.height * TITLE_TOP - box[1]), title, font=font, fill=TITLE_COLOR)
+    return image
+
+
+def title_font(title: str, width: int, height: int):
+    """The bold title font, as large as TITLE_SIZE allows within 90% of the width."""
+    size = int(height * TITLE_SIZE)
+    names = ["segoeuib.ttf", "arialbd.ttf", "DejaVuSans-Bold.ttf"]
+    font = load_font(names, size)
+    while size > 10 and font.getbbox(title)[2] > width * 0.9:
+        size -= 2
+        font = load_font(names, size)
+    return font
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Encode the rendered frames into the MP4 with captions.")
+    parser.add_argument("--title", default="", help="product name shown at the top of every frame")
+    return parser.parse_args()
+
+
 def main():
+    args = parse_args()
     ensure_project_dirs()
 
     frames = sorted(FRAME_DIR.glob("*.png"), key=frame_number)
@@ -126,7 +159,10 @@ def main():
     else:
         print(f"No {RENDER_TIMELINE_JSON.name}; encoding without captions")
 
-    height = Image.open(frames[0]).height
+    first = Image.open(frames[0])
+    height = first.height
+    title = args.title.strip()
+    font_title = title_font(title, first.width, height) if title else None
     fonts = (
         load_font(["segoeuib.ttf", "arialbd.ttf", "DejaVuSans-Bold.ttf"], int(height * LABEL_SIZE)),
         load_font(["segoeui.ttf", "arial.ttf", "DejaVuSans.ttf"], int(height * TEXT_SIZE)),
@@ -139,10 +175,13 @@ def main():
         caption, opacity = caption_at(captions, frame_number(path))
         if caption and opacity > 0:
             image = draw_caption(image, caption, opacity, fonts)
+        if title:
+            image = draw_title(image, title, font_title)
         return np.asarray(image)
 
     print(f"Frames found: {len(frames)}")
     print(f"Captions: {len(captions)}")
+    print(f"Title: {title or '(none)'}")
     print(f"Input folder: {FRAME_DIR.resolve()}")
     print(f"Output video: {OUTPUT_VIDEO.resolve()}")
 

@@ -72,10 +72,14 @@ def diagram(dtype, desc, region, labels=(), parts=True, fast=False, tools=False,
             "visual_complexity": complexity, "confidence": conf}
 
 
-def write_description(out: Path, pages, diagrams) -> None:
+def write_description(out: Path, pages, diagrams, title: str = "") -> None:
     """Validate the pages and write page_states.json and diagram_analysis.json
-    into `out`. `diagrams` maps page number -> (page_type, diagrams, uncertainties)."""
+    into `out`. `diagrams` maps page number -> (page_type, diagrams, uncertainties).
+    `title` (brand, product and kind, e.g. "IKEA BRIMNES Wardrobe") goes to
+    product.json and is shown at the top of the video."""
     out.mkdir(parents=True, exist_ok=True)
+    if title:
+        (out / "product.json").write_text(json.dumps({"title": title}, indent=2) + "\n", encoding="utf-8")
     states = [validate_page_state(p)[0] for p in pages]
     (out / "page_states.json").write_text(json.dumps(states, indent=2) + "\n", encoding="utf-8")
 
