@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  # Every described manual through the JSON stages and the Blender script
+  # generation (no Blender, no video), then the stage-output tests.
+  pipeline:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        manual: [alhult_chair, alhult_gemini, banbury_chair, brimnes_wardrobe,
+                 hemnes_dresser, kaycie_bed, melltorp_table, new_table_manual,
+                 poang_chair, rakkestad_wardrobe, sofa_manual]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python v2/run_mvp_pipeline.py ${{ matrix.manual }} --no-render --quiet
+      - name: Generated Blender script compiles
+        run: python -m py_compile blender/generated/v3_generated_blender_scene.py
+      - run: pytest v2/tests -q
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-log-${{ matrix.manual }}
+          path: outputs/logs/pipeline.log
+
+  mcp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements-mcp.txt
+      - run: pytest mcp_server/tests -q
