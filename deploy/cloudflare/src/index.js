@@ -24,9 +24,38 @@ const json = (body, status = 200) =>
 const problem = (detail, status) => json({ detail }, status);
 const now = () => Date.now() / 1000;
 
+// Browsers can only jump to a time in a video (clicking a step) when the
+// server answers Range requests with 206; static assets don't, so videos
+// are answered here.
+function withRange(request, bytes, headers) {
+  const range = /^bytes=(\d*)-(\d*)$/.exec(request.headers.get("range") || "");
+  const base = { ...headers, "accept-ranges": "bytes" };
+  if (!range || (!range[1] && !range[2])) {
+    return new Response(bytes, { headers: { ...base, "content-length": String(bytes.length) } });
+  }
+  const size = bytes.length;
+  let start = range[1] ? Number(range[1]) : Math.max(0, size - Number(range[2]));
+  let end = range[1] && range[2] ? Math.min(Number(range[2]), size - 1) : size - 1;
+  if (start >= size || start > end) {
+    return new Response(null, { status: 416, headers: { ...base, "content-range": `bytes */${size}` } });
+  }
+  return new Response(bytes.slice(start, end + 1), {
+    status: 206,
+    headers: { ...base, "content-range": `bytes ${start}-${end}/${size}`, "content-length": String(end - start + 1) },
+  });
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname.endsWith(".mp4") && !url.pathname.startsWith("/api/")) {
+      const asset = await env.ASSETS.fetch(new Request(url, { method: "GET" }));
+      if (!asset.ok) return asset;
+      return withRange(request, new Uint8Array(await asset.arrayBuffer()), {
+        "content-type": "video/mp4",
+        "cache-control": "public, max-age=86400",
+      });
+    }
     if (!url.pathname.startsWith("/api/")) return env.ASSETS.fetch(request);
     try {
       return await env.JOBS.get(env.JOBS.idFromName("main")).fetch(request);
@@ -53,6 +82,7 @@ export class Jobs extends DurableObject {
 
   async fetch(request) {
     try {
+      this.request = request;
       this.tidy();
       const url = new URL(request.url);
       const parts = url.pathname.split("/").filter(Boolean); // ["api", ...]
@@ -134,12 +164,10 @@ export class Jobs extends DurableObject {
     const job = this.status(id);
     if (!job || job.state !== "done") return problem("The video isn't ready yet.", 404);
     const name = (job.title || "assembly").toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");
-    return new Response(this.getBlob(id, "video"), {
-      headers: {
-        "content-type": "video/mp4",
-        "content-disposition": `inline; filename="${name}_assembly.mp4"`,
-        "cache-control": "private, max-age=3600",
-      },
+    return withRange(this.request, this.getBlob(id, "video"), {
+      "content-type": "video/mp4",
+      "content-disposition": `inline; filename="${name}_assembly.mp4"`,
+      "cache-control": "private, max-age=3600",
     });
   }
 
