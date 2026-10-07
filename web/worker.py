@@ -61,9 +61,10 @@ def other_pipeline_running() -> bool:
     """Whether a pipeline run someone started by hand is going on here."""
     try:
         if os.name == "nt":
+            # The pattern's "\." keeps this PowerShell command from matching itself.
             out = subprocess.run(
                 ["powershell", "-NoProfile", "-Command",
-                 "Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'run_mvp_pipeline' } "
+                 "Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'run_mvp_pipeline\\.py' } "
                  "| Measure-Object | Select-Object -ExpandProperty Count"],
                 capture_output=True, text=True, timeout=30,
             ).stdout.strip()
