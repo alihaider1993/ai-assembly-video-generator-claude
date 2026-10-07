@@ -1,0 +1,1520 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "ADDE chair: four steel tube legs, perforated plastic seat and backrest",
+    "uncertainties": [
+      "Cover page; product name ADDE and IKEA logo."
+    ]
+  },
+  {
+    "page_number": 2,
+    "page_type": "parts_list",
+    "visible_parts": [],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F002_001",
+        "manual_label": "128671",
+        "name": "seat clip 128671",
+        "shape_family": "bracket",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F002_002",
+        "manual_label": "128654",
+        "name": "hex bolt 128654",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F002_003",
+        "manual_label": "106917",
+        "name": "screw 106917",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F002_004",
+        "manual_label": "104875",
+        "name": "flange nut 104875",
+        "shape_family": "nut",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T002_001",
+        "name": "cross head screwdriver"
+      },
+      {
+        "tool_uid": "T002_002",
+        "name": "adjustable spanner"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Only the hardware is drawn; the tube frames, back legs, backrest and seat appear in the steps.",
+      "Tools drawn: cross head screwdriver, hammer and adjustable spanner (not supplied); work on a soft floor; two people not required."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P003_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P003_002",
+        "manual_label": "",
+        "name": "left back leg",
+        "visual_description": "left straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      },
+      {
+        "part_uid": "P003_003",
+        "manual_label": "",
+        "name": "right back leg",
+        "visual_description": "right straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A003_001",
+        "action_type": "attach",
+        "moving_part_ref": "P003_002",
+        "target_part_ref": "P003_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 1: frame laid on a rug; left back leg pushed onto the bolt boss of the left side frame, hex hole lined up (inset), curve the right way"
+      },
+      {
+        "action_uid": "A003_002",
+        "action_type": "attach",
+        "moving_part_ref": "P003_003",
+        "target_part_ref": "P003_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 2: right back leg pushed onto the second bolt boss of the left side frame"
+      }
+    ],
+    "final_visible_structure": "left side frame lying on a rug with both back legs standing up from it",
+    "uncertainties": [
+      "The frame is drawn lying on its side; the inset shows which way the back leg curves.",
+      "The left side frame also carries the welded cross rail, so both back legs fit on it."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P004_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P004_002",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P004_003",
+        "manual_label": "",
+        "name": "left back leg",
+        "visual_description": "left straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      },
+      {
+        "part_uid": "P004_004",
+        "manual_label": "",
+        "name": "right back leg",
+        "visual_description": "right straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F004_001",
+        "manual_label": "128654",
+        "name": "hex bolt 128654",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A004_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_001",
+        "fastener_ref": "F004_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 3: 2x hex bolt 128654 pushed through the left back leg and right back leg into the left side frame"
+      },
+      {
+        "action_uid": "A004_002",
+        "action_type": "attach",
+        "moving_part_ref": "P004_002",
+        "target_part_ref": "P004_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 4: right side frame turned over and laid on the free ends of the left back leg and right back leg"
+      }
+    ],
+    "final_visible_structure": "both tube frames joined by the two back legs",
+    "uncertainties": [
+      "Step 4 shows the right side frame being turned over before it goes on; this is not a join."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P005_002",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P005_003",
+        "manual_label": "",
+        "name": "left back leg",
+        "visual_description": "left straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      },
+      {
+        "part_uid": "P005_004",
+        "manual_label": "",
+        "name": "right back leg",
+        "visual_description": "right straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F005_001",
+        "manual_label": "128654",
+        "name": "hex bolt 128654",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F005_002",
+        "manual_label": "104875",
+        "name": "flange nut 104875",
+        "shape_family": "nut",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A005_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P005_002",
+        "fastener_ref": "F005_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 5: 2x hex bolt 128654 pushed through the back legs into the right side frame"
+      },
+      {
+        "action_uid": "A005_002",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P005_001",
+        "fastener_ref": "F005_002",
+        "tool_ref": "",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 6: 4x flange nut 104875 screwed onto the bolt ends by hand, not tight yet"
+      }
+    ],
+    "final_visible_structure": "chair frame upside down with all four bolts and nuts loosely fitted",
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P006_002",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P006_003",
+        "manual_label": "",
+        "name": "left back leg",
+        "visual_description": "left straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      },
+      {
+        "part_uid": "P006_004",
+        "manual_label": "",
+        "name": "right back leg",
+        "visual_description": "right straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      },
+      {
+        "part_uid": "P006_005",
+        "manual_label": "",
+        "name": "backrest",
+        "visual_description": "perforated plastic backrest with sockets underneath that fit over the back leg tops",
+        "shape_family": "panel",
+        "material_hint": "plastic",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "sockets and screw holes for the back legs"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          390,
+          20,
+          220
+        ],
+        "tilt_deg": 6,
+        "profile": {
+          "plane": "front",
+          "closed": true,
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              390,
+              0
+            ],
+            [
+              390,
+              190
+            ],
+            [
+              360,
+              220
+            ],
+            [
+              30,
+              220
+            ],
+            [
+              0,
+              190
+            ]
+          ]
+        }
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "106917",
+        "name": "screw 106917",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T006_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A006_001",
+        "action_type": "attach",
+        "moving_part_ref": "P006_005",
+        "target_part_ref": "P006_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 7: backrest pressed down onto the tops of the left back leg and right back leg"
+      },
+      {
+        "action_uid": "A006_002",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P006_005",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 8: 2x screw 106917 driven through the back of the backrest into the back legs with a cross head screwdriver"
+      }
+    ],
+    "final_visible_structure": "chair frame standing upright with the backrest on the back legs",
+    "uncertainties": [
+      "Step 7 starts by turning the frame upright; not a join."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P007_003",
+        "manual_label": "",
+        "name": "left back leg",
+        "visual_description": "left straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      },
+      {
+        "part_uid": "P007_004",
+        "manual_label": "",
+        "name": "right back leg",
+        "visual_description": "right straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      },
+      {
+        "part_uid": "P007_005",
+        "manual_label": "",
+        "name": "backrest",
+        "visual_description": "perforated plastic backrest with sockets underneath that fit over the back leg tops",
+        "shape_family": "panel",
+        "material_hint": "plastic",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "sockets and screw holes for the back legs"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          390,
+          20,
+          220
+        ],
+        "tilt_deg": 6,
+        "profile": {
+          "plane": "front",
+          "closed": true,
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              390,
+              0
+            ],
+            [
+              390,
+              190
+            ],
+            [
+              360,
+              220
+            ],
+            [
+              30,
+              220
+            ],
+            [
+              0,
+              190
+            ]
+          ]
+        }
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "104875",
+        "name": "flange nut 104875",
+        "shape_family": "nut",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T007_001",
+        "name": "adjustable spanner"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P007_002",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 9: 4x flange nut 104875 tightened with an adjustable spanner in the order 1, 2, 3, 4 shown at the seat corners"
+      }
+    ],
+    "final_visible_structure": "frame with all nuts tight",
+    "uncertainties": [
+      "The chair is turned round to reach the nuts; not a join."
+    ]
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P008_003",
+        "manual_label": "",
+        "name": "left back leg",
+        "visual_description": "left straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      },
+      {
+        "part_uid": "P008_004",
+        "manual_label": "",
+        "name": "right back leg",
+        "visual_description": "right straight steel tube back leg, slightly curved, with a hex bolt hole at seat height",
+        "shape_family": "tube",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "hex bolt hole at seat height"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          22,
+          620
+        ]
+      },
+      {
+        "part_uid": "P008_005",
+        "manual_label": "",
+        "name": "backrest",
+        "visual_description": "perforated plastic backrest with sockets underneath that fit over the back leg tops",
+        "shape_family": "panel",
+        "material_hint": "plastic",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "sockets and screw holes for the back legs"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          390,
+          20,
+          220
+        ],
+        "tilt_deg": 6,
+        "profile": {
+          "plane": "front",
+          "closed": true,
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              390,
+              0
+            ],
+            [
+              390,
+              190
+            ],
+            [
+              360,
+              220
+            ],
+            [
+              30,
+              220
+            ],
+            [
+              0,
+              190
+            ]
+          ]
+        }
+      },
+      {
+        "part_uid": "P008_006",
+        "manual_label": "",
+        "name": "seat",
+        "visual_description": "perforated plastic seat shell with hooks at the back and click catches underneath",
+        "shape_family": "panel",
+        "material_hint": "plastic",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 6,
+            "location_hint": "click catches underneath"
+          },
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "hooks at the back edge"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          390,
+          400,
+          25
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "128671",
+        "name": "seat clip 128671",
+        "shape_family": "bracket",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "F008_001",
+        "tool_ref": "",
+        "direction_hint": "up",
+        "visual_evidence": "step 10: 2x seat clip 128671 pushed up over the flange nuts under the left side frame"
+      },
+      {
+        "action_uid": "A008_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P008_002",
+        "fastener_ref": "F008_001",
+        "tool_ref": "",
+        "direction_hint": "up",
+        "visual_evidence": "step 10: 2x seat clip 128671 pushed up over the flange nuts under the right side frame"
+      },
+      {
+        "action_uid": "A008_003",
+        "action_type": "place",
+        "moving_part_ref": "P008_006",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 11: seat hooked under the seat rails at the back (2x hooks), front edge still raised"
+      }
+    ],
+    "final_visible_structure": "seat hooked on at the back, resting on the frame",
+    "uncertainties": [
+      "Step 11 turns the chair round again; not a join."
+    ]
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "",
+        "name": "left side frame",
+        "visual_description": "left welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P009_002",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right welded steel tube frame: a front leg bent back into a seat rail, with a cross rail welded on and threaded bolt bosses",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt bosses where the back legs are bolted on"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          22,
+          420,
+          450
+        ],
+        "profile": {
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              10,
+              400
+            ],
+            [
+              40,
+              450
+            ],
+            [
+              420,
+              450
+            ]
+          ],
+          "thickness": 22
+        }
+      },
+      {
+        "part_uid": "P009_003",
+        "manual_label": "",
+        "name": "backrest",
+        "visual_description": "perforated plastic backrest with sockets underneath that fit over the back leg tops",
+        "shape_family": "panel",
+        "material_hint": "plastic",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "sockets and screw holes for the back legs"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          390,
+          20,
+          220
+        ],
+        "tilt_deg": 6,
+        "profile": {
+          "plane": "front",
+          "closed": true,
+          "path": [
+            [
+              0,
+              0
+            ],
+            [
+              390,
+              0
+            ],
+            [
+              390,
+              190
+            ],
+            [
+              360,
+              220
+            ],
+            [
+              30,
+              220
+            ],
+            [
+              0,
+              190
+            ]
+          ]
+        }
+      },
+      {
+        "part_uid": "P009_004",
+        "manual_label": "",
+        "name": "seat",
+        "visual_description": "perforated plastic seat shell with hooks at the back and click catches underneath",
+        "shape_family": "panel",
+        "material_hint": "plastic",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 6,
+            "location_hint": "click catches underneath"
+          },
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "hooks at the back edge"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          390,
+          400,
+          25
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A009_001",
+        "action_type": "tighten",
+        "moving_part_ref": "",
+        "target_part_ref": "P009_004",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 12: seat pressed down until its 6x catches click into the clips fitted at step 10"
+      }
+    ],
+    "final_visible_structure": "finished ADDE chair",
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "info",
+    "visible_parts": [
+      {
+        "part_uid": "P010_001",
+        "manual_label": "",
+        "name": "seat",
+        "visual_description": "perforated plastic seat shell with hooks at the back and click catches underneath",
+        "shape_family": "panel",
+        "material_hint": "plastic",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 6,
+            "location_hint": "click catches underneath"
+          },
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "hooks at the back edge"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          390,
+          400,
+          25
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F010_001",
+        "manual_label": "128671",
+        "name": "seat clip 128671",
+        "shape_family": "bracket",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F010_002",
+        "manual_label": "104875",
+        "name": "flange nut 104875",
+        "shape_family": "nut",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T010_001",
+        "name": "adjustable spanner"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "finished ADDE chair",
+    "uncertainties": [
+      "Information page: if the chair wobbles, pull off the 4 seat clips, retighten the nuts with a spanner and refit the clips. Not part of the build."
+    ]
+  },
+  {
+    "page_number": 11,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Blank page."
+    ]
+  },
+  {
+    "page_number": 12,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Blank page."
+    ]
+  }
+]

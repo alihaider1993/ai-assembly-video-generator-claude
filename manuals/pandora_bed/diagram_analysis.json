@@ -1,0 +1,1121 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "Pandora ottoman bed with the lift-up base raised",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.08,
+          "x_max": 0.5,
+          "y_max": 0.6
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Text only."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D003_001",
+        "diagram_type": "part_inventory",
+        "description": "8x45mm bolt x8",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.18,
+          "x_max": 0.45,
+          "y_max": 0.3
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "A",
+          "8x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_002",
+        "diagram_type": "part_inventory",
+        "description": "8x25mm bolt x20",
+        "page_region": {
+          "x_min": 0.5,
+          "y_min": 0.18,
+          "x_max": 0.9,
+          "y_max": 0.3
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "B",
+          "20x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_003",
+        "diagram_type": "part_inventory",
+        "description": "8x30mm bolt x26",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.3,
+          "x_max": 0.45,
+          "y_max": 0.42
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "C",
+          "26x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_004",
+        "diagram_type": "part_inventory",
+        "description": "4x45mm wood screw x4",
+        "page_region": {
+          "x_min": 0.5,
+          "y_min": 0.3,
+          "x_max": 0.9,
+          "y_max": 0.42
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "D",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_005",
+        "diagram_type": "part_inventory",
+        "description": "Nut x6",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.42,
+          "x_max": 0.45,
+          "y_max": 0.53
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "E",
+          "6x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_006",
+        "diagram_type": "part_inventory",
+        "description": "17mm flat washer x54",
+        "page_region": {
+          "x_min": 0.5,
+          "y_min": 0.42,
+          "x_max": 0.9,
+          "y_max": 0.53
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "F",
+          "54x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_007",
+        "diagram_type": "part_inventory",
+        "description": "12mm spring washer x28",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.53,
+          "x_max": 0.45,
+          "y_max": 0.65
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "G",
+          "28x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_008",
+        "diagram_type": "part_inventory",
+        "description": "4x30mm wood screw x4",
+        "page_region": {
+          "x_min": 0.5,
+          "y_min": 0.53,
+          "x_max": 0.9,
+          "y_max": 0.65
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "J",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 4,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D004_001",
+        "diagram_type": "part_inventory",
+        "description": "Right side panel (1930 x 300mm) x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.13,
+          "x_max": 0.45,
+          "y_max": 0.25
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_002",
+        "diagram_type": "part_inventory",
+        "description": "Left side panel (1930 x 300mm) x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.26,
+          "x_max": 0.45,
+          "y_max": 0.37
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "2",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_003",
+        "diagram_type": "part_inventory",
+        "description": "Headboard (1465 x 995mm) x1",
+        "page_region": {
+          "x_min": 0.55,
+          "y_min": 0.13,
+          "x_max": 0.95,
+          "y_max": 0.37
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "3",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_004",
+        "diagram_type": "part_inventory",
+        "description": "Footboard (1460 x 300mm) x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.38,
+          "x_max": 0.45,
+          "y_max": 0.49
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "4",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_005",
+        "diagram_type": "part_inventory",
+        "description": "Foot (35 x 15mm) x4",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.53,
+          "x_max": 0.45,
+          "y_max": 0.6
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "6",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_006",
+        "diagram_type": "part_inventory",
+        "description": "Fabric base panel (1960 x 1420mm) x1",
+        "page_region": {
+          "x_min": 0.55,
+          "y_min": 0.49,
+          "x_max": 0.95,
+          "y_max": 0.62
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "7",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_007",
+        "diagram_type": "part_inventory",
+        "description": "Support leg (25 x 205mm) x2",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.63,
+          "x_max": 0.45,
+          "y_max": 0.7
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "8",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_008",
+        "diagram_type": "part_inventory",
+        "description": "Lift frame back rail (1363 x 85mm) x1",
+        "page_region": {
+          "x_min": 0.55,
+          "y_min": 0.63,
+          "x_max": 0.95,
+          "y_max": 0.76
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "9",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_009",
+        "diagram_type": "part_inventory",
+        "description": "Lift frame front rail (1363 x 85mm) x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.74,
+          "x_max": 0.45,
+          "y_max": 0.85
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "10",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_010",
+        "diagram_type": "part_inventory",
+        "description": "Lift frame long rail (1822 x 30mm) x2",
+        "page_region": {
+          "x_min": 0.55,
+          "y_min": 0.77,
+          "x_max": 0.95,
+          "y_max": 0.84
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "11",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_011",
+        "diagram_type": "part_inventory",
+        "description": "Lift frame centre rail (1822 x 30mm) x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.87,
+          "x_max": 0.45,
+          "y_max": 0.93
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "12",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_012",
+        "diagram_type": "part_inventory",
+        "description": "Slat (675 x 53mm) x28",
+        "page_region": {
+          "x_min": 0.55,
+          "y_min": 0.87,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "13",
+          "28x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      },
+      {
+        "diagram_uid": "D004_013",
+        "diagram_type": "part_inventory",
+        "description": "Hinge x1 pair, piston attached",
+        "page_region": {
+          "x_min": 0.55,
+          "y_min": 0.38,
+          "x_max": 0.95,
+          "y_max": 0.47
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "5",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "4'6 sizes used."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "part_inventory",
+        "description": "Middle cap (55mm) x14",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.13,
+          "x_max": 0.45,
+          "y_max": 0.28
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "14",
+          "14x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_002",
+        "diagram_type": "part_inventory",
+        "description": "Box cross rail (1390 x 25mm) x1",
+        "page_region": {
+          "x_min": 0.5,
+          "y_min": 0.13,
+          "x_max": 0.95,
+          "y_max": 0.28
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "15",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_003",
+        "diagram_type": "part_inventory",
+        "description": "Centre support block (130 x 30mm) x1",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.3,
+          "x_max": 0.45,
+          "y_max": 0.42
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "16",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_004",
+        "diagram_type": "part_inventory",
+        "description": "Retainer bracket x2",
+        "page_region": {
+          "x_min": 0.5,
+          "y_min": 0.3,
+          "x_max": 0.95,
+          "y_max": 0.42
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "17",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_005",
+        "diagram_type": "part_inventory",
+        "description": "End cap (55mm) x28",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.45,
+          "x_max": 0.45,
+          "y_max": 0.58
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "18",
+          "28x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "part_inventory",
+        "description": "Tools: allen key, spanner, box spanner (supplied), tape measure, Phillips screwdriver",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.12,
+          "x_max": 0.95,
+          "y_max": 0.42
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D007_001",
+        "diagram_type": "exploded_view",
+        "description": "Bolts C with washers G and F started in headboard 3 and footboard 4",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.1,
+          "x_max": 0.95,
+          "y_max": 0.58
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "3",
+          "4",
+          "C",
+          "F",
+          "G"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D007_002",
+        "diagram_type": "exploded_view",
+        "description": "Support block 16 bolted to footboard 4 with bolts A and washers F",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.6,
+          "x_max": 0.9,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "4",
+          "16",
+          "A",
+          "F"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D007_001",
+    "warnings": [],
+    "uncertainties": [
+      "Two steps on one page."
+    ]
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "assembly_view",
+        "description": "Side rails 1 and 2 hooked onto the headboard 3 and footboard 4 bolts",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.08,
+          "x_max": 0.95,
+          "y_max": 0.5
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "C"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D008_002",
+        "diagram_type": "assembly_view",
+        "description": "Cross rail 15 screwed between side rails 1 and 2 with screws D",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.52,
+          "x_max": 0.95,
+          "y_max": 0.97
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "2",
+          "15",
+          "D"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D008_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D009_001",
+        "diagram_type": "assembly_view",
+        "description": "Fabric base 7 pressed onto the underside with velcro",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.08,
+          "x_max": 0.9,
+          "y_max": 0.45
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "7"
+        ],
+        "likely_action": "place",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D009_002",
+        "diagram_type": "assembly_view",
+        "description": "Feet 6 screwed to the underside corners with screws J",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.48,
+          "x_max": 0.9,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "6",
+          "J"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D009_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D010_001",
+        "diagram_type": "assembly_view",
+        "description": "Hinges 5 bolted inside side rails 1 and 2 with bolts C and washers F",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.08,
+          "x_max": 0.95,
+          "y_max": 0.53
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "2",
+          "5",
+          "C",
+          "F"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D010_002",
+        "diagram_type": "exploded_view",
+        "description": "Support legs 8 bolted under centre rail 12 with bolts B and washers F",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.55,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "8",
+          "12",
+          "B",
+          "F"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D010_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D011_001",
+        "diagram_type": "exploded_view",
+        "description": "Lift frame: rails 9, 10, 11, 11 and 12 bolted with B, G and F (upside down)",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.08,
+          "x_max": 0.95,
+          "y_max": 0.5
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "9",
+          "10",
+          "11",
+          "12",
+          "B",
+          "G",
+          "F"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D011_002",
+        "diagram_type": "exploded_view",
+        "description": "Mattress brackets 17 bolted to head rail 9",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.53,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "9",
+          "10",
+          "17",
+          "B",
+          "F"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D011_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D012_001",
+        "diagram_type": "assembly_view",
+        "description": "Lift frame lowered into the box and bolted to hinges 5 with A, F and E",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.08,
+          "x_max": 0.95,
+          "y_max": 0.53
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "2",
+          "5",
+          "9",
+          "10",
+          "11",
+          "A",
+          "E",
+          "F"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D012_002",
+        "diagram_type": "close_up",
+        "description": "Piston clipped on with the box spanner, nut pre-assembled",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.55,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "2",
+          "5"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D012_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D013_001",
+        "diagram_type": "exploded_view",
+        "description": "a: slats 13 into middle cap 14 and end caps 18, repeat x14",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.3
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "13",
+          "14",
+          "18"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D013_002",
+        "diagram_type": "assembly_view",
+        "description": "Slat rows pressed onto lift frame rails 11 and 12; slats arch upwards",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.3,
+          "x_max": 0.95,
+          "y_max": 0.98
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "2",
+          "8",
+          "11",
+          "12",
+          "13",
+          "14",
+          "18"
+        ],
+        "likely_action": "place",
+        "visual_complexity": "high",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D013_001",
+    "warnings": [],
+    "uncertainties": []
+  }
+]

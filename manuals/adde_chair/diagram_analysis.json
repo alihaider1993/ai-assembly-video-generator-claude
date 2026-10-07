@@ -1,0 +1,482 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "Assembled ADDE chair",
+        "page_region": {
+          "x_min": 0.08,
+          "y_min": 0.1,
+          "x_max": 0.85,
+          "y_max": 0.85
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D002_001",
+        "diagram_type": "other",
+        "description": "Tools and safety: screwdriver, hammer, spanner; soft floor; ask IKEA if unsure",
+        "page_region": {
+          "x_min": 0.06,
+          "y_min": 0.03,
+          "x_max": 0.94,
+          "y_max": 0.7
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D002_002",
+        "diagram_type": "part_inventory",
+        "description": "Fittings: seat clip 128671 x4, hex bolt 128654 x4, screw 106917 x2, flange nut 104875 x4",
+        "page_region": {
+          "x_min": 0.06,
+          "y_min": 0.78,
+          "x_max": 0.62,
+          "y_max": 0.93
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "128671",
+          "128654",
+          "106917",
+          "104875",
+          "4x",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.9
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 3,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D003_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 1: side frame on a rug, back leg on the boss; inset of correct leg curve",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.02,
+          "x_max": 0.97,
+          "y_max": 0.5
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "1"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_002",
+        "diagram_type": "exploded_view",
+        "description": "Step 2: second back leg pushed onto the frame",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.55,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "2"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D003_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D004_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 3: 2x bolt 128654 into the back legs",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.5
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "3",
+          "2x",
+          "128654"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D004_002",
+        "diagram_type": "exploded_view",
+        "description": "Step 4: second frame turned over onto the back leg tops",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.55,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "4"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D004_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "exploded_view",
+        "description": "Step 5: 2x bolt 128654 into the second frame",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.45
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "5",
+          "2x",
+          "128654"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_002",
+        "diagram_type": "detail_callout",
+        "description": "Step 6: 4x nut 104875 started by hand",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.52,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "6",
+          "4x",
+          "104875"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D005_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "assembly_view",
+        "description": "Step 7: frame turned upright, backrest pressed onto the back legs",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.52
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "7"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D006_002",
+        "diagram_type": "detail_callout",
+        "description": "Step 8: 2x screw 106917 with screwdriver",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.55,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "8",
+          "2x",
+          "106917"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D006_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D007_001",
+        "diagram_type": "detail_callout",
+        "description": "Step 9: 4x nut tightened with a spanner in order 1-4",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.75
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "9",
+          "1",
+          "2",
+          "3",
+          "4",
+          "4x"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "detail_callout",
+        "description": "Step 10: 4x seat clip 128671 pushed onto the nuts",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.5
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "10",
+          "4x",
+          "128671"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D008_002",
+        "diagram_type": "assembly_view",
+        "description": "Step 11: seat hooked on at the back (2x)",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.52,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "11",
+          "2x"
+        ],
+        "likely_action": "place",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D008_002",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D009_001",
+        "diagram_type": "detail_callout",
+        "description": "Step 12: seat pressed down, 6x click",
+        "page_region": {
+          "x_min": 0.1,
+          "y_min": 0.2,
+          "x_max": 0.9,
+          "y_max": 0.7
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "12",
+          "6x"
+        ],
+        "likely_action": "place",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "info",
+    "diagrams": [
+      {
+        "diagram_uid": "D010_001",
+        "diagram_type": "detail_callout",
+        "description": "If the chair wobbles: remove clips, retighten nuts, refit clips",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "4x"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "unknown",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Blank page."
+    ]
+  },
+  {
+    "page_number": 12,
+    "page_type": "unknown",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Blank page."
+    ]
+  }
+]
