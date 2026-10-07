@@ -65,7 +65,7 @@ def build_sibling_groups(graph: Dict[str, Any]) -> Dict[str, List[str]]:
     return groups
 
 
-REPEAT_RE = re.compile(r"repeat\s*x\s*(\d+)", re.IGNORECASE)
+REPEAT_RE = re.compile(r"\brepeat\s*x\s*(\d+)", re.IGNORECASE)
 
 
 def page_quantities(page_states: List[Dict[str, Any]]) -> Dict[str, int]:

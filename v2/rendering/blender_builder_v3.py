@@ -259,6 +259,12 @@ def build_blender_script():
     # Optional overrides for quick preview renders; defaults keep full quality.
     resolution_percent = env_int("V3_RESOLUTION_PERCENT", 100, 10, 100)
     frame_step = env_int("V3_FRAME_STEP", 1, 1, 24)
+    # The render engine: EEVEE (default) needs a GPU; a server without one
+    # uses WORKBENCH (fast, flat studio light) or CYCLES on the CPU.
+    render_engine = os.environ.get("V3_RENDER_ENGINE", "").strip().upper() or "EEVEE"
+    if render_engine not in ("EEVEE", "WORKBENCH", "CYCLES"):
+        raise ValueError(f"V3_RENDER_ENGINE must be EEVEE, WORKBENCH or CYCLES, got {render_engine}")
+    cycles_samples = env_int("V3_CYCLES_SAMPLES", 16, 1, 1024)
 
     output_script = project_root / OUTPUT_SCRIPT
 
@@ -338,6 +344,7 @@ MATERIALS = {{
     "wood": mat("Birch Wood Proxy", (0.66, 0.45, 0.26, 1), 0.5, 0.0),
     "metal": mat("Dark Metal Proxy", (0.10, 0.11, 0.13, 1), 0.35, 0.6),
     "fabric": mat("Light Fabric Proxy", (0.70, 0.70, 0.66, 1), 0.7, 0.0),
+    "plastic": mat("Moulded Plastic Proxy", (0.86, 0.86, 0.84, 1), 0.4, 0.0),
     "fastener": mat("Steel Fastener", (0.62, 0.63, 0.66, 1), 0.3, 0.9),
     "hole": mat("Black Hole Marker", (0.01, 0.01, 0.01, 1), 0.5, 0.0),
     "floor": mat("Studio Floor", (0.50, 0.53, 0.58, 1), 0.6, 0.0),
@@ -611,7 +618,7 @@ def choose_material(layout_obj, graph_obj):
     if "bolt" in name or "screw" in name or "washer" in name:
         return MATERIALS["fastener"]
 
-    if material_hint in ("wood", "metal", "fabric"):
+    if material_hint in ("wood", "metal", "fabric", "plastic"):
         return MATERIALS[material_hint]
 
     if "leg" in name or "rail" in name or "support" in name:
@@ -1139,8 +1146,26 @@ floor = bpy.context.object
 floor.name = "Floor"
 floor.data.materials.append(MATERIALS["floor"])
 
-scene.render.engine = "BLENDER_EEVEE"
-scene.eevee.taa_render_samples = 32
+RENDER_ENGINE = "{render_engine}"
+if RENDER_ENGINE == "CYCLES":
+    scene.render.engine = "CYCLES"
+    scene.cycles.device = "CPU"
+    scene.cycles.samples = {cycles_samples}
+    scene.cycles.use_denoising = True
+elif RENDER_ENGINE == "WORKBENCH":
+    # Parts keep their colours through each material's diffuse_color.
+    scene.render.engine = "BLENDER_WORKBENCH"
+    scene.display.render_aa = "8"
+    shading = scene.display.shading
+    shading.light = "STUDIO"
+    shading.color_type = "MATERIAL"
+    shading.show_shadows = True
+    shading.shadow_intensity = 0.35
+    shading.show_cavity = True
+    shading.cavity_type = "WORLD"
+else:
+    scene.render.engine = "BLENDER_EEVEE"
+    scene.eevee.taa_render_samples = 32
 scene.view_settings.view_transform = "Filmic"
 scene.view_settings.look = "Medium High Contrast"
 scene.view_settings.exposure = -0.3

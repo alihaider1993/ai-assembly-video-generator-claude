@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Assembly Video Generator</title>
+  <meta name="description" content="Upload a furniture assembly manual and get back an animated 3D video of it being built, step by step.">
+  <meta name="color-scheme" content="light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23f6f4ef' stroke='%2316161a' stroke-width='3'/%3E%3Cpath d='M10 22 L19 13 L19 9 L23 9' fill='none' stroke='%23ff5a1f' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="AI Assembly Video Generator: home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" />
+        <path d="M10 22 L19 13 L19 9 L23 9" />
+      </svg>
+      <span>AI Assembly Video Generator</span>
+    </a>
+    <nav class="nav">
+      <a href="#pick">Examples</a>
+      <a href="#try" class="nav-cta">Try your own</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>AI Assembly <span class="ink-accent">Video Generator</span></h1>
+        <p class="lede">
+          Upload a furniture instruction manual and get back an animated 3D video of the piece
+          being built, step by step, with every part and screw in place.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#watch">Watch one build itself</a>
+          <a class="btn btn-ghost" href="#try">Try your own manual</a>
+        </div>
+        <dl class="stats" id="stats" aria-live="polite"></dl>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <figure class="paper paper-back"><img id="hero-page" alt=""></figure>
+        <div class="hero-arrow">
+          <svg viewBox="0 0 120 60"><path d="M6 44 C 40 6, 80 6, 112 30" /><path d="M100 18 L112 30 L96 36" /></svg>
+        </div>
+        <figure class="screen">
+          <video id="hero-video" muted loop playsinline preload="metadata"></video>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Pick -->
+    <section class="section" id="pick">
+      <header class="section-head">
+        <span class="step-dot big">1</span>
+        <div>
+          <h2>Pick a piece</h2>
+          <p>Real manuals, turned into videos. Hover to preview, click to step through it.</p>
+        </div>
+      </header>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <!-- Watch -->
+    <section class="section" id="watch">
+      <header class="section-head">
+        <span class="step-dot big">2</span>
+        <div>
+          <h2>Watch it build itself</h2>
+          <p>The manual turns to the right page as the video plays, and the parts list ticks itself off.</p>
+        </div>
+      </header>
+
+      <div class="studio" id="studio">
+        <div class="studio-title">
+          <h3 id="studio-title">&nbsp;</h3>
+          <span class="mono muted" id="studio-meta"></span>
+        </div>
+
+        <div class="studio-grid">
+          <div class="manual">
+            <div class="panel-head">
+              <span class="label">The manual</span>
+              <label class="follow"><input type="checkbox" id="follow" checked> Follow the video</label>
+            </div>
+            <div class="manual-page">
+              <img id="manual-img" alt="Manual page">
+              <span class="page-tag mono" id="page-tag"></span>
+            </div>
+            <div class="pager">
+              <button class="icon-btn" id="page-prev" aria-label="Previous page">&larr;</button>
+              <span class="mono muted" id="page-count"></span>
+              <button class="icon-btn" id="page-next" aria-label="Next page">&rarr;</button>
+            </div>
+          </div>
+
+          <div class="player">
+            <div class="panel-head">
+              <span class="label">The video</span>
+              <span class="mono muted keys">&larr; &rarr; to step</span>
+            </div>
+            <div class="video-frame">
+              <video id="video" controls playsinline preload="metadata"></video>
+            </div>
+            <div class="timeline" id="timeline" role="list" aria-label="Steps"></div>
+            <div class="now">
+              <span class="step-dot" id="now-num">1</span>
+              <div>
+                <div class="mono muted" id="now-label"></div>
+                <div class="now-caption" id="now-caption"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="studio-lower">
+          <div class="steps-panel">
+            <div class="panel-head"><span class="label">Steps</span></div>
+            <ol class="steps" id="steps"></ol>
+          </div>
+          <div class="parts-panel">
+            <div class="panel-head">
+              <span class="label">Parts list</span>
+              <span class="mono muted" id="parts-progress"></span>
+            </div>
+            <ul class="parts" id="parts"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Try -->
+    <section class="section" id="try">
+      <header class="section-head">
+        <span class="step-dot big">3</span>
+        <div>
+          <h2>Try your own manual</h2>
+          <p>Any furniture assembly manual. It takes a few minutes; you can watch the progress here.</p>
+        </div>
+      </header>
+
+      <div class="try">
+        <p class="machine" id="machine" aria-live="polite"><span class="machine-dot"></span><span id="machine-text">Checking the render machine&hellip;</span></p>
+        <label class="drop" id="drop">
+          <input type="file" id="file" accept="application/pdf,.pdf" hidden>
+          <svg class="drop-icon" viewBox="0 0 48 48" aria-hidden="true">
+            <rect x="9" y="5" width="30" height="38" rx="2" />
+            <path d="M15 15h18M15 21h18M15 27h10" />
+            <path class="arrow" d="M34 36v-12M29 29l5-5 5 5" />
+          </svg>
+          <strong>Drop a PDF here, or click to choose one</strong>
+          <span class="rules mono" id="rules">PDF &middot; up to 10 pages &middot; up to 2 MB</span>
+        </label>
+
+        <div class="job" id="job" hidden>
+          <div class="job-head">
+            <svg class="hexkey" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 24 L19 13 L19 7 L25 7" /></svg>
+            <div>
+              <div class="job-title" id="job-title">Uploading&hellip;</div>
+              <div class="mono muted" id="job-sub"></div>
+            </div>
+          </div>
+          <ol class="phases" id="phases"></ol>
+          <div class="job-result" id="job-result" hidden>
+            <video id="job-video" controls playsinline></video>
+            <div class="hero-actions">
+              <a class="btn btn-primary" id="job-download" download>Download the video</a>
+              <button class="btn btn-ghost" id="job-again">Try another manual</button>
+            </div>
+            <p class="mono muted small">Your manual and video are deleted from the server after an hour.</p>
+          </div>
+        </div>
+
+        <p class="error" id="try-error" role="alert" hidden></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>AI Assembly Video Generator</strong>
+      <p class="muted">Reads a manual's drawings, works out what goes where and in what order, and animates it in 3D.</p>
+    </div>
+    <div class="muted small">
+      Built by Syed Ali Haider &middot;
+      <a href="https://www.linkedin.com/in/syed-ali-haider1993" target="_blank" rel="noopener">LinkedIn</a> &middot;
+      <a href="https://github.com/alihaider1993" target="_blank" rel="noopener">GitHub</a><br>
+      Manuals shown are the property of their makers and are used here for demonstration only.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

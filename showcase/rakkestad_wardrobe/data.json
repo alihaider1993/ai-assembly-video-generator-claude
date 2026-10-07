@@ -1,0 +1,520 @@
+{
+ "title": "IKEA RAKKESTAD Wardrobe",
+ "duration": 46.21,
+ "pages": [
+  "01.jpg",
+  "02.jpg",
+  "03.jpg",
+  "04.jpg",
+  "05.jpg",
+  "06.jpg",
+  "07.jpg",
+  "08.jpg",
+  "09.jpg",
+  "10.jpg",
+  "11.jpg",
+  "12.jpg",
+  "13.jpg",
+  "14.jpg",
+  "15.jpg",
+  "16.jpg",
+  "17.jpg",
+  "18.jpg",
+  "19.jpg",
+  "20.jpg",
+  "21.jpg",
+  "22.jpg",
+  "23.jpg",
+  "24.jpg",
+  "25.jpg",
+  "26.jpg",
+  "27.jpg",
+  "28.jpg",
+  "29.jpg",
+  "30.jpg",
+  "31.jpg",
+  "32.jpg"
+ ],
+ "parts": [
+  {
+   "name": "hinge",
+   "hardware": false,
+   "quantity": 9
+  },
+  {
+   "name": "knob",
+   "hardware": false,
+   "quantity": 3
+  },
+  {
+   "name": "clothes rail",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "left side panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "divider",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "right side panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "shelf",
+   "hardware": false,
+   "quantity": 3
+  },
+  {
+   "name": "bottom panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "top panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "plinth",
+   "hardware": false,
+   "quantity": 2
+  },
+  {
+   "name": "back panel",
+   "hardware": false,
+   "quantity": 3
+  },
+  {
+   "name": "left door",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "middle door",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "right door",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "screw 100219",
+   "hardware": true,
+   "quantity": 16
+  },
+  {
+   "name": "dowel 101345",
+   "hardware": true,
+   "quantity": 38
+  },
+  {
+   "name": "screw 109567",
+   "hardware": true,
+   "quantity": 3
+  },
+  {
+   "name": "screw 105248",
+   "hardware": true,
+   "quantity": 38
+  },
+  {
+   "name": "screw 109041",
+   "hardware": true,
+   "quantity": 2
+  },
+  {
+   "name": "plug 109837",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "angle bracket 103717",
+   "hardware": true,
+   "quantity": 1
+  },
+  {
+   "name": "felt pad 107091",
+   "hardware": true,
+   "quantity": 1
+  },
+  {
+   "name": "nail guide 105494",
+   "hardware": true,
+   "quantity": 1
+  },
+  {
+   "name": "mounting plate 109221",
+   "hardware": true,
+   "quantity": 9
+  },
+  {
+   "name": "rail holder 157308",
+   "hardware": true,
+   "quantity": 2
+  },
+  {
+   "name": "spacer 158568",
+   "hardware": true,
+   "quantity": 8
+  },
+  {
+   "name": "nail 405950",
+   "hardware": true,
+   "quantity": 2
+  }
+ ],
+ "steps": [
+  {
+   "start": 0.79,
+   "end": 2.12,
+   "label": "Step 1 of 24",
+   "caption": "Insert 9 x mounting plate 109221 into left side panel",
+   "pages": [
+    7
+   ],
+   "parts": [
+    3,
+    23
+   ]
+  },
+  {
+   "start": 2.12,
+   "end": 3.46,
+   "label": "Step 2 of 24",
+   "caption": "Insert 4 x dowel 101345 into divider",
+   "pages": [
+    8
+   ],
+   "parts": [
+    4,
+    6,
+    8,
+    9,
+    15
+   ]
+  },
+  {
+   "start": 3.46,
+   "end": 5.21,
+   "label": "Step 3 of 24",
+   "caption": "Attach bottom panel and 2 x screw 100219 to left side panel",
+   "pages": [
+    9
+   ],
+   "parts": [
+    3,
+    4,
+    7,
+    8,
+    9,
+    14
+   ]
+  },
+  {
+   "start": 5.21,
+   "end": 6.54,
+   "label": "Step 4 of 24",
+   "caption": "Insert 4 x plug 109837 into top panel",
+   "pages": [
+    10
+   ],
+   "parts": [
+    8,
+    19
+   ]
+  },
+  {
+   "start": 6.54,
+   "end": 7.88,
+   "label": "Step 5 of 24",
+   "caption": "Insert angle bracket 103717 into top panel",
+   "pages": [
+    10
+   ],
+   "parts": [
+    8,
+    20
+   ]
+  },
+  {
+   "start": 7.88,
+   "end": 9.62,
+   "label": "Step 6 of 24",
+   "caption": "Attach divider to bottom panel",
+   "pages": [
+    11
+   ],
+   "parts": [
+    4,
+    7,
+    8
+   ]
+  },
+  {
+   "start": 9.62,
+   "end": 11.38,
+   "label": "Step 7 of 24",
+   "caption": "Attach 3 x shelf to divider",
+   "pages": [
+    12
+   ],
+   "parts": [
+    4,
+    6
+   ]
+  },
+  {
+   "start": 11.38,
+   "end": 13.12,
+   "label": "Step 8 of 24",
+   "caption": "Attach right side panel to shelf",
+   "pages": [
+    13
+   ],
+   "parts": [
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "start": 13.12,
+   "end": 14.46,
+   "label": "Step 9 of 24",
+   "caption": "Insert 4 x spacer 158568 into plinth",
+   "pages": [
+    14
+   ],
+   "parts": [
+    9,
+    25
+   ]
+  },
+  {
+   "start": 14.46,
+   "end": 16.21,
+   "label": "Step 10 of 24",
+   "caption": "Attach 2 x plinth to left side panel",
+   "pages": [
+    15
+   ],
+   "parts": [
+    3,
+    9
+   ]
+  },
+  {
+   "start": 16.21,
+   "end": 17.96,
+   "label": "Step 11 of 24",
+   "caption": "Attach top panel to left side panel",
+   "pages": [
+    16
+   ],
+   "parts": [
+    3,
+    5,
+    8
+   ]
+  },
+  {
+   "start": 17.96,
+   "end": 19.29,
+   "label": "Step 12 of 24",
+   "caption": "Screw in screw 109041 into divider",
+   "pages": [
+    17
+   ],
+   "parts": [
+    4,
+    18
+   ]
+  },
+  {
+   "start": 19.29,
+   "end": 21.04,
+   "label": "Step 13 of 24",
+   "caption": "Attach back panel and 3 x nail 405950 to top panel",
+   "pages": [
+    18
+   ],
+   "parts": [
+    3,
+    5,
+    7,
+    8,
+    10,
+    26
+   ]
+  },
+  {
+   "start": 21.04,
+   "end": 22.79,
+   "label": "Step 14 of 24",
+   "caption": "Attach 2 x back panel to top panel",
+   "pages": [
+    18
+   ],
+   "parts": [
+    3,
+    5,
+    7,
+    8,
+    10
+   ]
+  },
+  {
+   "start": 22.79,
+   "end": 24.12,
+   "label": "Step 15 of 24",
+   "caption": "Insert 2 x rail holder 157308 into left side panel",
+   "pages": [
+    26
+   ],
+   "parts": [
+    3,
+    24
+   ]
+  },
+  {
+   "start": 24.12,
+   "end": 25.88,
+   "label": "Step 16 of 24",
+   "caption": "Attach clothes rail to left side panel",
+   "pages": [
+    27
+   ],
+   "parts": [
+    2,
+    3
+   ]
+  },
+  {
+   "start": 25.88,
+   "end": 27.62,
+   "label": "Step 17 of 24",
+   "caption": "Attach 9 x hinge and 9 x screw 105248 to left door",
+   "pages": [
+    27
+   ],
+   "parts": [
+    0,
+    11,
+    13
+   ]
+  },
+  {
+   "start": 27.62,
+   "end": 29.38,
+   "label": "Step 18 of 24",
+   "caption": "Attach 9 x hinge to left door",
+   "pages": [
+    27
+   ],
+   "parts": [
+    0,
+    11,
+    13
+   ]
+  },
+  {
+   "start": 29.38,
+   "end": 31.12,
+   "label": "Step 19 of 24",
+   "caption": "Attach left door to left side panel",
+   "pages": [
+    28
+   ],
+   "parts": [
+    3,
+    11
+   ]
+  },
+  {
+   "start": 31.12,
+   "end": 32.88,
+   "label": "Step 20 of 24",
+   "caption": "Attach middle door to divider",
+   "pages": [
+    28
+   ],
+   "parts": [
+    4,
+    12
+   ]
+  },
+  {
+   "start": 32.88,
+   "end": 34.62,
+   "label": "Step 21 of 24",
+   "caption": "Attach right door to right side panel",
+   "pages": [
+    28
+   ],
+   "parts": [
+    5,
+    13
+   ]
+  },
+  {
+   "start": 34.62,
+   "end": 36.38,
+   "label": "Step 22 of 24",
+   "caption": "Attach knob and 3 x screw 109567 to left door",
+   "pages": [
+    29
+   ],
+   "parts": [
+    1,
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "start": 36.38,
+   "end": 38.12,
+   "label": "Step 23 of 24",
+   "caption": "Attach 2 x knob to left door",
+   "pages": [
+    29
+   ],
+   "parts": [
+    1,
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "start": 38.12,
+   "end": 39.46,
+   "label": "Step 24 of 24",
+   "caption": "Insert felt pad 107091 into left side panel",
+   "pages": [
+    30
+   ],
+   "parts": [
+    3,
+    21
+   ]
+  },
+  {
+   "start": 40.17,
+   "end": 46.17,
+   "label": "Done",
+   "caption": "Assembly complete",
+   "pages": [],
+   "parts": []
+  }
+ ]
+}

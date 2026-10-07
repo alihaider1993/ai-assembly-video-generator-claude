@@ -1,0 +1,645 @@
+{
+ "title": "IKEA HEMNES 8-Drawer Dresser",
+ "duration": 54.54,
+ "pages": [
+  "01.jpg",
+  "02.jpg",
+  "03.jpg",
+  "04.jpg",
+  "05.jpg",
+  "06.jpg",
+  "07.jpg",
+  "08.jpg",
+  "09.jpg",
+  "10.jpg",
+  "11.jpg",
+  "12.jpg",
+  "13.jpg",
+  "14.jpg",
+  "15.jpg",
+  "16.jpg",
+  "17.jpg",
+  "18.jpg",
+  "19.jpg",
+  "20.jpg",
+  "21.jpg",
+  "22.jpg",
+  "23.jpg",
+  "24.jpg",
+  "25.jpg",
+  "26.jpg",
+  "27.jpg",
+  "28.jpg",
+  "29.jpg",
+  "30.jpg",
+  "31.jpg",
+  "32.jpg",
+  "33.jpg",
+  "34.jpg",
+  "35.jpg",
+  "36.jpg",
+  "37.jpg",
+  "38.jpg",
+  "39.jpg",
+  "40.jpg",
+  "41.jpg",
+  "42.jpg",
+  "43.jpg",
+  "44.jpg",
+  "45.jpg",
+  "46.jpg",
+  "47.jpg",
+  "48.jpg"
+ ],
+ "parts": [
+  {
+   "name": "drawer runner",
+   "hardware": false,
+   "quantity": 32
+  },
+  {
+   "name": "knob",
+   "hardware": false,
+   "quantity": 12
+  },
+  {
+   "name": "left front leg",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "left back leg",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "right front leg",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "right back leg",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "left side panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "right side panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "front rail",
+   "hardware": false,
+   "quantity": 4
+  },
+  {
+   "name": "back rail",
+   "hardware": false,
+   "quantity": 2
+  },
+  {
+   "name": "divider",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "top panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "back panel",
+   "hardware": false,
+   "quantity": 2
+  },
+  {
+   "name": "small drawer front",
+   "hardware": false,
+   "quantity": 4
+  },
+  {
+   "name": "wide drawer front",
+   "hardware": false,
+   "quantity": 4
+  },
+  {
+   "name": "drawer side",
+   "hardware": false,
+   "quantity": 16
+  },
+  {
+   "name": "drawer back",
+   "hardware": false,
+   "quantity": 8
+  },
+  {
+   "name": "drawer bottom",
+   "hardware": false,
+   "quantity": 8
+  },
+  {
+   "name": "cam bolt 118331",
+   "hardware": true,
+   "quantity": 22
+  },
+  {
+   "name": "cam lock 110630",
+   "hardware": true,
+   "quantity": 12
+  },
+  {
+   "name": "dowel 101350",
+   "hardware": true,
+   "quantity": 8
+  },
+  {
+   "name": "screw 100349",
+   "hardware": true,
+   "quantity": 12
+  },
+  {
+   "name": "screw 100232",
+   "hardware": true,
+   "quantity": 2
+  },
+  {
+   "name": "screw 100214",
+   "hardware": true,
+   "quantity": 9
+  },
+  {
+   "name": "screw 100365",
+   "hardware": true,
+   "quantity": 26
+  },
+  {
+   "name": "adjustable foot 107862",
+   "hardware": true,
+   "quantity": 1
+  },
+  {
+   "name": "nail 101221",
+   "hardware": true,
+   "quantity": 1
+  },
+  {
+   "name": "cam bolt 603440",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "screw 100413",
+   "hardware": true,
+   "quantity": 12
+  },
+  {
+   "name": "dowel 101345",
+   "hardware": true,
+   "quantity": 32
+  },
+  {
+   "name": "plug 110519",
+   "hardware": true,
+   "quantity": 36
+  },
+  {
+   "name": "cam bolt 123492",
+   "hardware": true,
+   "quantity": 32
+  },
+  {
+   "name": "screw 100347",
+   "hardware": true,
+   "quantity": 32
+  },
+  {
+   "name": "screw 105344",
+   "hardware": true,
+   "quantity": 8
+  },
+  {
+   "name": "stabiliser rod 131294",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "floor glider 191064",
+   "hardware": true,
+   "quantity": 4
+  }
+ ],
+ "steps": [
+  {
+   "start": 0.79,
+   "end": 2.12,
+   "label": "Step 1 of 29",
+   "caption": "Insert 12 x cam bolt 118331 into left front leg",
+   "pages": [
+    7
+   ],
+   "parts": [
+    2,
+    11,
+    18
+   ]
+  },
+  {
+   "start": 2.12,
+   "end": 3.88,
+   "label": "Step 2 of 29",
+   "caption": "Attach left side panel and 8 x dowel 101350 to left front leg",
+   "pages": [
+    8
+   ],
+   "parts": [
+    2,
+    3,
+    6
+   ]
+  },
+  {
+   "start": 3.88,
+   "end": 5.62,
+   "label": "Step 3 of 29",
+   "caption": "Attach right side panel to right front leg",
+   "pages": [
+    8
+   ],
+   "parts": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "start": 5.62,
+   "end": 6.96,
+   "label": "Step 4 of 29",
+   "caption": "Screw in 12 x cam lock 110630 into left side panel",
+   "pages": [
+    8
+   ],
+   "parts": [
+    6,
+    7,
+    8,
+    10,
+    11,
+    15,
+    19
+   ]
+  },
+  {
+   "start": 6.96,
+   "end": 8.71,
+   "label": "Step 5 of 29",
+   "caption": "Attach 3 x drawer runner and 6 x screw 100349 to left side panel",
+   "pages": [
+    9
+   ],
+   "parts": [
+    0,
+    6,
+    7
+   ]
+  },
+  {
+   "start": 8.71,
+   "end": 10.46,
+   "label": "Step 6 of 29",
+   "caption": "Attach 3 x drawer runner to left side panel",
+   "pages": [
+    9
+   ],
+   "parts": [
+    0,
+    6,
+    7,
+    10,
+    15
+   ]
+  },
+  {
+   "start": 10.46,
+   "end": 11.79,
+   "label": "Step 7 of 29",
+   "caption": "Insert 4 x floor glider 191064 into left front leg",
+   "pages": [
+    10
+   ],
+   "parts": [
+    2,
+    35
+   ]
+  },
+  {
+   "start": 11.79,
+   "end": 13.54,
+   "label": "Step 8 of 29",
+   "caption": "Attach 2 x back rail to left back leg",
+   "pages": [
+    12
+   ],
+   "parts": [
+    3,
+    8,
+    9
+   ]
+  },
+  {
+   "start": 13.54,
+   "end": 15.29,
+   "label": "Step 9 of 29",
+   "caption": "Attach 4 x front rail to left front leg",
+   "pages": [
+    12
+   ],
+   "parts": [
+    2,
+    8
+   ]
+  },
+  {
+   "start": 15.29,
+   "end": 16.62,
+   "label": "Step 10 of 29",
+   "caption": "Attach 9 x screw 100365 to divider",
+   "pages": [
+    16
+   ],
+   "parts": [
+    0,
+    10
+   ]
+  },
+  {
+   "start": 16.62,
+   "end": 17.96,
+   "label": "Step 11 of 29",
+   "caption": "Insert cam bolt 603440 into divider",
+   "pages": [
+    18
+   ],
+   "parts": [
+    10,
+    27
+   ]
+  },
+  {
+   "start": 17.96,
+   "end": 19.71,
+   "label": "Step 12 of 29",
+   "caption": "Attach divider to front rail",
+   "pages": [
+    19
+   ],
+   "parts": [
+    8,
+    10
+   ]
+  },
+  {
+   "start": 19.71,
+   "end": 21.04,
+   "label": "Step 13 of 29",
+   "caption": "Screw in 3 x screw 100214 into divider",
+   "pages": [
+    20
+   ],
+   "parts": [
+    8,
+    10,
+    23
+   ]
+  },
+  {
+   "start": 21.04,
+   "end": 22.38,
+   "label": "Step 14 of 29",
+   "caption": "Insert adjustable foot 107862 into divider",
+   "pages": [
+    26
+   ],
+   "parts": [
+    10,
+    25
+   ]
+  },
+  {
+   "start": 22.38,
+   "end": 24.12,
+   "label": "Step 15 of 29",
+   "caption": "Attach top panel to left side panel",
+   "pages": [
+    29
+   ],
+   "parts": [
+    6,
+    7,
+    11
+   ]
+  },
+  {
+   "start": 24.12,
+   "end": 25.88,
+   "label": "Step 16 of 29",
+   "caption": "Attach back panel and 28 x nail 101221 to back rail",
+   "pages": [
+    32
+   ],
+   "parts": [
+    9,
+    12
+   ]
+  },
+  {
+   "start": 25.88,
+   "end": 27.62,
+   "label": "Step 17 of 29",
+   "caption": "Attach back panel to back rail",
+   "pages": [
+    32
+   ],
+   "parts": [
+    9,
+    12
+   ]
+  },
+  {
+   "start": 27.62,
+   "end": 29.38,
+   "label": "Step 18 of 29",
+   "caption": "Attach 2 x drawer side and 16 x dowel 101345 to small drawer front",
+   "pages": [
+    39
+   ],
+   "parts": [
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "start": 29.38,
+   "end": 31.12,
+   "label": "Step 19 of 29",
+   "caption": "Attach 2 x drawer side to small drawer front",
+   "pages": [
+    39
+   ],
+   "parts": [
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "start": 31.12,
+   "end": 32.88,
+   "label": "Step 20 of 29",
+   "caption": "Attach 8 x drawer bottom to drawer side",
+   "pages": [
+    40
+   ],
+   "parts": [
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "start": 32.88,
+   "end": 34.62,
+   "label": "Step 21 of 29",
+   "caption": "Attach drawer back and 8 x plug 110519 to drawer side",
+   "pages": [
+    41
+   ],
+   "parts": [
+    15,
+    16
+   ]
+  },
+  {
+   "start": 34.62,
+   "end": 36.38,
+   "label": "Step 22 of 29",
+   "caption": "Attach 7 x drawer back to drawer side",
+   "pages": [
+    41
+   ],
+   "parts": [
+    15,
+    16
+   ]
+  },
+  {
+   "start": 36.38,
+   "end": 37.71,
+   "label": "Step 23 of 29",
+   "caption": "Insert 8 x stabiliser rod 131294 into drawer bottom",
+   "pages": [
+    42
+   ],
+   "parts": [
+    17,
+    34
+   ]
+  },
+  {
+   "start": 37.71,
+   "end": 39.04,
+   "label": "Step 24 of 29",
+   "caption": "Attach 32 x screw 100347 to drawer side",
+   "pages": [
+    43
+   ],
+   "parts": [
+    0,
+    15
+   ]
+  },
+  {
+   "start": 39.04,
+   "end": 40.79,
+   "label": "Step 25 of 29",
+   "caption": "Attach 26 x drawer runner to drawer side",
+   "pages": [
+    43
+   ],
+   "parts": [
+    0,
+    15
+   ]
+  },
+  {
+   "start": 40.79,
+   "end": 42.54,
+   "label": "Step 26 of 29",
+   "caption": "Attach 2 x knob and 12 x screw 100413 to wide drawer front",
+   "pages": [
+    44
+   ],
+   "parts": [
+    1,
+    13,
+    14
+   ]
+  },
+  {
+   "start": 42.54,
+   "end": 44.29,
+   "label": "Step 27 of 29",
+   "caption": "Attach 2 x knob to wide drawer front",
+   "pages": [
+    44
+   ],
+   "parts": [
+    1,
+    13,
+    14
+   ]
+  },
+  {
+   "start": 44.29,
+   "end": 46.04,
+   "label": "Step 28 of 29",
+   "caption": "Insert 4 x wide drawer front into divider",
+   "pages": [
+    45
+   ],
+   "parts": [
+    10,
+    14
+   ]
+  },
+  {
+   "start": 46.04,
+   "end": 47.79,
+   "label": "Step 29 of 29",
+   "caption": "Insert 4 x small drawer front into divider",
+   "pages": [
+    46
+   ],
+   "parts": [
+    10,
+    13
+   ]
+  },
+  {
+   "start": 48.5,
+   "end": 54.5,
+   "label": "Done",
+   "caption": "Assembly complete",
+   "pages": [],
+   "parts": []
+  }
+ ]
+}

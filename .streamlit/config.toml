@@ -1,0 +1,3 @@
+[server]
+# Matches MAX_UPLOAD_MB in config.py; Streamlit rejects larger uploads itself.
+maxUploadSize = 2

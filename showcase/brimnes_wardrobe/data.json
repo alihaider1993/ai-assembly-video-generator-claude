@@ -1,0 +1,558 @@
+{
+ "title": "IKEA BRIMNES Wardrobe",
+ "duration": 49.71,
+ "pages": [
+  "01.jpg",
+  "02.jpg",
+  "03.jpg",
+  "04.jpg",
+  "05.jpg",
+  "06.jpg",
+  "07.jpg",
+  "08.jpg",
+  "09.jpg",
+  "10.jpg",
+  "11.jpg",
+  "12.jpg",
+  "13.jpg",
+  "14.jpg",
+  "15.jpg",
+  "16.jpg",
+  "17.jpg",
+  "18.jpg",
+  "19.jpg",
+  "20.jpg",
+  "21.jpg",
+  "22.jpg",
+  "23.jpg",
+  "24.jpg",
+  "25.jpg",
+  "26.jpg",
+  "27.jpg",
+  "28.jpg",
+  "29.jpg",
+  "30.jpg",
+  "31.jpg",
+  "32.jpg",
+  "33.jpg",
+  "34.jpg",
+  "35.jpg",
+  "36.jpg"
+ ],
+ "parts": [
+  {
+   "name": "clothes rail",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "hinge",
+   "hardware": false,
+   "quantity": 6
+  },
+  {
+   "name": "handle",
+   "hardware": false,
+   "quantity": 2
+  },
+  {
+   "name": "left side panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "right side panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "bottom panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "lower back panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "divider",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "fixed shelf",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "plinth",
+   "hardware": false,
+   "quantity": 2
+  },
+  {
+   "name": "top panel",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "hardboard",
+   "hardware": false,
+   "quantity": 2
+  },
+  {
+   "name": "adjustable shelf",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "left door",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "right door",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "connector pin 106940",
+   "hardware": true,
+   "quantity": 2
+  },
+  {
+   "name": "screw 100214",
+   "hardware": true,
+   "quantity": 2
+  },
+  {
+   "name": "cam lock 119252",
+   "hardware": true,
+   "quantity": 20
+  },
+  {
+   "name": "screw 109567",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "dowel 101345",
+   "hardware": true,
+   "quantity": 27
+  },
+  {
+   "name": "cam bolt 118331",
+   "hardware": true,
+   "quantity": 16
+  },
+  {
+   "name": "nail 101206",
+   "hardware": true,
+   "quantity": 40
+  },
+  {
+   "name": "plug 123840",
+   "hardware": true,
+   "quantity": 2
+  },
+  {
+   "name": "nail guide 105494",
+   "hardware": true,
+   "quantity": 1
+  },
+  {
+   "name": "rail holder 157306",
+   "hardware": true,
+   "quantity": 2
+  },
+  {
+   "name": "mounting plate 109220",
+   "hardware": true,
+   "quantity": 6
+  },
+  {
+   "name": "shelf pin 101532",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "felt pad 107091",
+   "hardware": true,
+   "quantity": 1
+  },
+  {
+   "name": "screw 105248",
+   "hardware": true,
+   "quantity": 26
+  }
+ ],
+ "steps": [
+  {
+   "start": 0.79,
+   "end": 2.12,
+   "label": "Step 1 of 26",
+   "caption": "Insert 6 x mounting plate 109220 into left side panel",
+   "pages": [
+    10
+   ],
+   "parts": [
+    3,
+    25
+   ]
+  },
+  {
+   "start": 2.12,
+   "end": 3.46,
+   "label": "Step 2 of 26",
+   "caption": "Insert 10 x cam bolt 118331 into left side panel",
+   "pages": [
+    10
+   ],
+   "parts": [
+    3,
+    8,
+    10,
+    20
+   ]
+  },
+  {
+   "start": 3.46,
+   "end": 5.21,
+   "label": "Step 3 of 26",
+   "caption": "Attach bottom panel and 4 x dowel 101345 to left side panel",
+   "pages": [
+    11
+   ],
+   "parts": [
+    3,
+    5,
+    6,
+    19
+   ]
+  },
+  {
+   "start": 5.21,
+   "end": 6.54,
+   "label": "Step 4 of 26",
+   "caption": "Screw in 2 x cam lock 119252 into bottom panel",
+   "pages": [
+    11
+   ],
+   "parts": [
+    4,
+    5,
+    6,
+    8,
+    10,
+    17
+   ]
+  },
+  {
+   "start": 6.54,
+   "end": 7.88,
+   "label": "Step 5 of 26",
+   "caption": "Insert 2 x connector pin 106940 into lower back panel",
+   "pages": [
+    12
+   ],
+   "parts": [
+    6,
+    15
+   ]
+  },
+  {
+   "start": 7.88,
+   "end": 9.62,
+   "label": "Step 6 of 26",
+   "caption": "Insert lower back panel into bottom panel",
+   "pages": [
+    13
+   ],
+   "parts": [
+    5,
+    6
+   ]
+  },
+  {
+   "start": 9.62,
+   "end": 11.38,
+   "label": "Step 7 of 26",
+   "caption": "Attach divider to bottom panel",
+   "pages": [
+    14
+   ],
+   "parts": [
+    5,
+    7
+   ]
+  },
+  {
+   "start": 11.38,
+   "end": 12.71,
+   "label": "Step 8 of 26",
+   "caption": "Screw in 2 x screw 100214 into divider",
+   "pages": [
+    14
+   ],
+   "parts": [
+    7,
+    16
+   ]
+  },
+  {
+   "start": 12.71,
+   "end": 14.46,
+   "label": "Step 9 of 26",
+   "caption": "Attach fixed shelf to divider",
+   "pages": [
+    15
+   ],
+   "parts": [
+    7,
+    8
+   ]
+  },
+  {
+   "start": 14.46,
+   "end": 16.21,
+   "label": "Step 10 of 26",
+   "caption": "Attach left side panel to fixed shelf",
+   "pages": [
+    15
+   ],
+   "parts": [
+    3,
+    8
+   ]
+  },
+  {
+   "start": 16.21,
+   "end": 17.96,
+   "label": "Step 11 of 26",
+   "caption": "Attach 2 x plinth to left side panel",
+   "pages": [
+    16
+   ],
+   "parts": [
+    3,
+    9
+   ]
+  },
+  {
+   "start": 17.96,
+   "end": 19.71,
+   "label": "Step 12 of 26",
+   "caption": "Attach right side panel to bottom panel",
+   "pages": [
+    17
+   ],
+   "parts": [
+    4,
+    5,
+    8,
+    12
+   ]
+  },
+  {
+   "start": 19.71,
+   "end": 21.04,
+   "label": "Step 13 of 26",
+   "caption": "Insert 2 x plug 123840 into top panel",
+   "pages": [
+    18
+   ],
+   "parts": [
+    10,
+    22
+   ]
+  },
+  {
+   "start": 21.04,
+   "end": 22.79,
+   "label": "Step 14 of 26",
+   "caption": "Attach top panel to left side panel",
+   "pages": [
+    18
+   ],
+   "parts": [
+    0,
+    3,
+    4,
+    10
+   ]
+  },
+  {
+   "start": 22.79,
+   "end": 24.54,
+   "label": "Step 15 of 26",
+   "caption": "Attach hardboard and 2 x nail 101206 to top panel",
+   "pages": [
+    20
+   ],
+   "parts": [
+    4,
+    9,
+    10,
+    11,
+    21
+   ]
+  },
+  {
+   "start": 24.54,
+   "end": 26.29,
+   "label": "Step 16 of 26",
+   "caption": "Attach hardboard to top panel",
+   "pages": [
+    20
+   ],
+   "parts": [
+    4,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "start": 26.29,
+   "end": 27.62,
+   "label": "Step 17 of 26",
+   "caption": "Insert 2 x rail holder 157306 into left side panel",
+   "pages": [
+    29
+   ],
+   "parts": [
+    3,
+    24
+   ]
+  },
+  {
+   "start": 27.62,
+   "end": 29.38,
+   "label": "Step 18 of 26",
+   "caption": "Attach clothes rail to left side panel",
+   "pages": [
+    29
+   ],
+   "parts": [
+    0,
+    3
+   ]
+  },
+  {
+   "start": 29.38,
+   "end": 31.12,
+   "label": "Step 19 of 26",
+   "caption": "Attach adjustable shelf and 4 x shelf pin 101532 to divider",
+   "pages": [
+    29
+   ],
+   "parts": [
+    7,
+    12
+   ]
+  },
+  {
+   "start": 31.12,
+   "end": 32.88,
+   "label": "Step 20 of 26",
+   "caption": "Attach 3 x hinge and 6 x screw 105248 to left door",
+   "pages": [
+    30
+   ],
+   "parts": [
+    1,
+    13,
+    14
+   ]
+  },
+  {
+   "start": 32.88,
+   "end": 34.62,
+   "label": "Step 21 of 26",
+   "caption": "Attach 3 x hinge to left door",
+   "pages": [
+    30
+   ],
+   "parts": [
+    1,
+    13,
+    14
+   ]
+  },
+  {
+   "start": 34.62,
+   "end": 36.38,
+   "label": "Step 22 of 26",
+   "caption": "Attach left door to left side panel",
+   "pages": [
+    31
+   ],
+   "parts": [
+    3,
+    13
+   ]
+  },
+  {
+   "start": 36.38,
+   "end": 38.12,
+   "label": "Step 23 of 26",
+   "caption": "Attach right door to right side panel",
+   "pages": [
+    31
+   ],
+   "parts": [
+    4,
+    14
+   ]
+  },
+  {
+   "start": 38.12,
+   "end": 39.88,
+   "label": "Step 24 of 26",
+   "caption": "Attach handle and 2 x screw 109567 to left door",
+   "pages": [
+    32
+   ],
+   "parts": [
+    2,
+    13,
+    14
+   ]
+  },
+  {
+   "start": 39.88,
+   "end": 41.62,
+   "label": "Step 25 of 26",
+   "caption": "Attach handle to left door",
+   "pages": [
+    32
+   ],
+   "parts": [
+    2,
+    13,
+    14
+   ]
+  },
+  {
+   "start": 41.62,
+   "end": 42.96,
+   "label": "Step 26 of 26",
+   "caption": "Insert 2 x felt pad 107091 into right door",
+   "pages": [
+    33
+   ],
+   "parts": [
+    14,
+    27
+   ]
+  },
+  {
+   "start": 43.67,
+   "end": 49.67,
+   "label": "Done",
+   "caption": "Assembly complete",
+   "pages": [],
+   "parts": []
+  }
+ ]
+}

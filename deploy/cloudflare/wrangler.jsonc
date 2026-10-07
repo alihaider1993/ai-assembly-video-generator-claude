@@ -1,0 +1,20 @@
+// The public website on Cloudflare's free plan (see src/index.js).
+//   npx wrangler login                                # once
+//   npx wrangler secret put WORKER_SECRET             # once; same value as in .env
+//   npx wrangler deploy                               # from deploy/cloudflare/
+{
+  "name": "ai-assembly-video-generator",
+  "main": "src/index.js",
+  "compatibility_date": "2026-06-01",
+  "build": { "command": "python build_site.py" },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "JOBS", "class_name": "Jobs" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Jobs"] }],
+  "observability": { "enabled": false }
+}

@@ -1,0 +1,260 @@
+{
+ "title": "IKEA KIVIK Chaise Longue",
+ "duration": 26.38,
+ "pages": [
+  "01.jpg",
+  "02.jpg",
+  "03.jpg",
+  "04.jpg",
+  "05.jpg",
+  "06.jpg",
+  "07.jpg",
+  "08.jpg",
+  "09.jpg",
+  "10.jpg",
+  "11.jpg",
+  "12.jpg",
+  "13.jpg",
+  "14.jpg",
+  "15.jpg",
+  "16.jpg"
+ ],
+ "parts": [
+  {
+   "name": "foot",
+   "hardware": false,
+   "quantity": 4
+  },
+  {
+   "name": "corner bracket",
+   "hardware": false,
+   "quantity": 2
+  },
+  {
+   "name": "connecting rail",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "joining rail",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "clamp bracket",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "chaise frame",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "sofa section",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "armrest",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "seat cushion",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "back cushion",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "nut 100712",
+   "hardware": true,
+   "quantity": 5
+  },
+  {
+   "name": "washer 100854",
+   "hardware": true,
+   "quantity": 5
+  },
+  {
+   "name": "toothed washer 100851",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "screw 111374",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "screw 121365",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "bolt 100471",
+   "hardware": true,
+   "quantity": 4
+  }
+ ],
+ "steps": [
+  {
+   "start": 0.79,
+   "end": 2.54,
+   "label": "Step 1 of 11",
+   "caption": "Insert 4 x foot into chaise frame",
+   "pages": [
+    5
+   ],
+   "parts": [
+    0,
+    5
+   ]
+  },
+  {
+   "start": 2.54,
+   "end": 4.29,
+   "label": "Step 2 of 11",
+   "caption": "Attach connecting rail and screw 121365 to sofa section",
+   "pages": [
+    7
+   ],
+   "parts": [
+    2,
+    3,
+    6
+   ]
+  },
+  {
+   "start": 4.29,
+   "end": 5.62,
+   "label": "Step 3 of 11",
+   "caption": "Screw in nut 100712 into connecting rail",
+   "pages": [
+    7
+   ],
+   "parts": [
+    2,
+    10
+   ]
+  },
+  {
+   "start": 5.62,
+   "end": 7.38,
+   "label": "Step 4 of 11",
+   "caption": "Attach joining rail to sofa section",
+   "pages": [
+    8
+   ],
+   "parts": [
+    3,
+    6
+   ]
+  },
+  {
+   "start": 7.38,
+   "end": 9.12,
+   "label": "Step 5 of 11",
+   "caption": "Attach 2 x corner bracket and 4 x screw 111374 to armrest",
+   "pages": [
+    9
+   ],
+   "parts": [
+    1,
+    5,
+    7
+   ]
+  },
+  {
+   "start": 9.12,
+   "end": 10.88,
+   "label": "Step 6 of 11",
+   "caption": "Attach 2 x corner bracket to armrest",
+   "pages": [
+    9
+   ],
+   "parts": [
+    1,
+    5,
+    7
+   ]
+  },
+  {
+   "start": 10.88,
+   "end": 12.62,
+   "label": "Step 7 of 11",
+   "caption": "Attach armrest to chaise frame",
+   "pages": [
+    9
+   ],
+   "parts": [
+    5,
+    7
+   ]
+  },
+  {
+   "start": 12.62,
+   "end": 14.38,
+   "label": "Step 8 of 11",
+   "caption": "Attach clamp bracket to chaise frame",
+   "pages": [
+    10
+   ],
+   "parts": [
+    4,
+    5
+   ]
+  },
+  {
+   "start": 14.38,
+   "end": 16.12,
+   "label": "Step 9 of 11",
+   "caption": "Attach chaise frame to sofa section",
+   "pages": [
+    13
+   ],
+   "parts": [
+    5,
+    6
+   ]
+  },
+  {
+   "start": 16.12,
+   "end": 17.88,
+   "label": "Step 10 of 11",
+   "caption": "Attach seat cushion to chaise frame",
+   "pages": [
+    14
+   ],
+   "parts": [
+    5,
+    8
+   ]
+  },
+  {
+   "start": 17.88,
+   "end": 19.62,
+   "label": "Step 11 of 11",
+   "caption": "Attach back cushion to chaise frame",
+   "pages": [
+    14
+   ],
+   "parts": [
+    5,
+    9
+   ]
+  },
+  {
+   "start": 20.33,
+   "end": 26.33,
+   "label": "Done",
+   "caption": "Assembly complete",
+   "pages": [],
+   "parts": []
+  }
+ ]
+}

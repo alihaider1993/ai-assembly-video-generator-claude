@@ -1,0 +1,249 @@
+{
+ "title": "IKEA \u00c5LHULT Chair",
+ "duration": 25.96,
+ "pages": [
+  "01.jpg",
+  "02.jpg",
+  "03.jpg",
+  "04.jpg",
+  "05.jpg",
+  "06.jpg",
+  "07.jpg",
+  "08.jpg"
+ ],
+ "parts": [
+  {
+   "name": "left corner bracket",
+   "hardware": false,
+   "quantity": 2
+  },
+  {
+   "name": "right corner bracket",
+   "hardware": false,
+   "quantity": 2
+  },
+  {
+   "name": "left side frame",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "right side frame",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "front rail",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "back rail",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "back slat",
+   "hardware": false,
+   "quantity": 4
+  },
+  {
+   "name": "top rail",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "seat",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "frame bolt 128745",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "top rail screw 100215",
+   "hardware": true,
+   "quantity": 2
+  },
+  {
+   "name": "bracket screw 109598",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "seat screw 100400",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "wooden dowel 101357",
+   "hardware": true,
+   "quantity": 2
+  },
+  {
+   "name": "wooden dowel 101350",
+   "hardware": true,
+   "quantity": 6
+  }
+ ],
+ "steps": [
+  {
+   "start": 0.79,
+   "end": 2.54,
+   "label": "Step 1 of 11",
+   "caption": "Attach 2 x left corner bracket and 4 x bracket screw 109598 to left side frame",
+   "pages": [
+    4
+   ],
+   "parts": [
+    0,
+    2
+   ]
+  },
+  {
+   "start": 2.54,
+   "end": 4.29,
+   "label": "Step 2 of 11",
+   "caption": "Attach 2 x left corner bracket to left side frame",
+   "pages": [
+    4
+   ],
+   "parts": [
+    0,
+    2
+   ]
+  },
+  {
+   "start": 4.29,
+   "end": 6.04,
+   "label": "Step 3 of 11",
+   "caption": "Attach 2 x right corner bracket to right side frame",
+   "pages": [
+    4
+   ],
+   "parts": [
+    1,
+    3,
+    8
+   ]
+  },
+  {
+   "start": 6.04,
+   "end": 7.38,
+   "label": "Step 4 of 11",
+   "caption": "Insert wooden dowel 101357 into front rail",
+   "pages": [
+    4
+   ],
+   "parts": [
+    4,
+    13
+   ]
+  },
+  {
+   "start": 7.38,
+   "end": 8.71,
+   "label": "Step 5 of 11",
+   "caption": "Insert 2 x wooden dowel 101350 into back rail",
+   "pages": [
+    4
+   ],
+   "parts": [
+    5,
+    14
+   ]
+  },
+  {
+   "start": 8.71,
+   "end": 10.46,
+   "label": "Step 6 of 11",
+   "caption": "Attach front rail to left side frame",
+   "pages": [
+    5
+   ],
+   "parts": [
+    2,
+    4
+   ]
+  },
+  {
+   "start": 10.46,
+   "end": 12.21,
+   "label": "Step 7 of 11",
+   "caption": "Attach back rail to left side frame",
+   "pages": [
+    5
+   ],
+   "parts": [
+    2,
+    5
+   ]
+  },
+  {
+   "start": 12.21,
+   "end": 13.96,
+   "label": "Step 8 of 11",
+   "caption": "Attach right side frame and 2 x frame bolt 128745 to back rail",
+   "pages": [
+    5
+   ],
+   "parts": [
+    2,
+    3,
+    4,
+    5,
+    9
+   ]
+  },
+  {
+   "start": 13.96,
+   "end": 15.71,
+   "label": "Step 9 of 11",
+   "caption": "Insert 4 x back slat into back rail",
+   "pages": [
+    6
+   ],
+   "parts": [
+    5,
+    6
+   ]
+  },
+  {
+   "start": 15.71,
+   "end": 17.46,
+   "label": "Step 10 of 11",
+   "caption": "Attach top rail and 2 x top rail screw 100215 to left side frame",
+   "pages": [
+    7
+   ],
+   "parts": [
+    2,
+    6,
+    7
+   ]
+  },
+  {
+   "start": 17.46,
+   "end": 19.21,
+   "label": "Step 11 of 11",
+   "caption": "Attach seat and 4 x seat screw 100400 to left corner bracket",
+   "pages": [
+    8
+   ],
+   "parts": [
+    0,
+    8
+   ]
+  },
+  {
+   "start": 19.92,
+   "end": 25.92,
+   "label": "Done",
+   "caption": "Assembly complete",
+   "pages": [],
+   "parts": []
+  }
+ ]
+}

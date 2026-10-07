@@ -48,6 +48,34 @@ VIDEO_V3_PATH = OUTPUTS_DIR / "assembly_animation_v3.mp4"
 VIDEOS_DIR = OUTPUTS_DIR / "videos"
 
 # ==========================================================
+# WEBSITE
+# ==========================================================
+
+# Finished videos shown on the website, picked by hand with
+# utils/showcase.py. Unlike outputs/, this folder is committed.
+SHOWCASE_DIR = PROJECT_ROOT / "showcase"
+
+SHOWCASE_JSON = SHOWCASE_DIR / "showcase.json"
+
+# Limits on manuals uploaded through the website.
+MAX_UPLOAD_PAGES = 10
+
+MAX_UPLOAD_MB = 2
+
+# Uploads made on the website (web/server.py) and their videos, deleted
+# JOB_KEEP_SECONDS after they finish. Each upload asks Gemini once, so the
+# daily caps keep the site inside the free tier.
+JOBS_DIR = OUTPUTS_DIR / "jobs"
+
+JOB_KEEP_SECONDS = 60 * 60
+
+MAX_QUEUED_JOBS = 5
+
+DAILY_JOB_LIMIT = 20
+
+DAILY_JOBS_PER_VISITOR = 3
+
+# ==========================================================
 # BLENDER
 # ==========================================================
 

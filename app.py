@@ -9,14 +9,18 @@ import streamlit as st
 from config import (
     FRAMES_V3_DIR,
     MANUALS_DIR,
+    MAX_UPLOAD_MB,
+    MAX_UPLOAD_PAGES,
     OUTPUTS_DIR,
+    SHOWCASE_DIR,
     VIDEOS_DIR,
     V2_JSON_DIR,
     V2_OUTPUT_DIR,
     ensure_project_dirs,
     is_described,
 )
-from utils.pdf_to_images import add_manual, manual_name
+from utils.pdf_to_images import add_manual, manual_name, upload_problem
+from utils.showcase import load as load_showcase
 
 
 st.set_page_config(
@@ -227,11 +231,33 @@ def show_video(name: str):
         )
 
 
+def show_showcase():
+    """The finished videos picked with utils/showcase.py, two per row."""
+    entries = [e for e in load_showcase() if (SHOWCASE_DIR / e["name"] / "video.mp4").exists()]
+    if not entries:
+        return
+
+    st.subheader("Example videos")
+    for row_start in range(0, len(entries), 2):
+        for col, entry in zip(st.columns(2), entries[row_start:row_start + 2]):
+            with col:
+                st.markdown(f"**{entry['title']}**")
+                st.video(str(SHOWCASE_DIR / entry["name"] / "video.mp4"))
+
+
 def add_manual_form():
     st.subheader("1. Add a manual")
 
-    uploaded = st.file_uploader("Instruction manual PDF", type=["pdf"])
+    uploaded = st.file_uploader(
+        f"Instruction manual (PDF, up to {MAX_UPLOAD_PAGES} pages and {MAX_UPLOAD_MB} MB)",
+        type=["pdf"],
+    )
     if not uploaded:
+        return
+
+    problem = upload_problem(uploaded.getvalue())
+    if problem:
+        st.error(problem)
         return
 
     name = st.text_input("Manual name", value=manual_name(Path(uploaded.name)))
@@ -275,6 +301,8 @@ def main():
         "Turns an assembly manual into an animated video: assembly graph, "
         "motion plan, 3D layout and a Blender render."
     )
+
+    show_showcase()
 
     st.markdown("---")
     add_manual_form()

@@ -1,0 +1,21 @@
+.git
+.github
+.venv
+.env
+.claude
+.agents
+**/__pycache__
+*.pyc
+
+outputs/
+temp/
+uploads/
+blender/generated/
+github_demo_assets/
+v2/outputs/json/*.json
+v2/output/*.json
+
+# The pipeline reads each manual's JSON; PDFs and page images stay local.
+manuals/*/manual.pdf
+manuals/*/pages/
+manuals/*/sheets/

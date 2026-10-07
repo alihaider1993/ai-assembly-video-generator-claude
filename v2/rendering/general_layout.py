@@ -399,7 +399,7 @@ class GeneralLayout:
     def attach_level(self, uid: str) -> float:
         """Height at which other parts join a vertical part: a side frame's
         seat rail, else its top."""
-        if self.role(uid) == "side_frame" or self.parts[uid].get("primitive") == "side_frame":
+        if self.is_full_side_frame(uid):
             lo, hi = self.frame.box(uid)
             return lo[2] + (hi[2] - lo[2]) * SIDE_FRAME_SEAT_FRACTION
         return self.frame.top(uid)
@@ -407,7 +407,15 @@ class GeneralLayout:
     def tall_end(self, uid: str) -> int:
         """Which Y end of a wall reaches its full height: a side frame's back
         leg is at +Y. 0 when the wall is the same height all along."""
-        return 1 if self.role(uid) == "side_frame" or self.parts[uid].get("primitive") == "side_frame" else 0
+        return 1 if self.is_full_side_frame(uid) else 0
+
+    def is_full_side_frame(self, uid: str) -> bool:
+        """A chair side with its own tall back leg. One joined to separate
+        legs (a front leg and seat rail, with the back legs bolted on) is
+        only seat high, so its top is the seat rail."""
+        if not (self.role(uid) == "side_frame" or self.parts[uid].get("primitive") == "side_frame"):
+            return False
+        return not any(self.role(o) == "leg" for o in self.links.get(uid, ()))
 
     # -- 1. walls and the frame's footprint --
 
@@ -514,7 +522,9 @@ class GeneralLayout:
             if self.placed(uid):
                 continue
             scale = None
-            if side_walls:
+            # A chair back or front leg frame keeps its own orientation and
+            # size; it is not a carcass panel.
+            if side_walls and self.role(uid) not in ("back", "leg_frame"):
                 # A panel across a carcass: turned so its longer side runs the
                 # way the carcass is longer, and sized to cover it unless
                 # measured.
@@ -577,6 +587,45 @@ class GeneralLayout:
             free.remove(choice)
             self.corner_side[uid] = choice
 
+    def legs_against_side_frames(self) -> None:
+        """A corner upright bolted to a chair side frame (a back leg on a
+        front leg and seat rail frame) stands against the inner face of the
+        side frame on its side, at the frame's end, instead of inset from
+        the footprint like a table leg."""
+        frames = [w for w in self.with_role("side_frame") if self.placed(w)]
+        for uid, (xs, ys) in self.corner_side.items():
+            if not any(self.role(o) == "side_frame" for o in self.links.get(uid, ())):
+                continue
+            mine = [w for w in frames if (self.frame.final[w][0] > 0) == (xs > 0)]
+            if not mine:
+                continue
+            lo, hi = self.frame.box(mine[0])
+            t, d, _ = self.dims(uid)
+            center = list(self.frame.final[uid])
+            center[0] = (lo[0] - t / 2) if xs > 0 else (hi[0] + t / 2)
+            center[1] = (hi[1] - d / 2) if ys > 0 else (lo[1] + d / 2)
+            self.frame.put(uid, center, rotation=self.frame.rotation.get(uid), scale=self.frame.scale.get(uid))
+
+    def raise_backs_onto_uprights(self) -> None:
+        """A backrest shorter than the uprights it is joined to (a shell
+        pushed onto the tops of the back legs) sits on them, not on the
+        floor: centred on their tops, so it sleeves over them."""
+        for uid in self.with_role("back"):
+            if not self.placed(uid):
+                continue
+            ups = self.linked(uid, ("upright",))
+            if not ups:
+                continue
+            top = max(self.frame.top(o) for o in ups)
+            h = self.dims(uid)[2]
+            if h >= top:
+                continue
+            center = list(self.frame.final[uid])
+            center[2] = top
+            # Over the uprights, not in front of or behind them.
+            center[1] = sum(self.frame.final[o][1] for o in ups) / len(ups)
+            self.frame.put(uid, center, rotation=self.frame.rotation.get(uid), scale=self.frame.scale.get(uid))
+
     # -- 3. beams: which line each one runs along --
 
     def long_axis(self, width: float, depth: float, plate: Optional[str]) -> int:
@@ -619,7 +668,10 @@ class GeneralLayout:
             return sides.pop()
         if axis == 0:
             return word_side(self.words[uid], Y_WORDS)
-        return 0
+        # With no corner posts (an upholstered bed box), "left"/"right"
+        # name the side. Between posts they can name the two halves of
+        # one side instead (rails meeting at a centre leg).
+        return 0 if self.corner_side else word_side(self.words[uid], X_WORDS)
 
     # -- placement --
 
@@ -651,6 +703,8 @@ class GeneralLayout:
 
         for uid, (xs, ys) in self.corner_side.items():
             self.frame.put(uid, [xs * cx, ys * cy, self.dims(uid)[2] / 2])
+        self.legs_against_side_frames()
+        self.raise_backs_onto_uprights()
         self.panels_between_legs(cx, cy, up_half)
 
         frame_top = max((self.frame.top(u) for u in self.frame.final), default=0.75)
@@ -841,7 +895,8 @@ class GeneralLayout:
         cross = 1 - axis
         found = []
         for uid in self.frame.final:
-            if self.kind.get(uid) not in VERTICAL_KINDS:
+            # Short feet stand under a piece; no beam runs between them.
+            if self.kind.get(uid) not in VERTICAL_KINDS or self.role(uid) == "foot":
                 continue
             lo, hi = self.frame.box(uid)
             if lo[cross] - TOUCH <= offset <= hi[cross] + TOUCH:
@@ -879,6 +934,10 @@ class GeneralLayout:
                 junction = next((j for j in self.junctions), None)
                 pos -= length + (self.dims(junction)[axis] if junction else 0.0)
 
+        # Beams with no wall or upright to set their height (the ends of a
+        # frame that rests on walls only through its long rails).
+        unsupported: List[str] = []
+
         # Group the beams by line, so several on one edge can be stacked.
         lines: Dict[Tuple[int, float, float], List[str]] = {}
         order = sorted(plan, key=lambda u: (bool(self.words[u] & TOP_WORDS), plan[u]["why"] == "interior", u))
@@ -906,8 +965,11 @@ class GeneralLayout:
             line_top = max((self.frame.top(v) for v in ends), default=corner_top)
             line_low = min((self.attach_level(v) for v in ends), default=corner_top)
             lowest_corner = min((self.frame.top(u) for u in corners), default=self.floor)
+            # Only beams joined to the line's ends are stacked between them (a
+            # rail down the middle of a bed is not part of its headboard).
             plain = [u for u in stack if not (self.words[u] & (TOP_WORDS | BOTTOM_WORDS))
-                     and self.role(u) not in ("stretcher", "plinth")]
+                     and self.role(u) not in ("stretcher", "plinth")
+                     and (not ends or self.links[u] & set(ends))]
 
             # Several beams on one edge between tall posts: stacked with even
             # gaps from just under the posts' tops down to the lower rails.
@@ -940,8 +1002,17 @@ class GeneralLayout:
                 else:
                     # Inside the walls it is joined to (a seat's side rail):
                     # at their joining height.
+                    # The walls it is joined to come first: a lift frame's rail
+                    # resting on the box sides is not at the height of whatever
+                    # else stands on its line.
                     walls = [w for w in self.links[uid] if self.placed(w) and self.kind.get(w) == "wall"]
-                    z_top = line_low if verticals else (min(self.attach_level(w) for w in walls) if walls else corner_top)
+                    if walls:
+                        z_top = min(self.attach_level(w) for w in walls)
+                    elif verticals:
+                        z_top = line_low
+                    else:
+                        z_top = corner_top
+                        unsupported.append(uid)
                 center = [0.0, 0.0, z_top - height / 2]
                 center[1 - axis] = offset
                 center[axis] = along
@@ -957,6 +1028,15 @@ class GeneralLayout:
                         low, high = along - length / 2, along + length / 2
                 center[axis] = (low + high) / 2
                 self.frame.put(uid, center, rotation, [(high - low) / length, 1.0, 1.0])
+
+        # Those take the height of the placed beams they are joined to.
+        for uid in unsupported:
+            joined = [o for o in self.links[uid] if o in plan and o not in unsupported and self.placed(o)]
+            if not joined:
+                continue
+            center = list(self.frame.final[uid])
+            center[2] = max(self.frame.top(o) for o in joined) - self.dims(uid)[2] / 2
+            self.frame.put(uid, center, self.frame.rotation.get(uid), self.frame.scale.get(uid))
 
     def stack_order(self, members: List[str]) -> List[str]:
         """Beams on one edge from the top down: one of the tallest, the
@@ -1205,8 +1285,9 @@ class GeneralLayout:
         """A carcass's flat panels: a top (or lid) on the side walls, a bottom
         at their foot (on the plinth if there is one), dividers standing on
         the bottom, evenly spaced across, and the other shelves evenly
-        spaced up each compartment between two of those walls."""
-        side_walls = [w for w in self.walls()[0] if self.placed(w)]
+        spaced up each compartment between two of those walls. Chair side
+        frames are not a carcass: a seat joined to both rests on their rails."""
+        side_walls = [w for w in self.walls()[0] if self.placed(w) and self.role(w) != "side_frame"]
         if len(side_walls) < 2:
             return
         dividers = self.with_role("divider")
@@ -1671,6 +1752,9 @@ class GeneralLayout:
         # It rests on the rails or brackets it is joined to; only with none
         # does it go to the joining height of the uprights.
         resting = [o for o in joined if self.kind[o] not in VERTICAL_KINDS] or joined
+        # A side frame's seat rail sets the seat height; back legs bolted to
+        # it run on past the seat.
+        resting = [o for o in resting if self.role(o) == "side_frame"] or resting
         level = max(self.attach_level(o) if self.kind[o] in VERTICAL_KINDS else self.frame.top(o) for o in resting)
         boxes = [self.frame.box(o) for o in joined]
         # Centred over what it rests on; along an axis where that is much
@@ -1774,6 +1858,37 @@ def compute_general_positions(shapes: Dict[str, Dict[str, Any]], graph: Dict[str
 
 # --- fasteners and start positions (shared with scene_layout_engine) ---------
 
+PROFILE_AXES = {"side": (1, 2), "front": (0, 2), "top": (0, 1)}
+
+
+def snap_to_profile(shape: Dict[str, Any], center: Sequence[float], rotation: Optional[Sequence[float]],
+                    scale: Optional[Sequence[float]], point: List[float]) -> List[float]:
+    """A part drawn as a traced strip (a bent tube frame) is mostly empty
+    box: move the point onto the nearest spot of its path, as the renderer
+    draws it (centred in the part's box, mm). Only for unturned, unscaled
+    open outlines; anything else keeps the point."""
+    profile = shape.get("profile") or {}
+    path = profile.get("path") or []
+    if profile.get("closed") or len(path) < 2 or any(abs(a) > 1e-6 for a in rotation or ()) or scale:
+        return point
+    a, b = PROFILE_AXES.get(profile.get("plane", "side"), PROFILE_AXES["side"])
+    mid_u = (min(p[0] for p in path) + max(p[0] for p in path)) / 2
+    mid_v = (min(p[1] for p in path) + max(p[1] for p in path)) / 2
+    pts = [((p[0] - mid_u) / 1000.0 + center[a], (p[1] - mid_v) / 1000.0 + center[b]) for p in path]
+    best, best_d = None, float("inf")
+    for (u0, v0), (u1, v1) in zip(pts, pts[1:]):
+        du, dv = u1 - u0, v1 - v0
+        length2 = du * du + dv * dv
+        t = 0.0 if length2 < 1e-12 else min(1.0, max(0.0, ((point[a] - u0) * du + (point[b] - v0) * dv) / length2))
+        u, v = u0 + t * du, v0 + t * dv
+        d = (u - point[a]) ** 2 + (v - point[b]) ** 2
+        if d < best_d:
+            best, best_d = (u, v), d
+    snapped = list(point)
+    snapped[a], snapped[b] = best
+    return snapped
+
+
 def place_fastener_instances(
     shapes: Dict[str, Dict[str, Any]],
     graph: Dict[str, Any],
@@ -1814,6 +1929,7 @@ def place_fastener_instances(
             offset = (k + 1) // 2 * FASTENER_SPREAD * (1 if k % 2 else -1)
             axis = 0 if half[0] >= half[1] else 1
             point[axis] = min(max(point[axis] + offset, center[axis] - half[axis]), center[axis] + half[axis])
+            point = snap_to_profile(shapes[host], center, rotation.get(host), scale.get(host), point)
 
             instance_count[fastener] = instance_count.get(fastener, 0) + 1
             uid = f"{fastener}_{instance_count[fastener]}"

@@ -1,0 +1,190 @@
+{
+ "title": "IKEA MELLTORP Table",
+ "duration": 22.38,
+ "pages": [
+  "01.jpg",
+  "02.jpg",
+  "03.jpg",
+  "04.jpg",
+  "05.jpg",
+  "06.jpg",
+  "07.jpg",
+  "08.jpg"
+ ],
+ "parts": [
+  {
+   "name": "corner bracket",
+   "hardware": false,
+   "quantity": 4
+  },
+  {
+   "name": "tabletop",
+   "hardware": false,
+   "quantity": 1
+  },
+  {
+   "name": "long rail",
+   "hardware": false,
+   "quantity": 2
+  },
+  {
+   "name": "short rail",
+   "hardware": false,
+   "quantity": 2
+  },
+  {
+   "name": "leg",
+   "hardware": false,
+   "quantity": 4
+  },
+  {
+   "name": "hex socket screw",
+   "hardware": true,
+   "quantity": 8
+  },
+  {
+   "name": "hex head bolt (100469 / 131128)",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "spring washer",
+   "hardware": true,
+   "quantity": 4
+  },
+  {
+   "name": "plastic plug",
+   "hardware": true,
+   "quantity": 8
+  },
+  {
+   "name": "hex head bolt",
+   "hardware": true,
+   "quantity": 4
+  }
+ ],
+ "steps": [
+  {
+   "start": 0.79,
+   "end": 2.12,
+   "label": "Step 1 of 8",
+   "caption": "Insert 8 x plastic plug into tabletop",
+   "pages": [
+    4
+   ],
+   "parts": [
+    1,
+    8
+   ]
+  },
+  {
+   "start": 2.12,
+   "end": 3.88,
+   "label": "Step 2 of 8",
+   "caption": "Attach 2 x long rail to tabletop",
+   "pages": [
+    4
+   ],
+   "parts": [
+    1,
+    2
+   ]
+  },
+  {
+   "start": 3.88,
+   "end": 5.21,
+   "label": "Step 3 of 8",
+   "caption": "Screw in 8 x hex socket screw into tabletop",
+   "pages": [
+    4
+   ],
+   "parts": [
+    1,
+    2
+   ]
+  },
+  {
+   "start": 5.21,
+   "end": 6.96,
+   "label": "Step 4 of 8",
+   "caption": "Insert 4 x corner bracket into long rail",
+   "pages": [
+    5
+   ],
+   "parts": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "start": 6.96,
+   "end": 8.71,
+   "label": "Step 5 of 8",
+   "caption": "Insert 2 x short rail into long rail",
+   "pages": [
+    5
+   ],
+   "parts": [
+    2,
+    3
+   ]
+  },
+  {
+   "start": 8.71,
+   "end": 10.46,
+   "label": "Step 6 of 8",
+   "caption": "Attach 4 x leg to tabletop",
+   "pages": [
+    6
+   ],
+   "parts": [
+    1,
+    4
+   ]
+  },
+  {
+   "start": 10.46,
+   "end": 11.79,
+   "label": "Step 7 of 8",
+   "caption": "Insert 4 x hex head bolt (100469 / 131128) into leg",
+   "pages": [
+    6
+   ],
+   "parts": [
+    0,
+    4
+   ]
+  },
+  {
+   "start": 11.79,
+   "end": 13.12,
+   "label": "Step 8 of 8",
+   "caption": "Screw in 4 x hex head bolt into tabletop",
+   "pages": [
+    7
+   ],
+   "parts": [
+    1,
+    4
+   ]
+  },
+  {
+   "start": 13.17,
+   "end": 15.92,
+   "label": "Finish",
+   "caption": "Turn the assembly over",
+   "pages": [],
+   "parts": []
+  },
+  {
+   "start": 16.33,
+   "end": 22.33,
+   "label": "Done",
+   "caption": "Assembly complete",
+   "pages": [],
+   "parts": []
+  }
+ ]
+}

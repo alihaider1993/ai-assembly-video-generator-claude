@@ -16,7 +16,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 import fitz
 
-from config import MANUALS_DIR
+from config import MANUALS_DIR, MAX_UPLOAD_MB, MAX_UPLOAD_PAGES
 
 
 def manual_name(pdf_path: Path) -> str:
@@ -42,6 +42,21 @@ def pdf_to_images(pdf_path: Path, output_dir: Path, zoom: int = 2):
 
     doc.close()
     return image_paths
+
+
+def upload_problem(data: bytes) -> str:
+    """Why an uploaded file can't be used ("" when it's fine): it must be a
+    PDF of at most MAX_UPLOAD_PAGES pages and MAX_UPLOAD_MB megabytes."""
+    if len(data) > MAX_UPLOAD_MB * 1024 * 1024:
+        return f"The file is over {MAX_UPLOAD_MB} MB, the limit."
+    try:
+        with fitz.open(stream=data, filetype="pdf") as doc:
+            pages = doc.page_count
+    except Exception:
+        return "That file isn't a readable PDF."
+    if pages > MAX_UPLOAD_PAGES:
+        return f"The manual has {pages} pages; the limit is {MAX_UPLOAD_PAGES}."
+    return ""
 
 
 def add_manual(pdf_path: Path, name: str = "") -> Path:
