@@ -26,6 +26,8 @@ python v2/run_mvp_pipeline.py <name> --no-render # stages up to the Blender scri
 python utils/page_sheets.py <name> [--page N --split 2]  # page images sized for reading (manuals/<name>/sheets/)
 python utils/layout_summary.py               # last run's layout + motion plan as a short table
 python utils/sample_frames.py <name> [--at S] # grid of video frames → outputs/checks/
+python utils/layout_regress.py check [NAME ...]  # re-run manuals (no render) and compare layouts with v2/tests/layout_snapshots/
+python utils/layout_regress.py update NAME ...   # after an intended layout change: save new snapshots and commit them
 streamlit run app.py                         # UI: add a manual, pick one, generate, play/download
 python web/worker.py                         # this PC as the render machine: uploads on the live site open while it runs
 cd deploy/cloudflare && npx wrangler deploy  # publish the website (Cloudflare free plan; builds public/ from web/static + showcase)
@@ -90,4 +92,4 @@ Key points:
 - The full run is Windows-first because of the default `BLENDER_EXE` path.
 - The live website runs on Cloudflare's free plan (`deploy/cloudflare/`: static site, upload API, and a Durable Object holding jobs, PDFs and videos). This PC renders: `web/worker.py` polls it for uploads and runs them with `web/pipeline_job.py`, which `web/server.py` shares. Uploads are open only while the worker runs.
 - The public website (`web/`) must not expose the pipeline: browsers get only `showcase/` files (titles, captions, page numbers, part names) and a job's state, a plain-language phase and a generic error. No stage names, ids, logs, JSON or API docs.
-- CI (`.github/workflows/ci.yml`, GitHub Actions on Ubuntu) runs every described manual with `--no-render`, compiles the generated Blender script, runs `pytest v2/tests`, and runs `pytest mcp_server/tests`. Add a new manual to its matrix.
+- CI (`.github/workflows/ci.yml`, GitHub Actions on Ubuntu) runs every described manual with `--no-render`, checks its layout against its snapshot (`utils/layout_regress.py`), compiles the generated Blender script, runs `pytest v2/tests`, and runs `pytest mcp_server/tests`. Add a new manual to its matrix and save its snapshot (`layout_regress.py update NAME`). Before committing a layout change, run `layout_regress.py check` on all manuals: a part that moves in another manual is a side effect to look at.

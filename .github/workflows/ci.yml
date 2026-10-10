@@ -28,6 +28,8 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python v2/run_mvp_pipeline.py ${{ matrix.manual }} --no-render --quiet
+      - name: Layout unchanged from its snapshot
+        run: python utils/layout_regress.py check ${{ matrix.manual }} --no-run
       - name: Generated Blender script compiles
         run: python -m py_compile blender/generated/v3_generated_blender_scene.py
       - run: pytest v2/tests -q
