@@ -1,0 +1,2348 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "HAUGA chest of 3 drawers with an open shelf unit on top",
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tip-over warning text."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tools, wall fixing advice, two people."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Soft surface; ask IKEA; wall fixing parts."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "parts_list",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Bag 1 hardware: click fittings, dowels, screws, connector plates (labels too small to matter)."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "10052019",
+        "name": "knob",
+        "visual_description": "round wooden knob",
+        "shape_family": "block",
+        "material_hint": "wood",
+        "quantity_visible": 6,
+        "connection_features": [],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 24
+      },
+      {
+        "fastener_uid": "F006_002",
+        "manual_label": "119030",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 12
+      },
+      {
+        "fastener_uid": "F006_003",
+        "manual_label": "110519",
+        "name": "drawer pin",
+        "shape_family": "nail",
+        "quantity_visible": 12
+      },
+      {
+        "fastener_uid": "F006_004",
+        "manual_label": "146114",
+        "name": "runner screw",
+        "shape_family": "screw",
+        "quantity_visible": 24
+      },
+      {
+        "fastener_uid": "F006_005",
+        "manual_label": "10040242",
+        "name": "wire stiffener",
+        "shape_family": "other",
+        "quantity_visible": 3
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Bag A (drawers)."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "10043622",
+        "name": "drawer runner",
+        "visual_description": "drawer runner set: carcass and drawer halves",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 12,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "3x runner sets, 12 runners in all."
+    ]
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel of the chest, front top corner cut off",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "runner screw holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          460,
+          840
+        ]
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel of the chest, front top corner cut off",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "runner screw holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          460,
+          840
+        ]
+      },
+      {
+        "part_uid": "P008_003",
+        "manual_label": "10043622",
+        "name": "drawer runner",
+        "visual_description": "carcass drawer runner",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 6,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "146114",
+        "name": "runner screw",
+        "shape_family": "screw",
+        "quantity_visible": 18
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T008_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "attach",
+        "moving_part_ref": "P008_003",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 1: 3x drawer runner screwed to the right side panel (IKEA CR)"
+      },
+      {
+        "action_uid": "A008_002",
+        "action_type": "attach",
+        "moving_part_ref": "P008_003",
+        "target_part_ref": "P008_002",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 1: 3x drawer runner screwed to the left side panel (IKEA CL)"
+      }
+    ],
+    "final_visible_structure": "runners on both side panels",
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel of the chest, front top corner cut off",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "runner screw holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          460,
+          840
+        ]
+      },
+      {
+        "part_uid": "P009_002",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel of the chest between the side panels",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "click fitting holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          460,
+          18
+        ]
+      },
+      {
+        "part_uid": "P009_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel of the chest",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "click fitting holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          440,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A009_001",
+        "action_type": "attach",
+        "moving_part_ref": "P009_002",
+        "target_part_ref": "P009_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 2: top panel pushed onto the click fittings of the right side panel until it clicks (4x)"
+      },
+      {
+        "action_uid": "A009_002",
+        "action_type": "attach",
+        "moving_part_ref": "P009_003",
+        "target_part_ref": "P009_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 2: bottom panel pushed onto the right side panel until it clicks"
+      }
+    ],
+    "final_visible_structure": "top and bottom panels standing on the right side panel",
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P010_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel of the chest, front top corner cut off",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "runner screw holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          460,
+          840
+        ]
+      },
+      {
+        "part_uid": "P010_002",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel of the chest between the side panels",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "click fitting holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          460,
+          18
+        ]
+      },
+      {
+        "part_uid": "P010_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel of the chest",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "click fitting holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          440,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A010_001",
+        "action_type": "attach",
+        "moving_part_ref": "P010_001",
+        "target_part_ref": "P010_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 3: left side panel pushed onto the top panel and bottom panel until it clicks (4x)"
+      }
+    ],
+    "final_visible_structure": "chest carcass box",
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P011_001",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "U-shaped metal rail across the back of the chest",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          20,
+          20
+        ]
+      },
+      {
+        "part_uid": "P011_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel of the chest, front top corner cut off",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "runner screw holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          460,
+          840
+        ]
+      },
+      {
+        "part_uid": "P011_003",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel of the chest, front top corner cut off",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "runner screw holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          460,
+          840
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F011_001",
+        "manual_label": "105811",
+        "name": "rail screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T011_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A011_001",
+        "action_type": "attach",
+        "moving_part_ref": "P011_001",
+        "target_part_ref": "P011_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 4: metal back rail fitted between the side panels at the back, flanges as the inset shows"
+      },
+      {
+        "action_uid": "A011_002",
+        "action_type": "tighten",
+        "moving_part_ref": "P011_001",
+        "target_part_ref": "P011_003",
+        "fastener_ref": "F011_001",
+        "tool_ref": "T011_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 5: 2x rail screw 105811 through the back rail into the side panels"
+      }
+    ],
+    "final_visible_structure": "back rail fixed",
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P012_001",
+        "manual_label": "",
+        "name": "back panel",
+        "visual_description": "folding hardboard back panel of the chest",
+        "shape_family": "panel",
+        "material_hint": "fibreboard",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          690,
+          3,
+          820
+        ]
+      },
+      {
+        "part_uid": "P012_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel of the chest, front top corner cut off",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "runner screw holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          460,
+          840
+        ]
+      },
+      {
+        "part_uid": "P012_003",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel of the chest, front top corner cut off",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "runner screw holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          460,
+          840
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F012_001",
+        "manual_label": "151708",
+        "name": "back panel fixing",
+        "shape_family": "plug",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A012_001",
+        "action_type": "slide",
+        "moving_part_ref": "P012_001",
+        "target_part_ref": "P012_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 6: folding back panel slid into the grooves of the side panels"
+      },
+      {
+        "action_uid": "A012_002",
+        "action_type": "insert",
+        "moving_part_ref": "P012_001",
+        "target_part_ref": "P012_003",
+        "fastener_ref": "F012_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 7: 8x back panel fixing 151708 pressed through the back panel into the top panel and bottom panel"
+      }
+    ],
+    "final_visible_structure": "back panel in place",
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P013_001",
+        "manual_label": "",
+        "name": "back panel",
+        "visual_description": "folding hardboard back panel of the chest",
+        "shape_family": "panel",
+        "material_hint": "fibreboard",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          690,
+          3,
+          820
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F013_001",
+        "manual_label": "10093081",
+        "name": "back panel clip",
+        "shape_family": "other",
+        "quantity_visible": 6
+      },
+      {
+        "fastener_uid": "F013_002",
+        "manual_label": "151707",
+        "name": "back panel pin",
+        "shape_family": "plug",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A013_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P013_001",
+        "fastener_ref": "F013_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 8: 6x back panel clip 10093081 with wedge 10093082 at the fold of the back panel"
+      },
+      {
+        "action_uid": "A013_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P013_001",
+        "fastener_ref": "F013_002",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 9: 8x back panel pin 151707 pressed in along the back panel"
+      }
+    ],
+    "final_visible_structure": "back panel held",
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P014_001",
+        "manual_label": "",
+        "name": "plinth",
+        "visual_description": "kick board across the front under the bottom panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          18,
+          60
+        ]
+      },
+      {
+        "part_uid": "P014_002",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel of the chest",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "click fitting holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          440,
+          18
+        ]
+      },
+      {
+        "part_uid": "P014_003",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel of the chest, front top corner cut off",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "runner screw holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          460,
+          840
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F014_001",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F014_002",
+        "manual_label": "153548",
+        "name": "floor glide",
+        "shape_family": "other",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F014_003",
+        "manual_label": "10051022",
+        "name": "foot",
+        "shape_family": "other",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A014_001",
+        "action_type": "attach",
+        "moving_part_ref": "P014_001",
+        "target_part_ref": "P014_002",
+        "fastener_ref": "F014_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 10: plinth pushed onto 2x wooden dowel 101345 under the bottom panel at the front"
+      },
+      {
+        "action_uid": "A014_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P014_003",
+        "fastener_ref": "F014_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 11: 2x floor glide 153548 at the front and 2x foot 10051022 at the back of the side panels"
+      }
+    ],
+    "final_visible_structure": "chest carcass complete, lying on its back",
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P015_001",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel of the chest between the side panels",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "click fitting holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          460,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F015_001",
+        "manual_label": "10047146",
+        "name": "plug",
+        "shape_family": "plug",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A015_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P015_001",
+        "fastener_ref": "F015_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 12: chest stood upright (turning is not a join); 2x plug 10047146 into the back edge of the top panel"
+      }
+    ],
+    "final_visible_structure": "chest standing upright",
+    "uncertainties": []
+  },
+  {
+    "page_number": 16,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P016_001",
+        "manual_label": "",
+        "name": "hutch top panel",
+        "visual_description": "top panel of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          250,
+          18
+        ]
+      },
+      {
+        "part_uid": "P016_002",
+        "manual_label": "",
+        "name": "hutch shelf",
+        "visual_description": "shelf in the middle of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          240,
+          18
+        ]
+      },
+      {
+        "part_uid": "P016_003",
+        "manual_label": "",
+        "name": "hutch left side panel",
+        "visual_description": "left side panel of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          250,
+          330
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F016_001",
+        "manual_label": "120173",
+        "name": "long dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A016_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P016_001",
+        "fastener_ref": "F016_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 13: 4x long dowel 120173 into the hutch top panel and hutch shelf"
+      },
+      {
+        "action_uid": "A016_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P016_002",
+        "fastener_ref": "F016_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 13: long dowel into the hutch shelf"
+      },
+      {
+        "action_uid": "A016_003",
+        "action_type": "attach",
+        "moving_part_ref": "P016_001",
+        "target_part_ref": "P016_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 14: hutch top panel and hutch shelf pushed into the hutch left side panel until they click"
+      },
+      {
+        "action_uid": "A016_004",
+        "action_type": "attach",
+        "moving_part_ref": "P016_002",
+        "target_part_ref": "P016_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 14: hutch shelf clicked into the hutch left side panel"
+      }
+    ],
+    "final_visible_structure": "shelf unit begun",
+    "uncertainties": []
+  },
+  {
+    "page_number": 17,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P017_001",
+        "manual_label": "",
+        "name": "hutch right side panel",
+        "visual_description": "right side panel of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          250,
+          330
+        ]
+      },
+      {
+        "part_uid": "P017_002",
+        "manual_label": "",
+        "name": "hutch top panel",
+        "visual_description": "top panel of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          250,
+          18
+        ]
+      },
+      {
+        "part_uid": "P017_003",
+        "manual_label": "",
+        "name": "hutch shelf",
+        "visual_description": "shelf in the middle of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          240,
+          18
+        ]
+      },
+      {
+        "part_uid": "P017_004",
+        "manual_label": "",
+        "name": "hutch rail",
+        "visual_description": "rail across the bottom back of the open shelf unit",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F017_001",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 3
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A017_001",
+        "action_type": "attach",
+        "moving_part_ref": "P017_001",
+        "target_part_ref": "P017_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 15: hutch right side panel pushed on until it clicks"
+      },
+      {
+        "action_uid": "A017_002",
+        "action_type": "attach",
+        "moving_part_ref": "P017_004",
+        "target_part_ref": "P017_001",
+        "fastener_ref": "F017_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 16: hutch rail with 3x wooden dowel 101345 fitted between the hutch side panels at the bottom back"
+      }
+    ],
+    "final_visible_structure": "shelf unit frame",
+    "uncertainties": []
+  },
+  {
+    "page_number": 18,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P018_001",
+        "manual_label": "",
+        "name": "hutch back panel",
+        "visual_description": "hardboard back panel of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "fibreboard",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          680,
+          3,
+          330
+        ]
+      },
+      {
+        "part_uid": "P018_002",
+        "manual_label": "",
+        "name": "hutch left side panel",
+        "visual_description": "left side panel of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          250,
+          330
+        ]
+      },
+      {
+        "part_uid": "P018_003",
+        "manual_label": "",
+        "name": "hutch right side panel",
+        "visual_description": "right side panel of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          250,
+          330
+        ]
+      },
+      {
+        "part_uid": "P018_004",
+        "manual_label": "",
+        "name": "hutch rail",
+        "visual_description": "rail across the bottom back of the open shelf unit",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          664,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F018_001",
+        "manual_label": "151708",
+        "name": "back panel fixing",
+        "shape_family": "plug",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A018_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P018_002",
+        "fastener_ref": "F018_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 17: 2x back panel fixing 151708 and pin 151707"
+      },
+      {
+        "action_uid": "A018_002",
+        "action_type": "slide",
+        "moving_part_ref": "P018_001",
+        "target_part_ref": "P018_004",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 18: hutch back panel slid down the grooves of the hutch side panels into the hutch rail"
+      }
+    ],
+    "final_visible_structure": "shelf unit complete",
+    "uncertainties": []
+  },
+  {
+    "page_number": 19,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P019_001",
+        "manual_label": "",
+        "name": "hutch left side panel",
+        "visual_description": "left side panel of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          250,
+          330
+        ]
+      },
+      {
+        "part_uid": "P019_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel of the chest, front top corner cut off",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "runner screw holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          460,
+          840
+        ]
+      },
+      {
+        "part_uid": "P019_003",
+        "manual_label": "",
+        "name": "hutch right side panel",
+        "visual_description": "right side panel of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          250,
+          330
+        ]
+      },
+      {
+        "part_uid": "P019_004",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel of the chest, front top corner cut off",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "runner screw holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          460,
+          840
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F019_001",
+        "manual_label": "10049270",
+        "name": "connector plate",
+        "shape_family": "bracket",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F019_002",
+        "manual_label": "144575",
+        "name": "connector screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T019_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A019_001",
+        "action_type": "attach",
+        "moving_part_ref": "P019_001",
+        "target_part_ref": "P019_002",
+        "fastener_ref": "F019_001",
+        "tool_ref": "T019_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 19: shelf unit set on the chest; connector plate 10049270 screwed across the hutch left side panel and left side panel"
+      },
+      {
+        "action_uid": "A019_002",
+        "action_type": "attach",
+        "moving_part_ref": "P019_003",
+        "target_part_ref": "P019_004",
+        "fastener_ref": "F019_001",
+        "tool_ref": "T019_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 19: connector plate across the hutch right side panel and right side panel; 2x in all"
+      }
+    ],
+    "final_visible_structure": "shelf unit fixed on top of the chest",
+    "uncertainties": []
+  },
+  {
+    "page_number": 20,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P020_001",
+        "manual_label": "",
+        "name": "hutch left side panel",
+        "visual_description": "left side panel of the open shelf unit",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "back panel groove"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          250,
+          330
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F020_001",
+        "manual_label": "10093081",
+        "name": "back panel clip",
+        "shape_family": "other",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A020_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P020_001",
+        "fastener_ref": "F020_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "steps 20-21: 2x clip 10093081 and wall spacers 150688 fitted at the back"
+      }
+    ],
+    "final_visible_structure": "back fittings in place",
+    "uncertainties": []
+  },
+  {
+    "page_number": 21,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 22-27: wall spacers and wall fixing. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 22,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 22-27: wall spacers and wall fixing. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 23,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 22-27: wall spacers and wall fixing. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 24,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 22-27: wall spacers and wall fixing. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 25,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 22-27: wall spacers and wall fixing. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 26,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 22-27: wall spacers and wall fixing. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 27,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 22-27: wall spacers and wall fixing. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 28,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P028_001",
+        "manual_label": "",
+        "name": "small drawer front",
+        "visual_description": "shallow top drawer front with two knobs",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          664,
+          18,
+          160
+        ]
+      },
+      {
+        "part_uid": "P028_002",
+        "manual_label": "",
+        "name": "large drawer front",
+        "visual_description": "deep drawer front with two knobs",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          664,
+          18,
+          250
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F028_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T028_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A028_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P028_001",
+        "fastener_ref": "F028_001",
+        "tool_ref": "T028_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 28: 2x cam bolt 118331 into the small drawer front"
+      },
+      {
+        "action_uid": "A028_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P028_002",
+        "fastener_ref": "F028_001",
+        "tool_ref": "T028_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 28: 4x cam bolt 118331 into each large drawer front, repeat x2"
+      }
+    ],
+    "final_visible_structure": "drawer fronts with cam bolts",
+    "uncertainties": [
+      "Insets: one small drawer (1x) and two large drawers (2x)."
+    ]
+  },
+  {
+    "page_number": 29,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P029_001",
+        "manual_label": "",
+        "name": "small drawer front",
+        "visual_description": "shallow top drawer front with two knobs",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          664,
+          18,
+          160
+        ]
+      },
+      {
+        "part_uid": "P029_002",
+        "manual_label": "",
+        "name": "large drawer front",
+        "visual_description": "deep drawer front with two knobs",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          664,
+          18,
+          250
+        ]
+      },
+      {
+        "part_uid": "P029_003",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer side with a groove for the bottom",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 6,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          420,
+          140
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F029_001",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 12
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A029_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P029_003",
+        "fastener_ref": "F029_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 29: 2x wooden dowel 101345 into each drawer side, repeat x3"
+      },
+      {
+        "action_uid": "A029_002",
+        "action_type": "attach",
+        "moving_part_ref": "P029_003",
+        "target_part_ref": "P029_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 30: 2x drawer side pushed onto the small drawer front"
+      },
+      {
+        "action_uid": "A029_003",
+        "action_type": "attach",
+        "moving_part_ref": "P029_003",
+        "target_part_ref": "P029_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 30: 2x drawer side pushed onto each large drawer front, repeat x2"
+      }
+    ],
+    "final_visible_structure": "drawer sides standing on the fronts",
+    "uncertainties": []
+  },
+  {
+    "page_number": 30,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P030_001",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer side with a groove for the bottom",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 6,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          420,
+          140
+        ]
+      },
+      {
+        "part_uid": "P030_002",
+        "manual_label": "",
+        "name": "small drawer front",
+        "visual_description": "shallow top drawer front with two knobs",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          664,
+          18,
+          160
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F030_001",
+        "manual_label": "119030",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T030_001",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A030_001",
+        "action_type": "tighten",
+        "moving_part_ref": "P030_001",
+        "target_part_ref": "P030_002",
+        "fastener_ref": "F030_001",
+        "tool_ref": "T030_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 31: 4x cam lock 119030 turned in the drawer sides, repeat x3"
+      }
+    ],
+    "final_visible_structure": "drawer sides locked",
+    "uncertainties": []
+  },
+  {
+    "page_number": 31,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P031_001",
+        "manual_label": "",
+        "name": "drawer bottom",
+        "visual_description": "thin drawer bottom",
+        "shape_family": "panel",
+        "material_hint": "fibreboard",
+        "quantity_visible": 3,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          620,
+          420,
+          3
+        ]
+      },
+      {
+        "part_uid": "P031_002",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer side with a groove for the bottom",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 6,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          420,
+          140
+        ]
+      },
+      {
+        "part_uid": "P031_003",
+        "manual_label": "",
+        "name": "drawer back",
+        "visual_description": "drawer back with holes for the wire stiffener",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 3,
+        "connection_features": [],
+        "page_position": "top",
+        "size_mm": [
+          620,
+          12,
+          130
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F031_001",
+        "manual_label": "10040242",
+        "name": "wire stiffener",
+        "shape_family": "other",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T031_001",
+        "name": "hammer"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A031_001",
+        "action_type": "slide",
+        "moving_part_ref": "P031_001",
+        "target_part_ref": "P031_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 32: drawer bottom slid into the grooves, repeat x3"
+      },
+      {
+        "action_uid": "A031_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P031_003",
+        "fastener_ref": "F031_001",
+        "tool_ref": "T031_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 33: wire stiffener 10040242 tapped into the drawer back, repeat x3"
+      }
+    ],
+    "final_visible_structure": "drawer bottoms in",
+    "uncertainties": []
+  },
+  {
+    "page_number": 32,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P032_001",
+        "manual_label": "",
+        "name": "drawer back",
+        "visual_description": "drawer back with holes for the wire stiffener",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 3,
+        "connection_features": [],
+        "page_position": "top",
+        "size_mm": [
+          620,
+          12,
+          130
+        ]
+      },
+      {
+        "part_uid": "P032_002",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer side with a groove for the bottom",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 6,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          420,
+          140
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F032_001",
+        "manual_label": "110519",
+        "name": "drawer pin",
+        "shape_family": "nail",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A032_001",
+        "action_type": "attach",
+        "moving_part_ref": "P032_001",
+        "target_part_ref": "P032_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 34: drawer back tilted in over the drawer bottom, repeat x3"
+      },
+      {
+        "action_uid": "A032_002",
+        "action_type": "insert",
+        "moving_part_ref": "P032_001",
+        "target_part_ref": "P032_002",
+        "fastener_ref": "F032_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 35: 4x drawer pin 110519 pushed through the drawer sides into the drawer back, repeat x3"
+      }
+    ],
+    "final_visible_structure": "drawer boxes closed",
+    "uncertainties": []
+  },
+  {
+    "page_number": 33,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P033_001",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer side with a groove for the bottom",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 6,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          420,
+          140
+        ]
+      },
+      {
+        "part_uid": "P033_002",
+        "manual_label": "10043622",
+        "name": "drawer runner",
+        "visual_description": "drawer runner for the drawer sides",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 6,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F033_001",
+        "manual_label": "119030",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F033_002",
+        "manual_label": "146114",
+        "name": "runner screw",
+        "shape_family": "screw",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T033_001",
+        "name": "cross head screwdriver"
+      },
+      {
+        "tool_uid": "T033_002",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A033_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P033_001",
+        "fastener_ref": "F033_001",
+        "tool_ref": "T033_002",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 36: 4x cam lock 119030 turned in the tops of the drawer sides, repeat x3"
+      },
+      {
+        "action_uid": "A033_002",
+        "action_type": "attach",
+        "moving_part_ref": "P033_002",
+        "target_part_ref": "P033_001",
+        "fastener_ref": "F033_002",
+        "tool_ref": "T033_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 37: drawer runner (IKEA DR, DL) hooked onto each drawer side and screwed with 6x runner screw 146114, repeat x3"
+      }
+    ],
+    "final_visible_structure": "drawers with runners",
+    "uncertainties": []
+  },
+  {
+    "page_number": 34,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P034_001",
+        "manual_label": "",
+        "name": "small drawer front",
+        "visual_description": "shallow top drawer front with two knobs",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          664,
+          18,
+          160
+        ]
+      },
+      {
+        "part_uid": "P034_002",
+        "manual_label": "",
+        "name": "large drawer front",
+        "visual_description": "deep drawer front with two knobs",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          664,
+          18,
+          250
+        ]
+      },
+      {
+        "part_uid": "P034_003",
+        "manual_label": "10052019",
+        "name": "knob",
+        "visual_description": "round wooden knob",
+        "shape_family": "block",
+        "material_hint": "wood",
+        "quantity_visible": 6,
+        "connection_features": [],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P034_004",
+        "manual_label": "10043622",
+        "name": "drawer runner",
+        "visual_description": "carcass runner",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F034_001",
+        "manual_label": "119976",
+        "name": "knob screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T034_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A034_001",
+        "action_type": "attach",
+        "moving_part_ref": "P034_003",
+        "target_part_ref": "P034_001",
+        "fastener_ref": "F034_001",
+        "tool_ref": "T034_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 38: 2x knob 10052019 screwed to the small drawer front with knob screw 119976"
+      },
+      {
+        "action_uid": "A034_002",
+        "action_type": "attach",
+        "moving_part_ref": "P034_003",
+        "target_part_ref": "P034_002",
+        "fastener_ref": "F034_001",
+        "tool_ref": "T034_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 38: 2x knob screwed to each large drawer front, repeat x2"
+      },
+      {
+        "action_uid": "A034_003",
+        "action_type": "slide",
+        "moving_part_ref": "P034_001",
+        "target_part_ref": "P034_004",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 39: drawers put on the carcass runners and pushed in, small drawer at the top"
+      },
+      {
+        "action_uid": "A034_004",
+        "action_type": "slide",
+        "moving_part_ref": "P034_002",
+        "target_part_ref": "P034_004",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 39: the two large drawers pushed in below, repeat x2"
+      }
+    ],
+    "final_visible_structure": "finished HAUGA chest with shelf unit",
+    "uncertainties": [
+      "Info: never pull out more than one drawer at a time."
+    ]
+  },
+  {
+    "page_number": 35,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Blank page."
+    ]
+  },
+  {
+    "page_number": 36,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Back page."
+    ]
+  }
+]

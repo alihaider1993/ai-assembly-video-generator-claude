@@ -1,0 +1,1258 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "KLEPPSTAD wardrobe with two sliding doors",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.1,
+          "x_max": 0.9,
+          "y_max": 0.85
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D002_001",
+        "diagram_type": "warning",
+        "description": "Safety text and advice",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 3,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D003_001",
+        "diagram_type": "warning",
+        "description": "Safety text and advice",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 4,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D004_001",
+        "diagram_type": "warning",
+        "description": "Safety text and advice",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "warning",
+        "description": "Safety text and advice",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "warning",
+        "description": "Safety text and advice",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D007_001",
+        "diagram_type": "warning",
+        "description": "Safety text and advice",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "part_inventory",
+        "description": "Bag 1 hardware",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "118331",
+          "119253",
+          "100214",
+          "101345",
+          "153548",
+          "405950"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D009_001",
+        "diagram_type": "part_inventory",
+        "description": "Bag 2 hardware",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "157306",
+          "105811",
+          "115339",
+          "143278",
+          "143279",
+          "100365",
+          "146854"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D010_001",
+        "diagram_type": "assembly_view",
+        "description": "Parts sorted",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "1"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D010_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D011_001",
+        "diagram_type": "assembly_view",
+        "description": "Cam bolts in the divider; first shelf",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "2",
+          "3",
+          "2x",
+          "118331"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D011_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D012_001",
+        "diagram_type": "assembly_view",
+        "description": "Cam locks; second shelf on the other face",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "4",
+          "5",
+          "2x",
+          "1x",
+          "119253",
+          "118331"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D012_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D013_001",
+        "diagram_type": "assembly_view",
+        "description": "Cam locks; dowels in top and bottom",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "6",
+          "7",
+          "2x",
+          "4x",
+          "119253",
+          "101345"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D013_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D014_001",
+        "diagram_type": "assembly_view",
+        "description": "Door track strips pressed in",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "8",
+          "2x",
+          "10040620"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D014_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D015_001",
+        "diagram_type": "assembly_view",
+        "description": "Top and bottom on the divider",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "9",
+          "4x",
+          "100214"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D015_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 16,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D016_001",
+        "diagram_type": "assembly_view",
+        "description": "Left side panel on",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "10",
+          "11",
+          "5x",
+          "100214"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D016_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 17,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D017_001",
+        "diagram_type": "assembly_view",
+        "description": "Divider rails",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "12",
+          "13",
+          "4x",
+          "1x",
+          "101345"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D017_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 18,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D018_001",
+        "diagram_type": "assembly_view",
+        "description": "Screws; plinth pushed in",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "14",
+          "15",
+          "3x",
+          "100214"
+        ],
+        "likely_action": "slide",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D018_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 19,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D019_001",
+        "diagram_type": "assembly_view",
+        "description": "Right side panel on",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "16",
+          "17",
+          "3x",
+          "100214"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D019_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 20,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D020_001",
+        "diagram_type": "assembly_view",
+        "description": "Back rails",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "18",
+          "19",
+          "4x",
+          "101345"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D020_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 21,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D021_001",
+        "diagram_type": "assembly_view",
+        "description": "Back rails screwed",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "20",
+          "21",
+          "3x",
+          "2x",
+          "100214"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D021_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 22,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D022_001",
+        "diagram_type": "assembly_view",
+        "description": "Plinth bracket",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "22",
+          "23",
+          "1x",
+          "109041",
+          "102646"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D022_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 23,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D023_001",
+        "diagram_type": "assembly_view",
+        "description": "Back panels laid on; first nail",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "24",
+          "25",
+          "1x",
+          "405950",
+          "105494"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D023_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 24,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D024_001",
+        "diagram_type": "assembly_view",
+        "description": "Back panels nailed",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "26",
+          "27",
+          "2x",
+          "12x",
+          "405950"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D024_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 25,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D025_001",
+        "diagram_type": "assembly_view",
+        "description": "Nails all round; glides",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "28",
+          "29",
+          "44x",
+          "6x",
+          "405950",
+          "153548"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D025_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 26,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D026_001",
+        "diagram_type": "assembly_view",
+        "description": "Raised upright; wall marked",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "30"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D026_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 27,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D027_001",
+        "diagram_type": "assembly_view",
+        "description": "Wall fixing",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D027_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 28,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D028_001",
+        "diagram_type": "assembly_view",
+        "description": "Wall fixing",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D028_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 29,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D029_001",
+        "diagram_type": "assembly_view",
+        "description": "Wall fixing",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D029_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 30,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D030_001",
+        "diagram_type": "assembly_view",
+        "description": "Wall fixing",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D030_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 31,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D031_001",
+        "diagram_type": "assembly_view",
+        "description": "Rail holders",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "34",
+          "35",
+          "2x",
+          "4x",
+          "105811",
+          "157306"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D031_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 32,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D032_001",
+        "diagram_type": "assembly_view",
+        "description": "Clothes rails; door bumpers",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "36",
+          "37",
+          "2x",
+          "4x",
+          "146854",
+          "115339"
+        ],
+        "likely_action": "place",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D032_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 33,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D033_001",
+        "diagram_type": "assembly_view",
+        "description": "Lower door sliders",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "38",
+          "4x",
+          "143278",
+          "100365"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D033_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 34,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D034_001",
+        "diagram_type": "assembly_view",
+        "description": "Upper sliders; back door tilted in",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "39",
+          "40",
+          "4x",
+          "143279",
+          "100365"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D034_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 35,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D035_001",
+        "diagram_type": "assembly_view",
+        "description": "Back door hung",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "41"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D035_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 36,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D036_001",
+        "diagram_type": "assembly_view",
+        "description": "Front door hung",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "42",
+          "43"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D036_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 37,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D037_001",
+        "diagram_type": "assembly_view",
+        "description": "Removing a door",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D037_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 38,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D038_001",
+        "diagram_type": "assembly_view",
+        "description": "Door stops",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "44",
+          "3x",
+          "192161",
+          "192158"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D038_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 39,
+    "page_type": "unknown",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 40,
+    "page_type": "unknown",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  }
+]

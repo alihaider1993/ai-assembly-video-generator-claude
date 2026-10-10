@@ -1,0 +1,521 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "LACK coffee table: thick rectangular top on four square legs with a shelf near the floor between the legs",
+    "uncertainties": [
+      "Cover shows two sizes of the same table; described as the larger 118 x 78 cm one."
+    ]
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tools needed (screwdriver, hammer, awl) and general advice: assemble on a soft surface, ask IKEA if unsure. No assembly action."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P003_001",
+        "manual_label": "120298",
+        "name": "shelf bracket",
+        "visual_description": "small angle bracket with an upright face holding a round hole and a slotted hole, and a foot with one hole",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "upright face, round and slotted"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "foot"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          30,
+          25,
+          30
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F003_001",
+        "manual_label": "115980",
+        "name": "double-ended screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_002",
+        "manual_label": "108530",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_003",
+        "manual_label": "109041",
+        "name": "short shelf screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tabletop, legs and shelf are not shown in this inventory; only hardware.",
+      "Part 120938 (1x) is a plastic drilling template used in steps 3 and 5 to mark the bracket holes; it is a jig, not part of the table."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P004_001",
+        "manual_label": "",
+        "name": "tabletop",
+        "visual_description": "thick rectangular tabletop lying upside down",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "pre-drilled hole in each corner of the underside"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          1180,
+          780,
+          50
+        ]
+      },
+      {
+        "part_uid": "P004_002",
+        "manual_label": "",
+        "name": "leg",
+        "visual_description": "four square legs held upright over the corners of the upside-down tabletop",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "centre hole in the top end"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "pre-drilled bracket holes on the inner face"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          50,
+          50,
+          400
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F004_001",
+        "manual_label": "115980",
+        "name": "double-ended screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A004_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_001",
+        "fastener_ref": "F004_001",
+        "tool_ref": "",
+        "direction_hint": "clockwise",
+        "visual_evidence": "4x double-ended screw 115980 turned by hand into the hole in each corner of the tabletop (step 1)"
+      },
+      {
+        "action_uid": "A004_002",
+        "action_type": "attach",
+        "moving_part_ref": "P004_002",
+        "target_part_ref": "P004_001",
+        "fastener_ref": "F004_001",
+        "tool_ref": "",
+        "direction_hint": "clockwise",
+        "visual_evidence": "4x leg lowered onto the double-ended screw and turned clockwise until tight against the tabletop (step 2)"
+      }
+    ],
+    "final_visible_structure": "four legs standing up from the corners of the upside-down tabletop",
+    "uncertainties": [
+      "Page holds steps 1 and 2."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "",
+        "name": "leg",
+        "visual_description": "two legs on one long side of the upside-down table",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "centre hole in the top end"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "pre-drilled bracket holes on the inner face"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          50,
+          50,
+          400
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "bracket hole positions marked on two legs",
+    "uncertainties": [
+      "Step 3: the plastic template 120938 is pressed onto the inner face of a leg (2x) to mark the bracket holes, then lifted off. Template is a jig, not a part; no part moves.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "",
+        "name": "leg",
+        "visual_description": "two legs on one long side of the upside-down table",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "centre hole in the top end"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "pre-drilled bracket holes on the inner face"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          50,
+          50,
+          400
+        ]
+      },
+      {
+        "part_uid": "P006_002",
+        "manual_label": "120298",
+        "name": "shelf bracket",
+        "visual_description": "small angle bracket with an upright face holding a round hole and a slotted hole, and a foot with one hole",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "upright face, round and slotted"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "foot"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          30,
+          25,
+          30
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "108530",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T006_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A006_001",
+        "action_type": "attach",
+        "moving_part_ref": "P006_002",
+        "target_part_ref": "P006_001",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "2x shelf bracket 120298 screwed to the inner face of a leg with bracket screw 108530, not the shorter 109041 (step 4)"
+      }
+    ],
+    "final_visible_structure": "two shelf brackets fixed to the legs on one side",
+    "uncertainties": [
+      "Step 5 on the same page repeats the template marking on the other two legs."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "leg",
+        "visual_description": "two legs on the other long side",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "centre hole in the top end"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "pre-drilled bracket holes on the inner face"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          50,
+          50,
+          400
+        ]
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "120298",
+        "name": "shelf bracket",
+        "visual_description": "small angle bracket with an upright face holding a round hole and a slotted hole, and a foot with one hole",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "upright face, round and slotted"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "foot"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          30,
+          25,
+          30
+        ]
+      },
+      {
+        "part_uid": "P007_003",
+        "manual_label": "",
+        "name": "shelf",
+        "visual_description": "flat rectangular shelf panel tilted in between the four legs",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "small holes in the edges near each corner"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1080,
+          680,
+          16
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "108530",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T007_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "attach",
+        "moving_part_ref": "P007_002",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "2x shelf bracket 120298 screwed to the inner face of the other legs with bracket screw 108530 (step 6)"
+      },
+      {
+        "action_uid": "A007_002",
+        "action_type": "place",
+        "moving_part_ref": "P007_003",
+        "target_part_ref": "P007_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "shelf tilted and slid in between the four legs onto the shelf brackets (step 7)"
+      }
+    ],
+    "final_visible_structure": "shelf resting on the four shelf brackets between the legs, table still upside down",
+    "uncertainties": [
+      "Page holds steps 6 and 7."
+    ]
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "shelf",
+        "visual_description": "shelf between the legs on the four brackets",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "small holes in the edges near each corner"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1080,
+          680,
+          16
+        ]
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "120298",
+        "name": "shelf bracket",
+        "visual_description": "small angle bracket with an upright face holding a round hole and a slotted hole, and a foot with one hole",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "upright face, round and slotted"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "foot"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          30,
+          25,
+          30
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "109041",
+        "name": "short shelf screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T008_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "tighten",
+        "moving_part_ref": "P008_001",
+        "target_part_ref": "P008_002",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "4x short shelf screw 109041 driven through each shelf bracket into the edge of the shelf (step 8, insets 1-4)"
+      }
+    ],
+    "final_visible_structure": "complete LACK coffee table, upside down; turned over to stand on its legs",
+    "uncertainties": [
+      "Turning the table upright is not drawn but implied."
+    ]
+  }
+]

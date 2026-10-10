@@ -15,9 +15,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        manual: [alhult_chair, alhult_gemini, banbury_chair, brimnes_wardrobe,
-                 hemnes_dresser, kaycie_bed, melltorp_table, new_table_manual,
-                 poang_chair, rakkestad_wardrobe, sofa_manual]
+        manual: [adde_chair, alhult_chair, alhult_gemini, banbury_chair, billy_bookcase,
+                 brimnes_bed, brimnes_wardrobe, hauga_chest, hemnes_dresser, kaycie_bed,
+                 kleppstad_wardrobe, lack_coffee_table, malm_drawer_chest, melltorp_table,
+                 micke_desk, neiden_bed, new_table_manual, pandora_bed, poang_chair,
+                 poang_rocking, rakkestad_wardrobe, sofa_manual, songesand_chest, tarva_bed]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

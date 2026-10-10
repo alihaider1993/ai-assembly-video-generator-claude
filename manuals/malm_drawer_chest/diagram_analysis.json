@@ -1,0 +1,910 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "MALM chest of 4 drawers",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.1,
+          "x_max": 0.8,
+          "y_max": 0.85
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D002_001",
+        "diagram_type": "warning",
+        "description": "Tip-over warning",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.6
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 3,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D003_001",
+        "diagram_type": "warning",
+        "description": "Tools and wall-fixing advice",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.02,
+          "x_max": 0.97,
+          "y_max": 0.98
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 4,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D004_001",
+        "diagram_type": "part_inventory",
+        "description": "Wall-fixing kit 370766",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.55,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "109567",
+          "10087223",
+          "109049",
+          "100823",
+          "106989",
+          "2x",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "part_inventory",
+        "description": "Bag 1 hardware",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.95,
+          "y_max": 0.35
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "118331",
+          "119030",
+          "101345",
+          "155669",
+          "10048881",
+          "16x",
+          "18x",
+          "8x",
+          "24x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_002",
+        "diagram_type": "part_inventory",
+        "description": "Floor glide 6x, plinth bracket 2x",
+        "page_region": {
+          "x_min": 0.08,
+          "y_min": 0.35,
+          "x_max": 0.9,
+          "y_max": 0.6
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "153548",
+          "10038685",
+          "6x",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D005_003",
+        "diagram_type": "part_inventory",
+        "description": "Drawer runner sets 4x",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.62,
+          "x_max": 0.95,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "10084399",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "part_inventory",
+        "description": "Bag 2 hardware",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.35
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "101345",
+          "110519",
+          "118331",
+          "119030",
+          "146114",
+          "10040242",
+          "16x",
+          "24x",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D007_001",
+        "diagram_type": "assembly_view",
+        "description": "Runners screwed to both side panels",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "12x",
+          "10048881",
+          "146114"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D007_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "assembly_view",
+        "description": "Cam bolts in the side panels; dowels in rails and back panels",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "2",
+          "3",
+          "12x",
+          "16x",
+          "118331",
+          "101345"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D008_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D009_001",
+        "diagram_type": "assembly_view",
+        "description": "Front rails stood on the left side panel; cam locks",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "4",
+          "5",
+          "4x",
+          "119030"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D009_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D010_001",
+        "diagram_type": "assembly_view",
+        "description": "Back panels stood on the left side panel; cam locks",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "6",
+          "7",
+          "2x",
+          "119030"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D010_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D011_001",
+        "diagram_type": "assembly_view",
+        "description": "Plinth brackets and glides",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "8",
+          "9",
+          "2x",
+          "155669",
+          "10038685",
+          "153548"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D011_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D012_001",
+        "diagram_type": "assembly_view",
+        "description": "Right side panel on; plinth screwed; bottom panel on; cam locks",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "10",
+          "11",
+          "12",
+          "6x",
+          "155669",
+          "119030"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D012_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D013_001",
+        "diagram_type": "assembly_view",
+        "description": "Plinth screwed to the other side; glides",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "13",
+          "14",
+          "4x",
+          "155669",
+          "153548"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D013_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D014_001",
+        "diagram_type": "assembly_view",
+        "description": "Wall brackets and cam bolts on the top panel",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "15",
+          "16",
+          "2x",
+          "4x",
+          "109049",
+          "100823",
+          "118331"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D014_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D015_001",
+        "diagram_type": "assembly_view",
+        "description": "Carcass turned over; dowels in the side tops",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "17",
+          "2x",
+          "101345"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D015_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 16,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D016_001",
+        "diagram_type": "assembly_view",
+        "description": "Top panel lowered on; cam locks",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "18",
+          "19",
+          "4x",
+          "119030"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D016_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 17,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D017_001",
+        "diagram_type": "assembly_view",
+        "description": "Wall fixing: brackets bent, chest pushed to the wall",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "20",
+          "21",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D017_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 18,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D018_001",
+        "diagram_type": "warning",
+        "description": "Wall types A, B, C and drilling",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.02,
+          "x_max": 0.97,
+          "y_max": 0.98
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 19,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D019_001",
+        "diagram_type": "assembly_view",
+        "description": "Wall screws through the brackets",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "23",
+          "2x",
+          "109567",
+          "100823"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D019_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 20,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D020_001",
+        "diagram_type": "assembly_view",
+        "description": "Cam bolts in the drawer front; dowels in the drawer sides (4x drawers)",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "24",
+          "25",
+          "4x",
+          "118331",
+          "101345"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D020_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 21,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D021_001",
+        "diagram_type": "assembly_view",
+        "description": "Drawer sides on; cam locks; bottom slid in",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "26",
+          "27",
+          "28",
+          "4x",
+          "119030"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D021_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 22,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D022_001",
+        "diagram_type": "assembly_view",
+        "description": "Wire stiffener in the drawer back; back tilted in",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "29",
+          "30",
+          "10040242"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D022_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 23,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D023_001",
+        "diagram_type": "assembly_view",
+        "description": "Drawer pins hammered; runners screwed on",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "31",
+          "32",
+          "4x",
+          "2x",
+          "6x",
+          "110519",
+          "146114"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D023_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 24,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D024_001",
+        "diagram_type": "assembly_view",
+        "description": "Anti-tip catch; top drawer pushed in",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "33",
+          "34",
+          "1x"
+        ],
+        "likely_action": "slide",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D024_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 25,
+    "page_type": "unknown",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Same as page 24 for the next drawer."
+    ]
+  },
+  {
+    "page_number": 26,
+    "page_type": "unknown",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Same as page 24 for the next drawer."
+    ]
+  },
+  {
+    "page_number": 27,
+    "page_type": "unknown",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Same as page 24 for the next drawer."
+    ]
+  },
+  {
+    "page_number": 28,
+    "page_type": "unknown",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Runner adjustment."
+    ]
+  }
+]

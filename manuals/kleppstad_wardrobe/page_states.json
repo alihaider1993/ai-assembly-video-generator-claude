@@ -1,0 +1,2766 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "KLEPPSTAD wardrobe: carcass with a middle divider, low shelves, clothes rails and two sliding doors",
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tip-over and safety warning text. No assembly action."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tip-over and safety warning text. No assembly action."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tip-over and safety warning text. No assembly action."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tip-over and safety warning text. No assembly action."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tools (screwdrivers, hammer, drill), wall fixing advice, two people."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Soft surface; ask IKEA if unsure."
+    ]
+  },
+  {
+    "page_number": 8,
+    "page_type": "parts_list",
+    "visible_parts": [],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F008_002",
+        "manual_label": "119253",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F008_003",
+        "manual_label": "100214",
+        "name": "assembly screw",
+        "shape_family": "screw",
+        "quantity_visible": 20
+      },
+      {
+        "fastener_uid": "F008_004",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 16
+      },
+      {
+        "fastener_uid": "F008_005",
+        "manual_label": "153548",
+        "name": "floor glide",
+        "shape_family": "other",
+        "quantity_visible": 6
+      },
+      {
+        "fastener_uid": "F008_006",
+        "manual_label": "405950",
+        "name": "nail",
+        "shape_family": "nail",
+        "quantity_visible": 58
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Bag 1 hardware; label numbers partly too small to read on the contact sheet."
+    ]
+  },
+  {
+    "page_number": 9,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "157306",
+        "name": "rail holder",
+        "visual_description": "plastic clothes rail holder",
+        "shape_family": "bracket",
+        "material_hint": "plastic",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "screw hole"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F009_001",
+        "manual_label": "105811",
+        "name": "rail holder screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F009_002",
+        "manual_label": "115339",
+        "name": "door bumper",
+        "shape_family": "other",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F009_003",
+        "manual_label": "143278",
+        "name": "lower door slider",
+        "shape_family": "other",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F009_004",
+        "manual_label": "143279",
+        "name": "upper door slider",
+        "shape_family": "other",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F009_005",
+        "manual_label": "100365",
+        "name": "slider screw",
+        "shape_family": "screw",
+        "quantity_visible": 16
+      },
+      {
+        "fastener_uid": "F009_006",
+        "manual_label": "146854",
+        "name": "rail end cap",
+        "shape_family": "other",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Bag 2 hardware (rails and doors); wall fixing kit shown separately."
+    ]
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Step 1: parts sorted on a soft surface. No join.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P011_001",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "full-height middle panel between the two compartments",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          530,
+          1700
+        ]
+      },
+      {
+        "part_uid": "P011_002",
+        "manual_label": "",
+        "name": "shelf",
+        "visual_description": "low fixed shelf, one in each compartment",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          540,
+          520,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F011_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T011_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A011_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P011_001",
+        "fastener_ref": "F011_001",
+        "tool_ref": "T011_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 2: 2x cam bolt 118331 screwed into the divider"
+      },
+      {
+        "action_uid": "A011_002",
+        "action_type": "attach",
+        "moving_part_ref": "P011_002",
+        "target_part_ref": "P011_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 3: shelf stood on the cam bolts of the divider (divider lying flat)"
+      }
+    ],
+    "final_visible_structure": "one shelf standing on the divider",
+    "uncertainties": [
+      "The carcass is built lying down; the divider lies flat here."
+    ]
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P012_001",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "full-height middle panel between the two compartments",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          530,
+          1700
+        ]
+      },
+      {
+        "part_uid": "P012_002",
+        "manual_label": "",
+        "name": "shelf",
+        "visual_description": "low fixed shelf, one in each compartment",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          540,
+          520,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F012_001",
+        "manual_label": "119253",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F012_002",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T012_001",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A012_001",
+        "action_type": "tighten",
+        "moving_part_ref": "P012_002",
+        "target_part_ref": "P012_001",
+        "fastener_ref": "F012_001",
+        "tool_ref": "T012_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 4: 2x cam lock 119253 turned in the shelf"
+      },
+      {
+        "action_uid": "A012_002",
+        "action_type": "attach",
+        "moving_part_ref": "P012_002",
+        "target_part_ref": "P012_001",
+        "fastener_ref": "F012_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 5: divider turned over; second shelf pushed onto the other face with 2x cam bolt 118331"
+      }
+    ],
+    "final_visible_structure": "a shelf on each face of the divider",
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P013_001",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove for the upper door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      },
+      {
+        "part_uid": "P013_002",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove for the lower door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      },
+      {
+        "part_uid": "P013_003",
+        "manual_label": "",
+        "name": "shelf",
+        "visual_description": "low fixed shelf, one in each compartment",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          540,
+          520,
+          18
+        ]
+      },
+      {
+        "part_uid": "P013_004",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "full-height middle panel between the two compartments",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          530,
+          1700
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F013_001",
+        "manual_label": "119253",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F013_002",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T013_001",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A013_001",
+        "action_type": "tighten",
+        "moving_part_ref": "P013_003",
+        "target_part_ref": "P013_004",
+        "fastener_ref": "F013_001",
+        "tool_ref": "T013_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 6: 2x cam lock 119253 turned"
+      },
+      {
+        "action_uid": "A013_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P013_001",
+        "fastener_ref": "F013_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 7: 4x wooden dowel 101345 into the ends of the top panel and bottom panel"
+      },
+      {
+        "action_uid": "A013_003",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P013_002",
+        "fastener_ref": "F013_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 7: wooden dowel 101345 into the bottom panel"
+      }
+    ],
+    "final_visible_structure": "divider with shelves; top and bottom panels with dowels",
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P014_001",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove for the upper door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      },
+      {
+        "part_uid": "P014_002",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove for the lower door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F014_001",
+        "manual_label": "10040620",
+        "name": "door track strip",
+        "shape_family": "other",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A014_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P014_001",
+        "fastener_ref": "F014_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 8: 2x door track strip 10040620 pressed into the grooves of the top panel and bottom panel, from one end"
+      }
+    ],
+    "final_visible_structure": "door tracks in the top and bottom panels",
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P015_001",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove for the upper door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      },
+      {
+        "part_uid": "P015_002",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove for the lower door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      },
+      {
+        "part_uid": "P015_003",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "full-height middle panel between the two compartments",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          530,
+          1700
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F015_001",
+        "manual_label": "100214",
+        "name": "assembly screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T015_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A015_001",
+        "action_type": "attach",
+        "moving_part_ref": "P015_002",
+        "target_part_ref": "P015_003",
+        "fastener_ref": "F015_001",
+        "tool_ref": "T015_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 9: bottom panel fixed to one end of the divider with assembly screws 100214"
+      },
+      {
+        "action_uid": "A015_002",
+        "action_type": "attach",
+        "moving_part_ref": "P015_001",
+        "target_part_ref": "P015_003",
+        "fastener_ref": "F015_001",
+        "tool_ref": "T015_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 9: top panel fixed to the other end of the divider; 4x assembly screw 100214 in all"
+      }
+    ],
+    "final_visible_structure": "top and bottom panels on the divider",
+    "uncertainties": []
+  },
+  {
+    "page_number": 16,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P016_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P016_002",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove for the upper door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      },
+      {
+        "part_uid": "P016_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove for the lower door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F016_001",
+        "manual_label": "100214",
+        "name": "assembly screw",
+        "shape_family": "screw",
+        "quantity_visible": 5
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T016_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A016_001",
+        "action_type": "attach",
+        "moving_part_ref": "P016_001",
+        "target_part_ref": "P016_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 10: left side panel slid onto the dowels of the top panel and bottom panel"
+      },
+      {
+        "action_uid": "A016_002",
+        "action_type": "tighten",
+        "moving_part_ref": "P016_001",
+        "target_part_ref": "P016_003",
+        "fastener_ref": "F016_001",
+        "tool_ref": "T016_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 11: 5x assembly screw 100214 through the left side panel"
+      }
+    ],
+    "final_visible_structure": "left side panel fitted",
+    "uncertainties": []
+  },
+  {
+    "page_number": 17,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P017_001",
+        "manual_label": "",
+        "name": "divider rail",
+        "visual_description": "short rail between the divider and a side panel at the back",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          540,
+          18,
+          60
+        ]
+      },
+      {
+        "part_uid": "P017_002",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "full-height middle panel between the two compartments",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          530,
+          1700
+        ]
+      },
+      {
+        "part_uid": "P017_003",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F017_001",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A017_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P017_001",
+        "fastener_ref": "F017_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 12: 4x wooden dowel 101345 into the two divider rails (short ones)"
+      },
+      {
+        "action_uid": "A017_002",
+        "action_type": "attach",
+        "moving_part_ref": "P017_001",
+        "target_part_ref": "P017_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 13: 1x divider rail put between the left side panel and the divider at the back"
+      }
+    ],
+    "final_visible_structure": "first divider rail in place",
+    "uncertainties": []
+  },
+  {
+    "page_number": 18,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P018_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P018_002",
+        "manual_label": "",
+        "name": "plinth",
+        "visual_description": "kick board across the front under the bottom panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          18,
+          60
+        ]
+      },
+      {
+        "part_uid": "P018_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove for the lower door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      },
+      {
+        "part_uid": "P018_004",
+        "manual_label": "",
+        "name": "divider rail",
+        "visual_description": "short rail between the divider and a side panel at the back",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          540,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F018_001",
+        "manual_label": "100214",
+        "name": "assembly screw",
+        "shape_family": "screw",
+        "quantity_visible": 3
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T018_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A018_001",
+        "action_type": "tighten",
+        "moving_part_ref": "P018_004",
+        "target_part_ref": "P018_001",
+        "fastener_ref": "F018_001",
+        "tool_ref": "T018_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 14: 3x assembly screw 100214 through the left side panel"
+      },
+      {
+        "action_uid": "A018_002",
+        "action_type": "slide",
+        "moving_part_ref": "P018_002",
+        "target_part_ref": "P018_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 15: plinth pushed in under the bottom panel at the front"
+      }
+    ],
+    "final_visible_structure": "plinth in place",
+    "uncertainties": []
+  },
+  {
+    "page_number": 19,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P019_001",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P019_002",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove for the upper door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      },
+      {
+        "part_uid": "P019_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove for the lower door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      },
+      {
+        "part_uid": "P019_004",
+        "manual_label": "",
+        "name": "divider rail",
+        "visual_description": "short rail between the divider and a side panel at the back",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          540,
+          18,
+          60
+        ]
+      },
+      {
+        "part_uid": "P019_005",
+        "manual_label": "",
+        "name": "plinth",
+        "visual_description": "kick board across the front under the bottom panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F019_001",
+        "manual_label": "100214",
+        "name": "assembly screw",
+        "shape_family": "screw",
+        "quantity_visible": 3
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T019_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A019_001",
+        "action_type": "attach",
+        "moving_part_ref": "P019_001",
+        "target_part_ref": "P019_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 16: right side panel slid onto the top panel, bottom panel, divider rail and plinth"
+      },
+      {
+        "action_uid": "A019_002",
+        "action_type": "tighten",
+        "moving_part_ref": "P019_001",
+        "target_part_ref": "P019_003",
+        "fastener_ref": "F019_001",
+        "tool_ref": "T019_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 17: 3x assembly screw 100214 through the right side panel"
+      }
+    ],
+    "final_visible_structure": "carcass box closed",
+    "uncertainties": []
+  },
+  {
+    "page_number": 20,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P020_001",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "long rail across the back for the back panels",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          18,
+          60
+        ]
+      },
+      {
+        "part_uid": "P020_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P020_003",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F020_001",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A020_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P020_001",
+        "fastener_ref": "F020_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 18: 4x wooden dowel 101345 into the two back rails"
+      },
+      {
+        "action_uid": "A020_002",
+        "action_type": "attach",
+        "moving_part_ref": "P020_001",
+        "target_part_ref": "P020_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 19: 2x back rail lowered in between the left side panel and right side panel at the back"
+      }
+    ],
+    "final_visible_structure": "back rails in place",
+    "uncertainties": []
+  },
+  {
+    "page_number": 21,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P021_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P021_002",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P021_003",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "long rail across the back for the back panels",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F021_001",
+        "manual_label": "100214",
+        "name": "assembly screw",
+        "shape_family": "screw",
+        "quantity_visible": 5
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T021_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A021_001",
+        "action_type": "tighten",
+        "moving_part_ref": "P021_003",
+        "target_part_ref": "P021_002",
+        "fastener_ref": "F021_001",
+        "tool_ref": "T021_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "steps 20-21: assembly screws 100214 through the side panels into the back rails (3x, 2x)"
+      }
+    ],
+    "final_visible_structure": "back rails fixed",
+    "uncertainties": []
+  },
+  {
+    "page_number": 22,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P022_001",
+        "manual_label": "",
+        "name": "plinth",
+        "visual_description": "kick board across the front under the bottom panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          18,
+          60
+        ]
+      },
+      {
+        "part_uid": "P022_002",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove for the lower door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F022_001",
+        "manual_label": "102646",
+        "name": "plinth bracket",
+        "shape_family": "bracket",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F022_002",
+        "manual_label": "109041",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T022_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A022_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P022_001",
+        "fastener_ref": "F022_001",
+        "tool_ref": "T022_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "steps 22-23: plinth bracket 102646 screwed to the plinth and the bottom panel with bracket screw 109041"
+      }
+    ],
+    "final_visible_structure": "plinth braced",
+    "uncertainties": []
+  },
+  {
+    "page_number": 23,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P023_001",
+        "manual_label": "",
+        "name": "back panel",
+        "visual_description": "hardboard back panel, one half of the back",
+        "shape_family": "panel",
+        "material_hint": "fibreboard",
+        "quantity_visible": 2,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          580,
+          3,
+          1740
+        ]
+      },
+      {
+        "part_uid": "P023_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F023_001",
+        "manual_label": "405950",
+        "name": "nail",
+        "shape_family": "nail",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F023_002",
+        "manual_label": "105494",
+        "name": "nail guide",
+        "shape_family": "other",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T023_001",
+        "name": "hammer"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A023_001",
+        "action_type": "place",
+        "moving_part_ref": "P023_001",
+        "target_part_ref": "P023_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 24: 2x back panel laid on the back of the carcass"
+      },
+      {
+        "action_uid": "A023_002",
+        "action_type": "insert",
+        "moving_part_ref": "P023_001",
+        "target_part_ref": "P023_002",
+        "fastener_ref": "F023_001",
+        "tool_ref": "T023_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 25: first nail 405950 hammered through nail guide 105494 at a corner"
+      }
+    ],
+    "final_visible_structure": "back panels laid on",
+    "uncertainties": []
+  },
+  {
+    "page_number": 24,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P024_001",
+        "manual_label": "",
+        "name": "back panel",
+        "visual_description": "hardboard back panel, one half of the back",
+        "shape_family": "panel",
+        "material_hint": "fibreboard",
+        "quantity_visible": 2,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          580,
+          3,
+          1740
+        ]
+      },
+      {
+        "part_uid": "P024_002",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P024_003",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "long rail across the back for the back panels",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F024_001",
+        "manual_label": "405950",
+        "name": "nail",
+        "shape_family": "nail",
+        "quantity_visible": 14
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T024_001",
+        "name": "hammer"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A024_001",
+        "action_type": "insert",
+        "moving_part_ref": "P024_001",
+        "target_part_ref": "P024_003",
+        "fastener_ref": "F024_001",
+        "tool_ref": "T024_001",
+        "direction_hint": "down",
+        "visual_evidence": "steps 26-27: back panels squared and nailed along the middle and the back rails with nails 405950 (2x, 12x)"
+      }
+    ],
+    "final_visible_structure": "back panels held",
+    "uncertainties": []
+  },
+  {
+    "page_number": 25,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P025_001",
+        "manual_label": "",
+        "name": "back panel",
+        "visual_description": "hardboard back panel, one half of the back",
+        "shape_family": "panel",
+        "material_hint": "fibreboard",
+        "quantity_visible": 2,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          580,
+          3,
+          1740
+        ]
+      },
+      {
+        "part_uid": "P025_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P025_003",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F025_001",
+        "manual_label": "405950",
+        "name": "nail",
+        "shape_family": "nail",
+        "quantity_visible": 44
+      },
+      {
+        "fastener_uid": "F025_002",
+        "manual_label": "153548",
+        "name": "floor glide",
+        "shape_family": "other",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T025_001",
+        "name": "hammer"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A025_001",
+        "action_type": "insert",
+        "moving_part_ref": "P025_001",
+        "target_part_ref": "P025_003",
+        "fastener_ref": "F025_001",
+        "tool_ref": "T025_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 28: 44x nail 405950 hammered around the back panels using nail guide 105494"
+      },
+      {
+        "action_uid": "A025_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P025_002",
+        "fastener_ref": "F025_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 29: 6x floor glide 153548 pressed into the bottom edges of the side panels and divider"
+      }
+    ],
+    "final_visible_structure": "carcass complete, lying on its front",
+    "uncertainties": []
+  },
+  {
+    "page_number": 26,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Carcass raised upright by two people (curved arrow); step 30 marks the wall for the wall fixing. No join.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 27,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 31-33: wall fixing hardware and drilling for different walls. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 28,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 31-33: wall fixing hardware and drilling for different walls. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 29,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 31-33: wall fixing hardware and drilling for different walls. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 30,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 31-33: wall fixing hardware and drilling for different walls. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 31,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P031_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P031_002",
+        "manual_label": "",
+        "name": "divider",
+        "visual_description": "full-height middle panel between the two compartments",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          530,
+          1700
+        ]
+      },
+      {
+        "part_uid": "P031_003",
+        "manual_label": "157306",
+        "name": "rail holder",
+        "visual_description": "plastic clothes rail holder",
+        "shape_family": "bracket",
+        "material_hint": "plastic",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "screw hole"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F031_001",
+        "manual_label": "105811",
+        "name": "rail holder screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T031_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A031_001",
+        "action_type": "attach",
+        "moving_part_ref": "P031_003",
+        "target_part_ref": "P031_001",
+        "fastener_ref": "F031_001",
+        "tool_ref": "T031_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 35: rail holder 157306 screwed to the left side panel and right side panel near the top with rail holder screw 105811"
+      },
+      {
+        "action_uid": "A031_002",
+        "action_type": "attach",
+        "moving_part_ref": "P031_003",
+        "target_part_ref": "P031_002",
+        "fastener_ref": "F031_001",
+        "tool_ref": "T031_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 35: rail holder screwed to each face of the divider; 4x in all"
+      }
+    ],
+    "final_visible_structure": "rail holders fitted; step 34 screws the wall fixing to the top panel",
+    "uncertainties": [
+      "Step 34: wall fixing screwed to the top panel (109049, 100823)."
+    ]
+  },
+  {
+    "page_number": 32,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P032_001",
+        "manual_label": "",
+        "name": "clothes rail",
+        "visual_description": "round metal clothes rail in each compartment",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          540,
+          25,
+          25
+        ]
+      },
+      {
+        "part_uid": "P032_002",
+        "manual_label": "157306",
+        "name": "rail holder",
+        "visual_description": "plastic clothes rail holder",
+        "shape_family": "bracket",
+        "material_hint": "plastic",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "screw hole"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P032_003",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      },
+      {
+        "part_uid": "P032_004",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F032_001",
+        "manual_label": "146854",
+        "name": "rail end cap",
+        "shape_family": "other",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F032_002",
+        "manual_label": "115339",
+        "name": "door bumper",
+        "shape_family": "other",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A032_001",
+        "action_type": "place",
+        "moving_part_ref": "P032_001",
+        "target_part_ref": "P032_002",
+        "fastener_ref": "F032_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 36: 2x clothes rail with end cap 146854 laid in the rail holders, one per compartment"
+      },
+      {
+        "action_uid": "A032_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P032_003",
+        "fastener_ref": "F032_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 37: 4x door bumper 115339 pressed into the front edges of the left side panel and right side panel"
+      }
+    ],
+    "final_visible_structure": "clothes rails and door bumpers in place",
+    "uncertainties": []
+  },
+  {
+    "page_number": 33,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P033_001",
+        "manual_label": "",
+        "name": "door",
+        "visual_description": "sliding door panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slider screw holes at the corners"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          585,
+          18,
+          1700
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F033_001",
+        "manual_label": "143278",
+        "name": "lower door slider",
+        "shape_family": "other",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F033_002",
+        "manual_label": "100365",
+        "name": "slider screw",
+        "shape_family": "screw",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T033_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A033_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P033_001",
+        "fastener_ref": "F033_001",
+        "tool_ref": "T033_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 38: 4x lower door slider 143278 screwed to the bottom corners of the doors with slider screws 100365, 2x per door"
+      }
+    ],
+    "final_visible_structure": "lower sliders on both doors",
+    "uncertainties": []
+  },
+  {
+    "page_number": 34,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P034_001",
+        "manual_label": "",
+        "name": "door",
+        "visual_description": "sliding door panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slider screw holes at the corners"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          585,
+          18,
+          1700
+        ]
+      },
+      {
+        "part_uid": "P034_002",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove for the upper door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      },
+      {
+        "part_uid": "P034_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove for the lower door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F034_001",
+        "manual_label": "143279",
+        "name": "upper door slider",
+        "shape_family": "other",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F034_002",
+        "manual_label": "100365",
+        "name": "slider screw",
+        "shape_family": "screw",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T034_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A034_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P034_001",
+        "fastener_ref": "F034_001",
+        "tool_ref": "T034_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 39: 4x upper door slider 143279 screwed to the top corners of the doors"
+      },
+      {
+        "action_uid": "A034_002",
+        "action_type": "attach",
+        "moving_part_ref": "P034_001",
+        "target_part_ref": "P034_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 40: back door tilted into the inner door track of the bottom panel"
+      }
+    ],
+    "final_visible_structure": "back door standing in its track",
+    "uncertainties": []
+  },
+  {
+    "page_number": 35,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P035_001",
+        "manual_label": "",
+        "name": "door",
+        "visual_description": "sliding door panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slider screw holes at the corners"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          585,
+          18,
+          1700
+        ]
+      },
+      {
+        "part_uid": "P035_002",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove for the upper door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A035_001",
+        "action_type": "attach",
+        "moving_part_ref": "P035_001",
+        "target_part_ref": "P035_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "up",
+        "visual_evidence": "step 41: back door lifted into the inner track of the top panel and the upper sliders locked"
+      }
+    ],
+    "final_visible_structure": "back door hung",
+    "uncertainties": []
+  },
+  {
+    "page_number": 36,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P036_001",
+        "manual_label": "",
+        "name": "door",
+        "visual_description": "sliding door panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "slider screw holes at the corners"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          585,
+          18,
+          1700
+        ]
+      },
+      {
+        "part_uid": "P036_002",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove for the upper door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      },
+      {
+        "part_uid": "P036_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove for the lower door track",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "door track groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1134,
+          550,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A036_001",
+        "action_type": "slide",
+        "moving_part_ref": "P036_001",
+        "target_part_ref": "P036_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "steps 42-43: front door fitted in the outer tracks the same way and its sliders locked"
+      }
+    ],
+    "final_visible_structure": "both doors hung",
+    "uncertainties": []
+  },
+  {
+    "page_number": 37,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Info: removing a door by unlocking the lower sliders. No join.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 38,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P038_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel, full height",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "screw holes along the edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "shelf and rail holder holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          550,
+          1760
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F038_001",
+        "manual_label": "192161",
+        "name": "door stop",
+        "shape_family": "other",
+        "quantity_visible": 3
+      },
+      {
+        "fastener_uid": "F038_002",
+        "manual_label": "192158",
+        "name": "door stop pin",
+        "shape_family": "other",
+        "quantity_visible": 3
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A038_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P038_001",
+        "fastener_ref": "F038_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 44: door stops 192161 and pins 192158 pressed into the track ends (3x each)"
+      }
+    ],
+    "final_visible_structure": "finished KLEPPSTAD wardrobe",
+    "uncertainties": []
+  },
+  {
+    "page_number": 39,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Adjusting the door height (2x). No join."
+    ]
+  },
+  {
+    "page_number": 40,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Blank back page."
+    ]
+  }
+]

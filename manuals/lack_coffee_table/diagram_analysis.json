@@ -1,0 +1,489 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "Two LACK coffee tables: top on four square legs with a low shelf",
+        "page_region": {
+          "x_min": 0.02,
+          "y_min": 0.08,
+          "x_max": 0.98,
+          "y_max": 0.9
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D002_001",
+        "diagram_type": "warning",
+        "description": "Tools: screwdriver, hammer, awl",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.02,
+          "x_max": 0.95,
+          "y_max": 0.24
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D002_002",
+        "diagram_type": "warning",
+        "description": "Do not assemble on a hard floor; use a soft surface",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.27,
+          "x_max": 0.95,
+          "y_max": 0.47
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D002_003",
+        "diagram_type": "warning",
+        "description": "Confused person; person phoning IKEA for help",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.5,
+          "x_max": 0.95,
+          "y_max": 0.7
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D003_001",
+        "diagram_type": "part_inventory",
+        "description": "Double-ended screw 4x",
+        "page_region": {
+          "x_min": 0.08,
+          "y_min": 0.05,
+          "x_max": 0.14,
+          "y_max": 0.45
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "115980",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_002",
+        "diagram_type": "part_inventory",
+        "description": "Bracket screw 4x",
+        "page_region": {
+          "x_min": 0.22,
+          "y_min": 0.29,
+          "x_max": 0.28,
+          "y_max": 0.45
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "108530",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_003",
+        "diagram_type": "part_inventory",
+        "description": "Short shelf screw 4x",
+        "page_region": {
+          "x_min": 0.36,
+          "y_min": 0.33,
+          "x_max": 0.42,
+          "y_max": 0.45
+        },
+        "contains_parts": false,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "109041",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_004",
+        "diagram_type": "part_inventory",
+        "description": "Angle shelf bracket 4x",
+        "page_region": {
+          "x_min": 0.5,
+          "y_min": 0.29,
+          "x_max": 0.63,
+          "y_max": 0.45
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "120298",
+          "4x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D003_005",
+        "diagram_type": "part_inventory",
+        "description": "Plastic drilling template 1x",
+        "page_region": {
+          "x_min": 0.07,
+          "y_min": 0.62,
+          "x_max": 0.55,
+          "y_max": 0.9
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "120938",
+          "1x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Template is a jig, not a table part."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D004_001",
+        "diagram_type": "close_up",
+        "description": "Double-ended screw turned into the tabletop corner",
+        "page_region": {
+          "x_min": 0.02,
+          "y_min": 0.1,
+          "x_max": 0.4,
+          "y_max": 0.4
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "1",
+          "4x",
+          "115980"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D004_002",
+        "diagram_type": "assembly_view",
+        "description": "Upside-down tabletop with screws standing in the corners",
+        "page_region": {
+          "x_min": 0.4,
+          "y_min": 0.1,
+          "x_max": 0.98,
+          "y_max": 0.4
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "1"
+        ],
+        "likely_action": "insert",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D004_003",
+        "diagram_type": "assembly_view",
+        "description": "Legs turned onto the screws in the corners",
+        "page_region": {
+          "x_min": 0.02,
+          "y_min": 0.55,
+          "x_max": 0.98,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "2",
+          "4x"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D004_002",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "close_up",
+        "description": "Template pressed onto a leg to mark holes, then removed",
+        "page_region": {
+          "x_min": 0.02,
+          "y_min": 0.1,
+          "x_max": 0.98,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "3",
+          "2x",
+          "120938"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": [
+      "Marking only."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "close_up",
+        "description": "Bracket screwed to the leg with screw 108530; 109041 crossed out",
+        "page_region": {
+          "x_min": 0.02,
+          "y_min": 0.02,
+          "x_max": 0.5,
+          "y_max": 0.3
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "4",
+          "2x",
+          "108530",
+          "109041",
+          "120298"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D006_002",
+        "diagram_type": "assembly_view",
+        "description": "Template marking on the other legs",
+        "page_region": {
+          "x_min": 0.02,
+          "y_min": 0.35,
+          "x_max": 0.98,
+          "y_max": 0.95
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "5",
+          "2x",
+          "120938"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D006_002",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D007_001",
+        "diagram_type": "close_up",
+        "description": "Bracket screwed to the other legs",
+        "page_region": {
+          "x_min": 0.02,
+          "y_min": 0.02,
+          "x_max": 0.98,
+          "y_max": 0.45
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "6",
+          "2x",
+          "108530",
+          "120298"
+        ],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "diagram_uid": "D007_002",
+        "diagram_type": "assembly_view",
+        "description": "Shelf tilted in between the legs",
+        "page_region": {
+          "x_min": 0.02,
+          "y_min": 0.5,
+          "x_max": 0.98,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "7"
+        ],
+        "likely_action": "slide",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D007_002",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "assembly_view",
+        "description": "Shelf screwed to the four brackets, insets 1-4",
+        "page_region": {
+          "x_min": 0.02,
+          "y_min": 0.05,
+          "x_max": 0.98,
+          "y_max": 0.9
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": true,
+        "visible_labels": [
+          "8",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "likely_action": "tighten",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D008_001",
+    "warnings": [],
+    "uncertainties": []
+  }
+]

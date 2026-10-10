@@ -1,0 +1,1014 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "diagrams": [
+      {
+        "diagram_uid": "D001_001",
+        "diagram_type": "final_product",
+        "description": "SONGESAND chest of 6 drawers",
+        "page_region": {
+          "x_min": 0.05,
+          "y_min": 0.1,
+          "x_max": 0.9,
+          "y_max": 0.6
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.95
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D002_001",
+        "diagram_type": "warning",
+        "description": "Safety text",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 3,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D003_001",
+        "diagram_type": "warning",
+        "description": "Safety text",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 4,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D004_001",
+        "diagram_type": "warning",
+        "description": "Safety text",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 5,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D005_001",
+        "diagram_type": "warning",
+        "description": "Safety text",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 6,
+    "page_type": "warning",
+    "diagrams": [
+      {
+        "diagram_uid": "D006_001",
+        "diagram_type": "warning",
+        "description": "Safety text",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": false,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "warning",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D007_001",
+        "diagram_type": "part_inventory",
+        "description": "Rails",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.5,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": true,
+        "contains_fasteners": false,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "6x",
+          "2x"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "low",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "parts_list",
+    "diagrams": [
+      {
+        "diagram_uid": "D008_001",
+        "diagram_type": "part_inventory",
+        "description": "Hardware",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.03,
+          "x_max": 0.97,
+          "y_max": 0.97
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": false,
+        "contains_arrows": false,
+        "contains_labels": true,
+        "visible_labels": [
+          "101345",
+          "118331",
+          "146114",
+          "119252",
+          "153548",
+          "158672"
+        ],
+        "likely_action": "none",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D009_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 9",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D009_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D010_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 10",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D010_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D011_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 11",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D011_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D012_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 12",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D012_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D013_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 13",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D013_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D014_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 14",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D014_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D015_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 15",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D015_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 16,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D016_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 16",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D016_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 17,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D017_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 17",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D017_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 18,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D018_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 18",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D018_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 19,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D019_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 19",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D019_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 20,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D020_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 20",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D020_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 21,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D021_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 21",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D021_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 22,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D022_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 22",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D022_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 23,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D023_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 23",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D023_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 24,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D024_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 24",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D024_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 25,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D025_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 25",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D025_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 26,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D026_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 26",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D026_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 27,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D027_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 27",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D027_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 28,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D028_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 28",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D028_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 29,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D029_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 29",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D029_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 30,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D030_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 30",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D030_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 31,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D031_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 31",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D031_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 32,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D032_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 32",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D032_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 33,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D033_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 33",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D033_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 34,
+    "page_type": "assembly_step",
+    "diagrams": [
+      {
+        "diagram_uid": "D034_001",
+        "diagram_type": "assembly_view",
+        "description": "Steps on page 34",
+        "page_region": {
+          "x_min": 0.03,
+          "y_min": 0.05,
+          "x_max": 0.97,
+          "y_max": 0.95
+        },
+        "contains_parts": true,
+        "contains_fasteners": true,
+        "contains_tools": true,
+        "contains_arrows": true,
+        "contains_labels": false,
+        "visible_labels": [],
+        "likely_action": "attach",
+        "visual_complexity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "primary_assembly_diagram": "D034_001",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 35,
+    "page_type": "unknown",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  },
+  {
+    "page_number": 36,
+    "page_type": "unknown",
+    "diagrams": [],
+    "primary_assembly_diagram": "",
+    "warnings": [],
+    "uncertainties": []
+  }
+]

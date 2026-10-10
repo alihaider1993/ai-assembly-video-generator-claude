@@ -73,9 +73,12 @@ SMALL_FASTENER_SIZES = {
     "cam": [0.015, 0.015, 0.012],
     "plug": [0.008, 0.008, 0.025],
     "nail": [0.002, 0.002, 0.03],
+    "glide": [0.025, 0.025, 0.01],
+    "clip": [0.03, 0.02, 0.015],
     "other": [0.008, 0.008, 0.03],
     "unknown": [0.008, 0.008, 0.03],
 }
+SHAPE_FAMILY_ALIASES = {"cam_lock": "cam", "camlock": "cam", "cam_bolt": "bolt", "wall_plug": "plug"}
 
 
 def load_diagram_analysis() -> List[Dict[str, Any]]:
@@ -231,7 +234,9 @@ PART_ROLES = [
     # standing in the Y/Z plane (depth along Y).
     ("side_frame", re.compile(r"\bside frames?\b"), [0.04, 0.42, 0.95]),
     # Hardware named after what it is fitted to ("door hinge", "drawer
-    # handle") is still hardware, so it is matched before doors and drawers.
+    # handle", "shelf bracket") is still hardware, so it is matched before
+    # doors, drawers and shelves.
+    ("bracket", re.compile(r"\b(brackets?|holders?)\b"), [0.08, 0.08, 0.04]),
     ("handle", re.compile(r"\b(handles?|knobs?|pulls?)\b"), [0.12, 0.025, 0.03]),
     ("hinge", re.compile(r"\bhinges?\b"), [0.035, 0.05, 0.012]),
     # Drawers: each drawer is a front, two sides, a back and a bottom.
@@ -244,8 +249,9 @@ PART_ROLES = [
     ("back_cushion", re.compile(r"\b(back cushions?|backrest cushions?|back pillows?)\b"), [0.8, 0.2, 0.45]),
     ("cushion", re.compile(r"\b(seat cushions?|cushions?|mattress(es)?)\b"), [0.8, 0.8, 0.12]),
     ("body", re.compile(r"\b(sofa|couch|settee|chaise|armchair|ottoman|footstool|pouffe?)\b"), [1.0, 0.9, 0.45]),
-    # A bed's head or foot end as one board (not its rails or posts).
-    ("end_board", re.compile(r"\b(head|foot)boards?\b(?!\s+(rails?|foot|feet|posts?|legs?))"), [0.95, 0.04, 0.9]),
+    # A bed's head or foot end as one board (not its rails or posts, also
+    # with a word between: "headboard top rail").
+    ("end_board", re.compile(r"\b(head|foot)boards?\b(?!\s+(\w+\s+)?(rails?|foot|feet|posts?|legs?)\b)"), [0.95, 0.04, 0.9]),
     # Cabinet carcass panels.
     ("side_panel", re.compile(r"\b(side panels?|end panels?|gables?|side boards?)\b"), [0.018, 0.4, 0.8]),
     ("divider", re.compile(r"\b(dividers?|partitions?|middle panels?|cent(re|er) panels?|vertical panels?|mullions?)\b"),
@@ -265,7 +271,6 @@ PART_ROLES = [
     ("stretcher", re.compile(r"\bstretchers?\b"), [0.9, 0.03, 0.07]),
     ("rail", re.compile(r"\b(rails?|aprons?)\b"), [0.9, 0.03, 0.07]),
     ("seat", re.compile(r"\bseat\b"), [0.45, 0.42, 0.05]),
-    ("bracket", re.compile(r"\bbrackets?\b"), [0.08, 0.08, 0.04]),
 ]
 
 # How a measured (A x B mm) pair is turned, by role: "flat" lies down
@@ -291,11 +296,16 @@ ROLE_PRIMITIVES = {"leg_frame": "u_frame", "back": "slatted_back", "side_frame":
 
 
 def part_role(name: str) -> str:
+    """The role whose words come last in the name, the head noun ("divider
+    rail" is a rail, "shelf bracket" a bracket); on a tie, the first in
+    PART_ROLES."""
     name_n = norm(name)
+    best, best_end = "", -1
     for role, pattern, _ in PART_ROLES:
-        if pattern.search(name_n):
-            return role
-    return ""
+        ends = [m.end() for m in pattern.finditer(name_n)]
+        if ends and max(ends) > best_end:
+            best, best_end = role, max(ends)
+    return best
 
 
 def role_dimensions(role: str, dims_mm: Optional[Tuple[float, float]]) -> List[float]:
@@ -530,6 +540,8 @@ def extract_part_shapes():
 
         name = fastener.get("name", "")
         shape_family = fastener.get("shape_family", "cylinder")
+        # Spellings of a family ("cam_lock") count as the family.
+        shape_family = SHAPE_FAMILY_ALIASES.get(shape_family, shape_family)
 
         if shape_family in {"irregular"}:
             # e.g. Allen key — small tool, not a fastener geometry

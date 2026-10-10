@@ -140,14 +140,23 @@ def replicate_actions(
         same_kind = moving in groups and groups.get(moving) is groups.get(target)
 
         repeat_count = 1
+        group_size = 1
         if not same_kind:
             for end, ref in (("moving", moving), ("target", target)):
                 group = groups.get(ref)
                 if group:
                     shown = copies_shown(action, end, quantities)
                     repeat_count = max(repeat_count, min(len(group), shown or len(group)))
+                    group_size = max(group_size, len(group))
 
-        for pair_index in range(repeat_count):
+        # A page repeating an earlier page's step on the other copies ("two
+        # brackets on these legs", then "two on the others") resolves to the
+        # same first instance; step past the pairs already made until this
+        # action has its own copies.
+        emitted = 0
+        for pair_index in range(group_size if repeat_count > 1 else 1):
+            if emitted == repeat_count:
+                break
             new_action = dict(action)
             new_action["moving_ref"] = paired_uid(moving, pair_index, groups)
             new_action["target_ref"] = paired_uid(target, pair_index, groups)
@@ -162,6 +171,7 @@ def replicate_actions(
                 skipped_duplicates += 1
                 continue
             seen.add(key)
+            emitted += 1
 
             if repeat_count > 1:
                 new_action["action_uid"] = f"{action.get('action_uid', 'ACT')}_R{pair_index}"

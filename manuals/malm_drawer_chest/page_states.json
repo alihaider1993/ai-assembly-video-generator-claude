@@ -1,0 +1,2039 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "MALM chest of 4 drawers: carcass on a low plinth, four equal full-width drawers",
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tip-over warning text. No assembly action."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tools: flat, cross-head and pozidriv screwdrivers, pencil, hammer, drill with 8 mm and 3 mm bits.",
+      "Wall-fixing kit and wall types; two people for heavy parts. No assembly action."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Assemble on a soft surface; ask IKEA if unsure. Wall-fixing kit 370766 contents."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "10038685",
+        "name": "plinth bracket",
+        "visual_description": "metal angle bracket with several holes, at each end of the plinth",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P005_002",
+        "manual_label": "10084399",
+        "name": "drawer runner",
+        "visual_description": "metal drawer runner set 10084399: carcass and drawer halves",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 16,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F005_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 16
+      },
+      {
+        "fastener_uid": "F005_002",
+        "manual_label": "119030",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 16
+      },
+      {
+        "fastener_uid": "F005_003",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 18
+      },
+      {
+        "fastener_uid": "F005_004",
+        "manual_label": "155669",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F005_005",
+        "manual_label": "10048881",
+        "name": "runner screw",
+        "shape_family": "screw",
+        "quantity_visible": 24
+      },
+      {
+        "fastener_uid": "F005_006",
+        "manual_label": "153548",
+        "name": "floor glide",
+        "shape_family": "other",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Bag 1 (carcass). Runner sets 10084399 drawn as 4x sets; each set has a carcass and a drawer runner for both sides, 16 runners in all.",
+      "Panels are not shown in the inventory."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "parts_list",
+    "visible_parts": [],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 16
+      },
+      {
+        "fastener_uid": "F006_002",
+        "manual_label": "110519",
+        "name": "drawer pin",
+        "shape_family": "nail",
+        "quantity_visible": 16
+      },
+      {
+        "fastener_uid": "F006_003",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 16
+      },
+      {
+        "fastener_uid": "F006_004",
+        "manual_label": "119030",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 16
+      },
+      {
+        "fastener_uid": "F006_005",
+        "manual_label": "146114",
+        "name": "drawer runner screw",
+        "shape_family": "screw",
+        "quantity_visible": 24
+      },
+      {
+        "fastener_uid": "F006_006",
+        "manual_label": "10040242",
+        "name": "wire stiffener",
+        "shape_family": "other",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Bag 2 (drawers)."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel (IKEA CR) lying flat, inner face up",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel (IKEA CL) lying flat, inner face up",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P007_003",
+        "manual_label": "10084399",
+        "name": "drawer runner",
+        "visual_description": "carcass drawer runner laid across the side panel",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 8,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "10048881",
+        "name": "runner screw",
+        "shape_family": "screw",
+        "quantity_visible": 24
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T007_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "attach",
+        "moving_part_ref": "P007_003",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 1: 4x drawer runner screwed to the inner face of the right side panel (IKEA CR) with 12x runner screw 10048881; 146114 crossed out"
+      },
+      {
+        "action_uid": "A007_002",
+        "action_type": "attach",
+        "moving_part_ref": "P007_003",
+        "target_part_ref": "P007_002",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 1: 4x drawer runner screwed to the inner face of the left side panel (IKEA CL) with 12x runner screw 10048881"
+      }
+    ],
+    "final_visible_structure": "four runners on each side panel",
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel with runners",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel with runners",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P008_003",
+        "manual_label": "",
+        "name": "front rail",
+        "visual_description": "narrow board running across the front between the side panels, between drawer rows",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and cam lock holes at both ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          764,
+          50,
+          18
+        ]
+      },
+      {
+        "part_uid": "P008_004",
+        "manual_label": "",
+        "name": "back panel",
+        "visual_description": "board closing one half of the back between the side panels",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and cam lock holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          382,
+          12,
+          900
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 12
+      },
+      {
+        "fastener_uid": "F008_002",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 16
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T008_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P008_002",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 2: 12x cam bolt 118331 screwed into the edges of the left side panel and right side panel"
+      },
+      {
+        "action_uid": "A008_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 2: cam bolt 118331 screwed into the right side panel"
+      },
+      {
+        "action_uid": "A008_003",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P008_003",
+        "fastener_ref": "F008_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 3: 16x wooden dowel 101345 pushed into the ends of the four front rails and two back panels"
+      },
+      {
+        "action_uid": "A008_004",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P008_004",
+        "fastener_ref": "F008_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 3: wooden dowel 101345 pushed into the ends of the back panels"
+      }
+    ],
+    "final_visible_structure": "side panels with cam bolts; rails and back panels with dowels",
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel lying flat",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P009_002",
+        "manual_label": "",
+        "name": "front rail",
+        "visual_description": "narrow board running across the front between the side panels, between drawer rows",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and cam lock holes at both ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          764,
+          50,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F009_001",
+        "manual_label": "119030",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T009_001",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A009_001",
+        "action_type": "attach",
+        "moving_part_ref": "P009_002",
+        "target_part_ref": "P009_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 4: 4x front rail stood on the cam bolts along the front edge of the left side panel"
+      },
+      {
+        "action_uid": "A009_002",
+        "action_type": "tighten",
+        "moving_part_ref": "P009_002",
+        "target_part_ref": "P009_001",
+        "fastener_ref": "F009_001",
+        "tool_ref": "T009_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 5: 4x cam lock 119030 turned in the front rails"
+      }
+    ],
+    "final_visible_structure": "four front rails standing on the left side panel",
+    "uncertainties": [
+      "The carcass is built lying on the left side panel; the rails stand upright here and run across the front in the chest."
+    ]
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P010_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel lying flat",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P010_002",
+        "manual_label": "",
+        "name": "back panel",
+        "visual_description": "board closing one half of the back between the side panels",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and cam lock holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          382,
+          12,
+          900
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F010_001",
+        "manual_label": "119030",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T010_001",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A010_001",
+        "action_type": "attach",
+        "moving_part_ref": "P010_002",
+        "target_part_ref": "P010_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 6: 2x back panel stood along the back edge of the left side panel"
+      },
+      {
+        "action_uid": "A010_002",
+        "action_type": "tighten",
+        "moving_part_ref": "P010_002",
+        "target_part_ref": "P010_001",
+        "fastener_ref": "F010_001",
+        "tool_ref": "T010_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 7: 2x cam lock 119030 turned in the back panels"
+      }
+    ],
+    "final_visible_structure": "rails and back panels standing on the left side panel",
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P011_001",
+        "manual_label": "",
+        "name": "plinth",
+        "visual_description": "low board across the front under the bottom panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          764,
+          18,
+          80
+        ]
+      },
+      {
+        "part_uid": "P011_002",
+        "manual_label": "10038685",
+        "name": "plinth bracket",
+        "visual_description": "metal angle bracket with several holes, at each end of the plinth",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F011_001",
+        "manual_label": "155669",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F011_002",
+        "manual_label": "153548",
+        "name": "floor glide",
+        "shape_family": "other",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T011_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A011_001",
+        "action_type": "attach",
+        "moving_part_ref": "P011_002",
+        "target_part_ref": "P011_001",
+        "fastener_ref": "F011_001",
+        "tool_ref": "T011_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 8: 2x plinth bracket 10038685 screwed to the ends of the plinth with 2x bracket screw 155669 each"
+      },
+      {
+        "action_uid": "A011_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P011_001",
+        "fastener_ref": "F011_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 9: 2x floor glide 153548 pressed into the bottom edge of the plinth"
+      }
+    ],
+    "final_visible_structure": "plinth with a bracket at each end and two glides",
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P012_001",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel lowered onto the rails",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P012_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P012_003",
+        "manual_label": "",
+        "name": "plinth",
+        "visual_description": "low board across the front under the bottom panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          764,
+          18,
+          80
+        ]
+      },
+      {
+        "part_uid": "P012_004",
+        "manual_label": "10038685",
+        "name": "plinth bracket",
+        "visual_description": "metal angle bracket with several holes, at each end of the plinth",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P012_005",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel across the foot of the carcass",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          764,
+          460,
+          18
+        ]
+      },
+      {
+        "part_uid": "P012_006",
+        "manual_label": "",
+        "name": "front rail",
+        "visual_description": "narrow board running across the front between the side panels, between drawer rows",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and cam lock holes at both ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          764,
+          50,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F012_001",
+        "manual_label": "155669",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F012_002",
+        "manual_label": "119030",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T012_001",
+        "name": "cross head screwdriver"
+      },
+      {
+        "tool_uid": "T012_002",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A012_001",
+        "action_type": "attach",
+        "moving_part_ref": "P012_001",
+        "target_part_ref": "P012_006",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 10: right side panel lowered onto the free ends of the front rails and back panels"
+      },
+      {
+        "action_uid": "A012_002",
+        "action_type": "attach",
+        "moving_part_ref": "P012_003",
+        "target_part_ref": "P012_002",
+        "fastener_ref": "F012_001",
+        "tool_ref": "T012_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 10: plinth bracket screwed to the left side panel with 2x bracket screw 155669"
+      },
+      {
+        "action_uid": "A012_003",
+        "action_type": "attach",
+        "moving_part_ref": "P012_005",
+        "target_part_ref": "P012_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 11: bottom panel lowered onto the dowels at the foot of the side panels"
+      },
+      {
+        "action_uid": "A012_004",
+        "action_type": "tighten",
+        "moving_part_ref": "P012_005",
+        "target_part_ref": "P012_001",
+        "fastener_ref": "F012_002",
+        "tool_ref": "T012_002",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 12: 6x cam lock 119030 turned in the bottom panel"
+      }
+    ],
+    "final_visible_structure": "carcass upside down: two sides, rails, back panels, plinth and bottom",
+    "uncertainties": [
+      "The carcass has been stood up on its top end; the bottom panel goes on top here."
+    ]
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P013_001",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P013_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P013_003",
+        "manual_label": "",
+        "name": "plinth",
+        "visual_description": "low board across the front under the bottom panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bracket screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          764,
+          18,
+          80
+        ]
+      },
+      {
+        "part_uid": "P013_004",
+        "manual_label": "10038685",
+        "name": "plinth bracket",
+        "visual_description": "metal angle bracket with several holes, at each end of the plinth",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F013_001",
+        "manual_label": "155669",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F013_002",
+        "manual_label": "153548",
+        "name": "floor glide",
+        "shape_family": "other",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T013_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A013_001",
+        "action_type": "attach",
+        "moving_part_ref": "P013_003",
+        "target_part_ref": "P013_001",
+        "fastener_ref": "F013_001",
+        "tool_ref": "T013_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 13: plinth bracket screwed to the right side panel with 2x bracket screw 155669"
+      },
+      {
+        "action_uid": "A013_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P013_002",
+        "fastener_ref": "F013_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 14: 4x floor glide 153548 pressed into the bottom edges of the left side panel and right side panel"
+      }
+    ],
+    "final_visible_structure": "carcass with plinth fixed and glides fitted",
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P014_001",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel lying face down",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes underneath"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          800,
+          480,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F014_001",
+        "manual_label": "106989",
+        "name": "wall fixing bracket",
+        "shape_family": "bracket",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F014_002",
+        "manual_label": "109049",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F014_003",
+        "manual_label": "100823",
+        "name": "washer",
+        "shape_family": "washer",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F014_004",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T014_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A014_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P014_001",
+        "fastener_ref": "F014_001",
+        "tool_ref": "T014_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 15: 2x wall fixing bracket 106989 screwed to the back edge of the top panel with bracket screw 109049 and washer 100823"
+      },
+      {
+        "action_uid": "A014_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P014_001",
+        "fastener_ref": "F014_004",
+        "tool_ref": "T014_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 16: 4x cam bolt 118331 screwed into the underside of the top panel"
+      }
+    ],
+    "final_visible_structure": "top panel with wall fixing brackets and cam bolts",
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P015_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel of the upright carcass",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F015_001",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A015_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P015_001",
+        "fastener_ref": "F015_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 17: 2x wooden dowel 101345 pushed into the top edges of the side panels"
+      }
+    ],
+    "final_visible_structure": "carcass standing upright with dowels in the tops of the sides",
+    "uncertainties": [
+      "The carcass is turned over to stand on its plinth (curved arrow); turning is not a join."
+    ]
+  },
+  {
+    "page_number": 16,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P016_001",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel lowered onto the carcass",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes underneath"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          800,
+          480,
+          18
+        ]
+      },
+      {
+        "part_uid": "P016_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P016_003",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F016_001",
+        "manual_label": "119030",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T016_001",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A016_001",
+        "action_type": "attach",
+        "moving_part_ref": "P016_001",
+        "target_part_ref": "P016_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 18: top panel lowered onto the dowels and cam bolts at the top of the side panels"
+      },
+      {
+        "action_uid": "A016_002",
+        "action_type": "tighten",
+        "moving_part_ref": "P016_001",
+        "target_part_ref": "P016_003",
+        "fastener_ref": "F016_001",
+        "tool_ref": "T016_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 19: 4x cam lock 119030 turned in the side panels"
+      }
+    ],
+    "final_visible_structure": "finished carcass with top",
+    "uncertainties": []
+  },
+  {
+    "page_number": 17,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 20-21: read the wall-fixing leaflet; the wall fixing brackets are bent down and the chest pushed against the wall. No part joins.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 18,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Step 22: drilling and plug guidance for solid, hollow and wooden walls. No assembly action."
+    ]
+  },
+  {
+    "page_number": 19,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Step 23: 2x wall screw 109567 with washer 100823 through the wall fixing brackets into the wall. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 20,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P020_001",
+        "manual_label": "",
+        "name": "drawer front",
+        "visual_description": "drawer front lying face down",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          796,
+          18,
+          235
+        ]
+      },
+      {
+        "part_uid": "P020_002",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer side with a groove for the bottom",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 8,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          440,
+          160
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F020_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F020_002",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T020_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A020_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P020_001",
+        "fastener_ref": "F020_001",
+        "tool_ref": "T020_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 24: 4x cam bolt 118331 screwed into the drawer front, repeat x4 (one per drawer)"
+      },
+      {
+        "action_uid": "A020_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P020_002",
+        "fastener_ref": "F020_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 25: 4x wooden dowel 101345 pushed into the ends of the two drawer sides, repeat x4"
+      }
+    ],
+    "final_visible_structure": "drawer front with cam bolts, drawer sides with dowels",
+    "uncertainties": [
+      "Inset: four drawers are built the same way (4x)."
+    ]
+  },
+  {
+    "page_number": 21,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P021_001",
+        "manual_label": "",
+        "name": "drawer front",
+        "visual_description": "drawer front lying face down",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          796,
+          18,
+          235
+        ]
+      },
+      {
+        "part_uid": "P021_002",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer side with a groove for the bottom",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 8,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          440,
+          160
+        ]
+      },
+      {
+        "part_uid": "P021_003",
+        "manual_label": "",
+        "name": "drawer bottom",
+        "visual_description": "thin drawer bottom slid into the grooves",
+        "shape_family": "panel",
+        "material_hint": "fibreboard",
+        "quantity_visible": 4,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          730,
+          440,
+          3
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F021_001",
+        "manual_label": "119030",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T021_001",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A021_001",
+        "action_type": "attach",
+        "moving_part_ref": "P021_002",
+        "target_part_ref": "P021_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 26: 2x drawer side pushed onto the drawer front, repeat x4"
+      },
+      {
+        "action_uid": "A021_002",
+        "action_type": "tighten",
+        "moving_part_ref": "P021_002",
+        "target_part_ref": "P021_001",
+        "fastener_ref": "F021_001",
+        "tool_ref": "T021_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 27: 4x cam lock 119030 turned in the drawer sides, repeat x4"
+      },
+      {
+        "action_uid": "A021_003",
+        "action_type": "slide",
+        "moving_part_ref": "P021_003",
+        "target_part_ref": "P021_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 28: drawer bottom slid down the grooves of the drawer sides, repeat x4"
+      }
+    ],
+    "final_visible_structure": "drawer front with sides and bottom",
+    "uncertainties": []
+  },
+  {
+    "page_number": 22,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P022_001",
+        "manual_label": "",
+        "name": "drawer back",
+        "visual_description": "drawer back board with a slot for the wire stiffener",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "pin holes at the ends"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          730,
+          12,
+          140
+        ]
+      },
+      {
+        "part_uid": "P022_002",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer side with a groove for the bottom",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 8,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          440,
+          160
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F022_001",
+        "manual_label": "10040242",
+        "name": "wire stiffener",
+        "shape_family": "other",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A022_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P022_001",
+        "fastener_ref": "F022_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 29: wire stiffener 10040242 pushed into the holes in the drawer back, notched end down, repeat x4"
+      },
+      {
+        "action_uid": "A022_002",
+        "action_type": "attach",
+        "moving_part_ref": "P022_001",
+        "target_part_ref": "P022_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 30: drawer back tilted down between the drawer sides over the drawer bottom, repeat x4"
+      }
+    ],
+    "final_visible_structure": "drawer box closed by its back",
+    "uncertainties": []
+  },
+  {
+    "page_number": 23,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P023_001",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer side with a groove for the bottom",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 8,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          440,
+          160
+        ]
+      },
+      {
+        "part_uid": "P023_002",
+        "manual_label": "",
+        "name": "drawer back",
+        "visual_description": "drawer back board with a slot for the wire stiffener",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "pin holes at the ends"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          730,
+          12,
+          140
+        ]
+      },
+      {
+        "part_uid": "P023_003",
+        "manual_label": "10084399",
+        "name": "drawer runner",
+        "visual_description": "drawer runner for the drawer sides",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 8,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F023_001",
+        "manual_label": "110519",
+        "name": "drawer pin",
+        "shape_family": "nail",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F023_002",
+        "manual_label": "146114",
+        "name": "drawer runner screw",
+        "shape_family": "screw",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T023_001",
+        "name": "hammer"
+      },
+      {
+        "tool_uid": "T023_002",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A023_001",
+        "action_type": "insert",
+        "moving_part_ref": "P023_002",
+        "target_part_ref": "P023_001",
+        "fastener_ref": "F023_001",
+        "tool_ref": "T023_001",
+        "direction_hint": "inward",
+        "visual_evidence": "step 31: 4x drawer pin 110519 hammered through the drawer sides into the drawer back, repeat x4"
+      },
+      {
+        "action_uid": "A023_002",
+        "action_type": "attach",
+        "moving_part_ref": "P023_003",
+        "target_part_ref": "P023_001",
+        "fastener_ref": "F023_002",
+        "tool_ref": "T023_002",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 32: drawer runner hooked onto each drawer side and screwed with 6x drawer runner screw 146114, repeat x4"
+      }
+    ],
+    "final_visible_structure": "finished drawer with runners",
+    "uncertainties": []
+  },
+  {
+    "page_number": 24,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P024_001",
+        "manual_label": "",
+        "name": "drawer front",
+        "visual_description": "top drawer, finished",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          796,
+          18,
+          235
+        ]
+      },
+      {
+        "part_uid": "P024_002",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel of the carcass",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the front and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 12,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          18,
+          480,
+          1000
+        ]
+      },
+      {
+        "part_uid": "P024_003",
+        "manual_label": "10084399",
+        "name": "drawer runner",
+        "visual_description": "carcass runner of the top drawer",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F024_001",
+        "manual_label": "",
+        "name": "anti-tip catch",
+        "shape_family": "other",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A024_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P024_003",
+        "fastener_ref": "F024_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 33: 1x anti-tip catch clipped onto the carcass drawer runner of each drawer, repeat x4 (steps 33, 35, 37, 39)"
+      },
+      {
+        "action_uid": "A024_002",
+        "action_type": "slide",
+        "moving_part_ref": "P024_001",
+        "target_part_ref": "P024_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 34: finished drawer put on the carcass runners and pushed in, top drawer first, repeat x4"
+      }
+    ],
+    "final_visible_structure": "top drawer in place",
+    "uncertainties": [
+      "Info: fill the drawers from the bottom up; never pull out more than one drawer at a time.",
+      "Pages 25-27 (steps 35-40) fit the anti-tip catch and push in the other three drawers the same way."
+    ]
+  },
+  {
+    "page_number": 25,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 35-36: second drawer, same as steps 33-34."
+    ]
+  },
+  {
+    "page_number": 26,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 37-38: third drawer, same as steps 33-34."
+    ]
+  },
+  {
+    "page_number": 27,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 39-40: bottom drawer, same as steps 33-34."
+    ]
+  },
+  {
+    "page_number": 28,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Adjusting the drawer runners (insets 2 and 3). No part joins."
+    ]
+  }
+]

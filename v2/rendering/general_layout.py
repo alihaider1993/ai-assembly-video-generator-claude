@@ -53,6 +53,9 @@ TOUCH = 1e-4
 # Brackets slide toward the middle in steps of this size until they are clear
 # of the parts at the corner.
 PUSH_STEP = 0.005
+# A clothes rail hangs this far under the top of the panels it spans.
+HANGING_RAIL_DROP = 0.1
+HANGING_WORDS = {"clothes", "hanging", "hanger"}
 PUSH_LIMIT = 400
 # Fasteners at one host part are spread this far apart.
 FASTENER_SPREAD = 0.04
@@ -329,6 +332,13 @@ class GeneralLayout:
         self.kind = {uid: part_kind(s) for uid, s in self.parts.items()}
         self.words = {uid: name_words(s) for uid, s in self.parts.items()}
         self.links = part_links(graph, self.parts)
+        # A board or bar with no role joined only to beams (the centre
+        # upright of a headboard, between its rails) is a stile: not a wall
+        # or post of the frame, placed in the middle of those beams.
+        for uid, shape in self.parts.items():
+            if self.kind[uid] in ("wall", "upright") and not shape.get("role") and self.links[uid] \
+                    and all(self.kind.get(o) == "beam" for o in self.links[uid]):
+                self.kind[uid] = "stile"
         self.orient_panels()
         self.groups = sibling_groups(self.parts, self.parts)
         self.group_of = {uid: g for g in self.groups for uid in g}
@@ -676,6 +686,10 @@ class GeneralLayout:
     # -- placement --
 
     def compute(self) -> Dict[str, Any]:
+        self.place_all()
+        return self.finish()
+
+    def place_all(self) -> None:
         self.place_bodies()
         self.floor = max(self.floor, self.carcass_floor())
         width, depth, plate = self.footprint()
@@ -718,17 +732,22 @@ class GeneralLayout:
         self.place_frame_beams(plan, chains, cx, cy, width, depth, frame_top, corner_top)
         for group in sorted(ladders, key=lambda g: -len(g)):
             self.place_ladder(group, frame_top)
+        self.place_stiles()
+        self.place_leg_shelves(corners)
         self.place_blocks()
         self.place_shelves()
+        self.carcass_rails()
+        self.place_hanging_rails()
         self.place_fittings()
-        for uid in self.of_kind("plate"):
+        # Tops first, so plates under them can tell when they would run
+        # into one.
+        for uid in sorted(self.of_kind("plate"), key=lambda u: self.role(u) not in ("top", "lid")):
             if not self.placed(uid):
                 self.place_plate(uid, frame_top)
+        self.place_plate_edges()
         for uid in sorted(self.parts):
             if not self.placed(uid):
                 self.place_leftover(uid)
-
-        return self.finish()
 
     def plan_beams(self, long_axis: int) -> Tuple[Dict[str, Dict[str, Any]], List[List[str]]]:
         """Which line each frame beam runs along: {uid: axis, and an edge
@@ -801,6 +820,13 @@ class GeneralLayout:
                         continue
                     spare = min(reversed(crowded), key=lambda u: len(self.links[u] & set(corners)))
                     plan[spare]["side"] = side
+        # A beam joined to nothing but one edge beam along the same axis (a
+        # metal ledge screwed inside a bed's side rail) runs on that edge.
+        for uid, p in plan.items():
+            if "interior" in p and len(self.links[uid]) == 1:
+                q = plan.get(next(iter(self.links[uid])))
+                if q and q["axis"] == p["axis"] and q.get("side"):
+                    plan[uid] = {"axis": p["axis"], "side": q["side"], "why": "beside"}
         return plan, ladders
 
     def panels_between_legs(self, cx: float, cy: float, up_half: List[float]) -> None:
@@ -969,7 +995,19 @@ class GeneralLayout:
             # rail down the middle of a bed is not part of its headboard).
             plain = [u for u in stack if not (self.words[u] & (TOP_WORDS | BOTTOM_WORDS))
                      and self.role(u) not in ("stretcher", "plinth")
-                     and (not ends or self.links[u] & set(ends))]
+                     and ends and self.links[u] & set(ends)]
+
+            # Short rails named left and right in equal numbers on a line
+            # across (either side of a headboard's centre upright) are
+            # stacked in rows, each pair at one height, one in each half.
+            half_of = {u: word_side(self.words[u], X_WORDS) for u in members} if axis == 0 else {}
+            # Left and right beams sharing a line across each fill their own
+            # half of it (a cross rail from each side to a centre rail).
+            halves = set(half_of.values()) >= {-1, 1}
+            split = len(plain) > 1 and all(half_of.get(u, 0) for u in plain) and [half_of.get(u, 0) for u in plain].count(-1) * 2 == len(plain)
+            pairs = list(zip([u for u in plain if half_of[u] < 0], [u for u in plain if half_of[u] > 0])) if split else []
+            if split:
+                plain = [left for left, _ in pairs]
 
             # Several beams on one edge between tall posts: stacked with even
             # gaps from just under the posts' tops down to the lower rails.
@@ -987,6 +1025,9 @@ class GeneralLayout:
                 for uid, h in zip(plain, plain_h):
                     stacked[uid] = z
                     z -= h + gap
+            for left, right in pairs:
+                if left in stacked:
+                    stacked[right] = stacked[left]
 
             for uid in stack:
                 length, thickness, height = self.dims(uid)
@@ -1006,7 +1047,12 @@ class GeneralLayout:
                     # resting on the box sides is not at the height of whatever
                     # else stands on its line.
                     walls = [w for w in self.links[uid] if self.placed(w) and self.kind.get(w) == "wall"]
-                    if walls:
+                    holds_top = any(self.role(o) in ("top", "lid") for o in self.links[uid])
+                    if walls and holds_top:
+                        # The top is fixed to it (a desk's side rail): right
+                        # under the top, not at a side frame's seat height.
+                        z_top = min(self.frame.top(w) for w in walls)
+                    elif walls:
                         z_top = min(self.attach_level(w) for w in walls)
                     elif verticals:
                         z_top = line_low
@@ -1022,6 +1068,11 @@ class GeneralLayout:
                 reach = (width if axis == 0 else depth) / 2
                 if words & TOP_WORDS:
                     low, high = -reach, reach
+                elif halves and half_of[uid]:
+                    # Its half: from the part at its end to the middle.
+                    limit = (-reach, 0.0) if half_of[uid] < 0 else (0.0, reach)
+                    center[axis] = half_of[uid] * reach / 2
+                    low, high = self.frame.free_run(axis, center, half, limit)
                 else:
                     low, high = self.frame.free_run(axis, center, half, (along - reach, along + reach) if along else (-reach, reach))
                     if high - low < 0.02:
@@ -1172,6 +1223,63 @@ class GeneralLayout:
                               "inset": (self.frame.half(b)[0], self.frame.half(a)[1])})
         return sorted(slots, key=lambda s: (round(s["y"], 3), round(s["x"], 3), round(s["level"], 3)))
 
+    def place_stiles(self) -> None:
+        """Each stile stands in the middle of the beams it is joined to,
+        from the lowest to the highest of them."""
+        for uid in self.of_kind("stile", unplaced=True):
+            beams = self.linked(uid, ("beam",))
+            if not beams:
+                continue
+            boxes = [self.frame.box(o) for o in beams]
+            lo = [min(b[0][i] for b in boxes) for i in range(3)]
+            hi = [max(b[1][i] for b in boxes) for i in range(3)]
+            self.frame.put(uid, [(lo[i] + hi[i]) / 2 for i in range(3)])
+
+    def place_leg_shelves(self, corners: List[str]) -> None:
+        """A shelf between a table's legs (no side walls to span): joined to
+        the legs, or to brackets on them. Shelves are spread evenly between
+        the floor and what the legs hold up, like a carcass's, never wider
+        than the gap between the legs; their brackets go on the legs' inner
+        faces just under them."""
+        if len(self.walls()[0]) >= 2:
+            return
+        legs = [u for u in corners if self.placed(u) and self.kind[u] == "upright"]
+        if len(legs) < 2:
+            return
+        legs_set = set(legs)
+
+        def holders(uid: str) -> List[str]:
+            return [b for b in self.links[uid] if self.kind[b] == "block" and self.links[b] & legs_set]
+
+        shelves = [u for u in self.with_role("shelf")
+                   if not self.placed(u) and (self.links[u] & legs_set or holders(u))]
+        if not shelves:
+            return
+        leg_top = max(self.frame.top(u) for u in legs)
+        # Under the top and the rails the legs hold up.
+        above = [self.frame.box(u)[0][2] for u in self.frame.final
+                 if self.kind.get(u) in ("beam", "plate") and self.frame.box(u)[0][2] >= leg_top / 2]
+        high = min(above + [leg_top])
+        low = self.floor if self.floor else STACK_BOTTOM_MARGIN
+        boxes = [self.frame.box(u) for u in legs]
+        inner = [min(b[0][axis] for b in boxes if (b[0][axis] + b[1][axis]) > 0) -
+                 max(b[1][axis] for b in boxes if (b[0][axis] + b[1][axis]) < 0) for axis in (0, 1)]
+        for k, uid in enumerate(shelves):
+            w, d, t = self.dims(uid)
+            z = low + (high - low) * (k + 1) / (len(shelves) + 1)
+            scale = [inner[0] / w, inner[1] / d, 1.0] if not is_measured(self.parts[uid]) else \
+                [min(1.0, inner[0] / w), min(1.0, inner[1] / d), 1.0]
+            self.frame.put(uid, [0.0, 0.0, z], scale=scale)
+            under = self.frame.box(uid)[0][2]
+            for b in holders(uid):
+                if self.placed(b):
+                    continue
+                leg = next(iter(self.links[b] & legs_set))
+                (lx, ly, _), (hx, hy, _) = self.frame.half(leg), self.frame.half(b)
+                cx, cy, _ = self.frame.final[leg]
+                sx = 1 if cx >= 0 else -1
+                self.frame.put(b, [cx - sx * (lx + hx), cy, under - self.frame.half(b)[2]])
+
     def place_blocks(self) -> None:
         """Brackets: each in a different inside corner, the corners that
         touch the most of the parts it is joined to first, slid toward the
@@ -1252,7 +1360,12 @@ class GeneralLayout:
         beams = [o for o in joined if self.kind[o] == "beam"]
         point[2] = min((self.frame.top(b) for b in beams), default=point[2] + bz / 2) - bz / 2
         self.frame.put(uid, point)
-        self.push_clear(uid, [-point[0], -point[1]])
+        # Pushed toward the middle, but not off a joined beam running that
+        # way (a holder under the end of a centre rail would slide along
+        # the whole rail).
+        push = 0 if abs(point[0]) > abs(point[1]) else 1
+        along = [b for b in beams if (0 if self.frame.half(b)[0] >= self.frame.half(b)[1] else 1) == push]
+        self.push_clear(uid, [-point[0], -point[1]], ignore=along)
 
     def push_clear(self, uid: str, direction: Sequence[float], ignore: Iterable[str] = ()) -> None:
         """Slide a part along `direction` (horizontal) until it overlaps
@@ -1294,8 +1407,10 @@ class GeneralLayout:
         uprights = set(side_walls) | set(dividers)
         wall_h = min(self.dims(w)[2] for w in side_walls)
         self.short_dividers = {d for d in dividers if is_measured(self.parts[d]) and self.dims(d)[2] < 0.6 * wall_h}
-        spanning = [u for u in self.of_kind("plate", unplaced=True)
-                    if len(self.links[u] & uprights) >= 2 or self.role(u) in ("shelf", "top", "lid")]
+        # A seat or cushion between two uprights (a chair's back legs) rests
+        # on its rails instead; it is not a carcass shelf.
+        spanning = [u for u in self.of_kind("plate", unplaced=True) if self.role(u) not in ("seat", "cushion")
+                    and (len(self.links[u] & uprights) >= 2 or self.role(u) in ("shelf", "top", "lid"))]
         wall_top = min(self.frame.top(w) for w in side_walls)
         y = sum(self.frame.final[w][1] for w in side_walls) / len(side_walls)
         left = min(self.frame.box(w)[1][0] for w in side_walls)
@@ -1366,6 +1481,79 @@ class GeneralLayout:
                 scale = None if is_measured(self.parts[uid]) else [(x1 - x0) / w, 1.0, 1.0]
                 self.frame.put(uid, [(x0 + x1) / 2, y, z], scale=scale)
 
+    def carcass_rails(self) -> None:
+        """Rails across a carcass's front or back joined to its panels: one
+        named top runs just under the top of the panels and one named
+        bottom at their foot; when a rail comes in as many copies as there
+        are compartments between the sides and full dividers, each copy
+        spans its own compartment."""
+        side_walls = [w for w in self.walls()[0] if self.placed(w) and self.role(w) != "side_frame"]
+        if len(side_walls) < 2:
+            return
+        uprights = sorted(side_walls + self.full_dividers(), key=lambda w: self.frame.final[w][0])
+        bays = [(self.frame.box(a)[1][0], self.frame.box(b)[0][0]) for a, b in zip(uprights, uprights[1:])]
+        wall_top = min(self.frame.top(w) for w in side_walls)
+        wall_low = max(self.frame.box(w)[0][2] for w in side_walls)
+        for group in sibling_groups(self.of_kind("beam"), self.parts):
+            group = [u for u in group if self.placed(u) and self.links[u] & set(uprights)
+                     and abs(self.frame.rotation.get(u, [0.0, 0.0, 0.0])[2]) < 1e-6]
+            if not group:
+                continue
+            if self.words[group[0]] & HANGING_WORDS:
+                continue
+            h = self.dims(group[0])[2]
+            words = self.words[group[0]]
+            # Copies laid on top of each other (same height and face) share
+            # out the compartments; copies at different heights each span.
+            spots = {(round(self.frame.final[u][1], 3), round(self.frame.final[u][2], 3)) for u in group}
+            in_bays = len(group) == len(bays) > 1 and len(spots) == 1
+            for k, uid in enumerate(group):
+                center = list(self.frame.final[uid])
+                if words & TOP_WORDS:
+                    center[2] = wall_top - h / 2
+                elif words & BOTTOM_WORDS:
+                    center[2] = wall_low + h / 2
+                scale = self.frame.scale.get(uid)
+                if in_bays:
+                    x0, x1 = bays[k]
+                    center[0] = (x0 + x1) / 2
+                    scale = [(x1 - x0) / self.dims(uid)[0], 1.0, 1.0]
+                self.frame.put(uid, center, self.frame.rotation.get(uid), scale)
+
+    def place_hanging_rails(self) -> None:
+        """A beam joined only to holders (brackets) on the carcass's upright
+        panels, or named a clothes or hanging rail, is a hanging rail: each in its own
+        compartment between neighbouring panels, across it, a little under
+        the top, with its holders at its two ends on those panels."""
+        uprights = sorted([w for w in self.walls()[0] if self.placed(w) and self.role(w) != "side_frame"]
+                          + self.full_dividers(), key=lambda w: self.frame.final[w][0])
+        if len(uprights) < 2:
+            return
+        rails = [u for u in self.of_kind("beam") if self.links[u]
+                 and (all(self.kind.get(o) == "block" for o in self.links[u]) or self.words[u] & HANGING_WORDS)]
+        if not rails:
+            return
+        bays = [(uprights[i], uprights[i + 1]) for i in range(len(uprights) - 1)]
+        top = min(self.frame.top(w) for w in uprights)
+        used: Set[int] = set()
+        for uid in rails:
+            holders = sorted(o for o in self.links[uid] if self.kind.get(o) == "block")
+            walls = {w for h in holders for w in self.links[h]} | (self.links[uid] - set(holders))
+            fits = [i for i, (a, b) in enumerate(bays) if i not in used and {a, b} & walls]
+            free = [i for i in range(len(bays)) if i not in used] or list(range(len(bays)))
+            bay = (fits or free)[0]
+            used.add(bay)
+            a, b = bays[bay]
+            x0, x1 = self.frame.box(a)[1][0], self.frame.box(b)[0][0]
+            length, thickness, height = self.dims(uid)
+            z = top - HANGING_RAIL_DROP
+            y = sum(self.frame.final[w][1] for w in (a, b)) / 2
+            self.frame.put(uid, [(x0 + x1) / 2, y, z], [0.0, 0.0, 0.0], [(x1 - x0) / length, 1.0, 1.0])
+            for k, h in enumerate(holders[:2]):
+                hx = self.frame.half(h)[0]
+                x = x0 + hx if k == 0 else x1 - hx
+                self.frame.put(h, [x, y, z])
+
     def full_dividers(self) -> List[str]:
         """Placed dividers that run the carcass's full height (not a short
         one closing a low compartment); these split doors and drawers."""
@@ -1402,6 +1590,9 @@ class GeneralLayout:
         drawers = [u for u in self.with_role("drawer_front") if not self.placed(u)]
         doors = [u for u in self.with_role("door") if not self.placed(u)]
         fronts: List[str] = []
+        if opening and drawers and not doors and self.front_closed():
+            self.place_side_drawers(drawers)
+            fronts, drawers = list(drawers), []
         if opening and (drawers or doors):
             x0, x1, z0, z1, front, back = opening
             band = z0
@@ -1421,6 +1612,38 @@ class GeneralLayout:
         self.place_hinges([u for u in fronts if self.role(u) == "door"])
         self.place_handles(fronts)
         self.place_back_cushions()
+
+    def front_closed(self) -> bool:
+        """The front face is a solid board (a bed's footboard) and the side
+        walls are the long faces, with no drawer box parts to build behind
+        the fronts: drawers then open in the sides (a storage bed)."""
+        side_walls = [w for w in self.walls()[0] if self.placed(w)]
+        end_walls = [w for w in self.walls()[1] if self.placed(w)]
+        if len(side_walls) < 2 or self.with_role("drawer_side", "drawer_back", "drawer_bottom"):
+            return False
+        front = [w for w in end_walls if self.frame.final[w][1] < 0 and self.role(w) not in ("back_panel",)]
+        long_sides = all(self.dims(w)[1] > self.dims(w)[0] * 1.5 and self.dims(w)[1] > 1.5 * self.dims(w)[2] for w in side_walls)
+        return bool(front) and long_sides
+
+    def place_side_drawers(self, drawers: List[str]) -> None:
+        """Drawer fronts in the outer faces of the two side walls, half on
+        each, spread along them, turned to face out, at the foot of the
+        walls."""
+        side_walls = sorted((w for w in self.walls()[0] if self.placed(w)), key=lambda w: self.frame.final[w][0])
+        walls = [side_walls[0], side_walls[-1]]
+        per_side = [drawers[k::2] for k in range(2)]
+        for wall, members in zip(walls, per_side):
+            if not members:
+                continue
+            lo, hi = self.frame.box(wall)
+            out = -1 if self.frame.final[wall][0] < 0 else 1
+            n = len(members)
+            for k, uid in enumerate(members):
+                w, t, h = self.dims(uid)
+                y = lo[1] + (hi[1] - lo[1]) * (k + 0.5) / n
+                z = lo[2] + h / 2 + STACK_BOTTOM_MARGIN
+                x = (hi[0] if out > 0 else lo[0]) + out * t / 2
+                self.frame.put(uid, [x, y, z], [0.0, 0.0, 90.0])
 
     def pack_drawers(self, drawers: List[str], x0: float, x1: float, z0: float, z1: float,
                      band: bool) -> Dict[str, Tuple[float, float, float, float]]:
@@ -1454,7 +1677,10 @@ class GeneralLayout:
                     rows.append([uid])
                     used = w
             heights = [max(self.dims(u)[2] for u in row) for row in rows]
-            bottom = z1 - min(0.5 * (z1 - z0), sum(heights)) if band else z0
+            # Sized drawers that fill well under half the opening (a desk's
+            # drawer) keep their height and hang under the top.
+            hang = all(is_measured(self.parts[u]) for u in members) and sum(heights) < 0.5 * (z1 - z0)
+            bottom = z1 - min(0.5 * (z1 - z0), sum(heights)) if band or hang else z0
             stretch = (z1 - bottom) / sum(heights)
             top = z1
             for row, h in zip(rows, heights):
@@ -1744,7 +1970,8 @@ class GeneralLayout:
     def place_plate(self, uid: str, frame_top: float) -> None:
         """A seat or other plate: on top of the highest part it is joined
         to, centred over them."""
-        joined = self.linked(uid)
+        # Its own edge strips (beams joined to nothing else) don't hold it.
+        joined = [o for o in self.linked(uid) if not self.is_edge_strip(o, uid)]
         t = self.dims(uid)[2]
         if not joined:
             self.frame.put(uid, [0.0, 0.0, frame_top + t / 2])
@@ -1773,6 +2000,52 @@ class GeneralLayout:
             scale = [(hhi[0] - hlo[0]) / w, (hhi[1] - hlo[1]) / d, 1.0]
             center[0], center[1] = (hlo[0] + hhi[0]) / 2, (hlo[1] + hhi[1]) / 2
         self.frame.put(uid, center, scale=scale)
+        # Resting on its beams it runs into another plate (a shelf joined to
+        # rails under a desk top): it hangs under them instead.
+        beams = [o for o in resting if self.kind[o] == "beam"]
+        lo, hi = self.frame.box(uid)
+        if beams and any(self.kind.get(o) == "plate" for o in self.frame.colliders(lo, hi, ignore=[uid, *joined])):
+            center[2] = min(self.frame.box(o)[0][2] for o in beams) - t / 2
+            # Hung from beams much narrower than itself: against them,
+            # reaching toward the middle.
+            for axis in (0, 1):
+                blo = min(self.frame.box(o)[0][axis] for o in beams)
+                bhi = max(self.frame.box(o)[1][axis] for o in beams)
+                reach = self.frame.half(uid)[axis]
+                if bhi - blo < reach and abs(blo + bhi) > 1e-6:
+                    center[axis] = blo - reach if blo + bhi > 0 else bhi + reach
+            self.frame.put(uid, center, scale=scale)
+
+    def is_edge_strip(self, beam: str, plate: str) -> bool:
+        """A beam joined to nothing but one shelf-like plate (not a top, lid
+        or seat, whose own rails hang under them)."""
+        return (self.kind.get(beam) == "beam" and self.links[beam] == {plate} and self.kind.get(plate) == "plate"
+                and self.role(plate) not in ("top", "lid", "seat"))
+
+    def place_plate_edges(self) -> None:
+        """Edge strips (is_edge_strip, a lip on a shelf): along the plate's
+        longer side, on the edge away from the beams it hangs from,
+        standing on it."""
+        for uid in self.of_kind("beam"):
+            if len(self.links[uid]) != 1:
+                continue
+            plate = next(iter(self.links[uid]))
+            if not self.is_edge_strip(uid, plate) or not self.placed(plate):
+                continue
+            lo, hi = self.frame.box(plate)
+            axis = 0 if hi[0] - lo[0] >= hi[1] - lo[1] else 1
+            cross = 1 - axis
+            mid = (lo[cross] + hi[cross]) / 2
+            # The beams it hangs from say which edge is its back.
+            others = [o for o in self.links[plate] if o != uid and self.placed(o)]
+            others = [self.frame.final[o][cross] for o in [o for o in others if self.kind[o] == "beam"] or others]
+            side = -1 if others and sum(others) / len(others) > mid else 1
+            length, thickness, height = self.dims(uid)
+            center = [0.0, 0.0, hi[2] + height / 2]
+            center[axis] = (lo[axis] + hi[axis]) / 2
+            center[cross] = (lo[cross] if side < 0 else hi[cross]) - side * thickness / 2
+            self.frame.put(uid, center, [0.0, 0.0, 0.0 if axis == 0 else 90.0],
+                           [(hi[axis] - lo[axis]) / length, 1.0, 1.0])
 
     def place_leftover(self, uid: str) -> None:
         """Anything no rule placed: on top of the first placed part it is
@@ -1825,7 +2098,9 @@ class GeneralLayout:
         height = max((frame.top(u) for u in self.parts if u in frame.final), default=1.0)
         base = base_part(self.motion, self.structural())
         pivot = None
-        if base in frame.final and frame.box(base)[0][2] >= height / 2:
+        # Only a plate that ends up on top (a table top lying face down) is
+        # built on; a rail on top of posts (a headboard) is built upright.
+        if base in frame.final and self.kind.get(base) == "plate" and frame.box(base)[0][2] >= height / 2:
             # Built upside down from a part that ends up on top: lay it all
             # out turned 180 degrees about X through the middle; the finale
             # turns it back.
@@ -1853,7 +2128,64 @@ def compute_general_positions(shapes: Dict[str, Dict[str, Any]], graph: Dict[str
     layout = GeneralLayout(shapes, graph, motion)
     if not layout.parts:
         return None
-    return layout.compute()
+    upper = upper_unit(layout)
+    if not upper:
+        return layout.compute()
+
+    # A unit standing on another (a shelf unit on a chest): each laid out as
+    # its own carcass, then the upper one set on the lower one's top with
+    # their backs in line.
+    def subgraph(keep: Set[str]) -> Dict[str, Any]:
+        return {**graph, "parts": [p for p in graph.get("parts", []) if p.get("part_uid") in keep]}
+
+    lower = GeneralLayout(shapes, subgraph(set(layout.parts) - upper), motion)
+    top = GeneralLayout(shapes, subgraph(upper), motion)
+    lower.place_all()
+    top.place_all()
+    lower_boxes = [lower.frame.box(u) for u in lower.frame.final]
+    top_boxes = [top.frame.box(u) for u in top.frame.final]
+    lift = max(b[1][2] for b in lower_boxes) - min(b[0][2] for b in top_boxes)
+    back = max(b[1][1] for b in lower_boxes) - max(b[1][1] for b in top_boxes)
+    for uid, (x, y, z) in top.frame.final.items():
+        lower.frame.final[uid] = [x, y + back, z + lift]
+        lower.frame.rotation[uid] = top.frame.rotation.get(uid, [0.0, 0.0, 0.0])
+        if uid in top.frame.scale:
+            lower.frame.scale[uid] = top.frame.scale[uid]
+        if uid in top.frame.base_rotation:
+            lower.frame.base_rotation[uid] = top.frame.base_rotation[uid]
+    for attr in ("parts", "kind", "words"):
+        getattr(lower, attr).update(getattr(top, attr))
+    lower.graph = graph
+    lower.links = part_links(graph, lower.parts)
+    lower.groups = sibling_groups(lower.parts, lower.parts)
+    lower.group_of = {uid: g for g in lower.groups for uid in g}
+    return lower.finish()
+
+
+def upper_unit(layout: "GeneralLayout") -> Set[str]:
+    """Parts of a unit that stands on another: side walls each joined to a
+    taller side wall on the same side (a shelf unit's sides screwed to a
+    chest's), and the parts reached from them without passing through the
+    lower walls. Empty when there is none, or when that would take most of
+    the piece."""
+    side_walls = layout.walls()[0]
+    upper, lower = set(), set()
+    for uid in side_walls:
+        side = word_side(layout.words[uid], X_WORDS)
+        for other in layout.links[uid]:
+            if other in side_walls and side and word_side(layout.words[other], X_WORDS) == side \
+                    and layout.dims(other)[2] > layout.dims(uid)[2] * 1.2:
+                upper.add(uid)
+                lower.add(other)
+    if not upper:
+        return set()
+    group, todo = set(upper), list(upper)
+    while todo:
+        for other in layout.links[todo.pop()]:
+            if other not in group and other not in lower:
+                group.add(other)
+                todo.append(other)
+    return group if len(group) < len(layout.parts) / 2 else set()
 
 
 # --- fasteners and start positions (shared with scene_layout_engine) ---------

@@ -1,0 +1,978 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "BILLY bookcase: two tall side panels, top, bottom on a plinth, hardboard back and two shelves",
+    "uncertainties": [
+      "Cover shows the bookcase in two widths; described as the 80 cm one."
+    ]
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tip-over warning in many languages. No assembly action."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tip-over warning, continued."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tip-over warning, continued."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tools (screwdrivers, hammer, awl); soft surface; ask IKEA; fix to the wall."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "parts_list",
+    "visible_parts": [],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F006_002",
+        "manual_label": "101351",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 12
+      },
+      {
+        "fastener_uid": "F006_003",
+        "manual_label": "101201",
+        "name": "nail",
+        "shape_family": "nail",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F006_004",
+        "manual_label": "119081",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F006_005",
+        "manual_label": "131372",
+        "name": "shelf pin",
+        "shape_family": "plug",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F006_006",
+        "manual_label": "109041",
+        "name": "wall bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F006_007",
+        "manual_label": "100823",
+        "name": "washer",
+        "shape_family": "washer",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F006_008",
+        "manual_label": "106989",
+        "name": "wall fixing bracket",
+        "shape_family": "bracket",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Panels are not shown in the inventory; only hardware."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove along its back edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          770,
+          280,
+          15
+        ]
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove along its back edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          770,
+          260,
+          15
+        ]
+      },
+      {
+        "part_uid": "P007_003",
+        "manual_label": "",
+        "name": "plinth",
+        "visual_description": "narrow kick board across the front under the bottom panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes in the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          770,
+          15,
+          60
+        ]
+      },
+      {
+        "part_uid": "P007_004",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel lying flat",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes at top and bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 40,
+            "location_hint": "two rows of shelf pin holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove along the back edge for the back panel"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          15,
+          280,
+          1060
+        ]
+      },
+      {
+        "part_uid": "P007_005",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel lying flat",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes at top and bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 40,
+            "location_hint": "two rows of shelf pin holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove along the back edge for the back panel"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          15,
+          280,
+          1060
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "101351",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 12
+      },
+      {
+        "fastener_uid": "F007_002",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T007_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 1: 12x wooden dowel 101351 pushed into the ends of the top panel, bottom panel and plinth"
+      },
+      {
+        "action_uid": "A007_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P007_002",
+        "fastener_ref": "F007_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 1: wooden dowel 101351 into the bottom panel"
+      },
+      {
+        "action_uid": "A007_003",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P007_003",
+        "fastener_ref": "F007_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 1: wooden dowel 101351 into the plinth"
+      },
+      {
+        "action_uid": "A007_004",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P007_004",
+        "fastener_ref": "F007_002",
+        "tool_ref": "T007_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 2: 8x cam bolt 118331 screwed into the left side panel and right side panel"
+      },
+      {
+        "action_uid": "A007_005",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P007_005",
+        "fastener_ref": "F007_002",
+        "tool_ref": "T007_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 2: cam bolt 118331 into the right side panel"
+      }
+    ],
+    "final_visible_structure": "boards with dowels, side panels with cam bolts",
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel lying flat",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes at top and bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 40,
+            "location_hint": "two rows of shelf pin holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove along the back edge for the back panel"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          15,
+          280,
+          1060
+        ]
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove along its back edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          770,
+          280,
+          15
+        ]
+      },
+      {
+        "part_uid": "P008_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove along its back edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          770,
+          260,
+          15
+        ]
+      },
+      {
+        "part_uid": "P008_004",
+        "manual_label": "",
+        "name": "plinth",
+        "visual_description": "narrow kick board across the front under the bottom panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes in the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          770,
+          15,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "119081",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T008_001",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "attach",
+        "moving_part_ref": "P008_003",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 3: bottom panel stood on the cam bolts of the left side panel, groove to the back"
+      },
+      {
+        "action_uid": "A008_002",
+        "action_type": "attach",
+        "moving_part_ref": "P008_004",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 3: plinth stood in front of the bottom panel on the left side panel"
+      },
+      {
+        "action_uid": "A008_003",
+        "action_type": "attach",
+        "moving_part_ref": "P008_002",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 3: top panel stood at the other end of the left side panel, groove to the back"
+      },
+      {
+        "action_uid": "A008_004",
+        "action_type": "tighten",
+        "moving_part_ref": "P008_002",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 4: 4x cam lock 119081 turned in the top panel and bottom panel"
+      }
+    ],
+    "final_visible_structure": "top, bottom and plinth standing on the left side panel",
+    "uncertainties": [
+      "The carcass is built lying on its side; inset shows the groove edge facing the right way."
+    ]
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel lowered on",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes at top and bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 40,
+            "location_hint": "two rows of shelf pin holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove along the back edge for the back panel"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          15,
+          280,
+          1060
+        ]
+      },
+      {
+        "part_uid": "P009_002",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove along its back edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          770,
+          280,
+          15
+        ]
+      },
+      {
+        "part_uid": "P009_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove along its back edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          770,
+          260,
+          15
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F009_001",
+        "manual_label": "119081",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T009_001",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A009_001",
+        "action_type": "attach",
+        "moving_part_ref": "P009_001",
+        "target_part_ref": "P009_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 5: right side panel lowered onto the dowels of the top panel, bottom panel and plinth"
+      },
+      {
+        "action_uid": "A009_002",
+        "action_type": "tighten",
+        "moving_part_ref": "P009_001",
+        "target_part_ref": "P009_003",
+        "fastener_ref": "F009_001",
+        "tool_ref": "T009_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 6: 4x cam lock 119081 turned in the top panel and bottom panel"
+      }
+    ],
+    "final_visible_structure": "carcass box lying on its side",
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P010_001",
+        "manual_label": "",
+        "name": "back panel",
+        "visual_description": "folded hardboard back panel",
+        "shape_family": "panel",
+        "material_hint": "fibreboard",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          790,
+          3,
+          1050
+        ]
+      },
+      {
+        "part_uid": "P010_002",
+        "manual_label": "",
+        "name": "top panel",
+        "visual_description": "top panel with a groove along its back edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          770,
+          280,
+          15
+        ]
+      },
+      {
+        "part_uid": "P010_003",
+        "manual_label": "",
+        "name": "bottom panel",
+        "visual_description": "bottom panel with a groove along its back edge",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes in the ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          770,
+          260,
+          15
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F010_001",
+        "manual_label": "101201",
+        "name": "nail",
+        "shape_family": "nail",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T010_001",
+        "name": "hammer"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A010_001",
+        "action_type": "slide",
+        "moving_part_ref": "P010_001",
+        "target_part_ref": "P010_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 7: back panel unfolded and slid into the grooves of the side panels, top panel and bottom panel"
+      },
+      {
+        "action_uid": "A010_002",
+        "action_type": "insert",
+        "moving_part_ref": "P010_001",
+        "target_part_ref": "P010_003",
+        "fastener_ref": "F010_001",
+        "tool_ref": "T010_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 7: 4x nail 101201 hammered through the back panel into the bottom panel and top panel"
+      }
+    ],
+    "final_visible_structure": "carcass with back panel, then stood upright",
+    "uncertainties": [
+      "Lower right: the carcass is turned to stand upright; turning is not a join."
+    ]
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 8-9: tip-over warning; marking the wall and fixing the wall fixing brackets 106989 to the wall with screws and washers 100823. The wall is not a part.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 10-11: bookcase pushed against the wall and the brackets screwed to the top panel with screw 109041 and washer 100823.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P013_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel of the upright bookcase",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes at top and bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 40,
+            "location_hint": "two rows of shelf pin holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove along the back edge for the back panel"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          15,
+          280,
+          1060
+        ]
+      },
+      {
+        "part_uid": "P013_002",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes at top and bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 40,
+            "location_hint": "two rows of shelf pin holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove along the back edge for the back panel"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          15,
+          280,
+          1060
+        ]
+      },
+      {
+        "part_uid": "P013_003",
+        "manual_label": "",
+        "name": "shelf",
+        "visual_description": "loose shelf resting on four shelf pins",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          760,
+          260,
+          15
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F013_001",
+        "manual_label": "131372",
+        "name": "shelf pin",
+        "shape_family": "plug",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A013_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P013_001",
+        "fastener_ref": "F013_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 12: 8x shelf pin 131372 pushed into the shelf pin holes of the left side panel and right side panel"
+      },
+      {
+        "action_uid": "A013_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P013_002",
+        "fastener_ref": "F013_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 12: shelf pin 131372 into the right side panel"
+      },
+      {
+        "action_uid": "A013_003",
+        "action_type": "place",
+        "moving_part_ref": "P013_003",
+        "target_part_ref": "P013_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 13: 2x shelf laid on the shelf pins between the left side panel and right side panel"
+      },
+      {
+        "action_uid": "A013_004",
+        "action_type": "place",
+        "moving_part_ref": "P013_003",
+        "target_part_ref": "P013_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 13: shelf resting on the pins of the right side panel"
+      }
+    ],
+    "final_visible_structure": "finished BILLY bookcase with two shelves",
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Blank page."
+    ]
+  },
+  {
+    "page_number": 15,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Blank page."
+    ]
+  },
+  {
+    "page_number": 16,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Back page."
+    ]
+  }
+]

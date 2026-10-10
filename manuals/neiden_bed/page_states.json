@@ -1,0 +1,1774 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "NEIDEN pine bed frame: headboard with one wide top rail, four square legs, side rails, slatted base",
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tools (flat and cross-head screwdrivers); soft surface; ask IKEA; two people."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P003_001",
+        "manual_label": "10036350",
+        "name": "rail bracket",
+        "visual_description": "metal hook bracket at each end of a cross rail",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F003_001",
+        "manual_label": "120209",
+        "name": "long bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_002",
+        "manual_label": "120208",
+        "name": "short bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_003",
+        "manual_label": "128745",
+        "name": "lag screw",
+        "shape_family": "screw",
+        "quantity_visible": 12
+      },
+      {
+        "fastener_uid": "F003_004",
+        "manual_label": "109594",
+        "name": "bracket wood screw",
+        "shape_family": "screw",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F003_005",
+        "manual_label": "146899",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_006",
+        "manual_label": "128780",
+        "name": "steel dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_007",
+        "manual_label": "100217",
+        "name": "joint screw",
+        "shape_family": "screw",
+        "quantity_visible": 12
+      },
+      {
+        "fastener_uid": "F003_008",
+        "manual_label": "101357",
+        "name": "large wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 22
+      },
+      {
+        "fastener_uid": "F003_009",
+        "manual_label": "101348",
+        "name": "small wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 10
+      },
+      {
+        "fastener_uid": "F003_010",
+        "manual_label": "100514",
+        "name": "barrel nut",
+        "shape_family": "nut",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T003_001",
+        "name": "allen key 100001"
+      },
+      {
+        "tool_uid": "T003_002",
+        "name": "allen key 100092"
+      },
+      {
+        "tool_uid": "T003_003",
+        "name": "extension bar 121030"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Info: allen key 100092 goes into extension bar 121030."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P004_001",
+        "manual_label": "",
+        "name": "headboard top rail",
+        "visual_description": "thick headboard top rail with rounded ends, two boards screwed together",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and lag screw holes"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          1400,
+          40,
+          120
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F004_001",
+        "manual_label": "101348",
+        "name": "small wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F004_002",
+        "manual_label": "100217",
+        "name": "joint screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T004_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A004_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_001",
+        "fastener_ref": "F004_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 1: 2x small wooden dowel 101348 into the lower board of the headboard top rail"
+      },
+      {
+        "action_uid": "A004_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P004_001",
+        "fastener_ref": "F004_002",
+        "tool_ref": "T004_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "steps 2-3: second board laid on and joined with 4x joint screw 100217"
+      }
+    ],
+    "final_visible_structure": "headboard top rail made of two boards",
+    "uncertainties": [
+      "The headboard top rail is two boards laminated together; described as one part."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "",
+        "name": "headboard top rail",
+        "visual_description": "thick headboard top rail with rounded ends, two boards screwed together",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and lag screw holes"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          1400,
+          40,
+          120
+        ]
+      },
+      {
+        "part_uid": "P005_002",
+        "manual_label": "",
+        "name": "headboard bottom rail",
+        "visual_description": "headboard bottom rail between the headboard posts at mattress height",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and lag screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes for the centre rail"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1400,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P005_003",
+        "manual_label": "",
+        "name": "footboard rail",
+        "visual_description": "foot rail between the footboard posts",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and lag screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes for the centre rail"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1400,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P005_004",
+        "manual_label": "",
+        "name": "left headboard post",
+        "visual_description": "left headboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          640
+        ]
+      },
+      {
+        "part_uid": "P005_005",
+        "manual_label": "",
+        "name": "right headboard post",
+        "visual_description": "right headboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          640
+        ]
+      },
+      {
+        "part_uid": "P005_006",
+        "manual_label": "",
+        "name": "left footboard post",
+        "visual_description": "left footboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          300
+        ]
+      },
+      {
+        "part_uid": "P005_007",
+        "manual_label": "",
+        "name": "right footboard post",
+        "visual_description": "right footboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          300
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F005_001",
+        "manual_label": "101357",
+        "name": "large wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 10
+      },
+      {
+        "fastener_uid": "F005_002",
+        "manual_label": "101348",
+        "name": "small wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F005_003",
+        "manual_label": "100217",
+        "name": "joint screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T005_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A005_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P005_002",
+        "fastener_ref": "F005_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 4: 10x large wooden dowel 101357 into the ends of the headboard top rail, headboard bottom rail and footboard rail"
+      },
+      {
+        "action_uid": "A005_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P005_003",
+        "fastener_ref": "F005_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 4: large wooden dowel 101357 into the footboard rail"
+      },
+      {
+        "action_uid": "A005_003",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P005_004",
+        "fastener_ref": "F005_003",
+        "tool_ref": "T005_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "steps 5-6: each leg's two boards joined with small wooden dowels 101348 and joint screws 100217"
+      }
+    ],
+    "final_visible_structure": "rails with dowels; four legs made up",
+    "uncertainties": [
+      "Each leg is a long board and a short spacer board; described as one part."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "",
+        "name": "headboard top rail",
+        "visual_description": "thick headboard top rail with rounded ends, two boards screwed together",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and lag screw holes"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          1400,
+          40,
+          120
+        ]
+      },
+      {
+        "part_uid": "P006_002",
+        "manual_label": "",
+        "name": "headboard bottom rail",
+        "visual_description": "headboard bottom rail between the headboard posts at mattress height",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and lag screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes for the centre rail"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1400,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P006_003",
+        "manual_label": "",
+        "name": "footboard rail",
+        "visual_description": "foot rail between the footboard posts",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and lag screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes for the centre rail"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1400,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P006_004",
+        "manual_label": "",
+        "name": "left headboard post",
+        "visual_description": "left headboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          640
+        ]
+      },
+      {
+        "part_uid": "P006_005",
+        "manual_label": "",
+        "name": "right headboard post",
+        "visual_description": "right headboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          640
+        ]
+      },
+      {
+        "part_uid": "P006_006",
+        "manual_label": "",
+        "name": "left footboard post",
+        "visual_description": "left footboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          300
+        ]
+      },
+      {
+        "part_uid": "P006_007",
+        "manual_label": "",
+        "name": "right footboard post",
+        "visual_description": "right footboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          300
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "128745",
+        "name": "lag screw",
+        "shape_family": "screw",
+        "quantity_visible": 12
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T006_001",
+        "name": "allen key 100092"
+      },
+      {
+        "tool_uid": "T006_002",
+        "name": "extension bar 121030"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A006_001",
+        "action_type": "attach",
+        "moving_part_ref": "P006_004",
+        "target_part_ref": "P006_001",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 7: left headboard post screwed to the headboard top rail and headboard bottom rail with lag screws 128745"
+      },
+      {
+        "action_uid": "A006_002",
+        "action_type": "attach",
+        "moving_part_ref": "P006_005",
+        "target_part_ref": "P006_001",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 7: right headboard post screwed to the headboard top rail"
+      },
+      {
+        "action_uid": "A006_003",
+        "action_type": "attach",
+        "moving_part_ref": "P006_004",
+        "target_part_ref": "P006_002",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 7: left headboard post screwed to the headboard bottom rail"
+      },
+      {
+        "action_uid": "A006_004",
+        "action_type": "attach",
+        "moving_part_ref": "P006_005",
+        "target_part_ref": "P006_002",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 7: right headboard post screwed to the headboard bottom rail"
+      },
+      {
+        "action_uid": "A006_005",
+        "action_type": "attach",
+        "moving_part_ref": "P006_006",
+        "target_part_ref": "P006_003",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 7: left footboard post screwed to the footboard rail"
+      },
+      {
+        "action_uid": "A006_006",
+        "action_type": "attach",
+        "moving_part_ref": "P006_007",
+        "target_part_ref": "P006_003",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 7: right footboard post screwed to the footboard rail, 12x lag screw 128745 in all"
+      }
+    ],
+    "final_visible_structure": "headboard end and foot end assembled",
+    "uncertainties": []
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "left headboard post",
+        "visual_description": "left headboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          640
+        ]
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "",
+        "name": "right headboard post",
+        "visual_description": "right headboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          640
+        ]
+      },
+      {
+        "part_uid": "P007_003",
+        "manual_label": "",
+        "name": "left footboard post",
+        "visual_description": "left footboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          300
+        ]
+      },
+      {
+        "part_uid": "P007_004",
+        "manual_label": "",
+        "name": "right footboard post",
+        "visual_description": "right footboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          300
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "101357",
+        "name": "large wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 8: 4x large wooden dowel 101357 into the inner faces of the four posts"
+      }
+    ],
+    "final_visible_structure": "dowels ready for the side rails",
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "left side rail",
+        "visual_description": "long left side rail with a ledge for the slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "",
+        "name": "right side rail",
+        "visual_description": "long right side rail with a ledge for the slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P008_003",
+        "manual_label": "",
+        "name": "left headboard post",
+        "visual_description": "left headboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          640
+        ]
+      },
+      {
+        "part_uid": "P008_004",
+        "manual_label": "",
+        "name": "right headboard post",
+        "visual_description": "right headboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          640
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "120209",
+        "name": "long bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F008_002",
+        "manual_label": "100514",
+        "name": "barrel nut",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T008_001",
+        "name": "allen key 100001"
+      },
+      {
+        "tool_uid": "T008_002",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "attach",
+        "moving_part_ref": "P008_001",
+        "target_part_ref": "P008_003",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 9: left side rail bolted to the left headboard post with long bolt 120209 into barrel nut 100514; 120208 crossed out"
+      },
+      {
+        "action_uid": "A008_002",
+        "action_type": "attach",
+        "moving_part_ref": "P008_002",
+        "target_part_ref": "P008_004",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 9: right side rail bolted to the right headboard post, 2x long bolt 120209"
+      }
+    ],
+    "final_visible_structure": "side rails standing out from the headboard",
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "",
+        "name": "centre support rail",
+        "visual_description": "long rail down the middle from the headboard to the foot rail",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          70
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F009_001",
+        "manual_label": "128780",
+        "name": "steel dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A009_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P009_001",
+        "fastener_ref": "F009_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 10: 2x steel dowel 128780 into each end of the centre support rail, fully in"
+      }
+    ],
+    "final_visible_structure": "centre support rail with steel dowels",
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P010_001",
+        "manual_label": "",
+        "name": "centre support rail",
+        "visual_description": "long rail down the middle from the headboard to the foot rail",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          70
+        ]
+      },
+      {
+        "part_uid": "P010_002",
+        "manual_label": "",
+        "name": "headboard bottom rail",
+        "visual_description": "headboard bottom rail between the headboard posts at mattress height",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and lag screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes for the centre rail"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1400,
+          28,
+          115
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F010_001",
+        "manual_label": "120208",
+        "name": "short bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F010_002",
+        "manual_label": "100514",
+        "name": "barrel nut",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T010_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A010_001",
+        "action_type": "attach",
+        "moving_part_ref": "P010_001",
+        "target_part_ref": "P010_002",
+        "fastener_ref": "F010_001",
+        "tool_ref": "T010_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 11: centre support rail bolted to the middle of the headboard bottom rail with 2x short bolt 120208 and barrel nut 100514"
+      }
+    ],
+    "final_visible_structure": "centre support rail fixed to the headboard",
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P011_001",
+        "manual_label": "",
+        "name": "footboard rail",
+        "visual_description": "foot rail between the footboard posts",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and lag screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes for the centre rail"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1400,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P011_002",
+        "manual_label": "",
+        "name": "left footboard post",
+        "visual_description": "left footboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          300
+        ]
+      },
+      {
+        "part_uid": "P011_003",
+        "manual_label": "",
+        "name": "right footboard post",
+        "visual_description": "right footboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          300
+        ]
+      },
+      {
+        "part_uid": "P011_004",
+        "manual_label": "",
+        "name": "left side rail",
+        "visual_description": "long left side rail with a ledge for the slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P011_005",
+        "manual_label": "",
+        "name": "right side rail",
+        "visual_description": "long right side rail with a ledge for the slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          115
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F011_001",
+        "manual_label": "120209",
+        "name": "long bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F011_002",
+        "manual_label": "100514",
+        "name": "barrel nut",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T011_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A011_001",
+        "action_type": "attach",
+        "moving_part_ref": "P011_004",
+        "target_part_ref": "P011_002",
+        "fastener_ref": "F011_001",
+        "tool_ref": "T011_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 12: foot end fitted; left side rail bolted to the left footboard post with long bolt 120209 and barrel nut 100514"
+      },
+      {
+        "action_uid": "A011_002",
+        "action_type": "attach",
+        "moving_part_ref": "P011_005",
+        "target_part_ref": "P011_003",
+        "fastener_ref": "F011_001",
+        "tool_ref": "T011_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 12: right side rail bolted to the right footboard post, 2x long bolt 120209"
+      }
+    ],
+    "final_visible_structure": "bed frame closed at the foot",
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P012_001",
+        "manual_label": "",
+        "name": "centre support rail",
+        "visual_description": "long rail down the middle from the headboard to the foot rail",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          70
+        ]
+      },
+      {
+        "part_uid": "P012_002",
+        "manual_label": "",
+        "name": "footboard rail",
+        "visual_description": "foot rail between the footboard posts",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and lag screw holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bolt holes for the centre rail"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1400,
+          28,
+          115
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F012_001",
+        "manual_label": "120208",
+        "name": "short bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F012_002",
+        "manual_label": "100514",
+        "name": "barrel nut",
+        "shape_family": "nut",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T012_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A012_001",
+        "action_type": "attach",
+        "moving_part_ref": "P012_001",
+        "target_part_ref": "P012_002",
+        "fastener_ref": "F012_001",
+        "tool_ref": "T012_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 13: centre support rail bolted to the footboard rail with 2x short bolt 120208 and barrel nut 100514"
+      }
+    ],
+    "final_visible_structure": "centre support rail fixed at both ends",
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P013_001",
+        "manual_label": "",
+        "name": "left side rail",
+        "visual_description": "long left side rail with a ledge for the slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P013_002",
+        "manual_label": "",
+        "name": "right side rail",
+        "visual_description": "long right side rail with a ledge for the slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P013_003",
+        "manual_label": "",
+        "name": "left headboard post",
+        "visual_description": "left headboard leg, two pine boards joined with dowels and screws",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt and screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          55,
+          55,
+          640
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F013_001",
+        "manual_label": "100217",
+        "name": "joint screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T013_001",
+        "name": "allen key 100001"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A013_001",
+        "action_type": "tighten",
+        "moving_part_ref": "P013_001",
+        "target_part_ref": "P013_003",
+        "fastener_ref": "F013_001",
+        "tool_ref": "T013_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 14: 4x joint screw 100217 tightened at the ends of the side rails"
+      }
+    ],
+    "final_visible_structure": "frame tightened",
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P014_001",
+        "manual_label": "",
+        "name": "left cross rail",
+        "visual_description": "left short cross bar between the side rail and the centre rail",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bracket screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          650,
+          30,
+          30
+        ]
+      },
+      {
+        "part_uid": "P014_002",
+        "manual_label": "",
+        "name": "right cross rail",
+        "visual_description": "right short cross bar between the side rail and the centre rail",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bracket screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          650,
+          30,
+          30
+        ]
+      },
+      {
+        "part_uid": "P014_003",
+        "manual_label": "10036350",
+        "name": "rail bracket",
+        "visual_description": "metal hook bracket at each end of a cross rail",
+        "shape_family": "bracket",
+        "material_hint": "metal",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P014_004",
+        "manual_label": "",
+        "name": "left side rail",
+        "visual_description": "long left side rail with a ledge for the slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P014_005",
+        "manual_label": "",
+        "name": "right side rail",
+        "visual_description": "long right side rail with a ledge for the slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P014_006",
+        "manual_label": "",
+        "name": "centre support rail",
+        "visual_description": "long rail down the middle from the headboard to the foot rail",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel and bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          70
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F014_001",
+        "manual_label": "146899",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F014_002",
+        "manual_label": "109594",
+        "name": "bracket wood screw",
+        "shape_family": "screw",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T014_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A014_001",
+        "action_type": "attach",
+        "moving_part_ref": "P014_003",
+        "target_part_ref": "P014_001",
+        "fastener_ref": "F014_001",
+        "tool_ref": "T014_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 15: rail bracket 10036350 screwed to each end of the left cross rail with bracket screw 146899"
+      },
+      {
+        "action_uid": "A014_002",
+        "action_type": "attach",
+        "moving_part_ref": "P014_003",
+        "target_part_ref": "P014_002",
+        "fastener_ref": "F014_001",
+        "tool_ref": "T014_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 15: rail bracket screwed to each end of the right cross rail; 4x in all"
+      },
+      {
+        "action_uid": "A014_003",
+        "action_type": "attach",
+        "moving_part_ref": "P014_001",
+        "target_part_ref": "P014_004",
+        "fastener_ref": "F014_002",
+        "tool_ref": "T014_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 16: left cross rail hooked between the left side rail and the centre support rail, brackets screwed with bracket wood screw 109594"
+      },
+      {
+        "action_uid": "A014_004",
+        "action_type": "attach",
+        "moving_part_ref": "P014_001",
+        "target_part_ref": "P014_006",
+        "fastener_ref": "F014_002",
+        "tool_ref": "T014_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 16: left cross rail bracket screwed to the centre support rail"
+      },
+      {
+        "action_uid": "A014_005",
+        "action_type": "attach",
+        "moving_part_ref": "P014_002",
+        "target_part_ref": "P014_005",
+        "fastener_ref": "F014_002",
+        "tool_ref": "T014_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 16: right cross rail hooked between the right side rail and the centre support rail"
+      },
+      {
+        "action_uid": "A014_006",
+        "action_type": "attach",
+        "moving_part_ref": "P014_002",
+        "target_part_ref": "P014_006",
+        "fastener_ref": "F014_002",
+        "tool_ref": "T014_001",
+        "direction_hint": "down",
+        "visual_evidence": "step 16: right cross rail bracket screwed to the centre support rail, 8x screw 109594 in all"
+      }
+    ],
+    "final_visible_structure": "cross rails across the middle of the bed",
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Info: with a sprung slatted base use no dowels; with a plain slatted base (not included) continue to page 16.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 16,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P016_001",
+        "manual_label": "",
+        "name": "left side rail",
+        "visual_description": "long left side rail with a ledge for the slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          115
+        ]
+      },
+      {
+        "part_uid": "P016_002",
+        "manual_label": "",
+        "name": "right side rail",
+        "visual_description": "long right side rail with a ledge for the slats",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "bolt holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          28,
+          115
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F016_001",
+        "manual_label": "101357",
+        "name": "large wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A016_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P016_001",
+        "fastener_ref": "F016_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 17: 8x large wooden dowel 101357 into the tops of the side rails and centre rail as slat stops"
+      }
+    ],
+    "final_visible_structure": "finished NEIDEN bed frame; slatted base (not included) rolled out on it",
+    "uncertainties": [
+      "The slatted base is sold separately and not described as a part."
+    ]
+  }
+]

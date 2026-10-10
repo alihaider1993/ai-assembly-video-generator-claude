@@ -124,6 +124,27 @@ def part_kinds_from_pages(page_states: List[Dict[str, Any]]) -> List[Dict[str, A
     kinds: List[Dict[str, Any]] = []
     kind_by_key: Dict[str, Dict[str, Any]] = {}
 
+    # Names seen together on one page are different parts ("left side panel"
+    # and "hutch left side panel"), however alike.
+    seen_with: Dict[str, Set[str]] = {}
+    all_names: Set[str] = set()
+    for page in page_states:
+        names = {k for p in page.get("visible_parts", []) for k in identity_keys(None, p.get("name"))}
+        all_names |= names
+        for name in names:
+            seen_with.setdefault(name, set()).update(names - {name})
+    # So are names that differ by a group word starting several names (the
+    # "hutch" of "hutch top panel", "hutch shelf"): "top panel" is another
+    # part from "hutch top panel".
+    first_words = [n[len("name:"):].split()[0] for n in all_names if n.startswith("name:") and n[len("name:"):].split()]
+    groups = {w for w in first_words if first_words.count(w) >= 2}
+    for name in all_names:
+        words = name[len("name:"):].split()
+        if len(words) > 1 and words[0] in groups:
+            shorter = "name:" + " ".join(words[1:])
+            seen_with.setdefault(name, set()).add(shorter)
+            seen_with.setdefault(shorter, set()).add(name)
+
     def add_or_merge(local_part: Dict[str, Any], page_number: int, from_parts_list: bool) -> None:
         keys = identity_keys(local_part.get("manual_label"), local_part.get("name"))
         if not keys:
@@ -137,7 +158,8 @@ def part_kinds_from_pages(page_states: List[Dict[str, Any]]) -> List[Dict[str, A
             # rail" / "long side rail"), unless both carry different labels.
             similar = ""
             for key in keys:
-                similar = similar_name_key(key, kind_by_key)
+                apart = seen_with.get(key, set())
+                similar = similar_name_key(key, [k for k in kind_by_key if k not in apart])
                 if similar:
                     break
             candidate = kind_by_key.get(similar)

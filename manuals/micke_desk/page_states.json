@@ -1,0 +1,1768 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "MICKE desk: desktop on a full-height side panel on the left and a closed metal side frame on the right, with a drawer under the top",
+    "uncertainties": [
+      "Cover shows the desk twice, with the drawer pulled out and pushed in."
+    ]
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tools needed (flat and cross-head screwdrivers, hammer) and general advice. No assembly action."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "visible_parts": [],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F003_001",
+        "manual_label": "100086",
+        "name": "frame bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 3
+      },
+      {
+        "fastener_uid": "F003_002",
+        "manual_label": "110519",
+        "name": "drawer pin",
+        "shape_family": "nail",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F003_003",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 14
+      },
+      {
+        "fastener_uid": "F003_004",
+        "manual_label": "110126",
+        "name": "top cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F003_005",
+        "manual_label": "103430",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F003_006",
+        "manual_label": "103114",
+        "name": "drawer cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F003_007",
+        "manual_label": "101344",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 12
+      },
+      {
+        "fastener_uid": "F003_008",
+        "manual_label": "100365",
+        "name": "runner screw",
+        "shape_family": "screw",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F003_009",
+        "manual_label": "153549",
+        "name": "floor glide",
+        "shape_family": "other",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F003_010",
+        "manual_label": "112519",
+        "name": "bumper",
+        "shape_family": "other",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F003_011",
+        "manual_label": "10081375",
+        "name": "frame foot pad",
+        "shape_family": "other",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T003_001",
+        "name": "allen key 100092"
+      },
+      {
+        "tool_uid": "T003_002",
+        "name": "extension bar 121030"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Panels and the metal frame are not shown in the inventory; only hardware.",
+      "112519 is one sheet of 4 adhesive bumpers; 10081375 one sheet of 2 hexagonal pads."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P004_001",
+        "manual_label": "112482",
+        "name": "drawer runner",
+        "visual_description": "metal runner with a roller at its back end, fixed along a drawer side",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      },
+      {
+        "part_uid": "P004_002",
+        "manual_label": "112482",
+        "name": "drawer slide",
+        "visual_description": "metal carcass slide with a roller at its front end",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F004_001",
+        "manual_label": "121304",
+        "name": "cable grommet",
+        "shape_family": "other",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Runner set 112482: two drawer runners and two carcass drawer slides, drawn as one set (1x)."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "",
+        "name": "drawer front",
+        "visual_description": "drawer front lying face down on a rug, groove up",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove along the inner face for the drawer bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam bolt holes at the ends"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          660,
+          18,
+          100
+        ]
+      },
+      {
+        "part_uid": "P005_002",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "two drawer sides held upright over the ends of the drawer front",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "cam lock hole"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          430,
+          90
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F005_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F005_002",
+        "manual_label": "101344",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T005_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A005_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P005_001",
+        "fastener_ref": "F005_001",
+        "tool_ref": "T005_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "2x cam bolt 118331 screwed into the ends of the drawer front (step 1)"
+      },
+      {
+        "action_uid": "A005_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P005_002",
+        "fastener_ref": "F005_002",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "2x wooden dowel 101344 pushed into the lower end of each drawer side (step 2)"
+      },
+      {
+        "action_uid": "A005_003",
+        "action_type": "attach",
+        "moving_part_ref": "P005_002",
+        "target_part_ref": "P005_001",
+        "fastener_ref": "F005_002",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "two drawer sides lowered onto the ends of the drawer front over the cam bolts (step 2)"
+      }
+    ],
+    "final_visible_structure": "drawer front with both drawer sides standing on its ends",
+    "uncertainties": [
+      "Step 1 inset shows the finished drawer and its parts (1x) to say which panels these are."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "",
+        "name": "drawer front",
+        "visual_description": "drawer front with drawer sides fitted, lying face down",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove along the inner face for the drawer bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam bolt holes at the ends"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          660,
+          18,
+          100
+        ]
+      },
+      {
+        "part_uid": "P006_002",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer sides upright on the drawer front",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "cam lock hole"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          430,
+          90
+        ]
+      },
+      {
+        "part_uid": "P006_003",
+        "manual_label": "",
+        "name": "drawer bottom",
+        "visual_description": "thin fibreboard drawer bottom slid into the grooves",
+        "shape_family": "panel",
+        "material_hint": "fibreboard",
+        "quantity_visible": 1,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          620,
+          420,
+          3
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "103114",
+        "name": "drawer cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T006_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A006_001",
+        "action_type": "tighten",
+        "moving_part_ref": "P006_002",
+        "target_part_ref": "P006_001",
+        "fastener_ref": "F006_001",
+        "tool_ref": "T006_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "2x drawer cam lock 103114 pushed into each drawer side and turned to lock onto the cam bolt; 110126 and 103430 crossed out (step 3)"
+      },
+      {
+        "action_uid": "A006_002",
+        "action_type": "slide",
+        "moving_part_ref": "P006_003",
+        "target_part_ref": "P006_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "drawer bottom slid into the grooves of the drawer sides and drawer front, decorative side down (step 4)"
+      }
+    ],
+    "final_visible_structure": "drawer box of front, two sides and bottom",
+    "uncertainties": [
+      "Step 4 shows the box turned over (curved arrow) before the bottom is slid in."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer sides of the drawer box",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "cam lock hole"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          430,
+          90
+        ]
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "",
+        "name": "drawer back",
+        "visual_description": "narrow drawer back board slid in between the drawer sides",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "nail holes at the ends"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          616,
+          12,
+          75
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "110519",
+        "name": "drawer pin",
+        "shape_family": "nail",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T007_001",
+        "name": "hammer"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "slide",
+        "moving_part_ref": "P007_002",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "drawer back slid down between the drawer sides over the drawer bottom (step 5)"
+      },
+      {
+        "action_uid": "A007_002",
+        "action_type": "insert",
+        "moving_part_ref": "P007_002",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_001",
+        "tool_ref": "T007_001",
+        "direction_hint": "inward",
+        "visual_evidence": "2x drawer pin 110519 hammered through the drawer sides into the drawer back (step 6)"
+      }
+    ],
+    "final_visible_structure": "closed drawer box",
+    "uncertainties": [
+      "Info panel shows the drawer pin going straight into the end of the back."
+    ]
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "drawer side",
+        "visual_description": "drawer sides of the drawer box",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove for the drawer bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "cam lock hole"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          12,
+          430,
+          90
+        ]
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "112482",
+        "name": "drawer runner",
+        "visual_description": "metal runner with a roller at its back end, fixed along a drawer side",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F008_001",
+        "manual_label": "100365",
+        "name": "runner screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T008_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "place",
+        "moving_part_ref": "P008_002",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "2x drawer runner laid along the bottom edge of each drawer side (step 7)"
+      },
+      {
+        "action_uid": "A008_002",
+        "action_type": "tighten",
+        "moving_part_ref": "P008_002",
+        "target_part_ref": "P008_001",
+        "fastener_ref": "F008_001",
+        "tool_ref": "T008_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "4x runner screw 100365 driven through the drawer runners into the drawer sides (step 8)"
+      }
+    ],
+    "final_visible_structure": "drawer with a runner on each side",
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "back rail lying flat on a rug, holes up",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam lock holes at both ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes along one long edge"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          694,
+          18,
+          150
+        ]
+      },
+      {
+        "part_uid": "P009_002",
+        "manual_label": "",
+        "name": "cable shelf",
+        "visual_description": "cable shelf held on its edge over the back rail",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes along both long edges"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          694,
+          120,
+          18
+        ]
+      },
+      {
+        "part_uid": "P009_003",
+        "manual_label": "",
+        "name": "lip rail",
+        "visual_description": "narrow lip rail with cam lock holes held over the cable shelf",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam lock holes at the ends"
+          }
+        ],
+        "page_position": "top",
+        "size_mm": [
+          694,
+          18,
+          40
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F009_001",
+        "manual_label": "101344",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A009_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P009_001",
+        "fastener_ref": "F009_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "2x wooden dowel 101344 pushed into the back rail (step 9)"
+      },
+      {
+        "action_uid": "A009_002",
+        "action_type": "attach",
+        "moving_part_ref": "P009_002",
+        "target_part_ref": "P009_001",
+        "fastener_ref": "F009_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "cable shelf pressed onto the dowels along the back rail (step 9)"
+      },
+      {
+        "action_uid": "A009_003",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P009_002",
+        "fastener_ref": "F009_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "2x wooden dowel 101344 pushed into the free edge of the cable shelf (step 10)"
+      },
+      {
+        "action_uid": "A009_004",
+        "action_type": "attach",
+        "moving_part_ref": "P009_003",
+        "target_part_ref": "P009_002",
+        "fastener_ref": "F009_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "lip rail pressed onto the cable shelf, cam lock holes facing as the inset shows (step 10)"
+      }
+    ],
+    "final_visible_structure": "back rail, cable shelf and lip rail joined into one I-shaped piece",
+    "uncertainties": [
+      "Top insets: with the frame on the right continue here; with the frame on the left go to page 17 (mirrored steps).",
+      "The I-shaped piece is drawn lying down; in the desk the back rail stands upright at the back under the desktop."
+    ]
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P010_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel lying flat",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the top and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "drawer slide screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          500,
+          732
+        ]
+      },
+      {
+        "part_uid": "P010_002",
+        "manual_label": "",
+        "name": "right side rail",
+        "visual_description": "right side rail lying flat",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt holes for the metal side frame"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "drawer slide screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          500,
+          18,
+          130
+        ]
+      },
+      {
+        "part_uid": "P010_003",
+        "manual_label": "112482",
+        "name": "drawer slide",
+        "visual_description": "metal carcass slide with a roller at its front end",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F010_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F010_002",
+        "manual_label": "100365",
+        "name": "runner screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T010_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A010_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P010_001",
+        "fastener_ref": "F010_001",
+        "tool_ref": "T010_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "8x cam bolt 118331 screwed into the left side panel and the right side rail (step 11)"
+      },
+      {
+        "action_uid": "A010_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P010_002",
+        "fastener_ref": "F010_001",
+        "tool_ref": "T010_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "cam bolt 118331 screwed into the right side rail (step 11)"
+      },
+      {
+        "action_uid": "A010_003",
+        "action_type": "tighten",
+        "moving_part_ref": "P010_003",
+        "target_part_ref": "P010_001",
+        "fastener_ref": "F010_002",
+        "tool_ref": "T010_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "1x drawer slide screwed to the inner face of the left side panel with 2x runner screw 100365 (step 12)"
+      },
+      {
+        "action_uid": "A010_004",
+        "action_type": "tighten",
+        "moving_part_ref": "P010_003",
+        "target_part_ref": "P010_002",
+        "fastener_ref": "F010_002",
+        "tool_ref": "T010_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "1x drawer slide screwed to the inner face of the right side rail with 2x runner screw 100365 (step 12)"
+      }
+    ],
+    "final_visible_structure": "left side panel and right side rail each with cam bolts and a drawer slide",
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P011_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel turned onto the end of the back rail piece",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the top and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "drawer slide screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          500,
+          732
+        ]
+      },
+      {
+        "part_uid": "P011_002",
+        "manual_label": "",
+        "name": "right side rail",
+        "visual_description": "right side rail swung up onto the other end",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt holes for the metal side frame"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "drawer slide screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          500,
+          18,
+          130
+        ]
+      },
+      {
+        "part_uid": "P011_003",
+        "manual_label": "",
+        "name": "back rail",
+        "visual_description": "back rail of the I-shaped piece",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam lock holes at both ends"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "dowel holes along one long edge"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          694,
+          18,
+          150
+        ]
+      },
+      {
+        "part_uid": "P011_004",
+        "manual_label": "",
+        "name": "cable shelf",
+        "visual_description": "cable shelf of the I-shaped piece",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "dowel holes along both long edges"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          694,
+          120,
+          18
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F011_001",
+        "manual_label": "101344",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F011_002",
+        "manual_label": "103430",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T011_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A011_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P011_002",
+        "fastener_ref": "F011_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "2x wooden dowel 101344 pushed into the end of the right side rail (step 13)"
+      },
+      {
+        "action_uid": "A011_002",
+        "action_type": "attach",
+        "moving_part_ref": "P011_001",
+        "target_part_ref": "P011_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "left side panel turned onto the end of the back rail and cable shelf (step 13, curved arrow)"
+      },
+      {
+        "action_uid": "A011_003",
+        "action_type": "attach",
+        "moving_part_ref": "P011_002",
+        "target_part_ref": "P011_003",
+        "fastener_ref": "F011_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "right side rail swung up onto the other end of the back rail (step 13, curved arrow)"
+      },
+      {
+        "action_uid": "A011_004",
+        "action_type": "tighten",
+        "moving_part_ref": "P011_001",
+        "target_part_ref": "P011_003",
+        "fastener_ref": "F011_002",
+        "tool_ref": "T011_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "8x cam lock 103430 pushed into the back rail and lip rail and turned onto the cam bolts; 110126 crossed out (step 14)"
+      }
+    ],
+    "final_visible_structure": "left side panel and right side rail joined by the back rail piece",
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P012_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the top and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "drawer slide screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          500,
+          732
+        ]
+      },
+      {
+        "part_uid": "P012_002",
+        "manual_label": "",
+        "name": "right side rail",
+        "visual_description": "right side rail",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt holes for the metal side frame"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "drawer slide screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          500,
+          18,
+          130
+        ]
+      },
+      {
+        "part_uid": "P012_003",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "closed rectangular metal tube frame",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt holes in the upper bar"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          25,
+          480,
+          732
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F012_001",
+        "manual_label": "101344",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F012_002",
+        "manual_label": "100086",
+        "name": "frame bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 3
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T012_001",
+        "name": "allen key 100092"
+      },
+      {
+        "tool_uid": "T012_002",
+        "name": "extension bar 121030"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A012_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P012_001",
+        "fastener_ref": "F012_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "4x wooden dowel 101344 pushed into the top edges of the left side panel and right side rail (step 15)"
+      },
+      {
+        "action_uid": "A012_002",
+        "action_type": "attach",
+        "moving_part_ref": "P012_003",
+        "target_part_ref": "P012_002",
+        "fastener_ref": "F012_002",
+        "tool_ref": "T012_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "right side frame held against the right side rail and fixed with 3x frame bolt 100086 turned with allen key 100092 in extension bar 121030 (step 16)"
+      }
+    ],
+    "final_visible_structure": "desk frame: left side panel, back rail piece, right side rail and metal side frame",
+    "uncertainties": [
+      "Step 16 inset: allen key 100092 slots into extension bar 121030 at position 4."
+    ]
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P013_001",
+        "manual_label": "",
+        "name": "desktop",
+        "visual_description": "desktop lying face down",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round cable outlet hole near the back"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes in the underside"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          730,
+          500,
+          18
+        ]
+      },
+      {
+        "part_uid": "P013_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel of the upturned frame",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the top and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "drawer slide screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          500,
+          732
+        ]
+      },
+      {
+        "part_uid": "P013_003",
+        "manual_label": "",
+        "name": "right side rail",
+        "visual_description": "right side rail of the upturned frame",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt holes for the metal side frame"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "drawer slide screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          500,
+          18,
+          130
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F013_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T013_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A013_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P013_001",
+        "fastener_ref": "F013_001",
+        "tool_ref": "T013_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "4x cam bolt 118331 screwed into the underside of the desktop (step 17)"
+      },
+      {
+        "action_uid": "A013_002",
+        "action_type": "attach",
+        "moving_part_ref": "P013_001",
+        "target_part_ref": "P013_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "desktop pushed onto the dowels at the top of the left side panel (step 18)"
+      },
+      {
+        "action_uid": "A013_003",
+        "action_type": "attach",
+        "moving_part_ref": "P013_001",
+        "target_part_ref": "P013_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "desktop pushed onto the dowels at the top of the right side rail (step 18)"
+      }
+    ],
+    "final_visible_structure": "desktop fitted to the frame, desk upside down",
+    "uncertainties": [
+      "The frame is turned upside down onto the desktop; turning it is not a join."
+    ]
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P014_001",
+        "manual_label": "",
+        "name": "desktop",
+        "visual_description": "desktop",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round cable outlet hole near the back"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes in the underside"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          730,
+          500,
+          18
+        ]
+      },
+      {
+        "part_uid": "P014_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the top and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "drawer slide screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          500,
+          732
+        ]
+      },
+      {
+        "part_uid": "P014_003",
+        "manual_label": "",
+        "name": "right side frame",
+        "visual_description": "right side frame",
+        "shape_family": "frame",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt holes in the upper bar"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          25,
+          480,
+          732
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F014_001",
+        "manual_label": "110126",
+        "name": "top cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F014_002",
+        "manual_label": "10081375",
+        "name": "frame foot pad",
+        "shape_family": "other",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T014_001",
+        "name": "screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A014_001",
+        "action_type": "tighten",
+        "moving_part_ref": "P014_001",
+        "target_part_ref": "P014_002",
+        "fastener_ref": "F014_001",
+        "tool_ref": "T014_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "4x top cam lock 110126 pushed into the left side panel and right side rail and turned onto the desktop cam bolts (step 19)"
+      },
+      {
+        "action_uid": "A014_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P014_003",
+        "fastener_ref": "F014_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "2x frame foot pad 10081375 pressed onto the right side frame; adhesive bumper sheet crossed out (step 20)"
+      }
+    ],
+    "final_visible_structure": "desktop locked to the frame",
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P015_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left side panel",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam bolt holes along the top and back edges"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "drawer slide screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          500,
+          732
+        ]
+      },
+      {
+        "part_uid": "P015_002",
+        "manual_label": "",
+        "name": "drawer front",
+        "visual_description": "drawer front of the finished drawer",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "slot",
+            "count": 1,
+            "location_hint": "groove along the inner face for the drawer bottom"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "cam bolt holes at the ends"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          660,
+          18,
+          100
+        ]
+      },
+      {
+        "part_uid": "P015_003",
+        "manual_label": "112482",
+        "name": "drawer slide",
+        "visual_description": "metal carcass slide with a roller at its front end",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F015_001",
+        "manual_label": "153549",
+        "name": "floor glide",
+        "shape_family": "other",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A015_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P015_001",
+        "fastener_ref": "F015_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "2x floor glide 153549 pressed into the bottom edge of the left side panel (step 21)"
+      },
+      {
+        "action_uid": "A015_002",
+        "action_type": "slide",
+        "moving_part_ref": "P015_002",
+        "target_part_ref": "P015_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "drawer lifted onto the drawer slides and pushed in under the desktop (step 22)"
+      }
+    ],
+    "final_visible_structure": "desk standing upright with the drawer in place",
+    "uncertainties": [
+      "Step 22 inset shows the drawer runner roller dropping in behind the drawer slide roller."
+    ]
+  },
+  {
+    "page_number": 16,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P016_001",
+        "manual_label": "",
+        "name": "desktop",
+        "visual_description": "desktop of the finished desk",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 1,
+            "location_hint": "round cable outlet hole near the back"
+          },
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam bolt holes in the underside"
+          }
+        ],
+        "page_position": "bottom",
+        "size_mm": [
+          730,
+          500,
+          18
+        ]
+      },
+      {
+        "part_uid": "P016_002",
+        "manual_label": "",
+        "name": "right side rail",
+        "visual_description": "right side rail",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "bolt holes for the metal side frame"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "drawer slide screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          500,
+          18,
+          130
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F016_001",
+        "manual_label": "121304",
+        "name": "cable grommet",
+        "shape_family": "other",
+        "quantity_visible": 1
+      },
+      {
+        "fastener_uid": "F016_002",
+        "manual_label": "112519",
+        "name": "bumper",
+        "shape_family": "other",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A016_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P016_001",
+        "fastener_ref": "F016_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "1x cable grommet 121304 pressed into the hole in the desktop (step 23)"
+      },
+      {
+        "action_uid": "A016_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P016_002",
+        "fastener_ref": "F016_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "4x bumper 112519 stuck onto the front edges of the right side rail and left side panel as drawer stops (step 23)"
+      }
+    ],
+    "final_visible_structure": "finished MICKE desk",
+    "uncertainties": []
+  },
+  {
+    "page_number": 17,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Start of the mirrored branch (metal frame on the left): steps 9-10 repeated. Not described."
+    ]
+  },
+  {
+    "page_number": 18,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Mirrored branch: steps 11-12. Not described."
+    ]
+  },
+  {
+    "page_number": 19,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Mirrored branch: steps 13-14. Not described."
+    ]
+  },
+  {
+    "page_number": 20,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Mirrored branch: steps 15-16. Not described."
+    ]
+  },
+  {
+    "page_number": 21,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Mirrored branch: steps 17-18. Not described."
+    ]
+  },
+  {
+    "page_number": 22,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Mirrored branch: steps 19-20. Not described."
+    ]
+  },
+  {
+    "page_number": 23,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Mirrored branch: steps 21-22. Not described."
+    ]
+  },
+  {
+    "page_number": 24,
+    "page_type": "unknown",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Mirrored branch: step 23. Not described."
+    ]
+  }
+]

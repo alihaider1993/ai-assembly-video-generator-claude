@@ -1,0 +1,2700 @@
+[
+  {
+    "page_number": 1,
+    "page_type": "cover",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "BRIMNES bed frame with storage: low box bed, two drawers in each long side",
+    "uncertainties": []
+  },
+  {
+    "page_number": 2,
+    "page_type": "warning",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Tools, soft surface, two people, ask IKEA."
+    ]
+  },
+  {
+    "page_number": 3,
+    "page_type": "parts_list",
+    "visible_parts": [],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F003_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 14
+      },
+      {
+        "fastener_uid": "F003_002",
+        "manual_label": "110630",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 14
+      },
+      {
+        "fastener_uid": "F003_003",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 12
+      },
+      {
+        "fastener_uid": "F003_004",
+        "manual_label": "101359",
+        "name": "large dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F003_005",
+        "manual_label": "122628",
+        "name": "floor glide",
+        "shape_family": "other",
+        "quantity_visible": 6
+      },
+      {
+        "fastener_uid": "F003_006",
+        "manual_label": "110115",
+        "name": "connector bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T003_001",
+        "name": "allen key 100049"
+      }
+    ],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Bag 1 hardware."
+    ]
+  },
+  {
+    "page_number": 4,
+    "page_type": "parts_list",
+    "visible_parts": [],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F004_001",
+        "manual_label": "110789",
+        "name": "ledge screw",
+        "shape_family": "screw",
+        "quantity_visible": 20
+      },
+      {
+        "fastener_uid": "F004_002",
+        "manual_label": "100365",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 12
+      },
+      {
+        "fastener_uid": "F004_003",
+        "manual_label": "191315",
+        "name": "slat stop",
+        "shape_family": "other",
+        "quantity_visible": 8
+      },
+      {
+        "fastener_uid": "F004_004",
+        "manual_label": "116791",
+        "name": "beam bracket",
+        "shape_family": "bracket",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Bags 2 and 3 hardware."
+    ]
+  },
+  {
+    "page_number": 5,
+    "page_type": "parts_list",
+    "visible_parts": [
+      {
+        "part_uid": "P005_001",
+        "manual_label": "118301",
+        "name": "side ledge",
+        "visual_description": "metal angle ledge for the slatted base along a side panel",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "screw slots"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1000,
+          20,
+          20
+        ]
+      },
+      {
+        "part_uid": "P005_002",
+        "manual_label": "117228",
+        "name": "centre support rail",
+        "visual_description": "metal centre beam from the headboard to the footboard",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bracket holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          30,
+          60
+        ]
+      },
+      {
+        "part_uid": "P005_003",
+        "manual_label": "139505",
+        "name": "drawer runner",
+        "visual_description": "metal drawer runner",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 8,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Metal parts: 4x slat ledge, 4x runner set, 4x support strip; drawer handles 4x."
+    ]
+  },
+  {
+    "page_number": 6,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P006_001",
+        "manual_label": "",
+        "name": "left box cross rail",
+        "visual_description": "short divider panel across the left half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P006_002",
+        "manual_label": "",
+        "name": "right box cross rail",
+        "visual_description": "short divider panel across the right half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P006_003",
+        "manual_label": "",
+        "name": "centre divider",
+        "visual_description": "long board down the middle of the bed, the stem of the cross units (two boards end to end, drawn as one)",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          2000,
+          300
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F006_001",
+        "manual_label": "110630",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F006_002",
+        "manual_label": "110115",
+        "name": "connector bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A006_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P006_003",
+        "fastener_ref": "F006_002",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 1: 2x cam lock 110630 and 2x connector bolt 110115 fitted to the centre divider and box cross rails"
+      }
+    ],
+    "final_visible_structure": "first cross unit parts ready",
+    "uncertainties": [
+      "Info: the finished box frame. The two cross units are built the same way (steps 1-6 and 10-11)."
+    ]
+  },
+  {
+    "page_number": 7,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P007_001",
+        "manual_label": "",
+        "name": "left box cross rail",
+        "visual_description": "short divider panel across the left half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P007_002",
+        "manual_label": "",
+        "name": "right box cross rail",
+        "visual_description": "short divider panel across the right half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P007_003",
+        "manual_label": "139505",
+        "name": "drawer runner",
+        "visual_description": "metal drawer runner",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 8,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F007_001",
+        "manual_label": "139505",
+        "name": "runner screw",
+        "shape_family": "screw",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A007_001",
+        "action_type": "attach",
+        "moving_part_ref": "P007_003",
+        "target_part_ref": "P007_001",
+        "fastener_ref": "F007_001",
+        "tool_ref": "",
+        "direction_hint": "clockwise",
+        "visual_evidence": "steps 2-4: drawer runner screwed to each left box cross rail"
+      },
+      {
+        "action_uid": "A007_002",
+        "action_type": "attach",
+        "moving_part_ref": "P007_003",
+        "target_part_ref": "P007_002",
+        "fastener_ref": "F007_001",
+        "tool_ref": "",
+        "direction_hint": "clockwise",
+        "visual_evidence": "steps 2-4: drawer runner screwed to each right box cross rail"
+      }
+    ],
+    "final_visible_structure": "runners on the cross rails",
+    "uncertainties": []
+  },
+  {
+    "page_number": 8,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P008_001",
+        "manual_label": "",
+        "name": "left box cross rail",
+        "visual_description": "short divider panel across the left half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P008_002",
+        "manual_label": "",
+        "name": "right box cross rail",
+        "visual_description": "short divider panel across the right half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P008_003",
+        "manual_label": "139505",
+        "name": "drawer runner",
+        "visual_description": "metal drawer runner",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 8,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A008_001",
+        "action_type": "attach",
+        "moving_part_ref": "P008_003",
+        "target_part_ref": "P008_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 4: runners on the other right box cross rails"
+      }
+    ],
+    "final_visible_structure": "all cross rails with runners",
+    "uncertainties": []
+  },
+  {
+    "page_number": 9,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P009_001",
+        "manual_label": "",
+        "name": "left box cross rail",
+        "visual_description": "short divider panel across the left half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P009_002",
+        "manual_label": "",
+        "name": "right box cross rail",
+        "visual_description": "short divider panel across the right half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P009_003",
+        "manual_label": "",
+        "name": "centre divider",
+        "visual_description": "long board down the middle of the bed, the stem of the cross units (two boards end to end, drawn as one)",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          2000,
+          300
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F009_001",
+        "manual_label": "110115",
+        "name": "connector bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A009_001",
+        "action_type": "attach",
+        "moving_part_ref": "P009_001",
+        "target_part_ref": "P009_003",
+        "fastener_ref": "F009_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 5: left box cross rail pushed onto the connector bolts of the centre divider"
+      },
+      {
+        "action_uid": "A009_002",
+        "action_type": "attach",
+        "moving_part_ref": "P009_002",
+        "target_part_ref": "P009_003",
+        "fastener_ref": "F009_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 5: right box cross rail pushed on from the other side, forming a cross"
+      }
+    ],
+    "final_visible_structure": "first cross unit",
+    "uncertainties": []
+  },
+  {
+    "page_number": 10,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P010_001",
+        "manual_label": "",
+        "name": "left box cross rail",
+        "visual_description": "short divider panel across the left half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P010_002",
+        "manual_label": "",
+        "name": "right box cross rail",
+        "visual_description": "short divider panel across the right half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P010_003",
+        "manual_label": "",
+        "name": "centre divider",
+        "visual_description": "long board down the middle of the bed, the stem of the cross units (two boards end to end, drawn as one)",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          2000,
+          300
+        ]
+      },
+      {
+        "part_uid": "P010_004",
+        "manual_label": "",
+        "name": "bottom rail",
+        "visual_description": "narrow floor rail under the cross units, with glides",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and cam bolt holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1600,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F010_001",
+        "manual_label": "110630",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F010_002",
+        "manual_label": "122628",
+        "name": "floor glide",
+        "shape_family": "other",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T010_001",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A010_001",
+        "action_type": "tighten",
+        "moving_part_ref": "P010_001",
+        "target_part_ref": "P010_003",
+        "fastener_ref": "F010_001",
+        "tool_ref": "T010_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 6: 2x cam lock 110630 turned"
+      },
+      {
+        "action_uid": "A010_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P010_004",
+        "fastener_ref": "F010_002",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 7: 2x floor glide 122628 under each bottom rail"
+      }
+    ],
+    "final_visible_structure": "cross unit and floor rails",
+    "uncertainties": []
+  },
+  {
+    "page_number": 11,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P011_001",
+        "manual_label": "",
+        "name": "bottom rail",
+        "visual_description": "narrow floor rail under the cross units, with glides",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and cam bolt holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1600,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F011_001",
+        "manual_label": "118331",
+        "name": "cam bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F011_002",
+        "manual_label": "101345",
+        "name": "wooden dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 6
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A011_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P011_001",
+        "fastener_ref": "F011_001",
+        "tool_ref": "",
+        "direction_hint": "clockwise",
+        "visual_evidence": "steps 8-9: cam bolts 118331 and wooden dowels 101345 into the bottom rails"
+      }
+    ],
+    "final_visible_structure": "floor rails ready",
+    "uncertainties": []
+  },
+  {
+    "page_number": 12,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P012_001",
+        "manual_label": "",
+        "name": "left box cross rail",
+        "visual_description": "short divider panel across the left half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P012_002",
+        "manual_label": "",
+        "name": "right box cross rail",
+        "visual_description": "short divider panel across the right half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P012_003",
+        "manual_label": "",
+        "name": "centre divider",
+        "visual_description": "long board down the middle of the bed, the stem of the cross units (two boards end to end, drawn as one)",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          2000,
+          300
+        ]
+      },
+      {
+        "part_uid": "P012_004",
+        "manual_label": "",
+        "name": "bottom rail",
+        "visual_description": "narrow floor rail under the cross units, with glides",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and cam bolt holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1600,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F012_001",
+        "manual_label": "110630",
+        "name": "cam lock",
+        "shape_family": "cam",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T012_001",
+        "name": "flat screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A012_001",
+        "action_type": "attach",
+        "moving_part_ref": "P012_003",
+        "target_part_ref": "P012_004",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 10: cross unit lowered onto the bottom rails"
+      },
+      {
+        "action_uid": "A012_002",
+        "action_type": "tighten",
+        "moving_part_ref": "P012_003",
+        "target_part_ref": "P012_004",
+        "fastener_ref": "F012_001",
+        "tool_ref": "T012_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 11: 2x cam lock 110630 turned"
+      }
+    ],
+    "final_visible_structure": "first cross unit on the floor rails",
+    "uncertainties": []
+  },
+  {
+    "page_number": 13,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P013_001",
+        "manual_label": "",
+        "name": "left box cross rail",
+        "visual_description": "short divider panel across the left half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P013_002",
+        "manual_label": "",
+        "name": "right box cross rail",
+        "visual_description": "short divider panel across the right half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P013_003",
+        "manual_label": "",
+        "name": "centre divider",
+        "visual_description": "long board down the middle of the bed, the stem of the cross units (two boards end to end, drawn as one)",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          2000,
+          300
+        ]
+      },
+      {
+        "part_uid": "P013_004",
+        "manual_label": "",
+        "name": "bottom rail",
+        "visual_description": "narrow floor rail under the cross units, with glides",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and cam bolt holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1600,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A013_001",
+        "action_type": "attach",
+        "moving_part_ref": "P013_003",
+        "target_part_ref": "P013_004",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "steps on page 13: the second cross unit built the same way and set on the bottom rails"
+      }
+    ],
+    "final_visible_structure": "second cross unit on the floor rails",
+    "uncertainties": []
+  },
+  {
+    "page_number": 14,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P014_001",
+        "manual_label": "",
+        "name": "left box cross rail",
+        "visual_description": "short divider panel across the left half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P014_002",
+        "manual_label": "",
+        "name": "right box cross rail",
+        "visual_description": "short divider panel across the right half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P014_003",
+        "manual_label": "",
+        "name": "centre divider",
+        "visual_description": "long board down the middle of the bed, the stem of the cross units (two boards end to end, drawn as one)",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          2000,
+          300
+        ]
+      },
+      {
+        "part_uid": "P014_004",
+        "manual_label": "",
+        "name": "bottom rail",
+        "visual_description": "narrow floor rail under the cross units, with glides",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and cam bolt holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1600,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A014_001",
+        "action_type": "attach",
+        "moving_part_ref": "P014_003",
+        "target_part_ref": "P014_004",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "steps on page 14: the second cross unit built the same way and set on the bottom rails"
+      }
+    ],
+    "final_visible_structure": "second cross unit on the floor rails",
+    "uncertainties": []
+  },
+  {
+    "page_number": 15,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P015_001",
+        "manual_label": "",
+        "name": "left box cross rail",
+        "visual_description": "short divider panel across the left half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P015_002",
+        "manual_label": "",
+        "name": "right box cross rail",
+        "visual_description": "short divider panel across the right half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P015_003",
+        "manual_label": "",
+        "name": "centre divider",
+        "visual_description": "long board down the middle of the bed, the stem of the cross units (two boards end to end, drawn as one)",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          2000,
+          300
+        ]
+      },
+      {
+        "part_uid": "P015_004",
+        "manual_label": "",
+        "name": "bottom rail",
+        "visual_description": "narrow floor rail under the cross units, with glides",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and cam bolt holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1600,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A015_001",
+        "action_type": "attach",
+        "moving_part_ref": "P015_003",
+        "target_part_ref": "P015_004",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "steps on page 15: the second cross unit built the same way and set on the bottom rails"
+      }
+    ],
+    "final_visible_structure": "second cross unit on the floor rails",
+    "uncertainties": []
+  },
+  {
+    "page_number": 16,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P016_001",
+        "manual_label": "",
+        "name": "left box cross rail",
+        "visual_description": "short divider panel across the left half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P016_002",
+        "manual_label": "",
+        "name": "right box cross rail",
+        "visual_description": "short divider panel across the right half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P016_003",
+        "manual_label": "",
+        "name": "centre divider",
+        "visual_description": "long board down the middle of the bed, the stem of the cross units (two boards end to end, drawn as one)",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          2000,
+          300
+        ]
+      },
+      {
+        "part_uid": "P016_004",
+        "manual_label": "",
+        "name": "bottom rail",
+        "visual_description": "narrow floor rail under the cross units, with glides",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and cam bolt holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1600,
+          18,
+          60
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A016_001",
+        "action_type": "attach",
+        "moving_part_ref": "P016_003",
+        "target_part_ref": "P016_004",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "steps on page 16: the second cross unit built the same way and set on the bottom rails"
+      }
+    ],
+    "final_visible_structure": "second cross unit on the floor rails",
+    "uncertainties": []
+  },
+  {
+    "page_number": 17,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P017_001",
+        "manual_label": "",
+        "name": "long rail",
+        "visual_description": "long inner rail along the top of the drawer compartments",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bracket holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          18,
+          100
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F017_001",
+        "manual_label": "101359",
+        "name": "large dowel",
+        "shape_family": "dowel",
+        "quantity_visible": 4
+      },
+      {
+        "fastener_uid": "F017_002",
+        "manual_label": "100365",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A017_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P017_001",
+        "fastener_ref": "F017_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "steps 19-20: 4x large dowel 101359 in the long rails and a bracket 121370 screwed to each with bracket screw 100365"
+      }
+    ],
+    "final_visible_structure": "long rails ready",
+    "uncertainties": []
+  },
+  {
+    "page_number": 18,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P018_001",
+        "manual_label": "",
+        "name": "headboard",
+        "visual_description": "plain end board at the head of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      },
+      {
+        "part_uid": "P018_002",
+        "manual_label": "",
+        "name": "centre divider",
+        "visual_description": "long board down the middle of the bed, the stem of the cross units (two boards end to end, drawn as one)",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          2000,
+          300
+        ]
+      },
+      {
+        "part_uid": "P018_003",
+        "manual_label": "",
+        "name": "bottom rail",
+        "visual_description": "narrow floor rail under the cross units, with glides",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel and cam bolt holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1600,
+          18,
+          60
+        ]
+      },
+      {
+        "part_uid": "P018_004",
+        "manual_label": "",
+        "name": "long rail",
+        "visual_description": "long inner rail along the top of the drawer compartments",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bracket holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          18,
+          100
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A018_001",
+        "action_type": "attach",
+        "moving_part_ref": "P018_001",
+        "target_part_ref": "P018_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 21: headboard set against the ends of the bottom rails and cross units"
+      },
+      {
+        "action_uid": "A018_002",
+        "action_type": "attach",
+        "moving_part_ref": "P018_001",
+        "target_part_ref": "P018_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 21: headboard against the centre dividers"
+      }
+    ],
+    "final_visible_structure": "headboard against the inner frame",
+    "uncertainties": []
+  },
+  {
+    "page_number": 19,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P019_001",
+        "manual_label": "",
+        "name": "long rail",
+        "visual_description": "long inner rail along the top of the drawer compartments",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bracket holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          18,
+          100
+        ]
+      },
+      {
+        "part_uid": "P019_002",
+        "manual_label": "",
+        "name": "headboard",
+        "visual_description": "plain end board at the head of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F019_001",
+        "manual_label": "110115",
+        "name": "connector bolt",
+        "shape_family": "bolt",
+        "quantity_visible": 1
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T019_001",
+        "name": "allen key 100049"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A019_001",
+        "action_type": "attach",
+        "moving_part_ref": "P019_001",
+        "target_part_ref": "P019_002",
+        "fastener_ref": "F019_001",
+        "tool_ref": "T019_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 22: long rail fixed to the headboard with the connector turned by allen key 100049"
+      }
+    ],
+    "final_visible_structure": "first long rail on",
+    "uncertainties": []
+  },
+  {
+    "page_number": 20,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P020_001",
+        "manual_label": "",
+        "name": "long rail",
+        "visual_description": "long inner rail along the top of the drawer compartments",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bracket holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          18,
+          100
+        ]
+      },
+      {
+        "part_uid": "P020_002",
+        "manual_label": "",
+        "name": "left box cross rail",
+        "visual_description": "short divider panel across the left half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      },
+      {
+        "part_uid": "P020_003",
+        "manual_label": "",
+        "name": "right box cross rail",
+        "visual_description": "short divider panel across the right half of the bed, from the side panel to the centre divider",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam and runner holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          300
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F020_001",
+        "manual_label": "100365",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A020_001",
+        "action_type": "attach",
+        "moving_part_ref": "P020_001",
+        "target_part_ref": "P020_002",
+        "fastener_ref": "F020_001",
+        "tool_ref": "",
+        "direction_hint": "clockwise",
+        "visual_evidence": "steps 23-24: long rails screwed to the box cross rails with bracket screw 100365, both sides"
+      }
+    ],
+    "final_visible_structure": "long rails on both sides",
+    "uncertainties": []
+  },
+  {
+    "page_number": 21,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P021_001",
+        "manual_label": "",
+        "name": "long rail",
+        "visual_description": "long inner rail along the top of the drawer compartments",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bracket holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          18,
+          100
+        ]
+      },
+      {
+        "part_uid": "P021_002",
+        "manual_label": "",
+        "name": "headboard",
+        "visual_description": "plain end board at the head of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [
+      {
+        "tool_uid": "T021_001",
+        "name": "allen key 100049"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A021_001",
+        "action_type": "tighten",
+        "moving_part_ref": "P021_001",
+        "target_part_ref": "P021_002",
+        "fastener_ref": "",
+        "tool_ref": "T021_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 25: connectors tightened"
+      }
+    ],
+    "final_visible_structure": "frame tightened",
+    "uncertainties": []
+  },
+  {
+    "page_number": 22,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P022_001",
+        "manual_label": "",
+        "name": "footboard",
+        "visual_description": "plain end board at the foot of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      },
+      {
+        "part_uid": "P022_002",
+        "manual_label": "",
+        "name": "long rail",
+        "visual_description": "long inner rail along the top of the drawer compartments",
+        "shape_family": "beam",
+        "material_hint": "wood",
+        "quantity_visible": 2,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "dowel holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bracket holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          18,
+          100
+        ]
+      },
+      {
+        "part_uid": "P022_003",
+        "manual_label": "",
+        "name": "centre divider",
+        "visual_description": "long board down the middle of the bed, the stem of the cross units (two boards end to end, drawn as one)",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "cam holes"
+          },
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "runner screw holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          18,
+          2000,
+          300
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F022_001",
+        "manual_label": "100365",
+        "name": "bracket screw",
+        "shape_family": "screw",
+        "quantity_visible": 2
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A022_001",
+        "action_type": "attach",
+        "moving_part_ref": "P022_001",
+        "target_part_ref": "P022_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 27: footboard pushed onto the far ends of the long rails"
+      },
+      {
+        "action_uid": "A022_002",
+        "action_type": "attach",
+        "moving_part_ref": "P022_001",
+        "target_part_ref": "P022_003",
+        "fastener_ref": "F022_001",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 26: bracket screwed; footboard against the centre divider"
+      }
+    ],
+    "final_visible_structure": "footboard on",
+    "uncertainties": []
+  },
+  {
+    "page_number": 23,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P023_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left long side panel with two drawer openings",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "cam and dowel holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "drawer openings"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          2040,
+          470
+        ]
+      },
+      {
+        "part_uid": "P023_002",
+        "manual_label": "",
+        "name": "headboard",
+        "visual_description": "plain end board at the head of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      },
+      {
+        "part_uid": "P023_003",
+        "manual_label": "",
+        "name": "footboard",
+        "visual_description": "plain end board at the foot of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A023_001",
+        "action_type": "attach",
+        "moving_part_ref": "P023_001",
+        "target_part_ref": "P023_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 28: left side panel fitted between the headboard and footboard"
+      },
+      {
+        "action_uid": "A023_002",
+        "action_type": "attach",
+        "moving_part_ref": "P023_001",
+        "target_part_ref": "P023_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 28: left side panel against the footboard"
+      }
+    ],
+    "final_visible_structure": "left side panel on",
+    "uncertainties": []
+  },
+  {
+    "page_number": 24,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P024_001",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right long side panel with two drawer openings",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "cam and dowel holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "drawer openings"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          18,
+          2040,
+          470
+        ]
+      },
+      {
+        "part_uid": "P024_002",
+        "manual_label": "",
+        "name": "headboard",
+        "visual_description": "plain end board at the head of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      },
+      {
+        "part_uid": "P024_003",
+        "manual_label": "",
+        "name": "footboard",
+        "visual_description": "plain end board at the foot of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A024_001",
+        "action_type": "attach",
+        "moving_part_ref": "P024_001",
+        "target_part_ref": "P024_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 29: right side panel fitted"
+      },
+      {
+        "action_uid": "A024_002",
+        "action_type": "attach",
+        "moving_part_ref": "P024_001",
+        "target_part_ref": "P024_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 29: right side panel against the footboard"
+      }
+    ],
+    "final_visible_structure": "box frame closed",
+    "uncertainties": []
+  },
+  {
+    "page_number": 25,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P025_001",
+        "manual_label": "118301",
+        "name": "side ledge",
+        "visual_description": "metal angle ledge for the slatted base along a side panel",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 4,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 4,
+            "location_hint": "screw slots"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1000,
+          20,
+          20
+        ]
+      },
+      {
+        "part_uid": "P025_002",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left long side panel with two drawer openings",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "cam and dowel holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "drawer openings"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          2040,
+          470
+        ]
+      },
+      {
+        "part_uid": "P025_003",
+        "manual_label": "",
+        "name": "right side panel",
+        "visual_description": "right long side panel with two drawer openings",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "cam and dowel holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "drawer openings"
+          }
+        ],
+        "page_position": "right",
+        "size_mm": [
+          18,
+          2040,
+          470
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F025_001",
+        "manual_label": "110789",
+        "name": "ledge screw",
+        "shape_family": "screw",
+        "quantity_visible": 16
+      }
+    ],
+    "visible_tools": [
+      {
+        "tool_uid": "T025_001",
+        "name": "cross head screwdriver"
+      }
+    ],
+    "observed_actions": [
+      {
+        "action_uid": "A025_001",
+        "action_type": "attach",
+        "moving_part_ref": "P025_001",
+        "target_part_ref": "P025_002",
+        "fastener_ref": "F025_001",
+        "tool_ref": "T025_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 30: 2x side ledge screwed inside the left side panel with ledge screws 110789"
+      },
+      {
+        "action_uid": "A025_002",
+        "action_type": "attach",
+        "moving_part_ref": "P025_001",
+        "target_part_ref": "P025_003",
+        "fastener_ref": "F025_001",
+        "tool_ref": "T025_001",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 30: 2x side ledge screwed inside the right side panel; 16x screw in all"
+      }
+    ],
+    "final_visible_structure": "slat ledges along both sides",
+    "uncertainties": [
+      "Info: the mattress must sit inside the frame."
+    ]
+  },
+  {
+    "page_number": 26,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P026_001",
+        "manual_label": "",
+        "name": "headboard",
+        "visual_description": "plain end board at the head of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      },
+      {
+        "part_uid": "P026_002",
+        "manual_label": "",
+        "name": "footboard",
+        "visual_description": "plain end board at the foot of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F026_001",
+        "manual_label": "116791",
+        "name": "beam bracket",
+        "shape_family": "bracket",
+        "quantity_visible": 2
+      },
+      {
+        "fastener_uid": "F026_002",
+        "manual_label": "110789",
+        "name": "ledge screw",
+        "shape_family": "screw",
+        "quantity_visible": 4
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A026_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P026_001",
+        "fastener_ref": "F026_001",
+        "tool_ref": "",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 31: beam bracket 116791 screwed to the middle of the headboard"
+      },
+      {
+        "action_uid": "A026_002",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P026_002",
+        "fastener_ref": "F026_001",
+        "tool_ref": "",
+        "direction_hint": "clockwise",
+        "visual_evidence": "step 31: beam bracket 116791 screwed to the middle of the footboard"
+      }
+    ],
+    "final_visible_structure": "beam brackets at both ends",
+    "uncertainties": []
+  },
+  {
+    "page_number": 27,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 32-33: support strips and runner adjustments. No new join.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 28,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 32-33: support strips and runner adjustments. No new join.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 29,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P029_001",
+        "manual_label": "117228",
+        "name": "centre support rail",
+        "visual_description": "metal centre beam from the headboard to the footboard",
+        "shape_family": "beam",
+        "material_hint": "metal",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 2,
+            "location_hint": "bracket holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          2000,
+          30,
+          60
+        ]
+      },
+      {
+        "part_uid": "P029_002",
+        "manual_label": "",
+        "name": "headboard",
+        "visual_description": "plain end board at the head of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      },
+      {
+        "part_uid": "P029_003",
+        "manual_label": "",
+        "name": "footboard",
+        "visual_description": "plain end board at the foot of the bed",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 6,
+            "location_hint": "cam and dowel holes"
+          }
+        ],
+        "page_position": "center",
+        "size_mm": [
+          1680,
+          18,
+          470
+        ]
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A029_001",
+        "action_type": "attach",
+        "moving_part_ref": "P029_001",
+        "target_part_ref": "P029_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "steps 34-35: metal centre support rail lowered into the beam bracket at the headboard"
+      },
+      {
+        "action_uid": "A029_002",
+        "action_type": "attach",
+        "moving_part_ref": "P029_001",
+        "target_part_ref": "P029_003",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "steps 34-35: and into the beam bracket at the footboard"
+      }
+    ],
+    "final_visible_structure": "centre support rail in place",
+    "uncertainties": []
+  },
+  {
+    "page_number": 30,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P030_001",
+        "manual_label": "",
+        "name": "left side panel",
+        "visual_description": "left long side panel with two drawer openings",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 1,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 8,
+            "location_hint": "cam and dowel holes"
+          },
+          {
+            "feature_type": "slot",
+            "count": 2,
+            "location_hint": "drawer openings"
+          }
+        ],
+        "page_position": "left",
+        "size_mm": [
+          18,
+          2040,
+          470
+        ]
+      }
+    ],
+    "visible_fasteners": [
+      {
+        "fastener_uid": "F030_001",
+        "manual_label": "191315",
+        "name": "slat stop",
+        "shape_family": "other",
+        "quantity_visible": 8
+      }
+    ],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A030_001",
+        "action_type": "insert",
+        "moving_part_ref": "",
+        "target_part_ref": "P030_001",
+        "fastener_ref": "F030_001",
+        "tool_ref": "",
+        "direction_hint": "down",
+        "visual_evidence": "step 36: 8x slat stop 191315 screwed onto the ledges"
+      }
+    ],
+    "final_visible_structure": "frame ready for a slatted base",
+    "uncertainties": [
+      "Info: the slatted base is sold separately."
+    ]
+  },
+  {
+    "page_number": 31,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Step 37: slatted base (not included) rolled out. Steps 38: drawer building begins; 4 drawers.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 32,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 38-46: each drawer built from a front, two sides, a back and a bottom (4x).",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 33,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 38-46: each drawer built from a front, two sides, a back and a bottom (4x).",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 34,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Steps 38-46: each drawer built from a front, two sides, a back and a bottom (4x).",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  },
+  {
+    "page_number": 35,
+    "page_type": "assembly_step",
+    "visible_parts": [
+      {
+        "part_uid": "P035_001",
+        "manual_label": "",
+        "name": "drawer front",
+        "visual_description": "finished drawer seen by its front, in a side panel opening",
+        "shape_family": "panel",
+        "material_hint": "wood",
+        "quantity_visible": 4,
+        "connection_features": [],
+        "page_position": "center",
+        "size_mm": [
+          780,
+          18,
+          200
+        ]
+      },
+      {
+        "part_uid": "P035_002",
+        "manual_label": "139505",
+        "name": "drawer runner",
+        "visual_description": "metal drawer runner",
+        "shape_family": "rail",
+        "material_hint": "metal",
+        "quantity_visible": 8,
+        "connection_features": [
+          {
+            "feature_type": "hole",
+            "count": 3,
+            "location_hint": "screw holes"
+          }
+        ],
+        "page_position": "center"
+      }
+    ],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [
+      {
+        "action_uid": "A035_001",
+        "action_type": "slide",
+        "moving_part_ref": "P035_001",
+        "target_part_ref": "P035_002",
+        "fastener_ref": "",
+        "tool_ref": "",
+        "direction_hint": "inward",
+        "visual_evidence": "step 47: 4x finished drawer put on the drawer runners and pushed into the side panel openings"
+      }
+    ],
+    "final_visible_structure": "drawers in",
+    "uncertainties": []
+  },
+  {
+    "page_number": 36,
+    "page_type": "assembly_step",
+    "visible_parts": [],
+    "visible_fasteners": [],
+    "visible_tools": [],
+    "observed_actions": [],
+    "final_visible_structure": "",
+    "uncertainties": [
+      "Finished BRIMNES storage bed; do not sit on open drawers.",
+      "Assembly step page has no observed_actions. Re-check page analysis."
+    ]
+  }
+]
