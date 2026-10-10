@@ -28,6 +28,7 @@ python utils/layout_summary.py               # last run's layout + motion plan a
 python utils/sample_frames.py <name> [--at S] # grid of video frames → outputs/checks/
 python utils/layout_regress.py check [NAME ...]  # re-run manuals (no render) and compare layouts with v2/tests/layout_snapshots/
 python utils/layout_regress.py update NAME ...   # after an intended layout change: save new snapshots and commit them
+python utils/review_sheet.py [NAME ...]          # every manual's finished piece on one image (last frame only, ~6 s each) → outputs/checks/review_sheet.png
 streamlit run app.py                         # UI: add a manual, pick one, generate, play/download
 python web/worker.py                         # this PC as the render machine: uploads on the live site open while it runs
 cd deploy/cloudflare && npx wrangler deploy  # publish the website (Cloudflare free plan; builds public/ from web/static + showcase)
