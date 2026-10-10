@@ -29,7 +29,7 @@ HUTCH_TOP = part("", "hutch top panel", "top panel of the open shelf unit", "pan
                  [("hole", 4, "dowel holes")], "center", size=(664, 250, 18))
 HUTCH_SHELF = part("", "hutch shelf", "shelf in the middle of the open shelf unit", "panel", "wood", 1,
                    [("hole", 4, "dowel holes")], "center", size=(664, 240, 18))
-HUTCH_RAIL = part("", "hutch rail", "rail across the bottom back of the open shelf unit", "beam", "wood", 1,
+HUTCH_RAIL = part("", "hutch back rail", "rail across the bottom back of the open shelf unit", "beam", "wood", 1,
                   [("hole", 3, "dowel holes")], "center", size=(664, 18, 60))
 HUTCH_BACK = part("", "hutch back panel", "hardboard back panel of the open shelf unit", "panel", "fibreboard", 1,
                   [], "center", size=(680, 3, 330))
@@ -151,7 +151,7 @@ PAGES = [
          actions=[
              action("attach", "hutch right side panel", "hutch top panel", "", "", "down",
                     "step 15: hutch right side panel pushed on until it clicks"),
-             action("attach", "hutch rail", "hutch right side panel", "101345", "", "inward",
+             action("attach", "hutch back rail", "hutch right side panel", "101345", "", "inward",
                     "step 16: hutch rail with 3x wooden dowel 101345 fitted between the hutch side panels at the bottom back"),
          ],
          final="shelf unit frame"),
@@ -160,7 +160,7 @@ PAGES = [
          fasteners=[fastener("151708", "back panel fixing", "plug", 2)],
          actions=[
              action("insert", "", "hutch left side panel", "151708", "", "inward", "step 17: 2x back panel fixing 151708 and pin 151707"),
-             action("slide", "hutch back panel", "hutch rail", "", "", "down",
+             action("slide", "hutch back panel", "hutch back rail", "", "", "down",
                     "step 18: hutch back panel slid down the grooves of the hutch side panels into the hutch rail"),
          ],
          final="shelf unit complete"),

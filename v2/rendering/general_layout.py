@@ -1478,7 +1478,10 @@ class GeneralLayout:
             for k, uid in enumerate(shelves_in[i]):
                 z = low + (bay_high - low) * (k + 1) / (len(shelves_in[i]) + 1)
                 w = self.dims(uid)[0]
-                scale = None if is_measured(self.parts[uid]) else [(x1 - x0) / w, 1.0, 1.0]
+                # A size from the manual is kept; an estimate gives way to
+                # the compartment, which the walls fix.
+                printed = self.parts[uid].get("dims_source") == "manual_measurement"
+                scale = None if printed else [(x1 - x0) / w, 1.0, 1.0]
                 self.frame.put(uid, [(x0 + x1) / 2, y, z], scale=scale)
 
     def carcass_rails(self) -> None:
@@ -1735,7 +1738,11 @@ class GeneralLayout:
         bottoms = pick("drawer_bottom", 1, near)
         all_sides = set(self.with_role("drawer_side"))
         free_runners = [u for u in self.with_role("runner") if not self.placed(u)]
-        carcass = [u for u in free_runners if not self.links[u] & all_sides][:2]
+        # Runners joined to this front first; ones joined to another front
+        # are left for that drawer.
+        fronts = set(self.with_role("drawer_front")) - {front_uid}
+        carcass = sorted((u for u in free_runners if not self.links[u] & all_sides),
+                         key=lambda u: (front_uid not in self.links[u], bool(self.links[u] & fronts)))[:2]
         on_sides = sorted((u for u in free_runners if self.links[u] & all_sides and u not in carcass),
                           key=lambda u: not (self.links[u] & set(sides)))[:max(0, runners_each - len(carcass))]
         runners = carcass + on_sides

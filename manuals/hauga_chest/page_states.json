@@ -1129,7 +1129,7 @@
       {
         "part_uid": "P017_004",
         "manual_label": "",
-        "name": "hutch rail",
+        "name": "hutch back rail",
         "visual_description": "rail across the bottom back of the open shelf unit",
         "shape_family": "beam",
         "material_hint": "wood",
@@ -1251,7 +1251,7 @@
       {
         "part_uid": "P018_004",
         "manual_label": "",
-        "name": "hutch rail",
+        "name": "hutch back rail",
         "visual_description": "rail across the bottom back of the open shelf unit",
         "shape_family": "beam",
         "material_hint": "wood",
