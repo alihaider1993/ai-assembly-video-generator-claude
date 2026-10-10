@@ -1071,10 +1071,47 @@ def keyframe_camera(shot, frame):
     keyframe_location(camera, location, frame)
 
 
+def focus_box(index):
+    # The moving parts where they land, plus the last stretch of their
+    # approach, at least FOCUS_MIN_SIZE across: what a close-up of the step
+    # shows.
+    entries = []
+    for uid, step_index in first_step_of.items():
+        if step_index != index:
+            continue
+        layout_obj = layout_by_uid[uid]
+        end = Vector(layout_obj.get("final_position", [0, 0, 1]))
+        start = Vector(layout_obj.get("start_position", [0, 0, 1]))
+        entries.append((uid, end))
+        entries.append((uid, end + (start - end) * FOCUS_APPROACH))
+    lo, hi = bounds_of(entries)
+    if lo is None:
+        return lo, hi
+    center = (lo + hi) / 2
+    half = Vector([max((hi[i] - lo[i]) / 2, FOCUS_MIN_SIZE / 2) for i in range(3)])
+    return center - half, center + half
+
+
+def blend(shot_a, shot_b, share):
+    return tuple(a.lerp(b, share) for a, b in zip(shot_a, shot_b))
+
+
+# Steps whose parts are small next to what is built so far get a closer
+# shot: part of the way from the whole build toward the moving parts, so
+# the piece stays in view for context.
+FOCUS_APPROACH = 0.35
+FOCUS_MIN_SIZE = 0.35
+FOCUS_ZOOM = 0.6
+FOCUS_WHEN_SMALLER = 0.5
+
 build_box = (None, None)
 for index, step in enumerate(steps):
     build_box = union(build_box, bounds_of(entries_for_step(index)))
     shot = framing(build_box)
+    focus = focus_box(index)
+    if focus[0] is not None:
+        if max(focus[1] - focus[0]) < FOCUS_WHEN_SMALLER * max(build_box[1] - build_box[0]):
+            shot = blend(shot, framing(focus), FOCUS_ZOOM)
     if index == 0:
         keyframe_camera(shot, 1)
     keyframe_camera(shot, step["start_frame"])
