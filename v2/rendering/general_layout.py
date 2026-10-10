@@ -730,6 +730,7 @@ class GeneralLayout:
 
         self.place_junctions(chains, plan, cx, cy, up_half)
         self.place_frame_beams(plan, chains, cx, cy, width, depth, frame_top, corner_top)
+        self.junctions_under_inner_beams(plan)
         for group in sorted(ladders, key=lambda g: -len(g)):
             self.place_ladder(group, frame_top)
         self.place_stiles()
@@ -915,6 +916,28 @@ class GeneralLayout:
             else:
                 spot = [(1 if i % 2 == 0 else -1) * cx, 0.0]
             self.frame.put(uid, [spot[0], spot[1], self.dims(uid)[2] / 2])
+
+    def junctions_under_inner_beams(self, plan: Dict[str, Dict[str, Any]]) -> None:
+        """A junction post joined only to beams inside the frame (support
+        legs under a bed's centre rail) stands under that beam, the posts on
+        one beam spread along it."""
+        under: Dict[str, List[str]] = {}
+        for uid in self.junctions:
+            beams = [b for b in self.links[uid] if b in plan and self.placed(b)]
+            if beams and all("interior" in plan[b] for b in beams):
+                under.setdefault(beams[0], []).append(uid)
+        for beam, posts in under.items():
+            lo, hi = self.frame.box(beam)
+            axis = 0 if hi[0] - lo[0] >= hi[1] - lo[1] else 1
+            for k, uid in enumerate(posts):
+                spot = [(lo[i] + hi[i]) / 2 for i in range(2)]
+                spot[axis] = lo[axis] + (hi[axis] - lo[axis]) * (k + 1) / (len(posts) + 1)
+                # From the floor to the beam: stretched a little when its
+                # length leaves a gap (a foot or mounting plate not counted).
+                h = self.dims(uid)[2]
+                reach = lo[2] - self.floor
+                scale = [1.0, 1.0, reach / h] if h < reach < h * 1.5 else None
+                self.frame.put(uid, [spot[0], spot[1], self.floor + (reach if scale else h) / 2], scale=scale)
 
     def line_verticals(self, axis: int, offset: float) -> List[str]:
         """Uprights and walls standing on the line along `axis` at `offset`."""
@@ -1285,6 +1308,11 @@ class GeneralLayout:
         touch the most of the parts it is joined to first, slid toward the
         middle until clear of the parts there."""
         blocks = [u for u in self.of_kind("block", unplaced=True) if self.linked(u, ("beam", "upright", "wall"))]
+        # One fixed to a single beam (a retainer on a rail) goes on that
+        # beam, not into a corner of the frame.
+        for uid in [u for u in blocks if len(self.links[u]) == 1 and self.kind.get(next(iter(self.links[u]))) == "beam"]:
+            blocks.remove(uid)
+            self.place_block(uid)
         slots = self.corner_slots()
 
         uprights = [u for u in self.frame.final if self.kind.get(u) == "upright"]
@@ -1647,6 +1675,14 @@ class GeneralLayout:
                 z = lo[2] + h / 2 + STACK_BOTTOM_MARGIN
                 x = (hi[0] if out > 0 else lo[0]) + out * t / 2
                 self.frame.put(uid, [x, y, z], [0.0, 0.0, 90.0])
+                # Its runners run inward from the side under it, one near
+                # each end of the front.
+                runners = [r for r in self.with_role("runner") if uid in self.links[r]]
+                for k, r in enumerate(runners[:2]):
+                    length, rt, rh = self.dims(r)
+                    ry = y + (-1 if k == 0 else 1) * (w / 2 - rt * 2)
+                    rx = (lo[0] if out > 0 else hi[0]) - out * length / 2
+                    self.frame.put(r, [rx, ry, z - h / 2 + rh / 2], [0.0, 0.0, 0.0])
 
     def pack_drawers(self, drawers: List[str], x0: float, x1: float, z0: float, z1: float,
                      band: bool) -> Dict[str, Tuple[float, float, float, float]]:
