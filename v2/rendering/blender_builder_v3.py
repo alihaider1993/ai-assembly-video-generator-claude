@@ -259,6 +259,8 @@ def build_blender_script():
     # Optional overrides for quick preview renders; defaults keep full quality.
     resolution_percent = env_int("V3_RESOLUTION_PERCENT", 100, 10, 100)
     frame_step = env_int("V3_FRAME_STEP", 1, 1, 24)
+    # Render only the finished piece (the last frame), for review sheets.
+    last_frame_only = os.environ.get("V3_LAST_FRAME_ONLY", "").strip() in ("1", "true", "yes")
     # The render engine: EEVEE (default) needs a GPU; a server without one
     # uses WORKBENCH (fast, flat studio light) or CYCLES on the CPU.
     render_engine = os.environ.get("V3_RENDER_ENGINE", "").strip().upper() or "EEVEE"
@@ -968,7 +970,7 @@ scene = bpy.context.scene
 fps = TIMELINE.get("fps", 24)
 frame_end = TIMELINE["frame_end"]
 
-scene.frame_start = 1
+scene.frame_start = frame_end if {last_frame_only} else 1
 scene.frame_end = frame_end
 scene.frame_step = {frame_step}
 scene.render.fps = fps
