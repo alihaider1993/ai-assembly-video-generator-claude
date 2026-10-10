@@ -9,6 +9,10 @@
   ],
   "type": "flip"
  },
+ "issues": [
+  "OBJ0020 ends 270 mm from every part it is joined to",
+  "OBJ0021 ends 270 mm from every part it is joined to"
+ ],
  "objects": {
   "ASM0001": {
    "pos": [

@@ -1,5 +1,11 @@
 {
  "finale": {},
+ "issues": [
+  "OBJ0027 ends 210 mm from every part it is joined to",
+  "OBJ0028 ends 1058 mm from every part it is joined to",
+  "OBJ0029 ends 464 mm from every part it is joined to",
+  "OBJ0030 ends 1074 mm from every part it is joined to"
+ ],
  "objects": {
   "ASM0001": {
    "pos": [

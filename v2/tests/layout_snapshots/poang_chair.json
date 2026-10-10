@@ -1,5 +1,10 @@
 {
  "finale": {},
+ "issues": [
+  "OBJ0005 and OBJ0014 pass through each other",
+  "OBJ0006 and OBJ0014 pass through each other",
+  "OBJ0012 ends 45 mm from every part it is joined to"
+ ],
  "objects": {
   "ASM0001": {
    "pos": [

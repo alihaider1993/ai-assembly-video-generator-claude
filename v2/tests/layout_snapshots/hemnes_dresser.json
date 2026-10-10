@@ -1,5 +1,37 @@
 {
  "finale": {},
+ "issues": [
+  "OBJ0004 ends 327 mm from every part it is joined to",
+  "OBJ0005 ends 331 mm from every part it is joined to",
+  "OBJ0007 ends 702 mm from every part it is joined to",
+  "OBJ0008 ends 726 mm from every part it is joined to",
+  "OBJ0009 ends 702 mm from every part it is joined to",
+  "OBJ0010 ends 364 mm from every part it is joined to",
+  "OBJ0011 ends 200 mm from every part it is joined to",
+  "OBJ0012 ends 363 mm from every part it is joined to",
+  "OBJ0013 ends 1064 mm from every part it is joined to",
+  "OBJ0014 ends 726 mm from every part it is joined to",
+  "OBJ0015 ends 489 mm from every part it is joined to",
+  "OBJ0016 ends 489 mm from every part it is joined to",
+  "OBJ0017 ends 224 mm from every part it is joined to",
+  "OBJ0018 ends 364 mm from every part it is joined to",
+  "OBJ0019 ends 339 mm from every part it is joined to",
+  "OBJ0020 ends 224 mm from every part it is joined to",
+  "OBJ0021 ends 224 mm from every part it is joined to",
+  "OBJ0022 ends 364 mm from every part it is joined to",
+  "OBJ0023 ends 339 mm from every part it is joined to",
+  "OBJ0024 ends 224 mm from every part it is joined to",
+  "OBJ0025 ends 224 mm from every part it is joined to",
+  "OBJ0026 ends 224 mm from every part it is joined to",
+  "OBJ0027 ends 702 mm from every part it is joined to",
+  "OBJ0028 ends 726 mm from every part it is joined to",
+  "OBJ0029 ends 702 mm from every part it is joined to",
+  "OBJ0030 ends 726 mm from every part it is joined to",
+  "OBJ0072 ends 224 mm from every part it is joined to",
+  "OBJ0075 ends 339 mm from every part it is joined to",
+  "OBJ0081 ends 151 mm from every part it is joined to",
+  "OBJ0082 ends 151 mm from every part it is joined to"
+ ],
  "objects": {
   "ASM0001": {
    "pos": [

@@ -1,11 +1,14 @@
 """Layout regression check: does a code change move parts in other manuals?
 
 Each described manual has a snapshot in v2/tests/layout_snapshots/<name>.json:
-its motion steps (what moves onto what), the finale, and every object's final
-position, rotation and scale. `check` re-runs the pipeline without rendering
-and compares; a part that moved more than TOLERANCE_M (or a changed step) is a
-failure. When a change is meant to move parts, look at the new layout (render
-it), then `update` the snapshot and commit it with the change.
+its motion steps (what moves onto what), the finale, every object's final
+position, rotation and scale, and the sanity issues it has (a part below the
+floor, two panels passing through each other, a moved part ending away from
+what it is joined to). `check` re-runs the pipeline without rendering and
+compares; a part that moved more than TOLERANCE_M, a changed step, or a NEW
+issue is a failure (issues already in the snapshot are known flaws). When a
+change is meant to move parts, look at the new layout (render it), then
+`update` the snapshot and commit it with the change.
 
 Usage (from the repo root):
     python utils/layout_regress.py check [NAME ...]           # all described manuals by default
@@ -17,6 +20,7 @@ pipeline run while it works.
 """
 import argparse
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -24,7 +28,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from config import MANUALS_DIR, MOTION_PLAN_JSON, SCENE_LAYOUT_JSON, is_described
+from config import MANUALS_DIR, UNIVERSAL_GRAPH_JSON, MOTION_PLAN_JSON, PROXY_GEOMETRY_JSON, SCENE_LAYOUT_JSON, is_described
 
 SNAPSHOT_DIR = PROJECT_ROOT / "v2" / "tests" / "layout_snapshots"
 # Small enough to catch a misplaced part, large enough for float differences
@@ -32,6 +36,13 @@ SNAPSHOT_DIR = PROJECT_ROOT / "v2" / "tests" / "layout_snapshots"
 TOLERANCE_M = 0.002
 TOLERANCE_DEG = 0.5
 TOLERANCE_SCALE = 0.005
+# Sanity checks: how far under the floor counts, which parts are large
+# panels (second-largest side), how much of the smaller one two of them may
+# share, and how far a moved part may end from what it is joined to.
+FLOOR_SLACK_M = 0.005
+LARGE_PANEL_M = 0.2
+OVERLAP_SHARE = 0.2
+TOUCH_SLACK_M = 0.03
 
 
 def described_manuals():
@@ -53,13 +64,90 @@ def snapshot_from_outputs() -> dict:
     return {
         "finale": layout.get("finale") or {},
         "steps": [[sorted(s.get("moving_nodes", [])), sorted(s.get("target_nodes", []))] for s in plan.get("steps", [])],
+        "issues": issues_in_outputs(),
         "objects": {o["node_uid"]: {"pos": r(o.get("final_position")), "rot": r(o.get("rotation")), "scale": r(o.get("scale"))}
                     for o in layout.get("scene_objects", [])},
     }
 
 
-def differences(old: dict, new: dict) -> list:
+def part_boxes() -> dict:
+    """uid -> (lo, hi) world box of every placed part, from the last run's
+    layout and proxy geometry."""
+    sys.path.insert(0, str(PROJECT_ROOT / "v2" / "rendering"))
+    from general_layout import matmul, rotation_matrix
+
+    layout = json.loads(Path(PROJECT_ROOT / SCENE_LAYOUT_JSON).read_text(encoding="utf-8"))
+    proxies = json.loads(Path(PROJECT_ROOT / PROXY_GEOMETRY_JSON).read_text(encoding="utf-8")).get("objects", [])
+    proxy = {p["part_uid"]: p for p in proxies}
+    boxes = {}
+    for o in layout.get("scene_objects", []):
+        uid = o["node_uid"]
+        if o.get("node_type") != "part" or uid not in proxy:
+            continue
+        p = proxy[uid]
+        m = matmul(rotation_matrix(o.get("rotation") or [0, 0, 0]), rotation_matrix(p.get("rotation") or [0, 0, 0]))
+        half = [d * s / 2 for d, s in zip(p["dimensions"], o.get("scale") or [1, 1, 1])]
+        ext = [sum(abs(m[i][j]) * half[j] for j in range(3)) for i in range(3)]
+        c = o.get("final_position")
+        boxes[uid] = ([c[i] - ext[i] for i in range(3)], [c[i] + ext[i] for i in range(3)])
+    return boxes
+
+
+def issues_in_outputs() -> list:
+    """Plain facts every finished piece should satisfy, checked on the last
+    run: nothing below the floor; no two large panels passing through each
+    other; every part moved in a step ends touching a part it was joined to."""
+    boxes = part_boxes()
     out = []
+    for uid, (lo, hi) in sorted(boxes.items()):
+        if lo[2] < -FLOOR_SLACK_M:
+            out.append(f"{uid} below the floor ({lo[2] * 1000:.0f} mm)")
+
+    def size(b):
+        return [b[1][i] - b[0][i] for i in range(3)]
+
+    large = [u for u, b in boxes.items() if sorted(size(b))[1] >= LARGE_PANEL_M]
+    for i, a in enumerate(sorted(large)):
+        for b in sorted(large)[i + 1:]:
+            (alo, ahi), (blo, bhi) = boxes[a], boxes[b]
+            overlap = [min(ahi[k], bhi[k]) - max(alo[k], blo[k]) for k in range(3)]
+            if min(overlap) <= 0:
+                continue
+            vol = overlap[0] * overlap[1] * overlap[2]
+            smaller = min(max(1e-9, sz[0] * sz[1] * sz[2]) for sz in (size(boxes[a]), size(boxes[b])))
+            if vol > OVERLAP_SHARE * smaller:
+                out.append(f"{a} and {b} pass through each other")
+
+    # A copy may be joined to a different copy than the one its step names
+    # (left runners and the left panel), so any part it is joined to counts.
+    graph = json.loads(Path(PROJECT_ROOT / UNIVERSAL_GRAPH_JSON).read_text(encoding="utf-8"))
+    joined = {}
+    for c in graph.get("connections", []):
+        a, b = c.get("from_node_ref", ""), c.get("to_node_ref", "")
+        joined.setdefault(a, set()).add(b)
+        joined.setdefault(b, set()).add(a)
+    plan = json.loads(Path(PROJECT_ROOT / MOTION_PLAN_JSON).read_text(encoding="utf-8"))
+    for step in plan.get("steps", []):
+        named = [t for t in step.get("target_nodes", []) if t in boxes]
+        for uid in step.get("moving_nodes", []):
+            targets = sorted(set(named) | {t for t in joined.get(uid, ()) if t in boxes})
+            if uid not in boxes or not targets:
+                continue
+            gaps = []
+            for t in targets:
+                (alo, ahi), (blo, bhi) = boxes[uid], boxes[t]
+                gaps.append(max(max(blo[k] - ahi[k], alo[k] - bhi[k], 0.0) for k in range(3)))
+            if min(gaps) > TOUCH_SLACK_M:
+                out.append(f"{uid} ends {min(gaps) * 1000:.0f} mm from every part it is joined to")
+    return sorted(set(out))
+
+
+def differences(old: dict, new: dict) -> list:
+    # Issues are matched without their figures, which may round differently
+    # on another machine.
+    bare = lambda text: re.sub(r"\(?-?\d+ mm\)?", "", text).strip()
+    known = {bare(i) for i in old.get("issues", [])}
+    out = [f"new issue: {i}" for i in new.get("issues", []) if bare(i) not in known]
     if old["steps"] != new["steps"]:
         out.append(f"motion steps changed ({len(old['steps'])} -> {len(new['steps'])})")
     if bool(old["finale"]) != bool(new["finale"]):

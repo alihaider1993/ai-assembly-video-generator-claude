@@ -345,6 +345,7 @@ MATERIALS = {{
     "metal": mat("Dark Metal Proxy", (0.10, 0.11, 0.13, 1), 0.35, 0.6),
     "fabric": mat("Light Fabric Proxy", (0.70, 0.70, 0.66, 1), 0.7, 0.0),
     "plastic": mat("Moulded Plastic Proxy", (0.86, 0.86, 0.84, 1), 0.4, 0.0),
+    "fibreboard": mat("Hardboard Proxy", (0.42, 0.30, 0.20, 1), 0.75, 0.0),
     "fastener": mat("Steel Fastener", (0.62, 0.63, 0.66, 1), 0.3, 0.9),
     "hole": mat("Black Hole Marker", (0.01, 0.01, 0.01, 1), 0.5, 0.0),
     "floor": mat("Studio Floor", (0.50, 0.53, 0.58, 1), 0.6, 0.0),
@@ -360,6 +361,12 @@ def create_empty(uid, location):
     return obj
 
 
+# Every board's edges are slightly rounded so they catch the light: the
+# seams between drawer fronts, and a panel's edge against the one behind it,
+# then show instead of merging into one flat face.
+EDGE_BEVEL = 0.0015
+
+
 def create_box(name, dimensions, material):
     bpy.ops.mesh.primitive_cube_add(size=1, location=(0, 0, 0))
     obj = bpy.context.object
@@ -367,6 +374,11 @@ def create_box(name, dimensions, material):
     obj.dimensions = dimensions
     bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
     obj.data.materials.append(material)
+    width = min(EDGE_BEVEL, min(dimensions) * 0.25)
+    if width > 0:
+        bevel = obj.modifiers.new("Edge_Bevel", "BEVEL")
+        bevel.width = width
+        bevel.segments = 2
     return obj
 
 
@@ -618,7 +630,9 @@ def choose_material(layout_obj, graph_obj):
     if "bolt" in name or "screw" in name or "washer" in name:
         return MATERIALS["fastener"]
 
-    if material_hint in ("wood", "metal", "fabric", "plastic"):
+    if material_hint in ("hardboard", "fiberboard"):
+        material_hint = "fibreboard"
+    if material_hint in ("wood", "metal", "fabric", "plastic", "fibreboard"):
         return MATERIALS[material_hint]
 
     if "leg" in name or "rail" in name or "support" in name:

@@ -1,5 +1,10 @@
 {
  "finale": {},
+ "issues": [
+  "OBJ0017 ends 89 mm from every part it is joined to",
+  "OBJ0018 ends 89 mm from every part it is joined to",
+  "OBJ0019 ends 89 mm from every part it is joined to"
+ ],
  "objects": {
   "ASM0001": {
    "pos": [
