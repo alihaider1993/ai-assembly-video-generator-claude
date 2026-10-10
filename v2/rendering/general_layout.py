@@ -1602,7 +1602,7 @@ class GeneralLayout:
                 runners_each = max(2, len(self.with_role("runner")) // len(drawers))
                 for uid in sorted(drawers, key=lambda u: (-slots[u][3], slots[u][0])):
                     self.place_front(uid, slots[uid], front)
-                    self.place_drawer_box(slots[uid], front, back, runners_each)
+                    self.place_drawer_box(slots[uid], front, back, runners_each, uid)
                     fronts.append(uid)
             if doors:
                 top = band if drawers else z1
@@ -1718,15 +1718,27 @@ class GeneralLayout:
                        scale=[(sx1 - sx0 - FRONT_GAP) / w, 1.0, (sz1 - sz0 - FRONT_GAP) / h])
 
     def place_drawer_box(self, slot: Tuple[float, float, float, float], front: float, back: float,
-                         runners_each: int = 2) -> None:
+                         runners_each: int = 2, front_uid: str = "") -> None:
         """The next drawer's sides, back, bottom and runners, behind its front:
-        the first two runner pieces on the carcass either side, any next two
-        on the drawer's sides."""
+        the sides joined to its front (else the next ones), the back and
+        bottom joined to those sides, two carcass runners either side and
+        any drawer runners on the sides they are joined to."""
         sx0, sx1, sz0, sz1 = slot
-        sides = [u for u in self.with_role("drawer_side") if not self.placed(u)][:2]
-        backs = [u for u in self.with_role("drawer_back") if not self.placed(u)][:1]
-        bottoms = [u for u in self.with_role("drawer_bottom") if not self.placed(u)][:1]
-        runners = [u for u in self.with_role("runner") if not self.placed(u)][:runners_each]
+
+        def pick(role: str, n: int, near: Set[str]) -> List[str]:
+            free = [u for u in self.with_role(role) if not self.placed(u)]
+            return sorted(free, key=lambda u: not (self.links[u] & near))[:n]
+
+        sides = pick("drawer_side", 2, {front_uid})
+        near = set(sides) | {front_uid}
+        backs = pick("drawer_back", 1, near)
+        bottoms = pick("drawer_bottom", 1, near)
+        all_sides = set(self.with_role("drawer_side"))
+        free_runners = [u for u in self.with_role("runner") if not self.placed(u)]
+        carcass = [u for u in free_runners if not self.links[u] & all_sides][:2]
+        on_sides = sorted((u for u in free_runners if self.links[u] & all_sides and u not in carcass),
+                          key=lambda u: not (self.links[u] & set(sides)))[:max(0, runners_each - len(carcass))]
+        runners = carcass + on_sides
         bx0, bx1 = sx0 + RUNNER_GAP, sx1 - RUNNER_GAP
         y0, y1 = front, back - DRAWER_LIFT
         zb = sz0 + DRAWER_LIFT
@@ -1747,9 +1759,15 @@ class GeneralLayout:
         for i, uid in enumerate(runners):
             length, t, h = self.dims(uid)
             # Carcass runners at the slot edges; drawer runners on the
-            # drawer sides, just inside them.
-            inset = 0.0 if i < 2 else side_t + t
-            x = sx0 + t / 2 + inset if i % 2 == 0 else sx1 - t / 2 - inset
+            # drawer side they are joined to, just inside it.
+            if uid in carcass:
+                left = carcass.index(uid) % 2 == 0
+                inset = 0.0
+            else:
+                own = [s for s in sides if s in self.links[uid]]
+                left = (sides.index(own[0]) == 0) if own else (on_sides.index(uid) % 2 == 0)
+                inset = side_t + t
+            x = sx0 + t / 2 + inset if left else sx1 - t / 2 - inset
             self.frame.put(uid, [x, (y0 + y1) / 2, zb + bh * 0.4], [0.0, 0.0, 90.0], [(y1 - y0) / length, 1.0, 1.0])
 
     def place_hinges(self, doors: List[str]) -> None:
